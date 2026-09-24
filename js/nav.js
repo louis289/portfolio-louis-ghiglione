@@ -58,10 +58,90 @@ function initLangSwitcher() {
 }
 
 /**
- * Initialises navigation: active link + lang switcher.
+ * Wires the burger menu toggle for mobile viewports.
+ * Manages aria-expanded, click-outside, and ESC key.
+ */
+function initMobileMenu() {
+  const toggleBtn = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  if (!toggleBtn || !navLinks) return;
+
+  const updateAriaLabel = () => {
+    const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+    const lang = getCurrentLang();
+    if (lang === 'fr') {
+      const label = isExpanded ? 'Fermer le menu' : 'Ouvrir le menu';
+      toggleBtn.setAttribute('aria-label', label);
+      toggleBtn.setAttribute('title', label);
+    } else {
+      const label = isExpanded ? 'Close menu' : 'Open menu';
+      toggleBtn.setAttribute('aria-label', label);
+      toggleBtn.setAttribute('title', label);
+    }
+  };
+
+  const closeMenu = () => {
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    navLinks.classList.remove('is-open');
+    updateAriaLabel();
+  };
+
+  const openMenu = () => {
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    navLinks.classList.add('is-open');
+    updateAriaLabel();
+  };
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+    if (isExpanded) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  // Close when clicking any nav link
+  navLinks.querySelectorAll('.nav-link').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close when clicking outside the nav
+  document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('is-open')) {
+      if (!navLinks.contains(e.target) && !toggleBtn.contains(e.target)) {
+        closeMenu();
+      }
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('is-open')) {
+      closeMenu();
+      toggleBtn.focus();
+    }
+  });
+
+  // Close automatically if viewport resized to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768 && navLinks.classList.contains('is-open')) {
+      closeMenu();
+    }
+  });
+
+  // Update label on language change
+  document.addEventListener('langchange', updateAriaLabel);
+  updateAriaLabel();
+}
+
+/**
+ * Initialises navigation: active link + lang switcher + mobile menu.
  * Call after initI18n() so button text is already translated.
  */
 export function initNav() {
   setActiveNavLink();
   initLangSwitcher();
+  initMobileMenu();
 }

@@ -25,7 +25,7 @@
 
   <nav class="site-nav" role="navigation" aria-label="Main navigation">
     <a href="./index.html" class="nav-logo" aria-label="Louis Ghiglione — Home">LG</a>
-    <ul class="nav-links" role="list">
+    <ul class="nav-links" id="nav-links" role="list">
       <li><a href="./index.html"    class="nav-link" data-page="welcome"  data-i18n="nav.welcome"></a></li>
       <li><a href="./projects.html" class="nav-link" data-page="projects" data-i18n="nav.projects"></a></li>
       <li><a href="./career.html"   class="nav-link" data-page="career"   data-i18n="nav.career"></a></li>
@@ -33,9 +33,16 @@
       <li><a href="./passions.html" class="nav-link" data-page="passions" data-i18n="nav.passions"></a></li>
       <li><a href="./civic.html"    class="nav-link" data-page="civic"    data-i18n="nav.civic"></a></li>
     </ul>
-    <div class="lang-switcher" role="group" aria-label="Language selection">
-      <button class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
-      <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+    <div class="nav-actions">
+      <div class="lang-switcher" role="group" aria-label="Language selection">
+        <button class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
     </div>
   </nav>
 
