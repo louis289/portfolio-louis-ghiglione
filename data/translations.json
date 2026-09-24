@@ -64,10 +64,16 @@
       "map_placeholder": "🗺 Interactive map — click markers for details",
       "d1_title": "Barcelona, Spain",
       "d1_desc": "Exchange semester at UPC (Universitat Politècnica de Catalunya) — immersion in Southern European tech ecosystem and language.",
+      "d1_country": "🇪🇸 Spain",
+      "d1_period": "Spring 2026",
       "d2_title": "Montréal, Canada",
       "d2_desc": "Research internship at Polytechnique Montréal — French-speaking North American environment, cutting-edge labs.",
+      "d2_country": "🇨🇦 Canada",
+      "d2_period": "Summer 2026",
       "d3_title": "Singapore",
-      "d3_desc": "Industrial project at NUS (National University of Singapore) — Asia-Pacific hub, international exposure and innovation culture."
+      "d3_desc": "Industrial project at NUS (National University of Singapore) — Asia-Pacific hub, international exposure and innovation culture.",
+      "d3_country": "🇸🇬 Singapore",
+      "d3_period": "Fall 2027"
     },
     "passions": {
       "tag": "Passions",
@@ -158,10 +164,16 @@
       "map_placeholder": "🗺 Carte interactive — cliquer les marqueurs pour les détails",
       "d1_title": "Barcelone, Espagne",
       "d1_desc": "Semestre d'échange à UPC (Universitat Politècnica de Catalunya) — immersion dans l'écosystème tech d'Europe du Sud et apprentissage de l'espagnol.",
+      "d1_country": "🇪🇸 Espagne",
+      "d1_period": "Printemps 2026",
       "d2_title": "Montréal, Canada",
       "d2_desc": "Stage de recherche à Polytechnique Montréal — environnement francophone en Amérique du Nord, laboratoires de pointe.",
+      "d2_country": "🇨🇦 Canada",
+      "d2_period": "Été 2026",
       "d3_title": "Singapour",
-      "d3_desc": "Projet industriel à NUS (National University of Singapore) — hub Asie-Pacifique, ouverture internationale et culture de l'innovation."
+      "d3_desc": "Projet industriel à NUS (National University of Singapore) — hub Asie-Pacifique, ouverture internationale et culture de l'innovation.",
+      "d3_country": "🇸🇬 Singapour",
+      "d3_period": "Automne 2027"
     },
     "passions": {
       "tag": "Passions",

@@ -66,6 +66,19 @@
   border-radius: var(--radius-sm);
   overflow: hidden;
   flex-shrink: 0;
+  cursor: pointer;
+  user-select: none;
+  transition: border-color var(--t), box-shadow var(--t), transform var(--t);
+}
+
+.lang-switcher:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 12px rgba(109, 74, 255, 0.25);
+}
+
+.lang-switcher:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 .lang-btn {
@@ -77,6 +90,7 @@
   background: transparent;
   border: none;
   cursor: pointer;
+  pointer-events: none;
   transition: color var(--t), background var(--t);
   letter-spacing: 0.05em;
 }
@@ -86,7 +100,7 @@
   color: #fff;
 }
 
-.lang-btn:hover:not(.is-active) {
+.lang-switcher:hover .lang-btn:not(.is-active) {
   color: var(--color-text);
 }
 

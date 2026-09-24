@@ -1,8 +1,10 @@
 /**
  * map.js — Leaflet mobility map module
  * Renders an interactive world map with destination markers.
- * Coordinates live here; labels are pulled from the already-rendered DOM.
+ * Coordinates and destination data live here; translations are synced via i18n.
  */
+
+import { t, getCurrentLang } from './i18n.js';
 
 /** @type {import('leaflet').Map | null} */
 let mapInstance = null;
@@ -16,6 +18,8 @@ let mapInstance = null;
  *   id: string,
  *   lat: number,
  *   lng: number,
+ *   city: string,
+ *   country: { en: string, fr: string } | string,
  *   i18nTitle: string,
  *   i18nDesc: string
  * }>}
@@ -26,7 +30,7 @@ const DESTINATIONS = [
     lat: 41.3851,
     lng: 2.1734,
     city: 'Barcelona',
-    country: '🇪🇸 Espagne / Spain',
+    country: { en: '🇪🇸 Spain', fr: '🇪🇸 Espagne' },
     i18nTitle: 'mobility.d1_title',
     i18nDesc:  'mobility.d1_desc',
   },
@@ -35,7 +39,7 @@ const DESTINATIONS = [
     lat: 45.5017,
     lng: -73.5673,
     city: 'Montréal',
-    country: '🇨🇦 Canada',
+    country: { en: '🇨🇦 Canada', fr: '🇨🇦 Canada' },
     i18nTitle: 'mobility.d2_title',
     i18nDesc:  'mobility.d2_desc',
   },
@@ -43,16 +47,15 @@ const DESTINATIONS = [
     id: 'dest-3',
     lat: 1.3521,
     lng: 103.8198,
-    city: 'Singapour / Singapore',
-    country: '🇸🇬 Singapore',
+    city: 'Singapore',
+    country: { en: '🇸🇬 Singapore', fr: '🇸🇬 Singapour' },
     i18nTitle: 'mobility.d3_title',
     i18nDesc:  'mobility.d3_desc',
   },
 ];
 
 /**
- * Reads the translated text of a [data-i18n] element.
- * Falls back to the key path if the element is not found.
+ * Reads the translated text of a [data-i18n] element as a fallback.
  * @param {string} keyPath
  * @returns {string}
  */
@@ -95,13 +98,18 @@ function createMarkerIcon(title) {
  * @param {L.Map} map
  */
 function addMarkers(map) {
+  const currentLang = getCurrentLang() || 'en';
+
   DESTINATIONS.forEach(({ lat, lng, city, country, i18nTitle, i18nDesc }) => {
-    const title = getLabel(i18nTitle) || city;
-    const desc  = getLabel(i18nDesc);
+    const title = t(i18nTitle) || getLabel(i18nTitle) || city;
+    const desc  = t(i18nDesc)  || getLabel(i18nDesc);
+    const countryLabel = typeof country === 'object'
+      ? (country[currentLang] || country.en)
+      : country;
 
     const popup = L.popup({ className: 'map-popup', maxWidth: 280 }).setContent(`
       <strong class="map-popup__title">${title}</strong>
-      <span class="map-popup__country">${country}</span>
+      <span class="map-popup__country">${countryLabel}</span>
       <p class="map-popup__desc">${desc}</p>
     `);
 
@@ -110,6 +118,46 @@ function addMarkers(map) {
       .addTo(map);
   });
 }
+
+/**
+ * Removes all existing markers and re-adds them with the current language.
+ * Preserves the open state of any active popup.
+ * Called automatically when a 'langchange' event is dispatched.
+ */
+function refreshMapMarkers() {
+  if (!mapInstance) return;
+
+  // Check if a popup is currently open and record its position
+  let openCoords = null;
+  mapInstance.eachLayer((layer) => {
+    if (layer instanceof L.Marker && typeof layer.isPopupOpen === 'function' && layer.isPopupOpen()) {
+      openCoords = layer.getLatLng();
+    }
+  });
+
+  // Remove every marker layer
+  mapInstance.eachLayer((layer) => {
+    if (layer instanceof L.Marker) mapInstance.removeLayer(layer);
+  });
+
+  // Re-add with up-to-date translated labels
+  addMarkers(mapInstance);
+
+  // Restore open popup if one was active
+  if (openCoords) {
+    mapInstance.eachLayer((layer) => {
+      if (layer instanceof L.Marker) {
+        const pos = layer.getLatLng();
+        if (Math.abs(pos.lat - openCoords.lat) < 0.001 && Math.abs(pos.lng - openCoords.lng) < 0.001) {
+          layer.openPopup();
+        }
+      }
+    });
+  }
+}
+
+// Automatically refresh markers whenever the language changes
+document.addEventListener('langchange', refreshMapMarkers);
 
 /**
  * Initialises the Leaflet map in #mobility-map.

@@ -58,6 +58,18 @@ export function applyLang(lang) {
     btn.classList.toggle('is-active', isActive);
     btn.setAttribute('aria-pressed', String(isActive));
   });
+
+  // Update switcher title / aria-label indicating toggle target
+  const switcher = document.querySelector('.lang-switcher');
+  if (switcher) {
+    const nextLang = lang === 'en' ? 'fr' : 'en';
+    const label = nextLang === 'fr' ? 'Passer en français' : 'Switch to English';
+    switcher.setAttribute('aria-label', label);
+    switcher.setAttribute('title', label);
+  }
+
+  // Notify other modules (e.g. map) that the language changed
+  document.dispatchEvent(new CustomEvent('langchange', { detail: { lang } }));
 }
 
 /**
@@ -66,6 +78,15 @@ export function applyLang(lang) {
  */
 export function getCurrentLang() {
   return currentLang;
+}
+
+/**
+ * Returns the translated string for a given keyPath in the current language.
+ * @param {string} keyPath
+ * @returns {string}
+ */
+export function t(keyPath) {
+  return resolve(translations[currentLang], keyPath) || '';
 }
 
 /**

@@ -21,13 +21,39 @@ function setActiveNavLink() {
 }
 
 /**
- * Wires click events on .lang-btn[data-lang] buttons.
+ * Wires the .lang-switcher container as a single EN↔FR toggle.
+ * Clicking anywhere on the zone (either button or between them) toggles.
+ * Keyboard: Enter / Space also toggle.
  */
 function initLangSwitcher() {
-  document.querySelectorAll('.lang-btn[data-lang]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      applyLang(btn.dataset.lang);
-    });
+  const switcher = document.querySelector('.lang-switcher');
+  if (!switcher) return;
+
+  const toggle = () => {
+    applyLang(getCurrentLang() === 'en' ? 'fr' : 'en');
+  };
+
+  // Entire zone is clickable
+  switcher.addEventListener('click', toggle);
+
+  // Make the container keyboard-navigable as a single button
+  switcher.setAttribute('tabindex', '0');
+  switcher.setAttribute('role', 'button');
+  const nextLang = getCurrentLang() === 'en' ? 'fr' : 'en';
+  switcher.setAttribute('aria-label', nextLang === 'fr' ? 'Passer en français' : 'Switch to English');
+  switcher.setAttribute('title', nextLang === 'fr' ? 'Passer en français' : 'Switch to English');
+
+  switcher.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggle();
+    }
+  });
+
+  // Ensure inner buttons do not create duplicate tab stops
+  switcher.querySelectorAll('.lang-btn').forEach((btn) => {
+    btn.setAttribute('tabindex', '-1');
+    btn.setAttribute('aria-hidden', 'true');
   });
 }
 
