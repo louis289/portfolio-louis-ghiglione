@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://louis289.github.io/portfolio-louis-ghiglione/sitemap.xml

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobility — Louis Ghiglione</title>
+  <meta name="description" content="Three international mobility projects by Louis Ghiglione, N7 engineering student." />
+  <link rel="canonical" href="https://louis289.github.io/portfolio-louis-ghiglione/mobility.html" />
+  <meta property="og:title" content="Mobility — Louis Ghiglione" />
+  <meta property="og:type"  content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet" />
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+</head>
+<body data-page="mobility">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob--purple"></div>
+    <div class="blob blob--cyan"></div>
+  </div>
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <a href="./index.html" class="nav-logo" aria-label="Louis Ghiglione — Home">LG</a>
+    <ul class="nav-links" role="list">
+      <li><a href="./index.html"    class="nav-link" data-page="welcome"  data-i18n="nav.welcome"></a></li>
+      <li><a href="./projects.html" class="nav-link" data-page="projects" data-i18n="nav.projects"></a></li>
+      <li><a href="./career.html"   class="nav-link" data-page="career"   data-i18n="nav.career"></a></li>
+      <li><a href="./mobility.html" class="nav-link" data-page="mobility" data-i18n="nav.mobility"></a></li>
+      <li><a href="./passions.html" class="nav-link" data-page="passions" data-i18n="nav.passions"></a></li>
+      <li><a href="./civic.html"    class="nav-link" data-page="civic"    data-i18n="nav.civic"></a></li>
+    </ul>
+    <div class="lang-switcher" role="group" aria-label="Language selection">
+      <button class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+    </div>
+  </nav>
+
+  <main id="main-content" class="page-content">
+    <div class="page-wrapper">
+
+      <header class="page-header">
+        <span class="section-tag" data-i18n="mobility.tag"></span>
+        <h1 class="section-title" data-i18n="mobility.title"></h1>
+        <p class="section-desc"   data-i18n="mobility.desc"></p>
+      </header>
+
+      <!-- Leaflet interactive map -->
+      <div id="mobility-map" role="application" aria-label="Interactive mobility destinations map"></div>
+
+      <ul class="grid-3" role="list">
+
+        <li class="card">
+          <span class="card__icon" aria-hidden="true">🌍</span>
+          <h2 class="card__title" data-i18n="mobility.d1_title"></h2>
+          <p class="card__body"   data-i18n="mobility.d1_desc"></p>
+          <div class="card__tags">
+            <span class="badge">[Country]</span>
+            <span class="badge">[Period]</span>
+          </div>
+        </li>
+
+        <li class="card">
+          <span class="card__icon" aria-hidden="true">✈️</span>
+          <h2 class="card__title" data-i18n="mobility.d2_title"></h2>
+          <p class="card__body"   data-i18n="mobility.d2_desc"></p>
+          <div class="card__tags">
+            <span class="badge">[Country]</span>
+            <span class="badge">[Period]</span>
+          </div>
+        </li>
+
+        <li class="card">
+          <span class="card__icon" aria-hidden="true">🏔</span>
+          <h2 class="card__title" data-i18n="mobility.d3_title"></h2>
+          <p class="card__body"   data-i18n="mobility.d3_desc"></p>
+          <div class="card__tags">
+            <span class="badge">[Country]</span>
+            <span class="badge">[Period]</span>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p data-i18n="footer"></p>
+  </footer>
+
+  <!-- Leaflet JS — loaded before module so L is globally available -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN2GqeY=" crossorigin=""></script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

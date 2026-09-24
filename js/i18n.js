@@ -1,7 +1,11 @@
 /**
  * i18n.js — Internationalisation module
- * Loads translations.json and exposes applyLang()
+ * - Loads translations from a JSON file
+ * - Persists language choice in localStorage
+ * - Exposes: initI18n(), applyLang(), getCurrentLang()
  */
+
+const STORAGE_KEY = 'portfolio-lang';
 
 /** @type {Record<string, object>} */
 let translations = {};
@@ -10,7 +14,8 @@ let translations = {};
 let currentLang = 'en';
 
 /**
- * Resolves a dot-separated key path against an object.
+ * Resolves a dot-separated key against a nested object.
+ * Returns empty string if not found.
  * @param {object} obj
  * @param {string} keyPath  e.g. "nav.welcome"
  * @returns {string}
@@ -20,18 +25,20 @@ function resolve(obj, keyPath) {
 }
 
 /**
- * Applies the given language to all data-i18n / data-i18n-html elements.
+ * Applies the given language to all [data-i18n] and [data-i18n-html] elements.
+ * Updates lang buttons and persists choice to localStorage.
  * @param {'en' | 'fr'} lang
  */
 export function applyLang(lang) {
   const t = translations[lang];
   if (!t) {
-    console.warn(`[i18n] Language "${lang}" not found.`);
+    console.warn(`[i18n] Language "${lang}" not found in translations.`);
     return;
   }
 
   currentLang = lang;
   document.documentElement.lang = lang;
+  localStorage.setItem(STORAGE_KEY, lang);
 
   // Plain text nodes
   document.querySelectorAll('[data-i18n]').forEach((el) => {
@@ -39,21 +46,22 @@ export function applyLang(lang) {
     if (value) el.textContent = value;
   });
 
-  // HTML nodes (e.g. <br/> in hero title)
+  // HTML nodes (needed for <br> in hero title)
   document.querySelectorAll('[data-i18n-html]').forEach((el) => {
     const value = resolve(t, el.dataset.i18nHtml);
     if (value) el.innerHTML = value;
   });
 
-  // Update lang button states
-  document.querySelectorAll('.lang-btn').forEach((btn) => {
-    btn.classList.toggle('is-active', btn.dataset.lang === lang);
-    btn.setAttribute('aria-pressed', btn.dataset.lang === lang ? 'true' : 'false');
+  // Update lang button active state + aria
+  document.querySelectorAll('.lang-btn[data-lang]').forEach((btn) => {
+    const isActive = btn.dataset.lang === lang;
+    btn.classList.toggle('is-active', isActive);
+    btn.setAttribute('aria-pressed', String(isActive));
   });
 }
 
 /**
- * Returns the currently active language.
+ * Returns the currently active language code.
  * @returns {'en' | 'fr'}
  */
 export function getCurrentLang() {
@@ -61,16 +69,22 @@ export function getCurrentLang() {
 }
 
 /**
- * Loads translations.json and applies the default language.
+ * Loads translations.json, restores saved language from localStorage,
+ * and applies it. Falls back to `defaultLang` if no saved preference.
  * @param {'en' | 'fr'} [defaultLang='en']
+ * @param {string} [translationsPath='./data/translations.json']
  */
-export async function initI18n(defaultLang = 'en') {
+export async function initI18n(defaultLang = 'en', translationsPath = './data/translations.json') {
   try {
-    const response = await fetch('translations.json');
+    const response = await fetch(translationsPath);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     translations = await response.json();
-    applyLang(defaultLang);
   } catch (err) {
     console.error('[i18n] Failed to load translations:', err);
+    return;
   }
+
+  const savedLang = localStorage.getItem(STORAGE_KEY);
+  const lang = (savedLang in translations) ? savedLang : defaultLang;
+  applyLang(lang);
 }

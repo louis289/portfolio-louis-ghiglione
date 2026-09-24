@@ -3,145 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
   <title>Louis Ghiglione — E-Portfolio</title>
   <meta name="description" content="E-Portfolio of Louis Ghiglione, N7 engineering student and apprentice. CAM L3 FISA S5." />
   <link rel="canonical" href="https://louis289.github.io/portfolio-louis-ghiglione/" />
-
-  <!-- Open Graph -->
   <meta property="og:title"       content="Louis Ghiglione — E-Portfolio" />
-  <meta property="og:description" content="Engineering student at N7, apprentice. Discover my projects, career path and passions." />
+  <meta property="og:description" content="Engineering student at N7, apprentice. My projects, career and passions." />
   <meta property="og:type"        content="website" />
   <meta property="og:url"         content="https://louis289.github.io/portfolio-louis-ghiglione/" />
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet" />
-
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-
-  <!-- App CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Leaflet custom marker styles (inline for specificity over Leaflet defaults) -->
-  <style>
-    #mobility-map {
-      width: 100%;
-      height: 380px;
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,0.08);
-      margin-bottom: 2rem;
-      background: #0f1322;
-    }
-
-    .map-marker {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #6d4aff, #00d4ff);
-      border: 2px solid rgba(255,255,255,0.8);
-      box-shadow: 0 0 10px rgba(109,74,255,0.7);
-    }
-
-    /* Leaflet popup dark theme */
-    .map-popup .leaflet-popup-content-wrapper {
-      background: #0f1322;
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 12px;
-      color: #f0f4ff;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-    }
-
-    .map-popup .leaflet-popup-tip {
-      background: #0f1322;
-    }
-
-    .map-popup .leaflet-popup-close-button {
-      color: #7a85a3;
-    }
-
-    .map-popup__title {
-      display: block;
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 700;
-      margin-bottom: 0.4rem;
-    }
-
-    .map-popup__desc {
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.82rem;
-      color: #7a85a3;
-      line-height: 1.5;
-    }
-
-    /* Override Leaflet attribution bar */
-    .leaflet-control-attribution {
-      background: rgba(8,11,20,0.8) !important;
-      color: #7a85a3 !important;
-    }
-
-    .leaflet-control-attribution a { color: #00d4ff !important; }
-  </style>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <!-- Prefetch inner pages for faster navigation -->
+  <link rel="prefetch" href="./projects.html" />
+  <link rel="prefetch" href="./career.html" />
 </head>
-<body>
+<body data-page="welcome">
 
-  <!-- Skip to main content (accessibility) -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Decorative background blobs -->
   <div class="bg-blobs" aria-hidden="true">
     <div class="blob blob--purple"></div>
     <div class="blob blob--cyan"></div>
   </div>
 
-  <!-- ── NAVIGATION ── -->
   <nav class="site-nav" role="navigation" aria-label="Main navigation">
-    <a href="#" class="nav-logo" aria-label="Louis Ghiglione — Home">LG</a>
-
+    <a href="./index.html" class="nav-logo" aria-label="Louis Ghiglione — Home">LG</a>
     <ul class="nav-links" role="list">
-      <li><a href="#tab-welcome"  class="nav-link" data-tab="welcome"  aria-current="page"  data-i18n="nav.welcome"></a></li>
-      <li><a href="#tab-projects" class="nav-link" data-tab="projects" aria-current="false" data-i18n="nav.projects"></a></li>
-      <li><a href="#tab-career"   class="nav-link" data-tab="career"   aria-current="false" data-i18n="nav.career"></a></li>
-      <li><a href="#tab-mobility" class="nav-link" data-tab="mobility" aria-current="false" data-i18n="nav.mobility"></a></li>
-      <li><a href="#tab-passions" class="nav-link" data-tab="passions" aria-current="false" data-i18n="nav.passions"></a></li>
-      <li><a href="#tab-civic"    class="nav-link" data-tab="civic"    aria-current="false" data-i18n="nav.civic"></a></li>
+      <li><a href="./index.html"    class="nav-link" data-page="welcome"  data-i18n="nav.welcome"></a></li>
+      <li><a href="./projects.html" class="nav-link" data-page="projects" data-i18n="nav.projects"></a></li>
+      <li><a href="./career.html"   class="nav-link" data-page="career"   data-i18n="nav.career"></a></li>
+      <li><a href="./mobility.html" class="nav-link" data-page="mobility" data-i18n="nav.mobility"></a></li>
+      <li><a href="./passions.html" class="nav-link" data-page="passions" data-i18n="nav.passions"></a></li>
+      <li><a href="./civic.html"    class="nav-link" data-page="civic"    data-i18n="nav.civic"></a></li>
     </ul>
-
     <div class="lang-switcher" role="group" aria-label="Language selection">
-      <button class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
-      <button class="lang-btn"           data-lang="fr" aria-pressed="false">FR</button>
+      <button class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
     </div>
   </nav>
 
-  <!-- ── MAIN CONTENT ── -->
-  <main id="main-content">
+  <main id="main-content" class="page-content">
+    <div class="page-wrapper">
 
-    <!-- ══ TAB 1 : WELCOME ══ -->
-    <section id="tab-welcome" class="tab-section is-active" aria-label="Welcome">
-      <div class="page-wrapper">
+      <!-- Hero -->
+      <header class="hero">
+        <div class="hero__tag"   data-i18n="welcome.tag"></div>
+        <h1 class="hero__title" data-i18n-html="welcome.hero_name"></h1>
+        <p class="hero__sub"    data-i18n="welcome.hero_sub"></p>
+        <a href="./career.html" class="hero__cta" data-i18n="welcome.hero_cta"></a>
+      </header>
 
-        <!-- Hero -->
-        <header class="hero">
-          <div class="hero__tag" data-i18n="welcome.tag"></div>
-          <h1 class="hero__title" data-i18n-html="welcome.hero_name"></h1>
-          <p class="hero__sub" data-i18n="welcome.hero_sub"></p>
-          <button id="hero-cta" class="hero__cta" data-i18n="welcome.hero_cta"></button>
-        </header>
+      <hr class="divider" />
 
-        <hr class="divider" />
-
-        <!-- About -->
+      <!-- About -->
+      <section aria-labelledby="about-title">
         <div class="section-header">
-          <span class="section-tag"  data-i18n="welcome.about_tag"></span>
-          <h2 class="section-title"  data-i18n="welcome.about_title"></h2>
+          <span class="section-tag"   data-i18n="welcome.about_tag"></span>
+          <h2 class="section-title" id="about-title" data-i18n="welcome.about_title"></h2>
           <p class="section-desc"    data-i18n="welcome.about_desc"></p>
         </div>
-
         <div class="about-layout">
           <div class="about-avatar" role="img" aria-label="Profile photo placeholder">👤</div>
           <div class="about-text">
@@ -149,269 +71,44 @@
             <p data-i18n="welcome.about_text2"></p>
           </div>
         </div>
+      </section>
 
-        <hr class="divider" />
+      <hr class="divider" />
 
-        <!-- UVP -->
+      <!-- UVP -->
+      <section aria-labelledby="uvp-title">
         <div class="section-header">
           <span class="section-tag" data-i18n="welcome.uvp_tag"></span>
-          <h2 class="section-title" data-i18n="welcome.uvp_title"></h2>
+          <h2 class="section-title" id="uvp-title" data-i18n="welcome.uvp_title"></h2>
         </div>
-
         <article class="card uvp-card">
           <span class="card__icon" aria-hidden="true">💡</span>
           <h3 class="card__title" data-i18n="welcome.uvp_card_title"></h3>
           <p class="card__body"><em data-i18n="welcome.uvp_card_text"></em></p>
         </article>
+      </section>
 
-        <hr class="divider" />
+      <hr class="divider" />
 
-        <!-- Pitch video -->
+      <!-- Pitch -->
+      <section aria-labelledby="pitch-title">
         <div class="section-header">
           <span class="section-tag" data-i18n="welcome.pitch_tag"></span>
-          <h2 class="section-title" data-i18n="welcome.pitch_title"></h2>
+          <h2 class="section-title" id="pitch-title" data-i18n="welcome.pitch_title"></h2>
           <p class="section-desc"   data-i18n="welcome.pitch_desc"></p>
         </div>
-
         <div class="placeholder-media" role="img" aria-label="Elevator pitch video placeholder">
           <span data-i18n="welcome.pitch_placeholder"></span>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-    <!-- ══ TAB 2 : PROJECTS ══ -->
-    <section id="tab-projects" class="tab-section" aria-label="Projects" aria-hidden="true">
-      <div class="page-wrapper">
-
-        <div class="section-header">
-          <span class="section-tag" data-i18n="projects.tag"></span>
-          <h2 class="section-title" data-i18n="projects.title"></h2>
-          <p class="section-desc"   data-i18n="projects.desc"></p>
-        </div>
-
-        <ul class="grid-2" role="list">
-          <li class="card">
-            <span class="card__icon" aria-hidden="true">🔬</span>
-            <h3 class="card__title" data-i18n="projects.p1_title"></h3>
-            <p class="card__body"   data-i18n="projects.p1_desc"></p>
-            <div class="card__tags">
-              <span class="badge">N7</span>
-              <span class="badge">2026</span>
-              <span class="badge">[Specialty]</span>
-            </div>
-          </li>
-          <li class="card">
-            <span class="card__icon" aria-hidden="true">🏢</span>
-            <h3 class="card__title" data-i18n="projects.p2_title"></h3>
-            <p class="card__body"   data-i18n="projects.p2_desc"></p>
-            <div class="card__tags">
-              <span class="badge">[Company]</span>
-              <span class="badge">2026</span>
-            </div>
-          </li>
-          <li class="card">
-            <span class="card__icon" aria-hidden="true">💻</span>
-            <h3 class="card__title" data-i18n="projects.p3_title"></h3>
-            <p class="card__body"   data-i18n="projects.p3_desc"></p>
-            <div class="card__tags">
-              <span class="badge">Personal</span>
-              <span class="badge">2025</span>
-            </div>
-          </li>
-        </ul>
-
-      </div>
-    </section>
-
-    <!-- ══ TAB 3 : CAREER ══ -->
-    <section id="tab-career" class="tab-section" aria-label="Career" aria-hidden="true">
-      <div class="page-wrapper">
-
-        <div class="section-header">
-          <span class="section-tag" data-i18n="career.tag"></span>
-          <h2 class="section-title" data-i18n="career.title"></h2>
-          <p class="section-desc"   data-i18n="career.desc"></p>
-        </div>
-
-        <ol class="career-list" role="list">
-
-          <li class="career-item">
-            <span class="career-item__num" aria-hidden="true">1</span>
-            <div class="career-item__content">
-              <h3 data-i18n="career.item1_title"></h3>
-              <p  data-i18n="career.item1_desc"></p>
-              <p>→ <a href="#" class="ext-link" data-i18n="career.item1_link"></a></p>
-              <div class="career-item__links">
-                <a href="#" class="badge" data-i18n="career.item1_cv"></a>
-                <a href="#" class="badge" data-i18n="career.item1_cover"></a>
-              </div>
-            </div>
-          </li>
-
-          <li class="career-item">
-            <span class="career-item__num" aria-hidden="true">2</span>
-            <div class="career-item__content">
-              <h3 data-i18n="career.item2_title"></h3>
-              <p  data-i18n="career.item2_desc"></p>
-              <p>→ <a href="#" class="ext-link" data-i18n="career.item2_link"></a></p>
-            </div>
-          </li>
-
-          <li class="career-item">
-            <span class="career-item__num" aria-hidden="true">3</span>
-            <div class="career-item__content">
-              <h3 data-i18n="career.item3_title"></h3>
-              <p><strong data-i18n="career.item3_person"></strong></p>
-              <p data-i18n="career.item3_learnt"></p>
-            </div>
-          </li>
-
-          <li class="career-item">
-            <span class="career-item__num" aria-hidden="true">4</span>
-            <div class="career-item__content">
-              <h3 data-i18n="career.item4_title"></h3>
-              <p><strong data-i18n="career.item4_person"></strong></p>
-              <p data-i18n="career.item4_learnt"></p>
-            </div>
-          </li>
-
-        </ol>
-
-      </div>
-    </section>
-
-    <!-- ══ TAB 4 : MOBILITY ══ -->
-    <section id="tab-mobility" class="tab-section" aria-label="Mobility" aria-hidden="true">
-      <div class="page-wrapper">
-
-        <div class="section-header">
-          <span class="section-tag" data-i18n="mobility.tag"></span>
-          <h2 class="section-title" data-i18n="mobility.title"></h2>
-          <p class="section-desc"   data-i18n="mobility.desc"></p>
-        </div>
-
-        <!-- Leaflet map container -->
-        <div id="mobility-map" role="application" aria-label="Interactive mobility map"></div>
-
-        <ul class="grid-3" role="list">
-          <li class="card">
-            <span class="card__icon" aria-hidden="true">🌍</span>
-            <h3 class="card__title" data-i18n="mobility.d1_title"></h3>
-            <p class="card__body"   data-i18n="mobility.d1_desc"></p>
-            <div class="card__tags">
-              <span class="badge">[Country]</span>
-              <span class="badge">[Period]</span>
-            </div>
-          </li>
-          <li class="card">
-            <span class="card__icon" aria-hidden="true">✈️</span>
-            <h3 class="card__title" data-i18n="mobility.d2_title"></h3>
-            <p class="card__body"   data-i18n="mobility.d2_desc"></p>
-            <div class="card__tags">
-              <span class="badge">[Country]</span>
-              <span class="badge">[Period]</span>
-            </div>
-          </li>
-          <li class="card">
-            <span class="card__icon" aria-hidden="true">🏔</span>
-            <h3 class="card__title" data-i18n="mobility.d3_title"></h3>
-            <p class="card__body"   data-i18n="mobility.d3_desc"></p>
-            <div class="card__tags">
-              <span class="badge">[Country]</span>
-              <span class="badge">[Period]</span>
-            </div>
-          </li>
-        </ul>
-
-      </div>
-    </section>
-
-    <!-- ══ TAB 5 : PASSIONS ══ -->
-    <section id="tab-passions" class="tab-section" aria-label="Passions" aria-hidden="true">
-      <div class="page-wrapper">
-
-        <div class="section-header">
-          <span class="section-tag" data-i18n="passions.tag"></span>
-          <h2 class="section-title" data-i18n="passions.title"></h2>
-          <p class="section-desc"   data-i18n="passions.desc"></p>
-        </div>
-
-        <ul class="grid-3" role="list">
-          <li class="card">
-            <span class="card__icon" aria-hidden="true">⚽</span>
-            <h3 class="card__title" data-i18n="passions.p1_title"></h3>
-            <p class="card__body"   data-i18n="passions.p1_desc"></p>
-          </li>
-          <li class="card">
-            <span class="card__icon" aria-hidden="true">🎸</span>
-            <h3 class="card__title" data-i18n="passions.p2_title"></h3>
-            <p class="card__body"   data-i18n="passions.p2_desc"></p>
-          </li>
-          <li class="card">
-            <span class="card__icon" aria-hidden="true">📚</span>
-            <h3 class="card__title" data-i18n="passions.p3_title"></h3>
-            <p class="card__body"   data-i18n="passions.p3_desc"></p>
-          </li>
-          <li class="card">
-            <span class="card__icon" aria-hidden="true">🎨</span>
-            <h3 class="card__title" data-i18n="passions.p4_title"></h3>
-            <p class="card__body"   data-i18n="passions.p4_desc"></p>
-          </li>
-        </ul>
-
-      </div>
-    </section>
-
-    <!-- ══ TAB 6 : CIVIC ENGAGEMENT ══ -->
-    <section id="tab-civic" class="tab-section" aria-label="Civic Engagement" aria-hidden="true">
-      <div class="page-wrapper">
-
-        <div class="section-header">
-          <span class="section-tag" data-i18n="civic.tag"></span>
-          <h2 class="section-title" data-i18n="civic.title"></h2>
-          <p class="section-desc"   data-i18n="civic.desc"></p>
-        </div>
-
-        <ul class="grid-2" role="list">
-          <li class="card">
-            <span class="card__icon" aria-hidden="true">🤝</span>
-            <h3 class="card__title" data-i18n="civic.a1_title"></h3>
-            <p class="card__body"   data-i18n="civic.a1_desc"></p>
-            <div class="card__tags">
-              <span class="badge">[Role]</span>
-              <span class="badge">[Period]</span>
-              <span class="badge">[Hours] h</span>
-            </div>
-          </li>
-          <li class="card">
-            <span class="card__icon" aria-hidden="true">🌱</span>
-            <h3 class="card__title" data-i18n="civic.a2_title"></h3>
-            <p class="card__body"   data-i18n="civic.a2_desc"></p>
-            <div class="card__tags">
-              <span class="badge">[Role]</span>
-              <span class="badge">[Period]</span>
-              <span class="badge">[Hours] h</span>
-            </div>
-          </li>
-        </ul>
-
-      </div>
-    </section>
-
+    </div>
   </main>
 
-  <!-- ── FOOTER ── -->
   <footer class="site-footer">
     <p data-i18n="footer"></p>
   </footer>
 
-  <!-- Leaflet JS (loaded before module so L is available globally) -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN2GqeY=" crossorigin=""></script>
-
-  <!-- App JS (ES Module) -->
-  <script type="module" src="js/main.js"></script>
-
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>

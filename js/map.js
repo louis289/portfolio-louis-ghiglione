@@ -1,17 +1,24 @@
 /**
  * map.js — Leaflet mobility map module
- * Initializes an interactive world map with destination markers.
- * Destination data is defined here (coordinates are not translatable).
- * Labels are injected from translations after i18n is ready.
+ * Renders an interactive world map with destination markers.
+ * Coordinates live here; labels are pulled from the already-rendered DOM.
  */
 
 /** @type {import('leaflet').Map | null} */
 let mapInstance = null;
 
 /**
- * Destination definitions — coordinates only.
- * Labels come from translations.json (mobility.d1_title, etc.)
- * @type {Array<{ id: string, lat: number, lng: number, i18nTitle: string, i18nDesc: string }>}
+ * Destination data.
+ * `i18nTitle` / `i18nDesc` → keys used in translations.json.
+ * Update coordinates when real destinations are known.
+ *
+ * @type {Array<{
+ *   id: string,
+ *   lat: number,
+ *   lng: number,
+ *   i18nTitle: string,
+ *   i18nDesc: string
+ * }>}
  */
 const DESTINATIONS = [
   {
@@ -38,85 +45,85 @@ const DESTINATIONS = [
 ];
 
 /**
- * Resolves a dot-separated i18n key from the DOM.
- * Falls back to the key itself if not found.
+ * Reads the translated text of a [data-i18n] element.
+ * Falls back to the key path if the element is not found.
  * @param {string} keyPath
  * @returns {string}
  */
-function getTranslation(keyPath) {
-  // Read from already-rendered data-i18n elements as source of truth
-  const el = document.querySelector(`[data-i18n="${keyPath}"]`);
-  return el?.textContent?.trim() || keyPath;
+function getLabel(keyPath) {
+  return document.querySelector(`[data-i18n="${keyPath}"]`)?.textContent?.trim() || keyPath;
 }
 
 /**
- * Initializes the Leaflet map in #mobility-map.
- * Safe to call multiple times — skips if already initialized.
+ * Builds a Leaflet divIcon using the .map-marker CSS class.
+ * @param {string} title  Accessible label for the marker
+ * @returns {L.DivIcon}
+ */
+function createMarkerIcon(title) {
+  return L.divIcon({
+    className: '',
+    html: `<div class="map-marker" title="${title}" aria-label="${title}"></div>`,
+    iconSize:    [14, 14],
+    iconAnchor:  [7, 7],
+    popupAnchor: [0, -10],
+  });
+}
+
+/**
+ * Adds all destination markers to the map with translated popups.
+ * @param {L.Map} map
+ */
+function addMarkers(map) {
+  DESTINATIONS.forEach(({ lat, lng, i18nTitle, i18nDesc }) => {
+    const title = getLabel(i18nTitle);
+    const desc  = getLabel(i18nDesc);
+
+    const popup = L.popup({ className: 'map-popup', maxWidth: 260 }).setContent(`
+      <strong class="map-popup__title">${title}</strong>
+      <p class="map-popup__desc">${desc}</p>
+    `);
+
+    L.marker([lat, lng], { icon: createMarkerIcon(title), alt: title })
+      .bindPopup(popup)
+      .addTo(map);
+  });
+}
+
+/**
+ * Initialises the Leaflet map in #mobility-map.
+ * Safe to call multiple times — no-ops if already initialised.
  */
 export function initMap() {
   if (mapInstance) return;
 
   const container = document.getElementById('mobility-map');
-  if (!container || typeof L === 'undefined') return;
+  if (!container) {
+    console.warn('[map] #mobility-map not found.');
+    return;
+  }
+  if (typeof L === 'undefined') {
+    console.error('[map] Leaflet (L) is not loaded.');
+    return;
+  }
 
-  // Dark tile layer (CartoDB Dark Matter — no API key required)
   mapInstance = L.map('mobility-map', {
     center: [30, 10],
     zoom: 2,
     zoomControl: true,
     scrollWheelZoom: false,
+    attributionControl: true,
   });
 
+  // CartoDB Dark Matter tiles — no API key needed
   L.tileLayer(
     'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
     {
       attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
       subdomains: 'abcd',
       maxZoom: 19,
     }
   ).addTo(mapInstance);
 
-  // Custom marker icon matching the design palette
-  const markerIcon = L.divIcon({
-    className: '',
-    html: `<div class="map-marker" aria-hidden="true"></div>`,
-    iconSize: [16, 16],
-    iconAnchor: [8, 8],
-    popupAnchor: [0, -12],
-  });
-
-  // Add markers with translated popups
-  DESTINATIONS.forEach((dest) => {
-    const title = getTranslation(dest.i18nTitle);
-    const desc  = getTranslation(dest.i18nDesc);
-
-    const popup = L.popup({
-      className: 'map-popup',
-      maxWidth: 260,
-    }).setContent(`
-      <strong class="map-popup__title">${title}</strong>
-      <p class="map-popup__desc">${desc}</p>
-    `);
-
-    L.marker([dest.lat, dest.lng], { icon: markerIcon, alt: title })
-      .bindPopup(popup)
-      .addTo(mapInstance);
-  });
-}
-
-/**
- * Refreshes marker popup text after a language switch.
- * (Removes and re-adds all markers with updated labels.)
- */
-export function refreshMapLabels() {
-  if (!mapInstance) return;
-
-  // Remove all existing layers except tile layer
-  mapInstance.eachLayer((layer) => {
-    if (layer instanceof L.Marker) mapInstance.removeLayer(layer);
-  });
-
-  // Re-add with fresh translations
-  initMap._addMarkers?.();
+  addMarkers(mapInstance);
 }
