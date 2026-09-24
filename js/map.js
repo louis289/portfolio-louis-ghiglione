@@ -61,17 +61,32 @@ function getLabel(keyPath) {
 }
 
 /**
- * Builds a Leaflet divIcon using the .map-marker CSS class.
- * @param {string} title  Accessible label for the marker
+ * Builds an SVG location-pin icon in the portfolio gradient.
+ * @param {string} title  Accessible label
  * @returns {L.DivIcon}
  */
 function createMarkerIcon(title) {
+  // Unique gradient ID per marker to avoid SVG defs collision
+  const gradId = `pin-grad-${Math.random().toString(36).slice(2, 7)}`;
+  const svg = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="40" viewBox="0 0 28 40" role="img" aria-label="${title}">
+      <defs>
+        <linearGradient id="${gradId}" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%"   stop-color="#6d4aff"/>
+          <stop offset="100%" stop-color="#00d4ff"/>
+        </linearGradient>
+      </defs>
+      <path d="M14 0C6.27 0 0 6.27 0 14c0 10.5 14 26 14 26S28 24.5 28 14C28 6.27 21.73 0 14 0z"
+            fill="url(#${gradId})" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+      <circle cx="14" cy="13" r="5" fill="white" opacity="0.95"/>
+    </svg>
+  `;
   return L.divIcon({
     className: '',
-    html: `<div class="map-marker" title="${title}" aria-label="${title}"></div>`,
-    iconSize:    [14, 14],
-    iconAnchor:  [7, 7],
-    popupAnchor: [0, -10],
+    html: svg,
+    iconSize:    [28, 40],
+    iconAnchor:  [14, 40],   // tip of the pin
+    popupAnchor: [0,  -42],  // popup opens above the pin
   });
 }
 
@@ -127,15 +142,19 @@ export function initMap() {
     attributionControl: true,
   });
 
-  // CartoDB Dark Matter tiles — no API key needed
+  // ESRI World Dark Gray Base — free, no API key required
   const tileLayer = L.tileLayer(
-    'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+    'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
     {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
-      subdomains: 'abcd',
-      maxZoom: 19,
+      attribution: 'Tiles &copy; <a href="https://www.esri.com">Esri</a> &mdash; Esri, DeLorme, NAVTEQ',
+      maxZoom: 16,
     }
+  ).addTo(mapInstance);
+
+  // Reference layer (labels) to show city/country names
+  L.tileLayer(
+    'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}',
+    { maxZoom: 16, pane: 'overlayPane' }
   ).addTo(mapInstance);
 
   addMarkers(mapInstance);
