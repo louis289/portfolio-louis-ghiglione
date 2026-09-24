@@ -113,6 +113,12 @@ export function initMap() {
     return;
   }
 
+  // Guarantee a minimum rendered height so Leaflet can measure the container.
+  // The CSS rule sets 400px, this is a safety fallback.
+  if (container.offsetHeight === 0) {
+    container.style.height = '400px';
+  }
+
   mapInstance = L.map('mobility-map', {
     center: [30, 10],
     zoom: 2,
@@ -122,7 +128,7 @@ export function initMap() {
   });
 
   // CartoDB Dark Matter tiles — no API key needed
-  L.tileLayer(
+  const tileLayer = L.tileLayer(
     'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
     {
       attribution:
@@ -133,4 +139,9 @@ export function initMap() {
   ).addTo(mapInstance);
 
   addMarkers(mapInstance);
+
+  // Force Leaflet to recalculate size once tiles have started loading.
+  // Fixes the grey/blank map issue when the container layout isn't settled yet.
+  tileLayer.once('load', () => mapInstance.invalidateSize());
+  setTimeout(() => mapInstance?.invalidateSize(), 300);
 }
