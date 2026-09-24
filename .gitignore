@@ -1,0 +1,18 @@
+# Logs and OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if ever used)
+node_modules/
+npm-debug.log*
+
+# Temp
+*.tmp
+*.bak

@@ -3,696 +3,415 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
   <title>Louis Ghiglione — E-Portfolio</title>
-  <meta name="description" content="E-Portfolio of Louis Ghiglione, N7 engineering student and apprentice." />
+  <meta name="description" content="E-Portfolio of Louis Ghiglione, N7 engineering student and apprentice. CAM L3 FISA S5." />
+  <link rel="canonical" href="https://louis289.github.io/portfolio-louis-ghiglione/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Louis Ghiglione — E-Portfolio" />
+  <meta property="og:description" content="Engineering student at N7, apprentice. Discover my projects, career path and passions." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://louis289.github.io/portfolio-louis-ghiglione/" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Leaflet custom marker styles (inline for specificity over Leaflet defaults) -->
   <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --bg:       #080b14;
-      --surface:  #0f1322;
-      --card:     rgba(255,255,255,0.04);
-      --border:   rgba(255,255,255,0.08);
-      --accent:   #6d4aff;
-      --accent2:  #00d4ff;
-      --text:     #f0f4ff;
-      --muted:    #7a85a3;
-      --nav-h:    68px;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Outfit', sans-serif;
-      font-size: 1rem;
-      line-height: 1.7;
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      height: var(--nav-h);
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 2rem;
-      background: rgba(8,11,20,0.85);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-      gap: 1rem;
-    }
-
-    .nav-logo {
-      font-weight: 800;
-      font-size: 1.1rem;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      letter-spacing: -0.02em;
-      flex-shrink: 0;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 0.15rem;
-      list-style: none;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      display: block;
-      padding: 0.38rem 0.85rem;
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 500;
-      border-radius: 8px;
-      transition: color 0.2s, background 0.2s;
-      white-space: nowrap;
-    }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: var(--text);
-      background: var(--card);
-    }
-
-    /* ── LANG SWITCHER ── */
-    .lang-switcher {
-      display: flex;
-      align-items: center;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      overflow: hidden;
-      flex-shrink: 0;
-    }
-
-    .lang-btn {
-      padding: 0.35rem 0.75rem;
-      font-size: 0.8rem;
-      font-weight: 700;
-      font-family: 'Outfit', sans-serif;
-      color: var(--muted);
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      transition: color 0.2s, background 0.2s;
-      letter-spacing: 0.05em;
-    }
-
-    .lang-btn.active {
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      color: #fff;
-    }
-
-    .lang-btn:hover:not(.active) { color: var(--text); }
-
-    /* ── SECTIONS ── */
-    section {
-      display: none;
-      min-height: 100vh;
-      padding: calc(var(--nav-h) + 3rem) 2.5rem 4rem;
-      max-width: 1100px;
-      margin: 0 auto;
-      animation: fadeIn 0.4s ease both;
-    }
-
-    section.active { display: block; }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(16px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ── HERO ── */
-    .hero {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-height: calc(100vh - var(--nav-h));
-      padding: 0;
-      gap: 2rem;
-    }
-
-    .hero-blob-wrap {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-      overflow: hidden;
-    }
-
-    .blob {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(90px);
-      opacity: 0.2;
-      animation: drift 10s ease-in-out infinite alternate;
-    }
-
-    .blob-1 { width: 600px; height: 600px; background: var(--accent); top: -200px; left: -200px; }
-    .blob-2 { width: 500px; height: 500px; background: var(--accent2); bottom: -150px; right: -150px; animation-delay: -5s; }
-
-    @keyframes drift {
-      from { transform: translate(0,0) scale(1); }
-      to   { transform: translate(50px,40px) scale(1.1); }
-    }
-
-    .hero-content { position: relative; z-index: 1; }
-
-    .hero-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent2);
-      background: rgba(0,212,255,0.1);
-      border: 1px solid rgba(0,212,255,0.25);
-      padding: 0.35rem 1rem;
-      border-radius: 999px;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
-      font-weight: 800;
-      line-height: 1.05;
-      letter-spacing: -0.03em;
-      background: linear-gradient(135deg, #fff 40%, var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 1.2rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--muted);
-      max-width: 580px;
+    #mobility-map {
+      width: 100%;
+      height: 380px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.08);
       margin-bottom: 2rem;
+      background: #0f1322;
     }
 
-    .hero-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      color: #fff;
-      font-weight: 600;
-      font-size: 0.95rem;
-      font-family: 'Outfit', sans-serif;
-      padding: 0.8rem 2rem;
-      border-radius: 12px;
-      text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s;
-      cursor: pointer;
-      border: none;
-    }
-
-    .hero-cta:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 40px rgba(109,74,255,0.4);
-    }
-
-    /* ── SECTION HEADER ── */
-    .section-header { margin-bottom: 3rem; }
-
-    .section-tag {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: rgba(109,74,255,0.1);
-      border: 1px solid rgba(109,74,255,0.25);
-      padding: 0.3rem 0.9rem;
-      border-radius: 999px;
-      margin-bottom: 1rem;
-    }
-
-    .section-header h2 {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.8rem;
-    }
-
-    .section-header p {
-      color: var(--muted);
-      max-width: 560px;
-      font-size: 1.05rem;
-    }
-
-    /* ── CARDS ── */
-    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 1.5rem; }
-    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 1.5rem; }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 1.8rem;
-      transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(109,74,255,0.4);
-      box-shadow: 0 16px 50px rgba(109,74,255,0.15);
-    }
-
-    .card-icon { font-size: 1.8rem; margin-bottom: 1rem; }
-    .card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.6rem; }
-    .card p   { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
-
-    /* ── PHOTO PLACEHOLDER ── */
-    .photo-placeholder {
-      width: 120px; height: 120px;
+    .map-marker {
+      width: 16px;
+      height: 16px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      border: 3px solid var(--border);
-      flex-shrink: 0;
+      background: linear-gradient(135deg, #6d4aff, #00d4ff);
+      border: 2px solid rgba(255,255,255,0.8);
+      box-shadow: 0 0 10px rgba(109,74,255,0.7);
     }
 
-    /* ── CAREER ITEMS ── */
-    .career-item {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 1.8rem;
-      margin-bottom: 1.2rem;
-      display: flex;
-      gap: 1.5rem;
-      align-items: flex-start;
-      transition: border-color 0.25s;
+    /* Leaflet popup dark theme */
+    .map-popup .leaflet-popup-content-wrapper {
+      background: #0f1322;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      color: #f0f4ff;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
     }
 
-    .career-item:hover { border-color: rgba(109,74,255,0.4); }
-
-    .career-num {
-      font-size: 1.5rem;
-      font-weight: 800;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      min-width: 2rem;
+    .map-popup .leaflet-popup-tip {
+      background: #0f1322;
     }
 
-    .career-item h3 { font-weight: 700; margin-bottom: 0.4rem; }
-    .career-item p  { color: var(--muted); font-size: 0.9rem; }
-
-    /* ── BADGES ── */
-    .badge {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 0.2rem 0.7rem;
-      border-radius: 999px;
-      background: rgba(0,212,255,0.1);
-      border: 1px solid rgba(0,212,255,0.2);
-      color: var(--accent2);
-      margin: 0.2rem;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.2s;
+    .map-popup .leaflet-popup-close-button {
+      color: #7a85a3;
     }
 
-    .badge:hover { background: rgba(0,212,255,0.2); }
-
-    /* ── MAP PLACEHOLDER ── */
-    .map-placeholder {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-size: 0.9rem;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
+    .map-popup__title {
+      display: block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
     }
 
-    hr {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 2.5rem 0;
+    .map-popup__desc {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.82rem;
+      color: #7a85a3;
+      line-height: 1.5;
     }
 
-    a.ext {
-      color: var(--accent2);
-      text-decoration: none;
-      font-weight: 600;
+    /* Override Leaflet attribution bar */
+    .leaflet-control-attribution {
+      background: rgba(8,11,20,0.8) !important;
+      color: #7a85a3 !important;
     }
-    a.ext:hover { text-decoration: underline; }
 
-    .site-footer {
-      text-align: center;
-      padding: 2rem;
-      color: var(--muted);
-      font-size: 0.8rem;
-      border-top: 1px solid var(--border);
-    }
+    .leaflet-control-attribution a { color: #00d4ff !important; }
   </style>
 </head>
 <body>
 
-  <div class="hero-blob-wrap">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Decorative background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob--purple"></div>
+    <div class="blob blob--cyan"></div>
   </div>
 
-  <!-- NAV -->
-  <nav>
-    <span class="nav-logo">LG</span>
-    <ul class="nav-links">
-      <li><a href="#" onclick="showTab('welcome'); return false;" id="nav-welcome" class="active" data-i18n="nav.welcome"></a></li>
-      <li><a href="#" onclick="showTab('projects'); return false;" id="nav-projects" data-i18n="nav.projects"></a></li>
-      <li><a href="#" onclick="showTab('career');   return false;" id="nav-career"   data-i18n="nav.career"></a></li>
-      <li><a href="#" onclick="showTab('mobility'); return false;" id="nav-mobility" data-i18n="nav.mobility"></a></li>
-      <li><a href="#" onclick="showTab('passions'); return false;" id="nav-passions" data-i18n="nav.passions"></a></li>
-      <li><a href="#" onclick="showTab('civic');    return false;" id="nav-civic"    data-i18n="nav.civic"></a></li>
+  <!-- ── NAVIGATION ── -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav-logo" aria-label="Louis Ghiglione — Home">LG</a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#tab-welcome"  class="nav-link" data-tab="welcome"  aria-current="page"  data-i18n="nav.welcome"></a></li>
+      <li><a href="#tab-projects" class="nav-link" data-tab="projects" aria-current="false" data-i18n="nav.projects"></a></li>
+      <li><a href="#tab-career"   class="nav-link" data-tab="career"   aria-current="false" data-i18n="nav.career"></a></li>
+      <li><a href="#tab-mobility" class="nav-link" data-tab="mobility" aria-current="false" data-i18n="nav.mobility"></a></li>
+      <li><a href="#tab-passions" class="nav-link" data-tab="passions" aria-current="false" data-i18n="nav.passions"></a></li>
+      <li><a href="#tab-civic"    class="nav-link" data-tab="civic"    aria-current="false" data-i18n="nav.civic"></a></li>
     </ul>
-    <div class="lang-switcher">
-      <button id="btn-en" class="lang-btn active" onclick="setLang('en')">EN</button>
-      <button id="btn-fr" class="lang-btn"        onclick="setLang('fr')">FR</button>
+
+    <div class="lang-switcher" role="group" aria-label="Language selection">
+      <button class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+      <button class="lang-btn"           data-lang="fr" aria-pressed="false">FR</button>
     </div>
   </nav>
 
-  <!-- ── TAB 1 : WELCOME ── -->
-  <section id="welcome" class="active">
-    <div class="hero">
-      <div class="hero-content">
-        <div class="hero-tag" data-i18n="welcome.tag"></div>
-        <h1 data-i18n-html="welcome.hero_name"></h1>
-        <p data-i18n="welcome.hero_sub"></p>
-        <button class="hero-cta" onclick="showTab('career')" data-i18n="welcome.hero_cta"></button>
-      </div>
-    </div>
+  <!-- ── MAIN CONTENT ── -->
+  <main id="main-content">
 
-    <hr/>
+    <!-- ══ TAB 1 : WELCOME ══ -->
+    <section id="tab-welcome" class="tab-section is-active" aria-label="Welcome">
+      <div class="page-wrapper">
 
-    <div class="section-header">
-      <div class="section-tag" data-i18n="welcome.about_tag"></div>
-      <h2 data-i18n="welcome.about_title"></h2>
-      <p data-i18n="welcome.about_desc"></p>
-    </div>
+        <!-- Hero -->
+        <header class="hero">
+          <div class="hero__tag" data-i18n="welcome.tag"></div>
+          <h1 class="hero__title" data-i18n-html="welcome.hero_name"></h1>
+          <p class="hero__sub" data-i18n="welcome.hero_sub"></p>
+          <button id="hero-cta" class="hero__cta" data-i18n="welcome.hero_cta"></button>
+        </header>
 
-    <div style="display:flex; gap:2rem; align-items:flex-start; flex-wrap:wrap;">
-      <div class="photo-placeholder">👤</div>
-      <div style="flex:1; min-width:280px;">
-        <p style="margin-bottom:1rem; color:var(--muted);" data-i18n="welcome.about_text1"></p>
-        <p style="color:var(--muted);" data-i18n="welcome.about_text2"></p>
-      </div>
-    </div>
+        <hr class="divider" />
 
-    <hr/>
-
-    <div class="section-header">
-      <div class="section-tag" data-i18n="welcome.uvp_tag"></div>
-      <h2 data-i18n="welcome.uvp_title"></h2>
-    </div>
-
-    <div class="card" style="max-width:700px;">
-      <div class="card-icon">💡</div>
-      <h3 data-i18n="welcome.uvp_card_title"></h3>
-      <p><em data-i18n="welcome.uvp_card_text"></em></p>
-    </div>
-
-    <hr/>
-
-    <div class="section-header">
-      <div class="section-tag" data-i18n="welcome.pitch_tag"></div>
-      <h2 data-i18n="welcome.pitch_title"></h2>
-      <p data-i18n="welcome.pitch_desc"></p>
-    </div>
-
-    <div class="map-placeholder" data-i18n="welcome.pitch_placeholder"></div>
-  </section>
-
-  <!-- ── TAB 2 : PROJECTS ── -->
-  <section id="projects">
-    <div class="section-header">
-      <div class="section-tag" data-i18n="projects.tag"></div>
-      <h2 data-i18n="projects.title"></h2>
-      <p data-i18n="projects.desc"></p>
-    </div>
-
-    <div class="grid-2">
-      <div class="card">
-        <div class="card-icon">🔬</div>
-        <h3 data-i18n="projects.p1_title"></h3>
-        <p data-i18n="projects.p1_desc"></p>
-        <div style="margin-top:1rem;">
-          <span class="badge">N7</span>
-          <span class="badge">2026</span>
-          <span class="badge">[Specialty]</span>
+        <!-- About -->
+        <div class="section-header">
+          <span class="section-tag"  data-i18n="welcome.about_tag"></span>
+          <h2 class="section-title"  data-i18n="welcome.about_title"></h2>
+          <p class="section-desc"    data-i18n="welcome.about_desc"></p>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🏢</div>
-        <h3 data-i18n="projects.p2_title"></h3>
-        <p data-i18n="projects.p2_desc"></p>
-        <div style="margin-top:1rem;">
-          <span class="badge">[Company]</span>
-          <span class="badge">2026</span>
+
+        <div class="about-layout">
+          <div class="about-avatar" role="img" aria-label="Profile photo placeholder">👤</div>
+          <div class="about-text">
+            <p data-i18n="welcome.about_text1"></p>
+            <p data-i18n="welcome.about_text2"></p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-icon">💻</div>
-        <h3 data-i18n="projects.p3_title"></h3>
-        <p data-i18n="projects.p3_desc"></p>
-        <div style="margin-top:1rem;">
-          <span class="badge">Personal</span>
-          <span class="badge">2025</span>
+
+        <hr class="divider" />
+
+        <!-- UVP -->
+        <div class="section-header">
+          <span class="section-tag" data-i18n="welcome.uvp_tag"></span>
+          <h2 class="section-title" data-i18n="welcome.uvp_title"></h2>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ── TAB 3 : CAREER ── -->
-  <section id="career">
-    <div class="section-header">
-      <div class="section-tag" data-i18n="career.tag"></div>
-      <h2 data-i18n="career.title"></h2>
-      <p data-i18n="career.desc"></p>
-    </div>
+        <article class="card uvp-card">
+          <span class="card__icon" aria-hidden="true">💡</span>
+          <h3 class="card__title" data-i18n="welcome.uvp_card_title"></h3>
+          <p class="card__body"><em data-i18n="welcome.uvp_card_text"></em></p>
+        </article>
 
-    <div class="career-item">
-      <div class="career-num">1</div>
-      <div>
-        <h3 data-i18n="career.item1_title"></h3>
-        <p data-i18n="career.item1_desc"></p>
-        <p>→ <a href="#" class="ext" data-i18n="career.item1_link"></a></p>
-        <div style="margin-top:0.8rem;">
-          <a href="#" class="badge" data-i18n="career.item1_cv"></a>
-          <a href="#" class="badge" data-i18n="career.item1_cover"></a>
+        <hr class="divider" />
+
+        <!-- Pitch video -->
+        <div class="section-header">
+          <span class="section-tag" data-i18n="welcome.pitch_tag"></span>
+          <h2 class="section-title" data-i18n="welcome.pitch_title"></h2>
+          <p class="section-desc"   data-i18n="welcome.pitch_desc"></p>
         </div>
-      </div>
-    </div>
 
-    <div class="career-item">
-      <div class="career-num">2</div>
-      <div>
-        <h3 data-i18n="career.item2_title"></h3>
-        <p data-i18n="career.item2_desc"></p>
-        <p>→ <a href="#" class="ext" data-i18n="career.item2_link"></a></p>
-      </div>
-    </div>
-
-    <div class="career-item">
-      <div class="career-num">3</div>
-      <div>
-        <h3 data-i18n="career.item3_title"></h3>
-        <p><strong data-i18n="career.item3_person"></strong></p>
-        <p style="margin-top:0.5rem;" data-i18n="career.item3_learnt"></p>
-      </div>
-    </div>
-
-    <div class="career-item">
-      <div class="career-num">4</div>
-      <div>
-        <h3 data-i18n="career.item4_title"></h3>
-        <p><strong data-i18n="career.item4_person"></strong></p>
-        <p style="margin-top:0.5rem;" data-i18n="career.item4_learnt"></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── TAB 4 : MOBILITY ── -->
-  <section id="mobility">
-    <div class="section-header">
-      <div class="section-tag" data-i18n="mobility.tag"></div>
-      <h2 data-i18n="mobility.title"></h2>
-      <p data-i18n="mobility.desc"></p>
-    </div>
-
-    <div class="map-placeholder" data-i18n="mobility.map_placeholder"></div>
-
-    <div class="grid-3">
-      <div class="card">
-        <div class="card-icon">🌍</div>
-        <h3 data-i18n="mobility.d1_title"></h3>
-        <p data-i18n="mobility.d1_desc"></p>
-        <div style="margin-top:1rem;"><span class="badge">[Country]</span><span class="badge">[Period]</span></div>
-      </div>
-      <div class="card">
-        <div class="card-icon">✈️</div>
-        <h3 data-i18n="mobility.d2_title"></h3>
-        <p data-i18n="mobility.d2_desc"></p>
-        <div style="margin-top:1rem;"><span class="badge">[Country]</span><span class="badge">[Period]</span></div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🏔</div>
-        <h3 data-i18n="mobility.d3_title"></h3>
-        <p data-i18n="mobility.d3_desc"></p>
-        <div style="margin-top:1rem;"><span class="badge">[Country]</span><span class="badge">[Period]</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── TAB 5 : PASSIONS ── -->
-  <section id="passions">
-    <div class="section-header">
-      <div class="section-tag" data-i18n="passions.tag"></div>
-      <h2 data-i18n="passions.title"></h2>
-      <p data-i18n="passions.desc"></p>
-    </div>
-
-    <div class="grid-3">
-      <div class="card">
-        <div class="card-icon">⚽</div>
-        <h3 data-i18n="passions.p1_title"></h3>
-        <p data-i18n="passions.p1_desc"></p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🎸</div>
-        <h3 data-i18n="passions.p2_title"></h3>
-        <p data-i18n="passions.p2_desc"></p>
-      </div>
-      <div class="card">
-        <div class="card-icon">📚</div>
-        <h3 data-i18n="passions.p3_title"></h3>
-        <p data-i18n="passions.p3_desc"></p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🎨</div>
-        <h3 data-i18n="passions.p4_title"></h3>
-        <p data-i18n="passions.p4_desc"></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── TAB 6 : CIVIC ── -->
-  <section id="civic">
-    <div class="section-header">
-      <div class="section-tag" data-i18n="civic.tag"></div>
-      <h2 data-i18n="civic.title"></h2>
-      <p data-i18n="civic.desc"></p>
-    </div>
-
-    <div class="grid-2">
-      <div class="card">
-        <div class="card-icon">🤝</div>
-        <h3 data-i18n="civic.a1_title"></h3>
-        <p data-i18n="civic.a1_desc"></p>
-        <div style="margin-top:1rem;">
-          <span class="badge">[Role]</span>
-          <span class="badge">[Period]</span>
-          <span class="badge">[Hours] h</span>
+        <div class="placeholder-media" role="img" aria-label="Elevator pitch video placeholder">
+          <span data-i18n="welcome.pitch_placeholder"></span>
         </div>
+
       </div>
-      <div class="card">
-        <div class="card-icon">🌱</div>
-        <h3 data-i18n="civic.a2_title"></h3>
-        <p data-i18n="civic.a2_desc"></p>
-        <div style="margin-top:1rem;">
-          <span class="badge">[Role]</span>
-          <span class="badge">[Period]</span>
-          <span class="badge">[Hours] h</span>
+    </section>
+
+    <!-- ══ TAB 2 : PROJECTS ══ -->
+    <section id="tab-projects" class="tab-section" aria-label="Projects" aria-hidden="true">
+      <div class="page-wrapper">
+
+        <div class="section-header">
+          <span class="section-tag" data-i18n="projects.tag"></span>
+          <h2 class="section-title" data-i18n="projects.title"></h2>
+          <p class="section-desc"   data-i18n="projects.desc"></p>
         </div>
+
+        <ul class="grid-2" role="list">
+          <li class="card">
+            <span class="card__icon" aria-hidden="true">🔬</span>
+            <h3 class="card__title" data-i18n="projects.p1_title"></h3>
+            <p class="card__body"   data-i18n="projects.p1_desc"></p>
+            <div class="card__tags">
+              <span class="badge">N7</span>
+              <span class="badge">2026</span>
+              <span class="badge">[Specialty]</span>
+            </div>
+          </li>
+          <li class="card">
+            <span class="card__icon" aria-hidden="true">🏢</span>
+            <h3 class="card__title" data-i18n="projects.p2_title"></h3>
+            <p class="card__body"   data-i18n="projects.p2_desc"></p>
+            <div class="card__tags">
+              <span class="badge">[Company]</span>
+              <span class="badge">2026</span>
+            </div>
+          </li>
+          <li class="card">
+            <span class="card__icon" aria-hidden="true">💻</span>
+            <h3 class="card__title" data-i18n="projects.p3_title"></h3>
+            <p class="card__body"   data-i18n="projects.p3_desc"></p>
+            <div class="card__tags">
+              <span class="badge">Personal</span>
+              <span class="badge">2025</span>
+            </div>
+          </li>
+        </ul>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="site-footer" data-i18n="footer"></footer>
+    <!-- ══ TAB 3 : CAREER ══ -->
+    <section id="tab-career" class="tab-section" aria-label="Career" aria-hidden="true">
+      <div class="page-wrapper">
 
-  <script>
-    // ── State ──
-    let currentLang = 'en';
-    let translations = {};
+        <div class="section-header">
+          <span class="section-tag" data-i18n="career.tag"></span>
+          <h2 class="section-title" data-i18n="career.title"></h2>
+          <p class="section-desc"   data-i18n="career.desc"></p>
+        </div>
 
-    // ── Load translations ──
-    fetch('translations.json')
-      .then(r => r.json())
-      .then(data => {
-        translations = data;
-        applyLang(currentLang);
-      });
+        <ol class="career-list" role="list">
 
-    // ── Apply language ──
-    function applyLang(lang) {
-      currentLang = lang;
-      const t = translations[lang];
-      if (!t) return;
+          <li class="career-item">
+            <span class="career-item__num" aria-hidden="true">1</span>
+            <div class="career-item__content">
+              <h3 data-i18n="career.item1_title"></h3>
+              <p  data-i18n="career.item1_desc"></p>
+              <p>→ <a href="#" class="ext-link" data-i18n="career.item1_link"></a></p>
+              <div class="career-item__links">
+                <a href="#" class="badge" data-i18n="career.item1_cv"></a>
+                <a href="#" class="badge" data-i18n="career.item1_cover"></a>
+              </div>
+            </div>
+          </li>
 
-      // Flat key resolver: "nav.welcome" → t.nav.welcome
-      function resolve(keyPath) {
-        return keyPath.split('.').reduce((obj, k) => obj?.[k], t) ?? '';
-      }
+          <li class="career-item">
+            <span class="career-item__num" aria-hidden="true">2</span>
+            <div class="career-item__content">
+              <h3 data-i18n="career.item2_title"></h3>
+              <p  data-i18n="career.item2_desc"></p>
+              <p>→ <a href="#" class="ext-link" data-i18n="career.item2_link"></a></p>
+            </div>
+          </li>
 
-      // Text content
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const val = resolve(el.dataset.i18n);
-        if (val) el.textContent = val;
-      });
+          <li class="career-item">
+            <span class="career-item__num" aria-hidden="true">3</span>
+            <div class="career-item__content">
+              <h3 data-i18n="career.item3_title"></h3>
+              <p><strong data-i18n="career.item3_person"></strong></p>
+              <p data-i18n="career.item3_learnt"></p>
+            </div>
+          </li>
 
-      // HTML content (for <br/> in hero h1)
-      document.querySelectorAll('[data-i18n-html]').forEach(el => {
-        const val = resolve(el.dataset.i18nHtml);
-        if (val) el.innerHTML = val;
-      });
+          <li class="career-item">
+            <span class="career-item__num" aria-hidden="true">4</span>
+            <div class="career-item__content">
+              <h3 data-i18n="career.item4_title"></h3>
+              <p><strong data-i18n="career.item4_person"></strong></p>
+              <p data-i18n="career.item4_learnt"></p>
+            </div>
+          </li>
 
-      // Update html lang attribute
-      document.documentElement.lang = lang;
+        </ol>
 
-      // Update lang buttons
-      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-      document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
-    }
+      </div>
+    </section>
 
-    function setLang(lang) {
-      applyLang(lang);
-    }
+    <!-- ══ TAB 4 : MOBILITY ══ -->
+    <section id="tab-mobility" class="tab-section" aria-label="Mobility" aria-hidden="true">
+      <div class="page-wrapper">
 
-    // ── Tab switching ──
-    function showTab(id) {
-      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
-      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-      document.getElementById('nav-' + id).classList.add('active');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
+        <div class="section-header">
+          <span class="section-tag" data-i18n="mobility.tag"></span>
+          <h2 class="section-title" data-i18n="mobility.title"></h2>
+          <p class="section-desc"   data-i18n="mobility.desc"></p>
+        </div>
+
+        <!-- Leaflet map container -->
+        <div id="mobility-map" role="application" aria-label="Interactive mobility map"></div>
+
+        <ul class="grid-3" role="list">
+          <li class="card">
+            <span class="card__icon" aria-hidden="true">🌍</span>
+            <h3 class="card__title" data-i18n="mobility.d1_title"></h3>
+            <p class="card__body"   data-i18n="mobility.d1_desc"></p>
+            <div class="card__tags">
+              <span class="badge">[Country]</span>
+              <span class="badge">[Period]</span>
+            </div>
+          </li>
+          <li class="card">
+            <span class="card__icon" aria-hidden="true">✈️</span>
+            <h3 class="card__title" data-i18n="mobility.d2_title"></h3>
+            <p class="card__body"   data-i18n="mobility.d2_desc"></p>
+            <div class="card__tags">
+              <span class="badge">[Country]</span>
+              <span class="badge">[Period]</span>
+            </div>
+          </li>
+          <li class="card">
+            <span class="card__icon" aria-hidden="true">🏔</span>
+            <h3 class="card__title" data-i18n="mobility.d3_title"></h3>
+            <p class="card__body"   data-i18n="mobility.d3_desc"></p>
+            <div class="card__tags">
+              <span class="badge">[Country]</span>
+              <span class="badge">[Period]</span>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ══ TAB 5 : PASSIONS ══ -->
+    <section id="tab-passions" class="tab-section" aria-label="Passions" aria-hidden="true">
+      <div class="page-wrapper">
+
+        <div class="section-header">
+          <span class="section-tag" data-i18n="passions.tag"></span>
+          <h2 class="section-title" data-i18n="passions.title"></h2>
+          <p class="section-desc"   data-i18n="passions.desc"></p>
+        </div>
+
+        <ul class="grid-3" role="list">
+          <li class="card">
+            <span class="card__icon" aria-hidden="true">⚽</span>
+            <h3 class="card__title" data-i18n="passions.p1_title"></h3>
+            <p class="card__body"   data-i18n="passions.p1_desc"></p>
+          </li>
+          <li class="card">
+            <span class="card__icon" aria-hidden="true">🎸</span>
+            <h3 class="card__title" data-i18n="passions.p2_title"></h3>
+            <p class="card__body"   data-i18n="passions.p2_desc"></p>
+          </li>
+          <li class="card">
+            <span class="card__icon" aria-hidden="true">📚</span>
+            <h3 class="card__title" data-i18n="passions.p3_title"></h3>
+            <p class="card__body"   data-i18n="passions.p3_desc"></p>
+          </li>
+          <li class="card">
+            <span class="card__icon" aria-hidden="true">🎨</span>
+            <h3 class="card__title" data-i18n="passions.p4_title"></h3>
+            <p class="card__body"   data-i18n="passions.p4_desc"></p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ══ TAB 6 : CIVIC ENGAGEMENT ══ -->
+    <section id="tab-civic" class="tab-section" aria-label="Civic Engagement" aria-hidden="true">
+      <div class="page-wrapper">
+
+        <div class="section-header">
+          <span class="section-tag" data-i18n="civic.tag"></span>
+          <h2 class="section-title" data-i18n="civic.title"></h2>
+          <p class="section-desc"   data-i18n="civic.desc"></p>
+        </div>
+
+        <ul class="grid-2" role="list">
+          <li class="card">
+            <span class="card__icon" aria-hidden="true">🤝</span>
+            <h3 class="card__title" data-i18n="civic.a1_title"></h3>
+            <p class="card__body"   data-i18n="civic.a1_desc"></p>
+            <div class="card__tags">
+              <span class="badge">[Role]</span>
+              <span class="badge">[Period]</span>
+              <span class="badge">[Hours] h</span>
+            </div>
+          </li>
+          <li class="card">
+            <span class="card__icon" aria-hidden="true">🌱</span>
+            <h3 class="card__title" data-i18n="civic.a2_title"></h3>
+            <p class="card__body"   data-i18n="civic.a2_desc"></p>
+            <div class="card__tags">
+              <span class="badge">[Role]</span>
+              <span class="badge">[Period]</span>
+              <span class="badge">[Hours] h</span>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <p data-i18n="footer"></p>
+  </footer>
+
+  <!-- Leaflet JS (loaded before module so L is available globally) -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN2GqeY=" crossorigin=""></script>
+
+  <!-- App JS (ES Module) -->
+  <script type="module" src="js/main.js"></script>
+
 </body>
 </html>
