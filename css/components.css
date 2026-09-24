@@ -433,6 +433,15 @@ a.badge:hover {
   margin-bottom: var(--space-xs);
 }
 
+.map-popup__country {
+  display: block;
+  font-family: var(--font-base);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-accent2);
+  margin-bottom: var(--space-xs);
+}
+
 .map-popup__desc {
   font-family: var(--font-base);
   font-size: var(--text-xs);

@@ -23,22 +23,28 @@ let mapInstance = null;
 const DESTINATIONS = [
   {
     id: 'dest-1',
-    lat: 48.8566,
-    lng: 2.3522,
+    lat: 41.3851,
+    lng: 2.1734,
+    city: 'Barcelona',
+    country: '🇪🇸 Espagne / Spain',
     i18nTitle: 'mobility.d1_title',
     i18nDesc:  'mobility.d1_desc',
   },
   {
     id: 'dest-2',
-    lat: 51.5074,
-    lng: -0.1278,
+    lat: 45.5017,
+    lng: -73.5673,
+    city: 'Montréal',
+    country: '🇨🇦 Canada',
     i18nTitle: 'mobility.d2_title',
     i18nDesc:  'mobility.d2_desc',
   },
   {
     id: 'dest-3',
-    lat: 35.6762,
-    lng: 139.6503,
+    lat: 1.3521,
+    lng: 103.8198,
+    city: 'Singapour / Singapore',
+    country: '🇸🇬 Singapore',
     i18nTitle: 'mobility.d3_title',
     i18nDesc:  'mobility.d3_desc',
   },
@@ -74,12 +80,13 @@ function createMarkerIcon(title) {
  * @param {L.Map} map
  */
 function addMarkers(map) {
-  DESTINATIONS.forEach(({ lat, lng, i18nTitle, i18nDesc }) => {
-    const title = getLabel(i18nTitle);
+  DESTINATIONS.forEach(({ lat, lng, city, country, i18nTitle, i18nDesc }) => {
+    const title = getLabel(i18nTitle) || city;
     const desc  = getLabel(i18nDesc);
 
-    const popup = L.popup({ className: 'map-popup', maxWidth: 260 }).setContent(`
+    const popup = L.popup({ className: 'map-popup', maxWidth: 280 }).setContent(`
       <strong class="map-popup__title">${title}</strong>
+      <span class="map-popup__country">${country}</span>
       <p class="map-popup__desc">${desc}</p>
     `);
 
