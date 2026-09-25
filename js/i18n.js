@@ -102,10 +102,11 @@ export async function initI18n(defaultLang = 'en', translationsPath = './data/tr
     translations = await response.json();
   } catch (err) {
     console.error('[i18n] Failed to load translations:', err);
-    return;
+    return null;
   }
 
   const savedLang = localStorage.getItem(STORAGE_KEY);
   const lang = (savedLang in translations) ? savedLang : defaultLang;
   applyLang(lang);
+  return translations;
 }
