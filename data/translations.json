@@ -16,8 +16,8 @@
       "about_tag": "About me",
       "about_title": "Who am I?",
       "about_desc": "A quick introduction to my background, values and goals.",
-      "about_text1": "I am a 21-year-old engineering student at ENSEEIHT (N7, 3EA — Electronics, Electrical Energy and Automation), currently working as an apprentice microelectronics design engineer in the CIME-DEOS group (Integrated Image Sensors) at ISAE-SUPAERO. I work on CMOS readout circuit architectures using CADENCE, VHDL-based control routines verified on Xilinx FPGA (Vivado), and full ASIC design — from synthesis to placement and routing.",
-      "about_text2": "Before N7, I ranked in the Top 3 of my graduating class in a Bachelor of Technology (BUT GEII) at IUT Aix-Marseille (Salon-de-Provence). I also hold certifications in networking (Cisco CCNA), aeronautics (BIA), first aid (PSC1), electrical safety (B2V), and youth worker management (BAFA/ASF). Outside engineering, I am passionate about bouldering (6B+), mountain biking, and maker culture — and I have been a Scout Leader for over 10 years.",
+      "about_text1": "I am a 21-year-old engineering student at ENSEEIHT (N7, 3EA — Electronics, Electrical Energy and Automation), currently working as an apprentice microelectronics design engineer in the CIME-DEOS group (Integrated Image Sensors) at ISAE-SUPAERO. I work on CMOS readout circuit architectures (CADENCE), VHDL-based control routines verified on Xilinx FPGA (Vivado), and full ASIC design flows.",
+      "about_text2": "Before N7, I completed a BUT GEII (Top 3 of my class) at IUT Aix-Marseille (Salon-de-Provence), and two experiences at <strong>Fare Ingenierie</strong>: an internship automating a 80m superyacht and building a LoRaWAN IoT system, then a work-study developing safety-critical IoT architecture for the ITER nuclear site. I also hold: Cisco CCNA, BIA (aeronautics), PSC1, B2V, BAFA/ASF. Outside engineering: bouldering (6B+), mountain biking, maker culture, and Scout Leader for 10+ years.",
       "uvp_tag": "Unique Value Proposition",
       "uvp_title": "What makes me different?",
       "uvp_card_title": "My UVP",
@@ -33,10 +33,10 @@
       "desc": "Projects from N7, my apprenticeship at ISAE-Supaero, and prior work in my field of expertise.",
       "p1_title": "ASIC & FPGA Design — ISAE-Supaero (CIMI)",
       "p1_desc": "Hardware architecture definition and VHDL implementation of control routines, verified on Xilinx FPGA (Vivado). Design of CMOS readout circuit architectures using CADENCE, including synthesis, placement and routing for ASIC delivery.",
-      "p2_title": "Park4Move — LoRaWAN Smart Parking",
-      "p2_desc": "End-to-end IoT architecture for connected urban parking sensors: LoRaWAN / MQTT integration on PLCs, secure Python/FastAPI/Docker web backend, MySQL database. European \"Service Learning\" award winner.",
-      "p3_title": "Robotics — 3 National Competitions",
-      "p3_desc": "Design, prototyping and maintenance of competitive robots for three national student robotics competitions. Covered full cycle from mechanical design to embedded software.",
+      "p2_title": "Automation & IoT Engineering — Fare Ingenierie",
+      "p2_desc": "Work-study automation engineer at Fare Ingenierie: PLC programming, LoRaWAN IoT architecture for the ITER nuclear site, yacht automation, and secure web backend.",
+      "p3_title": "Park4Move — LoRaWAN Smart Parking",
+      "p3_desc": "Connected urban mobility solution for disabled users: LoRaWAN sensors, FastAPI backend, interactive PWA. Winner of the AMU Service Learning award, presented at the European forum in Bucharest.",
       "p1_article": {
         "title": "ASIC & FPGA Design — ISAE-SUPAERO (CIME-DEOS)",
         "tag": "Project",
@@ -50,13 +50,30 @@
           "CADENCE",
           "VHDL",
           "Xilinx",
-          "2026"
+          "2025-2026"
         ]
       },
       "p2_article": {
+        "title": "Fare Ingenierie — Automation & IoT",
+        "tag": "Project / Work-Study",
+        "body": "<p>Two experiences at <strong>Fare Ingenierie</strong>, a technical engineering firm specialising in automation and supervision systems:</p><p><strong>Internship (Mar–Jun 2025, 4 months):</strong></p><ul><li>Full overhaul of the PLC programme for the <strong>SY Tiara II</strong> — an 80-metre superyacht</li><li>LoRaWAN sensor integration and internal web management application</li><li>Backend: <strong>Python</strong>, MySQL, Docker</li></ul><p><strong>Work-Study (Sep 2025 – Aug 2026, 1 year):</strong></p><ul><li>Design and integration of PLC programmes and supervision systems</li><li>R&D IoT architecture: <strong>LoRaWAN sensors via MQTT protocol on PLCs</strong> for safety monitoring at the <strong>ITER nuclear fusion site</strong></li><li>Secure web backend: <strong>Python / FastAPI / Docker / MySQL</strong></li></ul>",
+        "tags": [
+          "Fare Ingenierie",
+          "PLC",
+          "ITER",
+          "LoRaWAN",
+          "MQTT",
+          "Python",
+          "FastAPI",
+          "Docker",
+          "MySQL",
+          "2024-2026"
+        ]
+      },
+      "p3_article": {
         "title": "Park4Move — LoRaWAN Smart Parking",
         "tag": "Project",
-        "body": "<p><strong>Park4Move</strong> is an end-to-end connected urban mobility solution developed within the PIA student association at IUT Salon-de-Provence. The system enables real-time detection of parking space availability for people with reduced mobility (PMR).</p><p><strong>Technical stack:</strong></p><ul><li><strong>LoRaWAN sensors</strong> deployed on parking spaces, transmitting via <strong>MQTT</strong> protocol to PLCs</li><li><strong>Python / FastAPI</strong> secure web backend with <strong>Docker</strong> containerisation</li><li><strong>MySQL</strong> database management</li><li><strong>Progressive Web App</strong> with interactive Leaflet map (park4move.fr)</li></ul><p><strong>Impact:</strong> European Service Learning award winner — presented at the European forum in Bucharest representing Aix-Marseille University. Demonstrated to the French Minister of Higher Education.</p>",
+        "body": "<p><strong>Park4Move</strong> is an end-to-end connected urban mobility solution developed within the PIA student association at IUT Salon-de-Provence. The system enables real-time detection of parking space availability for people with reduced mobility (PMR).</p><p><strong>Technical stack:</strong></p><ul><li><strong>LoRaWAN sensors</strong> deployed on parking spaces, transmitting via <strong>MQTT</strong> protocol</li><li><strong>Python / FastAPI</strong> secure web backend with <strong>Docker</strong></li><li><strong>MySQL</strong> database</li><li><strong>Progressive Web App</strong> with interactive Leaflet map (park4move.fr)</li></ul><p><strong>Impact:</strong> European Service Learning award winner — presented at the European forum in Bucharest representing Aix-Marseille University. Demonstrated to the French Minister of Higher Education.</p>",
         "tags": [
           "LoRaWAN",
           "MQTT",
@@ -75,10 +92,12 @@
           }
         ]
       },
-      "p3_article": {
+      "p4_title": "Student Robotics — 3 National Competitions",
+      "p4_desc": "3 national robotics competitions at IUT Salon — full engineering cycle: PCB design, embedded C/C++ firmware, mechanical prototyping, competition strategy.",
+      "p4_article": {
         "title": "Robotics — 3 National Competitions",
         "tag": "Project",
-        "body": "<p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), I participated in <strong>3 national student robotics competitions</strong>, covering the full engineering cycle from design to competition.</p><ul><li><strong>Mechanical design</strong> — chassis, actuators, and structural components</li><li><strong>Embedded electronics</strong> — PCB design, motor drivers, sensor integration</li><li><strong>Embedded software</strong> — C/C++ firmware, Arduino and custom microcontroller programming</li><li><strong>Prototyping and maintenance</strong> — rapid iteration during competition prep</li></ul><p>These competitions were a formative experience in working under pressure, managing tight deadlines, and collaborating in a multidisciplinary team.</p>",
+        "body": "<p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), I participated in <strong>3 national student robotics competitions</strong>, covering the full engineering cycle from design to competition.</p><ul><li><strong>Mechanical design</strong> — chassis, actuators and structural components</li><li><strong>Embedded electronics</strong> — PCB design, motor drivers, sensor integration</li><li><strong>Embedded software</strong> — C/C++ firmware, Arduino and custom microcontroller programming</li><li><strong>Prototyping and maintenance</strong> — rapid iteration during competition prep</li></ul><p>These competitions trained working under pressure, managing tight deadlines, and collaborating in a multidisciplinary team.</p>",
         "tags": [
           "Robotics",
           "C/C++",
@@ -284,8 +303,8 @@
       "about_tag": "À propos",
       "about_title": "Qui suis-je ?",
       "about_desc": "Une brève introduction à mon parcours, mes valeurs et mes ambitions.",
-      "about_text1": "Étudiant ingénieur de 21 ans à l'ENSEEIHT (N7, spécialité 3EA — Électronique, Énergie Électrique et Automatique), je suis apprenti ingénieur en conception microélectronique dans le groupe CIME-DEOS (Capteurs d'Image Intégrés) à l'ISAE-SUPAERO. Je travaille sur des architectures de circuits de lecture CMOS sous CADENCE, des routines de commande VHDL vérifiées sur FPGA Xilinx (Vivado), et du design ASIC complet — de la synthèse au placement-routage.",
-      "about_text2": "Avant N7, j'ai été classé dans le Top 3 de ma promotion de BUT GEII à l'IUT Aix-Marseille (Salon-de-Provence). Je détiens également des certifications en réseaux (Cisco CCNA), aéronautique (BIA), premiers secours (PSC1), habilitation électrique (B2V) et animation (BAFA/ASF). En dehors de l'ingénierie, je suis passionné par l'escalade de bloc (6B+), le VTT et la culture maker — et je suis Chef Scout depuis plus de 10 ans.",
+      "about_text1": "Élève-Ingénieur de 21 ans à l'ENSEEIHT (N7, 3EA — Électronique, Énergie Électrique, Automatique), apprenti ingénieur conception microélectronique dans le groupe CIME-DEOS (Capteurs d'Image Intégrés) à l'ISAE-SUPAERO. Je travaille sur des architectures de circuits de lecture CMOS (CADENCE), des routines de commande VHDL vérifiées sur FPGA Xilinx (Vivado), et le flux ASIC complet.",
+      "about_text2": "Avant N7, j'ai obtenu un BUT GEII (Top 3 de promotion) à l'IUT Aix-Marseille (Salon-de-Provence), et deux expériences chez <strong>Fare Ingenierie</strong> : un stage sur l'automatisation d'un superyacht de 80m et la réalisation d'un système IoT LoRaWAN, puis une alternance sur une architecture IoT critique pour le site de fusion nucléaire ITER. Certifications : Cisco CCNA, BIA, PSC1, B2V, BAFA/ASF. En dehors : bloc (6B+), VTT, culture maker, Chef Scout depuis 10+ ans.",
       "uvp_tag": "Proposition de valeur unique",
       "uvp_title": "Ce qui me distingue",
       "uvp_card_title": "Ma PVU",
@@ -301,10 +320,10 @@
       "desc": "Projets issus de N7, de mon alternance à l'ISAE-Supaero et de mes travaux précédents.",
       "p1_title": "Conception ASIC & FPGA — ISAE-Supaero (CIMI)",
       "p1_desc": "Définition d'architectures matérielles et implémentation de routines de commande en VHDL, vérifiées sur FPGA Xilinx (Vivado). Conception d'architectures de circuits de lecture CMOS sous CADENCE, incluant synthèse, placement et routage.",
-      "p2_title": "Park4Move — Capteurs urbains LoRaWAN",
-      "p2_desc": "Architecture IoT de bout en bout pour des capteurs de stationnement connectés : intégration LoRaWAN/MQTT sur automates, backend web sécurisé Python/FastAPI/Docker, base de données MySQL. Lauréat du prix européen \"Service Learning\".",
-      "p3_title": "Robotique — 3 Compétitions Nationales",
-      "p3_desc": "Conception, prototypage et maintenance de robots pour trois compétitions nationales étudiantes. Cycle complet : conception mécanique, électronique embarquée et logiciel.",
+      "p2_title": "Automatisme & IoT — Fare Ingenierie",
+      "p2_desc": "Apprenti automaticien en bureau d'études chez Fare Ingenierie : programmation d'automates, architecture IoT LoRaWAN pour le site nucléaire ITER, automatisation d'un yacht 80m, backend web sécurisé.",
+      "p3_title": "Park4Move — Stationnement Connecté LoRaWAN",
+      "p3_desc": "Solution de mobilité urbaine connectée pour PMR : capteurs LoRaWAN, backend FastAPI, PWA interactive. Prix Service Learning AMU, forum européen à Bucarest.",
       "p1_article": {
         "title": "Conception ASIC & FPGA — ISAE-SUPAERO (CIME-DEOS)",
         "tag": "Projet",
@@ -318,13 +337,30 @@
           "CADENCE",
           "VHDL",
           "Xilinx",
-          "2026"
+          "2025-2026"
         ]
       },
       "p2_article": {
-        "title": "Park4Move — Capteurs urbains LoRaWAN",
+        "title": "Fare Ingenierie — Automatisme & IoT",
+        "tag": "Projet / Alternance",
+        "body": "<p>Deux expériences chez <strong>Fare Ingenierie</strong>, bureau d'études spécialisé en automatisme et supervision :</p><p><strong>Stage (Mars–Juin 2025, 4 mois) :</strong></p><ul><li>Refonte complète du programme automate du <strong>SY Tiara II</strong> — un superyacht de 80 mètres</li><li>Intégration de capteurs LoRaWAN et développement d'une application web interne de gestion d'entreprise</li><li>Backend : <strong>Python</strong>, MySQL, Docker</li></ul><p><strong>Alternance (Sept. 2025 – Août 2026, 1 an) :</strong></p><ul><li>Conception et intégration de programmes d'automates et réalisation de supervisions</li><li>Développement R&D d'une architecture IoT : <strong>capteurs LoRaWAN via MQTT sur automates</strong> pour la surveillance de sécurité du <strong>site de fusion nucléaire ITER</strong></li><li>Backend web sécurisé : <strong>Python / FastAPI / Docker / MySQL</strong></li></ul>",
+        "tags": [
+          "Fare Ingenierie",
+          "Automate",
+          "ITER",
+          "LoRaWAN",
+          "MQTT",
+          "Python",
+          "FastAPI",
+          "Docker",
+          "MySQL",
+          "2024-2026"
+        ]
+      },
+      "p3_article": {
+        "title": "Park4Move — Stationnement Connecté",
         "tag": "Projet",
-        "body": "<p><strong>Park4Move</strong> est une solution de mobilité urbaine connectée de bout en bout, développée au sein de l'association étudiante PIA à l'IUT de Salon-de-Provence. Le système permet la détection en temps réel de la disponibilité des places de stationnement pour les personnes à mobilité réduite (PMR).</p><p><strong>Stack technique :</strong></p><ul><li><strong>Capteurs LoRaWAN</strong> déployés sur les places, transmettant via le protocole <strong>MQTT</strong> aux automates</li><li>Backend web sécurisé <strong>Python / FastAPI</strong> avec conteneurisation <strong>Docker</strong></li><li>Gestion de base de données <strong>MySQL</strong></li><li><strong>Progressive Web App</strong> avec carte interactive Leaflet (park4move.fr)</li></ul><p><strong>Impact :</strong> Lauréat du prix Service Learning européen — présenté au forum de Bucarest représentant Aix-Marseille Université. Démonstration à la Ministre de l'Enseignement Supérieur.</p>",
+        "body": "<p><strong>Park4Move</strong> est une solution de mobilité urbaine connectée de bout en bout développée au sein de l'association étudiante PIA à l'IUT de Salon-de-Provence. Le système permet la détection en temps réel des places de stationnement disponibles pour les PMR.</p><p><strong>Stack technique :</strong></p><ul><li><strong>Capteurs LoRaWAN</strong> déployés sur les places, transmettant via <strong>MQTT</strong></li><li>Backend <strong>Python / FastAPI</strong> conteneurisé avec <strong>Docker</strong></li><li>Base de données <strong>MySQL</strong></li><li><strong>Progressive Web App</strong> avec carte Leaflet interactive (park4move.fr)</li></ul><p><strong>Impact :</strong> Lauréat du prix Service Learning européen — présenté au forum de Bucarest représentant AMU. Démonstration à la Ministre de l'Enseignement Supérieur.</p>",
         "tags": [
           "LoRaWAN",
           "MQTT",
@@ -343,10 +379,12 @@
           }
         ]
       },
-      "p3_article": {
+      "p4_title": "Robotique Étudiante — 3 Compétitions Nationales",
+      "p4_desc": "3 compétitions nationales de robotique à l'IUT Salon — cycle ingénierie complet : conception PCB, firmware embarqué C/C++, prototypage mécanique.",
+      "p4_article": {
         "title": "Robotique — 3 Compétitions Nationales",
         "tag": "Projet",
-        "body": "<p>Durant mon BUT GEII à l'IUT Aix-Marseille (Salon-de-Provence), j'ai participé à <strong>3 compétitions nationales de robotique étudiante</strong>, couvrant le cycle ingénierie complet de la conception jusqu'à la compétition.</p><ul><li><strong>Conception mécanique</strong> — châssis, actionneurs et éléments structuraux</li><li><strong>Électronique embarquée</strong> — conception PCB, drivers moteurs, intégration capteurs</li><li><strong>Logiciel embarqué</strong> — firmware C/C++, Arduino et microcontrôleurs personnalisés</li><li><strong>Prototypage et maintenance</strong> — itération rapide lors de la préparation aux concours</li></ul><p>Ces compétitions ont été une expérience formatrice pour travailler sous pression, gérer des délais serrés et collaborer en équipe pluridisciplinaire.</p>",
+        "body": "<p>Durant mon BUT GEII à l'IUT Aix-Marseille (Salon-de-Provence), j'ai participé à <strong>3 compétitions nationales de robotique étudiante</strong>, couvrant le cycle ingénierie complet de la conception jusqu'à la compétition.</p><ul><li><strong>Conception mécanique</strong> — châssis, actionneurs et éléments structuraux</li><li><strong>Électronique embarquée</strong> — conception PCB, drivers moteurs, intégration capteurs</li><li><strong>Logiciel embarqué</strong> — firmware C/C++, Arduino et microcontrôleurs sur mesure</li><li><strong>Prototypage et maintenance</strong> — itération rapide lors de la préparation</li></ul><p>Ces compétitions ont été formatrices pour travailler sous pression, gérer des délais serrés et collaborer en équipe pluridisciplinaire.</p>",
         "tags": [
           "Robotique",
           "C/C++",
