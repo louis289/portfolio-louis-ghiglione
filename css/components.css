@@ -6,7 +6,9 @@
 /* ── Navigation ── */
 .site-nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: var(--nav-h);
   z-index: 100;
   display: flex;
@@ -340,8 +342,8 @@
 }
 
 .about-avatar {
-  width: 120px;
-  height: 120px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -359,7 +361,7 @@
   color: var(--color-muted);
 }
 
-.about-text p + p {
+.about-text p+p {
   margin-top: var(--space-md);
 }
 
@@ -410,7 +412,7 @@
   font-size: var(--text-sm);
 }
 
-.career-item__content p + p {
+.career-item__content p+p {
   margin-top: var(--space-xs);
 }
 
@@ -637,8 +639,15 @@ a.badge:hover {
 }
 
 @keyframes modal-in {
-  from { opacity: 0; transform: scale(0.94) translateY(12px); }
-  to   { opacity: 1; transform: scale(1)   translateY(0); }
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 .modal-close {
@@ -683,9 +692,11 @@ a.badge:hover {
 
 .modal-hero-text {
   position: absolute;
-  bottom: 0; left: 0; right: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: var(--space-xl);
-  background: linear-gradient(to top, rgba(5,7,15,0.92) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(5, 7, 15, 0.92) 0%, transparent 100%);
 }
 
 .modal-title {
@@ -706,7 +717,7 @@ a.badge:hover {
   line-height: 1.75;
 }
 
-.modal-content p + p {
+.modal-content p+p {
   margin-top: var(--space-md);
 }
 
@@ -776,4 +787,3 @@ a.badge:hover {
     padding: var(--space-lg);
   }
 }
-
