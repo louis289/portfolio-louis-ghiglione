@@ -111,6 +111,7 @@ function createParallelObjectNode(obj, label, path) {
     fieldset.appendChild(listContainer);
   } else {
     for (const [key, val] of Object.entries(obj)) {
+      if (key === 'footer_credits') continue;
       const itemNode = createParallelNode(val, key, [...path, key]);
       fieldset.appendChild(itemNode);
     }
