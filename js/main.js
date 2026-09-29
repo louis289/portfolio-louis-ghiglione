@@ -14,6 +14,29 @@ async function tryInitMap() {
   initMap();
 }
 
+/** Initializes the card filtering logic (ongoing/past/all) */
+function initFilters() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  if (filterBtns.length === 0) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Update active state
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.card[data-status]').forEach(card => {
+        if (filter === 'all' || card.dataset.status === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   // 0. Start circuit background animation
   initCircuitBg();
@@ -32,7 +55,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.addEventListener('langchange', () => initModals(translations));
   }
 
-  // 4. Init Leaflet map only on the mobility page
+  // 4. Initialize filters (if any on page)
+  initFilters();
+
+  // 5. Init Leaflet map only on the mobility page
   if (document.body.dataset.page === 'mobility') {
     await tryInitMap();
     window.addEventListener('load', tryInitMap, { once: true });

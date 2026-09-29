@@ -6,7 +6,13 @@
       "career": "Career",
       "mobility": "Mobility",
       "passions": "Passions",
-      "civic": "Civic"
+      "civic": "Civic",
+      "contact": "Contact"
+    },
+    "filter": {
+      "all": "All",
+      "ongoing": "Ongoing",
+      "past": "Past"
     },
     "welcome": {
       "tag": "E-Portfolio · INP N7 · 2026",
@@ -284,6 +290,13 @@
         ]
       }
     },
+    "contact": {
+      "tag": "Get in touch",
+      "title": "Contact me",
+      "desc": "Feel free to reach out to me via email or LinkedIn for any inquiries or opportunities.",
+      "email": "Email",
+      "linkedin": "LinkedIn"
+    },
     "footer": "Louis Ghiglione · N7 · 2026 — Built for CAM L3 FISA S5"
   },
   "fr": {
@@ -293,7 +306,13 @@
       "career": "Carrière",
       "mobility": "Mobilité",
       "passions": "Passions",
-      "civic": "Engagement"
+      "civic": "Engagement",
+      "contact": "Contact"
+    },
+    "filter": {
+      "all": "Tout",
+      "ongoing": "En cours",
+      "past": "Passé"
     },
     "welcome": {
       "tag": "E-Portfolio · INP N7 · 2026",
@@ -570,6 +589,13 @@
           }
         ]
       }
+    },
+    "contact": {
+      "tag": "Me contacter",
+      "title": "Contact",
+      "desc": "N'hésitez pas à me contacter par e-mail ou sur LinkedIn pour toute question ou opportunité.",
+      "email": "E-mail",
+      "linkedin": "LinkedIn"
     },
     "footer": "Louis Ghiglione · N7 · 2026 — Portfolio CAM L3 FISA S5"
   }

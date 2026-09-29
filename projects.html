@@ -33,9 +33,15 @@
         <p class="section-desc"   data-i18n="projects.desc"></p>
       </header>
 
+      <div class="filter-group" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter.all"></button>
+        <button class="filter-btn" data-filter="ongoing" data-i18n="filter.ongoing"></button>
+        <button class="filter-btn" data-filter="past" data-i18n="filter.past"></button>
+      </div>
+
       <ul class="grid-2" role="list">
 
-        <li class="card" data-modal="projects.p1_article">
+        <li class="card" data-modal="projects.p1_article" data-status="ongoing">
           <span class="card__icon" aria-hidden="true">01</span>
           <h2 class="card__title" data-i18n="projects.p1_title"></h2>
           <p class="card__body"   data-i18n="projects.p1_desc"></p>
@@ -46,7 +52,7 @@
           </div>
         </li>
 
-        <li class="card" data-modal="projects.p2_article">
+        <li class="card" data-modal="projects.p2_article" data-status="past">
           <span class="card__icon" aria-hidden="true">02</span>
           <h2 class="card__title" data-i18n="projects.p2_title"></h2>
           <p class="card__body"   data-i18n="projects.p2_desc"></p>
@@ -57,7 +63,7 @@
           </div>
         </li>
 
-        <li class="card" data-modal="projects.p3_article">
+        <li class="card" data-modal="projects.p3_article" data-status="past">
           <span class="card__icon" aria-hidden="true">03</span>
           <h2 class="card__title" data-i18n="projects.p3_title"></h2>
           <p class="card__body"   data-i18n="projects.p3_desc"></p>
@@ -68,7 +74,7 @@
           </div>
         </li>
 
-        <li class="card" data-modal="projects.p4_article">
+        <li class="card" data-modal="projects.p4_article" data-status="past">
           <span class="card__icon" aria-hidden="true">04</span>
           <h2 class="card__title" data-i18n="projects.p4_title"></h2>
           <p class="card__body"   data-i18n="projects.p4_desc"></p>
