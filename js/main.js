@@ -14,11 +14,11 @@ async function tryInitMap() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  // 1. Load translations & restore saved language
-  const translations = await initI18n('en', './data/translations.json');
-
-  // 2. Inject nav partial + set active link + wire lang switcher
+  // 1. Inject nav partial first so its data-i18n elements are in the DOM
   await initNav();
+
+  // 2. Load translations & apply language to the full page (including nav)
+  const translations = await initI18n('en', './data/translations.json');
 
   // 3. Wire card modals (pages that have [data-modal] cards)
   if (translations) {
