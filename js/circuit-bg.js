@@ -1,51 +1,67 @@
 /**
  * circuit-bg.js — Animated circuit board background
- * Draws blurred PCB traces with flowing electrical pulses
- * in the site's purple/cyan palette.
+ * - Sparse PCB traces biased to screen edges
+ * - Slow electrical pulses with glow + tail
+ * - Parallax offset on scroll
  */
 
 const COLORS = {
   purple: '#6d4aff',
   cyan:   '#00e5ff',
-  dim:    'rgba(109, 74, 255, 0.08)',
 };
 
-const GRID   = 48;   // px between grid nodes
-const TRACE_ALPHA = 0.12;
-const PULSE_COUNT = 28;
+const GRID         = 56;    // px between grid nodes (larger = sparser)
+const TRACE_ALPHA  = 0.09;  // trace line opacity
+const PULSE_COUNT  = 14;    // fewer pulses
 
-let canvas, ctx, W, H, cols, rows;
-let traces  = [];  // [{pts: [{x,y},...], color}]
-let pulses  = [];  // [{traceIdx, t, speed, color, size}]
+let canvas, ctx, W, H;
+let traces  = [];
+let pulses  = [];
 let animId  = null;
+let scrollY = 0;
+let targetScrollY = 0;
 
-/* ── Geometry helpers ─────────────────────────────────────── */
+/* ── Helpers ──────────────────────────────────────────────── */
 
-function snap(v) { return Math.round(v / GRID) * GRID; }
+function snap(v, grid) { return Math.round(v / grid) * grid; }
+
+function hexToRgb(hex) {
+  const h = hex.replace('#', '');
+  return [parseInt(h.slice(0,2),16), parseInt(h.slice(2,4),16), parseInt(h.slice(4,6),16)];
+}
 
 /**
- * Build a random L-shaped or multi-segment trace starting from
- * a random grid point and walking horizontally then vertically
- * (or vice-versa) a random number of steps.
+ * Pick a starting X biased heavily toward the left or right edge.
+ * Centre third of the screen is avoided.
  */
-function buildTrace() {
-  const startX = snap(Math.random() * W);
-  const startY = snap(Math.random() * H);
-  const pts    = [{ x: startX, y: startY }];
-  let   cx     = startX;
-  let   cy     = startY;
-  const steps  = 3 + Math.floor(Math.random() * 6);
+function edgeBiasedX() {
+  // 70% chance left third, 30% right third
+  if (Math.random() < 0.5) {
+    return snap(Math.random() * (W * 0.28), GRID);            // left band
+  } else {
+    return snap(W * 0.72 + Math.random() * (W * 0.28), GRID); // right band
+  }
+}
 
+function buildTrace() {
+  const startX = edgeBiasedX();
+  const startY = snap(Math.random() * H, GRID);
+  const pts    = [{ x: startX, y: startY }];
+  let cx = startX, cy = startY;
+
+  // 3–5 segments only
+  const steps = 3 + Math.floor(Math.random() * 3);
   for (let i = 0; i < steps; i++) {
-    const horiz = Math.random() > 0.5;
-    const dist  = (2 + Math.floor(Math.random() * 5)) * GRID;
+    const horiz = Math.random() > 0.45;
+    const dist  = (1 + Math.floor(Math.random() * 4)) * GRID;
     const dir   = Math.random() > 0.5 ? 1 : -1;
 
     if (horiz) cx += dist * dir;
     else       cy += dist * dir;
 
-    cx = Math.max(0, Math.min(W, cx));
-    cy = Math.max(0, Math.min(H, cy));
+    // Clamp but keep near edges — allow slight overflow
+    cx = Math.max(-GRID, Math.min(W + GRID, cx));
+    cy = Math.max(-GRID, Math.min(H + GRID, cy));
     pts.push({ x: cx, y: cy });
   }
 
@@ -53,22 +69,18 @@ function buildTrace() {
   return { pts, color };
 }
 
-/**
- * Spawn a pulse on a random trace at a random starting position.
- */
 function spawnPulse() {
   const traceIdx = Math.floor(Math.random() * traces.length);
-  const trace    = traces[traceIdx];
   const color    = Math.random() > 0.5 ? COLORS.purple : COLORS.cyan;
   return {
     traceIdx,
     segIdx: 0,
-    t:      Math.random(),          // 0..1 along current segment
-    speed:  0.003 + Math.random() * 0.007,
+    t:      Math.random(),
+    speed:  0.0008 + Math.random() * 0.0018,  // much slower
     color,
-    size:   2 + Math.random() * 3,
-    tail:   0.35 + Math.random() * 0.35,  // tail length as fraction of segment
-    alpha:  0.6 + Math.random() * 0.4,
+    size:   1.8 + Math.random() * 2.5,
+    tail:   0.4 + Math.random() * 0.4,
+    alpha:  0.55 + Math.random() * 0.35,
   };
 }
 
@@ -80,95 +92,90 @@ function lerpPt(a, b, t) {
 
 /* ── Draw ─────────────────────────────────────────────────── */
 
-function drawTraces() {
+function drawTraces(offsetY) {
   traces.forEach(({ pts, color }) => {
+    const [r,g,b] = hexToRgb(color);
     ctx.beginPath();
-    ctx.moveTo(pts[0].x, pts[0].y);
-    for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
-    ctx.strokeStyle = color.replace(')', `, ${TRACE_ALPHA})`).replace('rgb', 'rgba').replace('#', '');
-
-    // Convert hex to rgba manually
-    const hex = color.replace('#', '');
-    const r   = parseInt(hex.slice(0,2), 16);
-    const g   = parseInt(hex.slice(2,4), 16);
-    const b   = parseInt(hex.slice(4,6), 16);
+    ctx.moveTo(pts[0].x, pts[0].y + offsetY);
+    for (let i = 1; i < pts.length; i++) {
+      ctx.lineTo(pts[i].x, pts[i].y + offsetY);
+    }
     ctx.strokeStyle = `rgba(${r},${g},${b},${TRACE_ALPHA})`;
     ctx.lineWidth   = 1;
     ctx.stroke();
 
-    // Junction dots at bends
+    // Junction dots
     pts.forEach(({ x, y }) => {
       ctx.beginPath();
-      ctx.arc(x, y, 2, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(${r},${g},${b},${TRACE_ALPHA * 1.6})`;
+      ctx.arc(x, y + offsetY, 2, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${r},${g},${b},${TRACE_ALPHA * 1.8})`;
       ctx.fill();
     });
   });
 }
 
-function drawPulse(p) {
-  const trace  = traces[p.traceIdx];
-  const pts    = trace.pts;
-  const segEnd = pts.length - 1;
-  if (p.segIdx >= segEnd) return;
+function drawPulse(p, offsetY) {
+  const trace = traces[p.traceIdx];
+  const pts   = trace.pts;
+  if (p.segIdx >= pts.length - 1) return;
 
   const a    = pts[p.segIdx];
   const b    = pts[p.segIdx + 1];
   const head = lerpPt(a, b, p.t);
+  const hx   = head.x;
+  const hy   = head.y + offsetY;
 
-  // Parse color
-  const hex = p.color.replace('#', '');
-  const r   = parseInt(hex.slice(0,2), 16);
-  const g   = parseInt(hex.slice(2,4), 16);
-  const bv  = parseInt(hex.slice(4,6), 16);
+  const [r,g,bv] = hexToRgb(p.color);
 
-  // Glow halo
-  const grd = ctx.createRadialGradient(head.x, head.y, 0, head.x, head.y, p.size * 6);
-  grd.addColorStop(0,   `rgba(${r},${g},${bv},${p.alpha * 0.9})`);
-  grd.addColorStop(0.4, `rgba(${r},${g},${bv},${p.alpha * 0.3})`);
+  // Outer glow
+  const grd = ctx.createRadialGradient(hx, hy, 0, hx, hy, p.size * 7);
+  grd.addColorStop(0,   `rgba(${r},${g},${bv},${p.alpha * 0.85})`);
+  grd.addColorStop(0.35,`rgba(${r},${g},${bv},${p.alpha * 0.25})`);
   grd.addColorStop(1,   `rgba(${r},${g},${bv},0)`);
   ctx.beginPath();
-  ctx.arc(head.x, head.y, p.size * 6, 0, Math.PI * 2);
+  ctx.arc(hx, hy, p.size * 7, 0, Math.PI * 2);
   ctx.fillStyle = grd;
   ctx.fill();
 
-  // Core dot
+  // Core
   ctx.beginPath();
-  ctx.arc(head.x, head.y, p.size, 0, Math.PI * 2);
+  ctx.arc(hx, hy, p.size, 0, Math.PI * 2);
   ctx.fillStyle = `rgba(${r},${g},${bv},${p.alpha})`;
   ctx.fill();
 
   // Tail
   const tailT  = Math.max(0, p.t - p.tail);
   const tailPt = lerpPt(a, b, tailT);
-  const grad   = ctx.createLinearGradient(tailPt.x, tailPt.y, head.x, head.y);
+  const grad   = ctx.createLinearGradient(tailPt.x, tailPt.y + offsetY, hx, hy);
   grad.addColorStop(0, `rgba(${r},${g},${bv},0)`);
-  grad.addColorStop(1, `rgba(${r},${g},${bv},${p.alpha * 0.5})`);
+  grad.addColorStop(1, `rgba(${r},${g},${bv},${p.alpha * 0.45})`);
   ctx.beginPath();
-  ctx.moveTo(tailPt.x, tailPt.y);
-  ctx.lineTo(head.x, head.y);
-  ctx.strokeStyle  = grad;
-  ctx.lineWidth    = p.size * 0.8;
-  ctx.lineCap      = 'round';
+  ctx.moveTo(tailPt.x, tailPt.y + offsetY);
+  ctx.lineTo(hx, hy);
+  ctx.strokeStyle = grad;
+  ctx.lineWidth   = p.size * 0.75;
+  ctx.lineCap     = 'round';
   ctx.stroke();
 }
 
 /* ── Animation loop ───────────────────────────────────────── */
 
 function tick() {
+  // Smooth scroll easing
+  scrollY += (targetScrollY - scrollY) * 0.06;
+  const parallaxOffset = -scrollY * 0.18; // subtle parallax factor
+
   ctx.clearRect(0, 0, W, H);
-  drawTraces();
+  drawTraces(parallaxOffset);
 
   pulses.forEach((p, i) => {
-    drawPulse(p);
+    drawPulse(p, parallaxOffset);
     p.t += p.speed;
 
     if (p.t >= 1) {
       p.t -= 1;
       p.segIdx++;
-      const trace = traces[p.traceIdx];
-      if (p.segIdx >= trace.pts.length - 1) {
-        // Respawn
+      if (p.segIdx >= traces[p.traceIdx].pts.length - 1) {
         pulses[i] = spawnPulse();
       }
     }
@@ -180,15 +187,13 @@ function tick() {
 /* ── Setup / resize ───────────────────────────────────────── */
 
 function build() {
-  W    = window.innerWidth;
-  H    = window.innerHeight;
-  cols = Math.ceil(W / GRID) + 1;
-  rows = Math.ceil(H / GRID) + 1;
-
+  W = window.innerWidth;
+  H = window.innerHeight;
   canvas.width  = W;
   canvas.height = H;
 
-  const count = Math.floor((W * H) / 18000);
+  // Fewer traces — roughly 1 per 30000px² instead of 18000
+  const count = Math.max(6, Math.floor((W * H) / 34000));
   traces = Array.from({ length: count }, buildTrace);
   pulses = Array.from({ length: PULSE_COUNT }, spawnPulse);
 }
@@ -203,17 +208,22 @@ export function initCircuitBg() {
     'inset:0',
     'z-index:-1',
     'pointer-events:none',
-    'opacity:0.6',
-    'filter:blur(1px)',
+    'opacity:0.65',
+    'filter:blur(0.8px)',
   ].join(';');
 
-  // Insert before all content but after <body>
   document.body.insertAdjacentElement('afterbegin', canvas);
   ctx = canvas.getContext('2d');
 
   build();
   tick();
 
+  // Scroll parallax
+  window.addEventListener('scroll', () => {
+    targetScrollY = window.scrollY;
+  }, { passive: true });
+
+  // Resize
   let resizeTimer;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
