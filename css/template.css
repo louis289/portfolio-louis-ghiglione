@@ -61,39 +61,6 @@
 }
 
 
-/* ── Background Blobs ── */
-.bg-blobs {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(90px);
-  opacity: calc(0.08 * var(--bg-blobs-opacity));
-  animation: drift 10s ease-in-out infinite alternate;
-}
-
-.blob--purple {
-  width: 600px;
-  height: 600px;
-  background: var(--color-accent);
-  top: -200px;
-  left: -200px;
-}
-
-.blob--cyan {
-  width: 500px;
-  height: 500px;
-  background: var(--color-accent2);
-  bottom: -150px;
-  right: -150px;
-  animation-delay: -5s;
-}
 
 /* ── 8. Divider ── */
 .divider {
@@ -121,10 +88,6 @@
 
 /* ── Animations ── */
 /* ── 10. Animations ── */
-@keyframes drift {
-  from { transform: translate(0, 0) scale(1); }
-  to   { transform: translate(50px, 40px) scale(1.1); }
-}
 
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
@@ -254,7 +217,7 @@
 
 .nav-toggle:hover {
   border-color: var(--color-accent);
-  box-shadow: 0 0 10px rgba(109, 74, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.30);
 }
 
 .nav-toggle:focus-visible {
@@ -302,7 +265,7 @@
 
 .lang-switcher:hover {
   border-color: var(--color-accent);
-  box-shadow: 0 0 12px rgba(109, 74, 255, 0.25);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.38);
 }
 
 .lang-switcher:focus-visible {

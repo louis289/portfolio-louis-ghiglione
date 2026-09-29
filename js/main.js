@@ -6,7 +6,7 @@
 import { initI18n }      from './i18n.js';
 import { initNav }       from './nav.js';
 import { initModals }    from './modal.js';
-import { initCircuitBg } from './circuit-bg.js';
+import { initCircuitBg } from './theme-3ea.js';
 import { initTilt }      from './tilt.js';
 import { initTheme }     from './theme.js';
 import { initSettingsUI } from './settings.js';

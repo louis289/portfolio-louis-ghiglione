@@ -11,8 +11,8 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-accent);
-  background: rgba(109, 74, 255, 0.1);
-  border: 1px solid rgba(109, 74, 255, 0.25);
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.38);
   padding: 0.3rem 0.9rem;
   border-radius: var(--radius-full);
   margin-bottom: var(--space-md);
@@ -114,7 +114,7 @@
 
 .hero__cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(109, 74, 255, 0.4);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.60);
 }
 
 /* ── Filters ── */
@@ -193,8 +193,8 @@
 
 .card:hover {
   transform: translateY(-4px);
-  border-color: rgba(109, 74, 255, 0.4);
-  box-shadow: 0 16px 50px rgba(109, 74, 255, 0.15);
+  border-color: rgba(0, 0, 0, 0.60);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.22);
 }
 
 .card:hover::before {
@@ -241,7 +241,7 @@
   object-position: center top;
   border: 3px solid var(--color-border);
   flex-shrink: 0;
-  box-shadow: 0 0 0 6px rgba(109, 74, 255, 0.12);
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.18);
 }
 
 .about-text {
@@ -291,7 +291,7 @@
 }
 
 .career-item:hover {
-  border-color: rgba(109, 74, 255, 0.4);
+  border-color: rgba(0, 0, 0, 0.60);
 }
 
 .career-item__num {
@@ -382,7 +382,7 @@ a.badge:hover {
   border-radius: 50%;
   background: linear-gradient(135deg, var(--color-accent), var(--color-accent2));
   border: 2px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 12px rgba(109, 74, 255, 0.8);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 1.00);
 }
 
 /* Leaflet popup — dark theme overrides */
@@ -573,7 +573,7 @@ a.badge:hover {
 }
 
 .modal-close:hover {
-  background: rgba(109, 74, 255, 0.15);
+  background: rgba(0, 0, 0, 0.22);
   border-color: var(--color-accent);
 }
 
@@ -669,7 +669,7 @@ a.badge:hover {
 
 .modal-link-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(109, 74, 255, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.60);
 }
 
 @media (max-width: 768px) {
@@ -738,7 +738,7 @@ a.badge:hover {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--color-accent);
-  box-shadow: 0 0 20px rgba(109, 74, 255, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.60);
   flex-shrink: 0;
 }
 
@@ -787,7 +787,7 @@ a.badge:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: var(--color-accent);
   transform: translateX(5px);
-  box-shadow: 0 4px 12px rgba(109, 74, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.30);
 }
 
 .contact-card__link svg {

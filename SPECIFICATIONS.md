@@ -53,6 +53,12 @@
 - **Repo local** : `/home/n7student/Documents/PortfolioINP/`
 - **Serveur local** : `python3 -m http.server 3000` → http://localhost:3000
 
+### Architecture & Outils Modernes
+- **Rendu Data-Driven** : Tout le contenu texte et liens provient de `data/translations.json`. Le JS injecte ces valeurs dynamiquement via les attributs `data-i18n` et `data-bind`.
+- **Framework Template** : Les éléments de structure globaux (nav, footer, modal, accessibilité) sont isolés dans `css/template.css` pour être réutilisables par d'autres étudiants.
+- **Paramètres d'URL** : L'état (langue, thème, accessibilité) est mémorisé via les paramètres d'URL (`?lang=fr&theme=light&a11y=true`), permettant de partager un état exact.
+- **Accessibilité (A11y)** : Mode WCAG avec contrastes maximaux, suppression des flous et arrêt complet des animations.
+
 ### Authentification Git
 - **Méthode** : Token GitHub (PAT) intégré dans l'URL remote
 - **Remote** : `https://louis289:<TOKEN>@github.com/louis289/portfolio-louis-ghiglione.git`
