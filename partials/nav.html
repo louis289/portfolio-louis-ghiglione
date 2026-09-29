@@ -18,11 +18,7 @@
     <li><a href="./contact.html"  class="nav-link" data-page="contact"  data-i18n="nav.contact"></a></li>
   </ul>
   <div class="nav-actions">
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">🌓</button>
-    <div class="lang-switcher" role="group" aria-label="Language selection">
-      <button class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
-      <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
-    </div>
+    <button class="settings-toggle" id="settings-toggle" aria-label="Open settings">⚙️</button>
     <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
       <span class="nav-toggle__bar"></span>
       <span class="nav-toggle__bar"></span>
@@ -30,3 +26,40 @@
     </button>
   </div>
 </nav>
+
+<!-- Settings Modal -->
+<div class="settings-backdrop" id="settings-modal" aria-hidden="true">
+  <div class="settings-content" role="dialog" aria-modal="true" aria-label="Settings">
+    <button class="settings-close" id="settings-close" aria-label="Close settings">&times;</button>
+    <h2 data-i18n="settings.title">Settings</h2>
+    
+    <div class="settings-group">
+      <h3 data-i18n="settings.theme">Theme</h3>
+      <div class="settings-options">
+        <button class="settings-btn" id="set-theme-dark" data-i18n="settings.theme_dark">Dark</button>
+        <button class="settings-btn" id="set-theme-light" data-i18n="settings.theme_light">Light</button>
+      </div>
+    </div>
+    
+    <div class="settings-group">
+      <h3 data-i18n="settings.language">Language</h3>
+      <div class="settings-options">
+        <button class="settings-btn" id="set-lang-en">English</button>
+        <button class="settings-btn" id="set-lang-fr">Français</button>
+      </div>
+    </div>
+    
+    <div class="settings-group">
+      <h3 data-i18n="settings.a11y">Accessibility</h3>
+      <div class="settings-options">
+        <button class="settings-btn" id="set-a11y-off" data-i18n="settings.a11y_off">Standard</button>
+        <button class="settings-btn" id="set-a11y-on" data-i18n="settings.a11y_on">Accessible</button>
+      </div>
+    </div>
+    
+    <div class="settings-group">
+      <h3 data-i18n="settings.download">Download</h3>
+      <a href="#" class="settings-link" target="_blank" data-bind="href:config.portfolio_pdf_url" data-i18n="settings.download_btn">Download Portfolio as PDF</a>
+    </div>
+  </div>
+</div>

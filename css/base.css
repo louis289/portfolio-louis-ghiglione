@@ -223,3 +223,18 @@ a {
   --color-text:    #1a1d24;
   --color-muted:   #5b637a;
 }
+
+/* ── 13. Accessibility Mode ── */
+[data-a11y="true"] {
+  --color-text: #ffffff; /* pure white in dark mode */
+  --color-muted: #e0e0e0;
+}
+[data-theme="light"][data-a11y="true"] {
+  --color-text: #000000;
+  --color-muted: #111111;
+}
+
+[data-a11y="true"] * {
+  animation: none !important;
+  transition: none !important;
+}

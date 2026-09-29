@@ -1,0 +1,77 @@
+/**
+ * settings.js
+ * Centralized handling of URL parameters for settings (theme, lang, a11y)
+ */
+
+export function updateUrlParam(key, value) {
+  const url = new URL(window.location);
+  url.searchParams.set(key, value);
+  window.history.replaceState({}, '', url);
+}
+
+export function getUrlParam(key) {
+  return new URLSearchParams(window.location.search).get(key);
+}
+
+export function initSettingsUI() {
+  const settingsBtn = document.getElementById('settings-toggle');
+  const settingsModal = document.getElementById('settings-modal');
+  const closeBtn = document.getElementById('settings-close');
+
+  if (!settingsBtn || !settingsModal) return;
+
+  settingsBtn.addEventListener('click', () => {
+    settingsModal.classList.add('active');
+    syncUI();
+  });
+
+  closeBtn?.addEventListener('click', () => {
+    settingsModal.classList.remove('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target.matches('.settings-backdrop')) {
+      settingsModal.classList.remove('active');
+    }
+  });
+
+  // Wire up buttons in the modal
+  document.getElementById('set-theme-dark')?.addEventListener('click', () => {
+    window.dispatchEvent(new CustomEvent('request-theme', { detail: 'dark' }));
+    syncUI();
+  });
+  document.getElementById('set-theme-light')?.addEventListener('click', () => {
+    window.dispatchEvent(new CustomEvent('request-theme', { detail: 'light' }));
+    syncUI();
+  });
+
+  document.getElementById('set-lang-en')?.addEventListener('click', () => {
+    window.dispatchEvent(new CustomEvent('request-lang', { detail: 'en' }));
+    syncUI();
+  });
+  document.getElementById('set-lang-fr')?.addEventListener('click', () => {
+    window.dispatchEvent(new CustomEvent('request-lang', { detail: 'fr' }));
+    syncUI();
+  });
+
+  document.getElementById('set-a11y-off')?.addEventListener('click', () => {
+    window.dispatchEvent(new CustomEvent('request-a11y', { detail: 'false' }));
+    syncUI();
+  });
+  document.getElementById('set-a11y-on')?.addEventListener('click', () => {
+    window.dispatchEvent(new CustomEvent('request-a11y', { detail: 'true' }));
+    syncUI();
+  });
+}
+
+function syncUI() {
+  const params = new URLSearchParams(window.location.search);
+  const theme = params.get('theme') || document.documentElement.getAttribute('data-theme') || 'dark';
+  const lang = params.get('lang') || document.documentElement.lang || 'en';
+  const a11y = params.get('a11y') || 'false';
+
+  document.querySelectorAll('.settings-btn').forEach(btn => btn.classList.remove('active'));
+  document.getElementById(`set-theme-${theme}`)?.classList.add('active');
+  document.getElementById(`set-lang-${lang}`)?.classList.add('active');
+  document.getElementById(`set-a11y-${a11y === 'true' ? 'on' : 'off'}`)?.classList.add('active');
+}

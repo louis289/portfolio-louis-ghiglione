@@ -9,6 +9,8 @@ import { initModals }    from './modal.js';
 import { initCircuitBg } from './circuit-bg.js';
 import { initTilt }      from './tilt.js';
 import { initTheme }     from './theme.js';
+import { initSettingsUI } from './settings.js';
+import { initA11y }      from './a11y.js';
 
 /** Tries to init the Leaflet map; safe to call multiple times. */
 async function tryInitMap() {
@@ -40,14 +42,18 @@ function initFilters() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  // 0. Initialize theme (light/dark mode)
+  // 0. Initialize theme (light/dark mode) and accessibility
   initTheme();
+  initA11y();
 
   // 1. Start circuit background animation
   initCircuitBg();
 
-  // 1. Inject nav partial first so its data-i18n elements are in the DOM
+  // 1.5 Inject nav partial first so its data-i18n elements are in the DOM
   await initNav();
+  
+  // 1.6 Init settings modal UI (after nav is loaded)
+  initSettingsUI();
 
   // 2. Load translations & apply language to the full page (including nav)
   const translations = await initI18n('en', './data/translations.json');

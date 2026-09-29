@@ -5,6 +5,8 @@
  * - Exposes: initI18n(), applyLang(), getCurrentLang()
  */
 
+import { updateUrlParam, getUrlParam } from './settings.js';
+
 const STORAGE_KEY = 'portfolio-lang';
 
 /** @type {Record<string, object>} */
@@ -43,6 +45,7 @@ export function applyLang(lang) {
   currentLang = lang;
   document.documentElement.lang = lang;
   localStorage.setItem(STORAGE_KEY, lang);
+  updateUrlParam('lang', lang);
 
   // Plain text nodes
   document.querySelectorAll('[data-i18n]').forEach((el) => {
@@ -127,8 +130,24 @@ export async function initI18n(defaultLang = 'en', translationsPath = './data/tr
     return null;
   }
 
+  const urlLang = getUrlParam('lang');
   const savedLang = localStorage.getItem(STORAGE_KEY);
-  const lang = (savedLang in translations) ? savedLang : defaultLang;
+  let lang = defaultLang;
+
+  if (urlLang && (urlLang in translations)) {
+    lang = urlLang;
+  } else if (savedLang && (savedLang in translations)) {
+    lang = savedLang;
+  }
+  
   applyLang(lang);
+  
+  // Listen for language changes from settings modal
+  window.addEventListener('request-lang', (e) => {
+    if (e.detail in translations) {
+      applyLang(e.detail);
+    }
+  });
+  
   return translations;
 }

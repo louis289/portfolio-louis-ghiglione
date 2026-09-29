@@ -3,6 +3,8 @@
  * Handles dark/light mode based on URL parameters, localStorage, and system preference.
  */
 
+import { updateUrlParam } from './settings.js';
+
 export function initTheme() {
   const urlParams = new URLSearchParams(window.location.search);
   const themeParam = urlParams.get('theme');
@@ -12,6 +14,7 @@ export function initTheme() {
   function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('portfolio-theme', theme);
+    updateUrlParam('theme', theme);
     
     // Dispatch an event so circuit-bg can redraw if necessary
     window.dispatchEvent(new Event('themechange'));
@@ -42,12 +45,8 @@ export function initTheme() {
     }
   });
 
-  // Handle manual toggle clicks using event delegation
-  document.addEventListener('click', (e) => {
-    const toggleBtn = e.target.closest('.theme-toggle');
-    if (toggleBtn) {
-      const current = document.documentElement.getAttribute('data-theme');
-      setTheme(current === 'light' ? 'dark' : 'light');
-    }
+  // Handle theme change requests from settings modal
+  window.addEventListener('request-theme', (e) => {
+    setTheme(e.detail);
   });
 }

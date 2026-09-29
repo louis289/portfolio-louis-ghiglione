@@ -1020,3 +1020,105 @@ a.badge:hover {
 .theme-toggle:active {
   transform: scale(0.9);
 }
+
+/* ── 14. Settings Modal ── */
+.settings-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  color: var(--color-text);
+  margin-right: 1rem;
+}
+.settings-toggle:hover { transform: scale(1.1); }
+.settings-toggle:active { transform: scale(0.9); }
+
+.settings-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.settings-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.settings-content {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.3s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.settings-backdrop.active .settings-content {
+  transform: translateY(0);
+}
+
+.settings-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.settings-content h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--color-text-title);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
+}
+
+.settings-group {
+  margin-bottom: 1.5rem;
+}
+.settings-group h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-muted);
+}
+
+.settings-options {
+  display: flex;
+  gap: 0.5rem;
+}
+.settings-btn {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.settings-btn.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+.settings-link {
+  display: inline-block;
+  color: var(--color-accent);
+  text-decoration: underline;
+}
