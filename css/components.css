@@ -22,16 +22,40 @@
   border-bottom: 1px solid var(--color-border);
 }
 
-.nav-logo {
-  font-weight: 800;
-  font-size: 1.1rem;
-  background: linear-gradient(135deg, var(--color-accent), var(--color-accent2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: -0.02em;
+.nav-logos {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
   flex-shrink: 0;
-  text-decoration: none;
+}
+
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  opacity: 0.85;
+  transition: opacity var(--t), transform var(--t);
+}
+
+.nav-logo-link:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.nav-logo-img {
+  display: block;
+  object-fit: contain;
+}
+
+.nav-logo-img--n7 {
+  height: 32px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.nav-logo-img--isae {
+  height: 36px;
+  width: auto;
+  filter: brightness(0) invert(1);
 }
 
 .nav-links {
@@ -303,6 +327,7 @@
     transform var(--t),
     border-color var(--t),
     box-shadow var(--t);
+  list-style: none;
 }
 
 .card:hover {
