@@ -54,10 +54,15 @@
 - **Serveur local** : `python3 -m http.server 3000` → http://localhost:3000
 
 ### Architecture & Outils Modernes
-- **Rendu Data-Driven** : Tout le contenu texte et liens provient de `data/translations.json`. Le JS injecte ces valeurs dynamiquement via les attributs `data-i18n` et `data-bind`.
-- **Framework Template** : Les éléments de structure globaux (nav, footer, modal, accessibilité) sont isolés dans `css/template.css` pour être réutilisables par d'autres étudiants.
-- **Paramètres d'URL** : L'état (langue, thème, accessibilité) est mémorisé via les paramètres d'URL (`?lang=fr&theme=light&a11y=true`), permettant de partager un état exact.
-- **Accessibilité (A11y)** : Mode WCAG avec contrastes maximaux, suppression des flous et arrêt complet des animations.
+- **Rendu Data-Driven** : Tout le contenu texte et liens provient de `data/translations.json`.
+- **Framework Template** : Les éléments de structure (nav, footer, modal, blobs) sont isolés dans `css/template.css` et `css/theme-3ea.css`.
+- **Paramètres d'URL** : L'état (langue, thème, accessibilité) est mémorisé via les paramètres d'URL (`?lang=fr&theme=light`) et se propage lors de la navigation.
+- **Accessibilité (A11y)** : Mode WCAG avec contrastes maximaux et arrêt complet des animations.
+- **Système de Tags (Auto-recommandation)** : Tags cliquables ouvrant une page dynamique `tag.html` qui suggère d'autres tags par algorithme de co-occurrence.
+- **Dashboard & CMS Local** : La page `status.html` intègre :
+  1. Le suivi de complétion (barres de progression via `up_to_date: true/false`).
+  2. Une checklist des contraintes CAM.
+  3. Un **Éditeur JSON Graphique** complet permettant d'ajouter des éléments (compétences, offres, etc.) et de télécharger le JSON final, destiné aux utilisateurs non-techniques.
 
 ### Authentification Git
 - **Méthode** : Token GitHub (PAT) intégré dans l'URL remote

@@ -41,7 +41,37 @@
     </div>
     <ul id="constraints-list"></ul>
   </div>
+  <div class="card">
+    <h2>JSON Data Editor</h2>
+    <p>Upload a JSON file or use the current data. Add items, edit text, and mark sections as completed.</p>
+    <div style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+      <button class="settings-btn active" id="btn-load-current">Load Current</button>
+      <input type="file" id="file-upload" accept=".json" style="display:none;" />
+      <button class="settings-btn" id="btn-upload" onclick="document.getElementById('file-upload').click()">Upload JSON</button>
+      <button class="settings-btn" id="btn-download" style="background:#4aff4a; color:#000;">Download JSON</button>
+      <button class="settings-btn" id="btn-help">Instructions</button>
+    </div>
+    <div id="editor-container" style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px; border: 1px solid var(--color-border); max-height: 600px; overflow-y: auto;">
+      <p style="color:var(--color-muted); text-align:center;">Click "Load Current" to edit.</p>
+    </div>
+  </div>
+
+  <!-- Instructions Modal -->
+  <div id="help-modal" class="settings-backdrop">
+    <div class="settings-content">
+      <button class="settings-close" id="help-close">&times;</button>
+      <h2>Deploying Your Changes</h2>
+      <ol style="color:var(--color-text); line-height:1.6; padding-left:1.5rem;">
+        <li style="margin-bottom:0.5rem">Click <strong>Download JSON</strong> to save your <code>translations.json</code>.</li>
+        <li style="margin-bottom:0.5rem">Move the downloaded file to the <code>data/</code> folder, replacing the old one.</li>
+        <li style="margin-bottom:0.5rem">For images (photos, logos), place them in the <code>images/</code> folder and use the path <code>./images/filename.ext</code> in the editor.</li>
+        <li style="margin-bottom:0.5rem">For documents (CV, Portfolio), place them in the <code>assets/</code> folder.</li>
+        <li style="margin-bottom:0.5rem">Commit and push to GitHub!</li>
+      </ol>
+    </div>
+  </div>
 
   <script type="module" src="./js/status.js"></script>
+  <script type="module" src="./js/editor.js"></script>
 </body>
 </html>
