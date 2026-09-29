@@ -13,7 +13,7 @@ export function renderDynamicContent(langData) {
 }
 
 function renderGrid(sectionName, items) {
-  const grid = document.querySelector('.grid-2');
+  const grid = document.querySelector('.grid-2, .grid-3');
   if (!grid) return;
   grid.innerHTML = ''; // Clear hardcoded
   
