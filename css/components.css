@@ -412,7 +412,7 @@ a.badge:hover {
 }
 
 .leaflet-control-attribution {
-  background: rgba(8, 11, 20, 0.8) !important;
+  background: color-mix(in srgb, var(--color-bg) 80%, transparent) !important;
   color: var(--color-muted) !important;
 }
 

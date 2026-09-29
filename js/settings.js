@@ -47,6 +47,15 @@ export function initSettingsUI() {
     });
   }
 
+  // Wire up the FX selector
+  const fxSelector = document.getElementById('fx-selector');
+  if (fxSelector) {
+    fxSelector.addEventListener('change', (e) => {
+      window.dispatchEvent(new CustomEvent('request-fx', { detail: e.target.value }));
+      syncUI();
+    });
+  }
+
   document.getElementById('set-lang-en')?.addEventListener('click', () => {
     window.dispatchEvent(new CustomEvent('request-lang', { detail: 'en' }));
     syncUI();
@@ -69,6 +78,7 @@ export function initSettingsUI() {
 function syncUI() {
   const params = new URLSearchParams(window.location.search);
   const theme = params.get('theme') || document.documentElement.getAttribute('data-theme') || 'dark-default';
+  const fx = params.get('fx') || 'electric';
   const lang = params.get('lang') || document.documentElement.lang || 'en';
   const a11y = params.get('a11y') || 'false';
 
@@ -78,6 +88,9 @@ function syncUI() {
   
   const themeSelector = document.getElementById('theme-selector');
   if (themeSelector) themeSelector.value = theme;
+  
+  const fxSelector = document.getElementById('fx-selector');
+  if (fxSelector) fxSelector.value = fx;
 
   document.getElementById(`set-lang-${lang}`)?.classList.add('active');
   document.getElementById(`set-a11y-${a11y === 'true' ? 'on' : 'off'}`)?.classList.add('active');

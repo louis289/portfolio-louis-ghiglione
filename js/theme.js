@@ -55,4 +55,28 @@ export function initTheme() {
   window.addEventListener('request-theme', (e) => {
     setTheme(e.detail);
   });
+
+  function setFx(fx) {
+    updateUrlParam('fx', fx);
+    localStorage.setItem('portfolio-fx', fx);
+    const fxLink = document.getElementById('theme-fx');
+    if (fxLink) {
+      fxLink.href = `./css/themes/fx-${fx}.css`;
+    }
+  }
+
+  // Handle FX param
+  const fxParam = urlParams.get('fx');
+  const storedFx = localStorage.getItem('portfolio-fx');
+  if (fxParam) {
+    setFx(fxParam);
+  } else if (storedFx) {
+    setFx(storedFx);
+  } else {
+    setFx('electric'); // Default
+  }
+
+  window.addEventListener('request-fx', (e) => {
+    setFx(e.detail);
+  });
 }

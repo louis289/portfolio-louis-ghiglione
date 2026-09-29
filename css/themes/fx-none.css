@@ -1,0 +1,3 @@
+/* fx-none.css */
+#circuit-bg { display: none !important; }
+body::before { display: none !important; }

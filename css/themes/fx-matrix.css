@@ -1,0 +1,10 @@
+/* fx-matrix.css (Placeholder for Game of Life / Matrix) */
+#circuit-bg { 
+  opacity: 0.2; 
+  filter: hue-rotate(120deg) brightness(1.5);
+}
+body {
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 19px, var(--color-accent) 20px), repeating-linear-gradient(90deg, transparent, transparent 19px, var(--color-accent) 20px);
+  background-size: 20px 20px;
+  background-attachment: fixed;
+}

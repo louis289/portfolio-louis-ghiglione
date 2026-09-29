@@ -126,8 +126,8 @@ a {
   /* Gradient: fully transparent on far left/right, dark in center column */
   background: radial-gradient(
     ellipse 62% 100% at 50% 50%,
-    rgba(8, 11, 20, 0.54) 0%,
-    rgba(8, 11, 20, 0.26) 60%,
+    color-mix(in srgb, var(--color-bg) 54%, transparent) 0%,
+    color-mix(in srgb, var(--color-bg) 26%, transparent) 60%,
     transparent 100%
   );
   pointer-events: none;
