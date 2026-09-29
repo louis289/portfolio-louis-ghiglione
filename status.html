@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — Content Status</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/template.css" />
+  <style>
+    body { background: var(--color-bg); color: var(--color-text); padding: 2rem; font-family: var(--font-base); }
+    h1, h2 { color: var(--color-accent); margin-bottom: 1rem; }
+    .card { background: var(--color-surface); border: 1px solid var(--color-border); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; }
+    .progress-bar { background: rgba(255,255,255,0.1); border-radius: 8px; height: 24px; width: 100%; overflow: hidden; margin: 1rem 0; }
+    .progress-fill { background: var(--color-accent); height: 100%; width: 0%; transition: width 0.5s; text-align: right; padding-right: 10px; font-weight: bold; font-size: 0.8rem; line-height: 24px; color: white;}
+    ul { list-style: none; padding: 0; }
+    li { padding: 0.5rem 0; border-bottom: 1px solid var(--color-border); }
+    .status-badge { display: inline-block; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 0.5rem; }
+    .badge-red { background: #ff4a4a33; color: #ff4a4a; border: 1px solid #ff4a4a; }
+    .badge-green { background: #4aff4a33; color: #4aff4a; border: 1px solid #4aff4a; }
+    .constraint-checkbox { margin-right: 10px; transform: scale(1.2); }
+  </style>
+</head>
+<body>
+  <h1>🛠️ Portfolio Content Status</h1>
+  
+  <div class="card">
+    <h2>JSON Data Freshness</h2>
+    <p>Percentage of items marked as <code>up_to_date: true</code> in translations.json.</p>
+    <div class="progress-bar">
+      <div id="json-progress" class="progress-fill">0%</div>
+    </div>
+    <h3>Items to update:</h3>
+    <ul id="outdated-list"></ul>
+  </div>
+
+  <div class="card">
+    <h2>CAM Course Checklist (Constraints)</h2>
+    <p>Saved in <code>data/constraints.json</code>. Check off items as you complete them.</p>
+    <div class="progress-bar">
+      <div id="constraints-progress" class="progress-fill">0%</div>
+    </div>
+    <ul id="constraints-list"></ul>
+  </div>
+
+  <script type="module" src="./js/status.js"></script>
+</body>
+</html>

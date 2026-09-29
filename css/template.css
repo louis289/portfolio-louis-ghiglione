@@ -407,3 +407,33 @@
   text-decoration: underline;
 }
 
+/* ── Print Styles (PDF Generation) ── */
+@media print {
+  /* Hide UI elements */
+  .site-nav, .site-footer, .settings-backdrop, .modal-backdrop, .bg-blobs, canvas {
+    display: none !important;
+  }
+  
+  /* Reset colors to black and white for print */
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  
+  /* Reset layout constraints */
+  .page-content {
+    padding-top: 0 !important;
+  }
+  
+  /* Remove shadows and borders that look bad in print */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+  }
+  
+  a {
+    text-decoration: underline !important;
+    color: #0000ee !important;
+  }
+}

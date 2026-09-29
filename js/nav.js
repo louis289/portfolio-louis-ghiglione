@@ -64,6 +64,27 @@ function setActiveNavLink() {
 }
 
 /**
+ * Propagates the current URL search params (?lang, ?theme, etc) to all navigation links
+ * so that state is maintained across pages.
+ */
+export function propagateUrlParams() {
+  if (!window.location.search) return;
+  
+  document.querySelectorAll('.nav-link').forEach((link) => {
+    try {
+      const url = new URL(link.href);
+      const currentParams = new URLSearchParams(window.location.search);
+      currentParams.forEach((val, key) => {
+        url.searchParams.set(key, val);
+      });
+      link.href = url.toString();
+    } catch (e) {
+      // Ignore invalid URLs
+    }
+  });
+}
+
+/**
  * Wires the .lang-switcher container as a single EN↔FR toggle.
  */
 function initLangSwitcher() {
@@ -163,6 +184,7 @@ function initMobileMenu() {
 export async function initNav() {
   await loadNav();
   setActiveNavLink();
+  propagateUrlParams();
   initLangSwitcher();
   initMobileMenu();
 }

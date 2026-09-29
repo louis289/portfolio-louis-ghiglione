@@ -11,6 +11,7 @@ import { initTilt }      from './tilt.js';
 import { initTheme }     from './theme.js';
 import { initSettingsUI } from './settings.js';
 import { initA11y }      from './a11y.js';
+import { initPdfGenerator } from './pdf-generator.js';
 
 /** Tries to init the Leaflet map; safe to call multiple times. */
 async function tryInitMap() {
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   
   // 1.6 Init settings modal UI (after nav is loaded)
   initSettingsUI();
+  initPdfGenerator();
 
   // 2. Load translations & apply language to the full page (including nav)
   const translations = await initI18n('en', './data/translations.json');

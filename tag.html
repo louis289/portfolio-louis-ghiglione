@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tag Details — Louis Ghiglione</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/template.css" />
+  <link rel="stylesheet" href="./css/theme-3ea.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <style>
+    .tag-header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 2rem;
+    }
+    .tag-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      color: var(--color-accent);
+      margin-bottom: 1rem;
+    }
+    .tag-desc {
+      color: var(--color-muted);
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .tag-img {
+      max-width: 100%;
+      border-radius: var(--radius-md);
+      margin-bottom: 1.5rem;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .tag-section-title {
+      font-size: 1.5rem;
+      margin: 2rem 0 1rem;
+      color: var(--color-text);
+    }
+    .related-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+<body data-page="tags">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content" class="page-content">
+    <div class="page-wrapper">
+      <div id="tag-content-container">
+        <!-- Injected by tags.js -->
+        <h2 style="text-align: center; color: var(--color-muted);">Loading tag data...</h2>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/tags.js"></script>
+</body>
+</html>

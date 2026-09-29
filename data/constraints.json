@@ -1,0 +1,17 @@
+{
+  "constraints": [
+    { "id": "c1", "text": "6 onglets obligatoires en ligne (Welcome, Projects, Career, Mobility, Passions, Civic)", "checked": true },
+    { "id": "c2", "text": "Pas d'onglet vide", "checked": false },
+    { "id": "c3", "text": "Career: Une vraie offre d'emploi ciblée (Microélectronique/ASIC)", "checked": false },
+    { "id": "c4", "text": "Career: CV adapté (Français & Anglais)", "checked": false },
+    { "id": "c5", "text": "Career: Lettre de motivation (Français & Anglais)", "checked": false },
+    { "id": "c6", "text": "Career: Profil LinkedIn à jour (poste = apprenti)", "checked": false },
+    { "id": "c7", "text": "Career: 2 interviews My Job Glasses rédigées", "checked": false },
+    { "id": "c8", "text": "Welcome: Pitch vidéo (3 min, parlé naturellement)", "checked": false },
+    { "id": "c9", "text": "Pas de texte placeholder (lorem ipsum)", "checked": false },
+    { "id": "c10", "text": "Pas de traduction machine non relue", "checked": false },
+    { "id": "c11", "text": "Tous les liens doivent fonctionner (tester sur autre appareil)", "checked": false },
+    { "id": "c12", "text": "Personnalisation (photos, projets, orga réelles)", "checked": false },
+    { "id": "c13", "text": "Dépôt sur Moodle avant le 3 décembre 2026 à 18h00", "checked": false }
+  ]
+}
