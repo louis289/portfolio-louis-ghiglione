@@ -141,27 +141,42 @@
       // 8. Civic
       html += renderSection(data.nav.civic, 6, data.civic);
 
-      // 9. Annexes (QR Codes)
-      // I assume data.config.youtube_video and data.config.cv_url_fr exist or will be filled
+      // 9. QR Codes
       const ytLink = data.config.youtube_video || 'https://youtube.com';
-      const cvLink = lang === 'fr' ? (data.config.cv_url_fr || data.config.cv_url) : data.config.cv_url;
+      const linkedinLink = data.config.linkedin_url || 'https://linkedin.com';
+      const mailtoLink = data.config.email_mailto || 'mailto:';
+      
       html += `
         <div class="page">
-          <h2>7. Annexes</h2>
+          <h2>7. Links & References</h2>
           
-          <div style="display: flex; gap: 4rem; margin-top: 2rem;">
+          <div style="display: flex; gap: 4rem; margin-top: 2rem; flex-wrap: wrap;">
             <div style="text-align: center;">
               <h3>My Video Pitch</h3>
               <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(ytLink)}" alt="QR Code Video" style="margin: 1rem 0;" />
-              <p><a href="${ytLink}">${ytLink}</a></p>
+              <p style="font-size: 0.9rem;"><a href="${ytLink}">${ytLink}</a></p>
             </div>
             
             <div style="text-align: center;">
-              <h3>My Curriculum Vitae</h3>
-              <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(window.location.origin + window.location.pathname.replace('portfolio-doc.html', '') + (cvLink || '').replace('./', ''))}" alt="QR Code CV" style="margin: 1rem 0;" />
-              <p><a href="${cvLink}">View PDF Online</a></p>
+              <h3>LinkedIn Profile</h3>
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(linkedinLink)}" alt="QR Code LinkedIn" style="margin: 1rem 0;" />
+              <p style="font-size: 0.9rem;"><a href="${linkedinLink}">${data.config.linkedin_display || linkedinLink}</a></p>
+            </div>
+            
+            <div style="text-align: center;">
+              <h3>Email</h3>
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(mailtoLink)}" alt="QR Code Email" style="margin: 1rem 0;" />
+              <p style="font-size: 0.9rem;"><a href="${mailtoLink}">${data.config.email_display || mailtoLink.replace('mailto:', '')}</a></p>
             </div>
           </div>
+        </div>
+      `;
+
+      // 10. Embedded CV (Full page image)
+      // I converted the CV PDF to a PNG so it prints seamlessly within the HTML PDF generator
+      html += `
+        <div class="page" style="padding: 0; text-align: center;">
+          <img src="./assets/images/cv_en-1.png" style="max-width: 100%; max-height: 100%; object-fit: contain;" alt="Curriculum Vitae" />
         </div>
       `;
 
