@@ -44,7 +44,7 @@
   <div class="card">
     <h2>JSON Data Editor</h2>
     <p>Upload a JSON file or use the current data. Add items, edit text, and mark sections as completed.</p>
-    <div style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+    <div id="editor-controls" style="margin-bottom: 1rem; display: flex; flex-wrap: wrap; gap: 1rem;">
       <button class="settings-btn active" id="btn-load-current">Load Current</button>
       <input type="file" id="file-upload" accept=".json" style="display:none;" />
       <button class="settings-btn" id="btn-upload" onclick="document.getElementById('file-upload').click()">Upload JSON</button>

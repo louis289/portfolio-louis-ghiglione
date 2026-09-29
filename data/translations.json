@@ -355,7 +355,7 @@
       "download": "Download",
       "download_btn": "Download Portfolio as PDF"
     },
-    "footer": "Created by Louis Ghiglione based on the CAM course guidelines (CAREERS AND MANAGEMENT - Fabienne Iché & Genevieve Casey) and the AI tool Antigravity. <br/> <a href=\"https://github.com/louis289/portfolio-louis-ghiglione.git\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--color-accent);\">Clone the Original GitHub Repo</a>"
+    "footer": "Created by Louis Ghiglione based on the CAM course guidelines 2026/2027 for FISA students (CAREERS AND MANAGEMENT - Fabienne Iché & Genevieve Casey) and the AI tool Antigravity. <br/> <a href=\"https://github.com/louis289/portfolio-louis-ghiglione.git\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--color-accent);\">Clone the Original GitHub Repo</a>"
   },
   "fr": {
     "config": {
@@ -713,6 +713,6 @@
       "download": "Télécharger",
       "download_btn": "Télécharger le Portfolio en PDF"
     },
-    "footer": "Créé par Louis Ghiglione en s'appuyant sur les consignes du cours de CAM de (CAREERS AND MANAGEMENT - Fabienne Iché & Genevieve Casey) et l'outil d'IA antigravity. <br/> <a href=\"https://github.com/louis289/portfolio-louis-ghiglione.git\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--color-accent);\">Lien du Github originel à cloner</a>"
+    "footer": "Créé par Louis Ghiglione en s'appuyant sur les consignes du cours de CAM 2026/2027 pour les étudiants FISA (CAREERS AND MANAGEMENT - Fabienne Iché & Genevieve Casey) et l'outil d'IA antigravity. <br/> <a href=\"https://github.com/louis289/portfolio-louis-ghiglione.git\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--color-accent);\">Lien du Github originel à cloner</a>"
   }
 }
