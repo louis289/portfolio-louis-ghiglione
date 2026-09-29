@@ -16,6 +16,12 @@ export function initTheme() {
     localStorage.setItem('portfolio-theme', theme);
     updateUrlParam('theme', theme);
     
+    // Swap the CSS file
+    const themeLink = document.getElementById('theme-colors');
+    if (themeLink) {
+      themeLink.href = `./css/themes/${theme}.css`;
+    }
+    
     // Dispatch an event so circuit-bg can redraw if necessary
     window.dispatchEvent(new Event('themechange'));
   }

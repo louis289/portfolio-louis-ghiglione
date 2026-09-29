@@ -2,13 +2,13 @@
 
 ## Requested on 2026-09-29
 
-### 1. PDF Generator Enhancements
-- [ ] Add contact information to the PDF.
-- [ ] Fix the Welcome section in the PDF (currently empty).
-- [ ] Add the CV and Motivation Letter PDFs as annexes (or link/QR code to them).
-- [ ] Add a YouTube link with a QR code in the PDF.
-- [ ] Language choice for PDF: Provide an option to generate it in English *only* or French *only*.
-- [ ] Add photos (from projects, passions, etc.) to the PDF.
+### 1. PDF Generator Enhancements (COMPLETED)
+- [x] Add contact information to the PDF.
+- [x] Fix the Welcome section in the PDF.
+- [x] Add the CV and Motivation Letter PDFs as annexes via QR code links.
+- [x] Add a YouTube link with a QR code in the PDF.
+- [x] Language choice for PDF: Radio buttons added next to the download button.
+- [x] Add photos (from projects, passions, etc.) to the PDF.
 
 ### 2. Bugs Fixed
 - [x] Fix `passions.html` rendering bug (was empty due to grid-3 selector missing in renderer).
