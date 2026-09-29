@@ -62,7 +62,11 @@
         <div class="page cover-page">
           <h1>${data.config.name}</h1>
           <h2 style="border:none;">Portfolio</h2>
-          <p>${data.config.school_name} - ${data.config.company_name}</p>
+          <p style="font-size: 1.2rem; margin-top: 1rem;">${data.config.school_name} - ${data.config.company_name}</p>
+          <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #ccc; width: 60%;">
+            <p><strong>Email:</strong> ${data.config.email_display}</p>
+            <p><strong>LinkedIn:</strong> ${data.config.linkedin_display}</p>
+          </div>
         </div>
       `;
 
@@ -77,6 +81,7 @@
             <div class="toc-item">4. ${data.nav.mobility}</div>
             <div class="toc-item">5. ${data.nav.passions}</div>
             <div class="toc-item">6. ${data.nav.civic}</div>
+            <div class="toc-item">7. Annexes (CV & Video)</div>
           </div>
         </div>
       `;
@@ -85,7 +90,8 @@
       html += `
         <div class="page">
           <h2>1. ${data.nav.welcome}</h2>
-          <p>${data.welcome.intro_desc || ''}</p>
+          ${data.welcome.about_text1 ? `<p>${data.welcome.about_text1}</p>` : ''}
+          ${data.welcome.about_text2 ? `<p>${data.welcome.about_text2}</p>` : ''}
         </div>
       `;
 
@@ -99,6 +105,7 @@
               <h3>${item.title || item.name || ''}</h3>
               <p class="tags">Tags: ${(item.tags || []).join(', ')}</p>
               <p><strong>Summary:</strong> ${item.desc || item.role || ''}</p>
+              ${item.article && item.article.img ? `<img src="${item.article.img}" style="max-width: 100%; height: auto; max-height: 300px; margin: 1rem 0; border-radius: 8px;" />` : ''}
               ${item.article ? `<div class="article-body">${item.article.body}</div>` : ''}
             </div>
           `;
@@ -113,11 +120,50 @@
       // 5. Career
       html += renderSection(data.nav.career, 3, data.career.jobs);
 
-      // 6. Passions
+      // 6. Mobility
+      // Render basic mobility info
+      html += `<div class="page"><h2>4. ${data.nav.mobility}</h2>`;
+      (data.config.destinations || []).forEach(dest => {
+        const titleKey = dest.i18nTitle.split('.')[1];
+        const descKey = dest.i18nDesc.split('.')[1];
+        html += `
+          <div class="content-block">
+            <h3>${data.mobility[titleKey] || dest.city}</h3>
+            <p>${data.mobility[descKey] || ''}</p>
+          </div>
+        `;
+      });
+      html += `</div>`;
+
+      // 7. Passions
       html += renderSection(data.nav.passions, 5, data.passions);
 
-      // 7. Civic
+      // 8. Civic
       html += renderSection(data.nav.civic, 6, data.civic);
+
+      // 9. Annexes (QR Codes)
+      // I assume data.config.youtube_video and data.config.cv_url_fr exist or will be filled
+      const ytLink = data.config.youtube_video || 'https://youtube.com';
+      const cvLink = lang === 'fr' ? (data.config.cv_url_fr || data.config.cv_url) : data.config.cv_url;
+      html += `
+        <div class="page">
+          <h2>7. Annexes</h2>
+          
+          <div style="display: flex; gap: 4rem; margin-top: 2rem;">
+            <div style="text-align: center;">
+              <h3>My Video Pitch</h3>
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(ytLink)}" alt="QR Code Video" style="margin: 1rem 0;" />
+              <p><a href="${ytLink}">${ytLink}</a></p>
+            </div>
+            
+            <div style="text-align: center;">
+              <h3>My Curriculum Vitae</h3>
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(window.location.origin + window.location.pathname.replace('portfolio-doc.html', '') + (cvLink || '').replace('./', ''))}" alt="QR Code CV" style="margin: 1rem 0;" />
+              <p><a href="${cvLink}">View PDF Online</a></p>
+            </div>
+          </div>
+        </div>
+      `;
 
       root.innerHTML = html;
 

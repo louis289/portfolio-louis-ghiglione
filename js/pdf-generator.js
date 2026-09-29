@@ -9,9 +9,12 @@ export function initPdfGenerator() {
   if (downloadBtn) {
     downloadBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      const params = new URLSearchParams(window.location.search);
-      const lang = params.get('lang') || 'en';
-      window.open(`./portfolio-doc.html?lang=${lang}&print=true`, '_blank');
+      const langRadios = document.querySelectorAll('input[name="pdf-lang"]');
+      let pdfLang = 'en';
+      for (const r of langRadios) {
+        if (r.checked) pdfLang = r.value;
+      }
+      window.open(`./portfolio-doc.html?lang=${pdfLang}&print=true`, '_blank');
     });
   }
 }
