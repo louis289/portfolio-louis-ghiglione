@@ -35,18 +35,21 @@
           
           <div class="contact-card__content">
             <img src="" alt="" class="contact-card__avatar" data-bind="src:config.avatar_url; alt:config.name" />
-            <h2 class="contact-card__name" data-bind="text:config.name"></h2>
-            <p class="contact-card__title" data-i18n="contact.contact_sub"></p>
             
-            <div class="contact-card__links">
-              <a href="#" class="contact-card__link" data-bind="href:config.email_mailto">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                <span data-bind="text:config.email_display"></span>
-              </a>
-              <a href="#" class="contact-card__link" target="_blank" rel="noopener" data-bind="href:config.linkedin_url">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                <span data-bind="text:config.linkedin_display"></span>
-              </a>
+            <div class="contact-card__info">
+              <h2 class="contact-card__name" data-bind="text:config.name"></h2>
+              <p class="contact-card__title" data-i18n="contact.contact_sub"></p>
+              
+              <div class="contact-card__links">
+                <a href="#" class="contact-card__link" data-bind="href:config.email_mailto">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <span data-bind="text:config.email_display"></span>
+                </a>
+                <a href="#" class="contact-card__link" target="_blank" rel="noopener" data-bind="href:config.linkedin_url">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <span data-bind="text:config.linkedin_display"></span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
