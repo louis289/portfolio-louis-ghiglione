@@ -25,7 +25,7 @@
 .nav-logos {
   display: flex;
   align-items: center;
-  gap: var(--space-sm);
+  gap: 8px;
   flex-shrink: 0;
 }
 
@@ -44,6 +44,14 @@
 .nav-logo-img {
   display: block;
   object-fit: contain;
+}
+
+.nav-logos-sep {
+  color: var(--color-border);
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1;
+  user-select: none;
 }
 
 .nav-logo-img--n7 {
