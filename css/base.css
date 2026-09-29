@@ -61,10 +61,11 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  background-color: var(--color-bg);
 }
 
 body {
-  background-color: var(--color-bg);
+  background-color: transparent;
   color: var(--color-text);
   font-family: var(--font-base);
   line-height: 1.7;
