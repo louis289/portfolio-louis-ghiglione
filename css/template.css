@@ -1,0 +1,446 @@
+/* =============================================================
+   template.css — Global Framework Components
+   Includes: Nav, Footer, Modals, Settings, Themes, Backgrounds
+   ============================================================= */
+
+/* ── Themes & A11y ── */
+/* ── 12. Themes ── */
+[data-theme="light"] {
+  --color-bg:      #f4f6f9;
+  --color-surface: #ffffff;
+  --color-card:    #ffffff;
+  --color-border:  #e0e4ec;
+  --color-accent:  #5030e5; /* Deeper purple for WCAG contrast */
+  --color-accent2: #0088aa; /* Darker cyan for text legibility */
+  --color-text:    #1c202a;
+  --color-muted:   #5b637a;
+  
+  --bg-blobs-opacity: 0.15; /* Subtler blobs in light mode */
+}
+
+/* ── 13. Accessibility Mode (WCAG) ── */
+[data-a11y="true"] {
+  /* High contrast dark mode */
+  --color-text: #ffffff !important;
+  --color-muted: #e0e0e0 !important;
+  --color-bg: #000000 !important;
+  --color-surface: #000000 !important;
+  --color-card: #000000 !important;
+  --color-border: #ffffff !important;
+  --color-accent: #ffff00 !important; /* Yellow for high contrast */
+  --bg-blobs-opacity: 0 !important; /* Disable blobs completely */
+}
+
+[data-theme="light"][data-a11y="true"] {
+  /* High contrast light mode */
+  --color-bg: #ffffff !important;
+  --color-surface: #ffffff !important;
+  --color-card: #ffffff !important;
+  --color-text: #000000 !important;
+  --color-muted: #111111 !important;
+  --color-border: #000000 !important;
+  --color-accent: #0000ee !important; /* Standard pure blue link color */
+}
+
+[data-a11y="true"] * {
+  animation: none !important;
+  transition: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+[data-a11y="true"] :focus-visible {
+  outline: 4px solid var(--color-accent) !important;
+  outline-offset: 4px !important;
+}
+
+/* Increase base text size slightly for a11y */
+[data-a11y="true"] body {
+  font-size: 1.125rem;
+}
+
+
+/* ── Background Blobs ── */
+.bg-blobs {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: calc(0.08 * var(--bg-blobs-opacity));
+  animation: drift 10s ease-in-out infinite alternate;
+}
+
+.blob--purple {
+  width: 600px;
+  height: 600px;
+  background: var(--color-accent);
+  top: -200px;
+  left: -200px;
+}
+
+.blob--cyan {
+  width: 500px;
+  height: 500px;
+  background: var(--color-accent2);
+  bottom: -150px;
+  right: -150px;
+  animation-delay: -5s;
+}
+
+/* ── 8. Divider ── */
+.divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: var(--space-2xl) 0;
+}
+
+/* ── 9. Utilities ── */
+.ext-link {
+  color: var(--color-accent2);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ext-link:hover {
+  text-decoration: underline;
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+
+
+/* ── Animations ── */
+/* ── 10. Animations ── */
+@keyframes drift {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(50px, 40px) scale(1.1); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.page-content {
+  animation: fadeInUp 0.45s var(--t-slow) both;
+}
+
+
+
+/* ── Navigation ── */
+/* ── Navigation ── */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-h);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-xl);
+  gap: var(--space-md);
+  background: rgba(8, 11, 20, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nav-logos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  opacity: 0.85;
+  transition: opacity var(--t), transform var(--t);
+}
+
+.nav-logo-link:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.nav-logo-img {
+  display: block;
+  object-fit: contain;
+}
+
+.nav-logos-sep {
+  color: var(--color-border);
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1;
+  user-select: none;
+}
+
+.nav-logo-img--n7 {
+  height: 34px;
+  width: auto;
+  border-radius: 3px;
+}
+
+.nav-logo-img--isae {
+  height: 36px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.15rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.38rem 0.85rem;
+  color: var(--color-muted);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  transition: color var(--t), background var(--t);
+  white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link[aria-current="page"] {
+  color: var(--color-text);
+  background: var(--color-card);
+}
+
+/* ── Navigation Actions ── */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+}
+
+/* ── Mobile Burger Toggle ── */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 38px;
+  height: 38px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  transition: border-color var(--t), background var(--t), box-shadow var(--t);
+}
+
+.nav-toggle:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 10px rgba(109, 74, 255, 0.2);
+}
+
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.nav-toggle__bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 2px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+  transform-origin: center;
+}
+
+/* Morph burger bars into 'X' when open */
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Language Switcher ── */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+  user-select: none;
+  transition: border-color var(--t), box-shadow var(--t), transform var(--t);
+}
+
+.lang-switcher:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 12px rgba(109, 74, 255, 0.25);
+}
+
+.lang-switcher:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.lang-btn {
+  padding: 0.35rem 0.75rem;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  font-family: var(--font-base);
+  color: var(--color-muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  pointer-events: none;
+  transition: color var(--t), background var(--t);
+  letter-spacing: 0.05em;
+}
+
+.lang-btn.is-active {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent2));
+  color: #fff;
+}
+
+.lang-switcher:hover .lang-btn:not(.is-active) {
+  color: var(--color-text);
+}
+
+
+
+/* ── Footer ── */
+
+
+/* ── Modals ── */
+
+
+/* ── Settings Modal ── */
+/* ── 14. Settings Modal ── */
+.settings-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  color: var(--color-text);
+  margin-right: 1rem;
+}
+.settings-toggle:hover { transform: scale(1.1); }
+.settings-toggle:active { transform: scale(0.9); }
+
+.settings-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.settings-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.settings-content {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.3s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.settings-backdrop.active .settings-content {
+  transform: translateY(0);
+}
+
+.settings-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.settings-content h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--color-text-title);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
+}
+
+.settings-group {
+  margin-bottom: 1.5rem;
+}
+.settings-group h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-muted);
+}
+
+.settings-options {
+  display: flex;
+  gap: 0.5rem;
+}
+.settings-btn {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.settings-btn.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+.settings-link {
+  display: inline-block;
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
