@@ -7,8 +7,8 @@
   /* Colors */
   --color-bg:      #080b14;
   --color-surface: #0f1322;
-  --color-card:    rgba(255, 255, 255, 0.04);
-  --color-border:  rgba(255, 255, 255, 0.08);
+  --color-card:    rgba(8, 11, 20, 0.72);
+  --color-border:  rgba(255, 255, 255, 0.09);
   --color-accent:  #6d4aff;
   --color-accent2: #00d4ff;
   --color-text:    #f0f4ff;
@@ -106,12 +106,32 @@ a {
   max-width: var(--wrapper-max);
   margin: 0 auto;
   padding: 0 var(--wrapper-pad);
+  position: relative;
+  z-index: 1;
 }
 
 .page-content {
   min-height: calc(100vh - var(--nav-h));
   padding-top: calc(var(--nav-h) + var(--space-2xl));
   padding-bottom: var(--space-3xl);
+  position: relative;
+  z-index: 1;
+}
+
+/* Frosted-mat band behind the reading column */
+.page-content::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  /* Gradient: fully transparent on far left/right, dark in center column */
+  background: radial-gradient(
+    ellipse 62% 100% at 50% 50%,
+    rgba(8, 11, 20, 0.54) 0%,
+    rgba(8, 11, 20, 0.26) 60%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* ── 7. Background blobs ── */
