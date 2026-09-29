@@ -318,7 +318,7 @@
       "email": "Email",
       "linkedin": "LinkedIn"
     },
-    "footer": "Louis Ghiglione · N7 · 2026 — Built for CAM L3 FISA S5"
+    "footer": "Created by Louis Ghiglione based on the CAM course guidelines (CAREERS AND MANAGEMENT - Fabienne Iché & Genevieve Casey) and the AI tool Antigravity. <br/> <a href=\"https://github.com/louis289/portfolio-louis-ghiglione.git\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--color-accent);\">Clone the Original GitHub Repo</a>"
   },
   "fr": {
     "config": {
@@ -639,6 +639,6 @@
       "email": "E-mail",
       "linkedin": "LinkedIn"
     },
-    "footer": "Louis Ghiglione · N7 · 2026 — Portfolio CAM L3 FISA S5"
+    "footer": "Créé par Louis Ghiglione en s'appuyant sur les consignes du cours de CAM de (CAREERS AND MANAGEMENT - Fabienne Iché & Genevieve Casey) et l'outil d'IA antigravity. <br/> <a href=\"https://github.com/louis289/portfolio-louis-ghiglione.git\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--color-accent);\">Lien du Github originel à cloner</a>"
   }
 }

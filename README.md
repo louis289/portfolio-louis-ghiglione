@@ -65,5 +65,33 @@ Dans la section `"welcome"`, la clé `"pitch_placeholder"` vous permet d'intégr
 3. **Data Binding** : Le JS (`i18n.js`) scanne les balises contenant `data-bind="href:config.cv_url; src:config.avatar_url"` et injecte dynamiquement les valeurs du JSON.
 4. **Fallback Navigation (Anti-Crash)** : Si le site est ouvert en local sans serveur web (double-clic `file:///`), le chargement de la navigation échouera par sécurité (CORS). Une fenêtre popup ("Fallback") apparaîtra alors automatiquement pour proposer au recruteur de télécharger directement votre Portfolio PDF global !
 
-## ⚡️ Déploiement
-Hébergez simplement ce dossier sur **GitHub Pages**, **Vercel** ou **Netlify**, et votre site sera fonctionnel !
+## ⚡️ Déploiement & Hébergement
+
+### 0. Cloner / Copier ce Template
+Pour créer votre propre portfolio, commencez par faire une copie de ce dépôt GitHub. 
+👉 **Dépôt originel à cloner :** [https://github.com/louis289/portfolio-louis-ghiglione.git](https://github.com/louis289/portfolio-louis-ghiglione.git)
+
+Vous pouvez :
+- Le "Fork" directement sur GitHub.
+- Ou télécharger le `.zip` et l'extraire sur votre machine.
+
+### Méthode 1 : GitHub Pages (Le plus simple et gratuit)
+C'est la méthode recommandée.
+1. Créez un dépôt sur GitHub (ex: `mon-portfolio`).
+2. Poussez (push) les fichiers de ce template sur votre dépôt.
+3. Sur la page de votre dépôt sur GitHub, allez dans **Settings** (Paramètres).
+4. Dans le menu de gauche, cliquez sur **Pages**.
+5. Sous *Build and deployment*, dans la section *Source*, sélectionnez **Deploy from a branch**.
+6. Sous *Branch*, choisissez `main` (ou `master`), laissez le dossier sur `/ (root)` et cliquez sur **Save**.
+7. Patientez quelques minutes. Votre portfolio sera accessible à l'adresse : `https://<votre-pseudo>.github.io/<nom-du-repo>/`.
+
+### Méthode 2 : Serveur VPS (Avancé)
+Si vous possédez un serveur VPS (OVH, Hostinger, AWS, etc.) et que vous voulez utiliser votre propre nom de domaine :
+1. Connectez-vous à votre VPS en SSH.
+2. Assurez-vous d'avoir un serveur web d'installé (comme Nginx ou Apache).
+3. Clonez votre dépôt dans le répertoire web (généralement `/var/www/html`) :
+   ```bash
+   git clone https://github.com/VOTRE_PSEUDO/VOTRE_REPO.git /var/www/mon-portfolio
+   ```
+4. Configurez votre Server Block Nginx (ou Virtual Host Apache) pour pointer vers ce dossier.
+5. (Optionnel mais recommandé) Sécurisez votre site avec HTTPS via Certbot (Let's Encrypt).
