@@ -147,7 +147,7 @@ a {
   position: absolute;
   border-radius: 50%;
   filter: blur(90px);
-  opacity: calc(0.18 * var(--bg-blobs-opacity));
+  opacity: calc(0.08 * var(--bg-blobs-opacity));
   animation: drift 10s ease-in-out infinite alternate;
 }
 
