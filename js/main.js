@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 1. Load translations & restore saved language
   const translations = await initI18n('en', './data/translations.json');
 
-  // 2. Set active nav link + wire lang switcher
-  initNav();
+  // 2. Inject nav partial + set active link + wire lang switcher
+  await initNav();
 
   // 3. Wire card modals (pages that have [data-modal] cards)
   if (translations) {
