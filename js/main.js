@@ -7,6 +7,7 @@ import { initI18n }      from './i18n.js';
 import { initNav }       from './nav.js';
 import { initModals }    from './modal.js';
 import { initCircuitBg } from './circuit-bg.js';
+import { initTilt }      from './tilt.js';
 
 /** Tries to init the Leaflet map; safe to call multiple times. */
 async function tryInitMap() {
@@ -62,5 +63,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (document.body.dataset.page === 'mobility') {
     await tryInitMap();
     window.addEventListener('load', tryInitMap, { once: true });
+  }
+
+  // 6. Init 3D tilt on contact page
+  if (document.body.dataset.page === 'contact') {
+    initTilt();
   }
 });

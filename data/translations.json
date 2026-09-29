@@ -315,6 +315,7 @@
       "tag": "Get in touch",
       "title": "Contact me",
       "desc": "Feel free to reach out to me via email or LinkedIn for any inquiries or opportunities.",
+      "contact_sub": "Engineering student at ENSEEIHT | Microelectronics apprentice at ISAE-SUPAERO",
       "email": "Email",
       "linkedin": "LinkedIn"
     },
@@ -636,6 +637,7 @@
       "tag": "Me contacter",
       "title": "Contact",
       "desc": "N'hésitez pas à me contacter par e-mail ou sur LinkedIn pour toute question ou opportunité.",
+      "contact_sub": "Élève-Ingénieur à l'ENSEEIHT | Apprenti microélectronique à l'ISAE-SUPAERO",
       "email": "E-mail",
       "linkedin": "LinkedIn"
     },
