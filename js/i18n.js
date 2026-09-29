@@ -13,6 +13,10 @@ let translations = {};
 /** @type {'en' | 'fr'} */
 let currentLang = 'en';
 
+export function getTranslations() {
+  return translations[currentLang];
+}
+
 /**
  * Resolves a dot-separated key against a nested object.
  * Returns empty string if not found.
@@ -50,6 +54,24 @@ export function applyLang(lang) {
   document.querySelectorAll('[data-i18n-html]').forEach((el) => {
     const value = resolve(t, el.dataset.i18nHtml);
     if (value) el.innerHTML = value;
+  });
+
+  // Attribute binding (e.g. data-bind="href:config.cv_url; src:config.avatar_url")
+  document.querySelectorAll('[data-bind]').forEach((el) => {
+    const bindings = el.dataset.bind.split(';');
+    bindings.forEach(binding => {
+      const parts = binding.split(':');
+      if (parts.length === 2) {
+        const attr = parts[0].trim();
+        const keyPath = parts[1].trim();
+        const value = resolve(t, keyPath);
+        if (value) {
+          if (attr === 'text') el.textContent = value;
+          else if (attr === 'html') el.innerHTML = value;
+          else el.setAttribute(attr, value);
+        }
+      }
+    });
   });
 
   // Update lang button active state + aria

@@ -1,5 +1,26 @@
 {
   "en": {
+    "config": {
+      "name": "Louis Ghiglione",
+      "avatar_url": "./images/avatar.jpg",
+      "email_mailto": "mailto:louis.ghiglione@etu.toulouse-inp.fr",
+      "email_display": "louis.ghiglione@etu.toulouse-inp.fr",
+      "linkedin_url": "https://www.linkedin.com/in/louis-ghiglione/",
+      "linkedin_display": "linkedin.com/in/louis-ghiglione",
+      "cv_url": "./assets/CV_Louis_Ghiglione_EN.pdf",
+      "portfolio_pdf_url": "./assets/Portfolio_Fallback.pdf",
+      "school_name": "INP-ENSEEIHT",
+      "school_logo_url": "./images/logo_n7.png",
+      "school_link": "https://www.enseeiht.fr/fr/index.html",
+      "company_name": "ISAE-SUPAERO CIMI",
+      "company_logo_url": "./images/logo_isae.png",
+      "company_link": "https://www.isae-supaero.fr/departement-electronique-optronique-et-signal/groupe-de-recherche-capteurs-dimages-integres-cimi/",
+      "destinations": [
+        { "id": "dest-1", "lat": 41.3851, "lng": 2.1734, "city": "Barcelona", "country": "🇪🇸 Spain", "i18nTitle": "mobility.d1_title", "i18nDesc": "mobility.d1_desc" },
+        { "id": "dest-2", "lat": 45.5017, "lng": -73.5673, "city": "Montréal", "country": "🇨🇦 Canada", "i18nTitle": "mobility.d2_title", "i18nDesc": "mobility.d2_desc" },
+        { "id": "dest-3", "lat": 1.3521, "lng": 103.8198, "city": "Singapore", "country": "🇸🇬 Singapore", "i18nTitle": "mobility.d3_title", "i18nDesc": "mobility.d3_desc" }
+      ]
+    },
     "nav": {
       "welcome": "Welcome",
       "projects": "Projects",
@@ -300,6 +321,27 @@
     "footer": "Louis Ghiglione · N7 · 2026 — Built for CAM L3 FISA S5"
   },
   "fr": {
+    "config": {
+      "name": "Louis Ghiglione",
+      "avatar_url": "./images/avatar.jpg",
+      "email_mailto": "mailto:louis.ghiglione@etu.toulouse-inp.fr",
+      "email_display": "louis.ghiglione@etu.toulouse-inp.fr",
+      "linkedin_url": "https://www.linkedin.com/in/louis-ghiglione/",
+      "linkedin_display": "linkedin.com/in/louis-ghiglione",
+      "cv_url": "./assets/CV_Louis_Ghiglione_FR.pdf",
+      "portfolio_pdf_url": "./assets/Portfolio_Fallback.pdf",
+      "school_name": "INP-ENSEEIHT",
+      "school_logo_url": "./images/logo_n7.png",
+      "school_link": "https://www.enseeiht.fr/fr/index.html",
+      "company_name": "ISAE-SUPAERO CIMI",
+      "company_logo_url": "./images/logo_isae.png",
+      "company_link": "https://www.isae-supaero.fr/departement-electronique-optronique-et-signal/groupe-de-recherche-capteurs-dimages-integres-cimi/",
+      "destinations": [
+        { "id": "dest-1", "lat": 41.3851, "lng": 2.1734, "city": "Barcelone", "country": "🇪🇸 Espagne", "i18nTitle": "mobility.d1_title", "i18nDesc": "mobility.d1_desc" },
+        { "id": "dest-2", "lat": 45.5017, "lng": -73.5673, "city": "Montréal", "country": "🇨🇦 Canada", "i18nTitle": "mobility.d2_title", "i18nDesc": "mobility.d2_desc" },
+        { "id": "dest-3", "lat": 1.3521, "lng": 103.8198, "city": "Singapour", "country": "🇸🇬 Singapour", "i18nTitle": "mobility.d3_title", "i18nDesc": "mobility.d3_desc" }
+      ]
+    },
     "nav": {
       "welcome": "Accueil",
       "projects": "Projets",

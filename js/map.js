@@ -4,55 +4,21 @@
  * Coordinates and destination data live here; translations are synced via i18n.
  */
 
-import { t, getCurrentLang } from './i18n.js';
+import { t, getCurrentLang, getTranslations } from './i18n.js';
 
 /** @type {import('leaflet').Map | null} */
 let mapInstance = null;
 
 /**
- * Destination data.
- * `i18nTitle` / `i18nDesc` → keys used in translations.json.
- * Update coordinates when real destinations are known.
- *
- * @type {Array<{
- *   id: string,
- *   lat: number,
- *   lng: number,
- *   city: string,
- *   country: { en: string, fr: string } | string,
- *   i18nTitle: string,
- *   i18nDesc: string
- * }>}
+ * Gets the current array of destinations from the translation config.
  */
-const DESTINATIONS = [
-  {
-    id: 'dest-1',
-    lat: 41.3851,
-    lng: 2.1734,
-    city: 'Barcelona',
-    country: { en: '🇪🇸 Spain', fr: '🇪🇸 Espagne' },
-    i18nTitle: 'mobility.d1_title',
-    i18nDesc:  'mobility.d1_desc',
-  },
-  {
-    id: 'dest-2',
-    lat: 45.5017,
-    lng: -73.5673,
-    city: 'Montréal',
-    country: { en: '🇨🇦 Canada', fr: '🇨🇦 Canada' },
-    i18nTitle: 'mobility.d2_title',
-    i18nDesc:  'mobility.d2_desc',
-  },
-  {
-    id: 'dest-3',
-    lat: 1.3521,
-    lng: 103.8198,
-    city: 'Singapore',
-    country: { en: '🇸🇬 Singapore', fr: '🇸🇬 Singapour' },
-    i18nTitle: 'mobility.d3_title',
-    i18nDesc:  'mobility.d3_desc',
-  },
-];
+function getDestinations() {
+  const trans = getTranslations();
+  if (trans && trans.config && trans.config.destinations) {
+    return trans.config.destinations;
+  }
+  return [];
+}
 
 /**
  * Reads the translated text of a [data-i18n] element as a fallback.
@@ -100,7 +66,7 @@ function createMarkerIcon(title) {
 function addMarkers(map) {
   const currentLang = getCurrentLang() || 'en';
 
-  DESTINATIONS.forEach(({ lat, lng, city, country, i18nTitle, i18nDesc }) => {
+  getDestinations().forEach(({ lat, lng, city, country, i18nTitle, i18nDesc }) => {
     const title = t(i18nTitle) || getLabel(i18nTitle) || city;
     const desc  = t(i18nDesc)  || getLabel(i18nDesc);
     const countryLabel = typeof country === 'object'

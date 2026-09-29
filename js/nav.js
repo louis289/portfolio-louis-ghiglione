@@ -22,7 +22,31 @@ async function loadNav() {
     placeholder.outerHTML = html;
   } catch (err) {
     console.error('[nav] Failed to load nav partial:', err);
+    showNavFallbackPopup();
   }
+}
+
+/**
+ * Shows a fallback popup proposing to download the full PDF portfolio
+ * if the navigation fails to load (e.g. CORS error opening file locally).
+ */
+function showNavFallbackPopup() {
+  const isFr = navigator.language.startsWith('fr');
+  const title = isFr ? "⚠️ Erreur de chargement" : "⚠️ Loading Error";
+  const text = isFr 
+    ? "La navigation n'a pas pu être chargée (probablement car vous ouvrez ce fichier en local sans serveur). Veuillez télécharger mon portfolio complet au format PDF." 
+    : "Navigation failed to load (likely because you opened this file locally without a server). Please download my full portfolio as a PDF instead.";
+  const btnText = isFr ? "Télécharger le Portfolio" : "Download Portfolio";
+  const pdfUrl = "./assets/Portfolio_Fallback.pdf"; // Fallback URL (user can edit this)
+
+  const div = document.createElement('div');
+  div.style.cssText = 'position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#0f1322; padding:2rem; border:1px solid rgba(255,255,255,0.1); z-index:9999; border-radius:12px; text-align:center; color:#f0f4ff; box-shadow:0 12px 40px rgba(0,0,0,0.5); max-width:90vw; width:400px;';
+  div.innerHTML = `
+    <h3 style="margin-bottom:1rem; color:#fff; font-size:1.4rem;">${title}</h3>
+    <p style="margin-bottom:1.5rem; line-height:1.5; color:#7a85a3;">${text}</p>
+    <a href="${pdfUrl}" download style="display:inline-block; background:#6d4aff; color:#fff; padding:0.8rem 1.5rem; text-decoration:none; border-radius:8px; font-weight:600; transition:opacity 0.2s;">${btnText}</a>
+  `;
+  document.body.appendChild(div);
 }
 
 /**
