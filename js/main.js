@@ -8,6 +8,7 @@ import { initNav }       from './nav.js';
 import { initModals }    from './modal.js';
 import { initCircuitBg } from './circuit-bg.js';
 import { initTilt }      from './tilt.js';
+import { initTheme }     from './theme.js';
 
 /** Tries to init the Leaflet map; safe to call multiple times. */
 async function tryInitMap() {
@@ -39,7 +40,10 @@ function initFilters() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  // 0. Start circuit background animation
+  // 0. Initialize theme (light/dark mode)
+  initTheme();
+
+  // 1. Start circuit background animation
   initCircuitBg();
 
   // 1. Inject nav partial first so its data-i18n elements are in the DOM

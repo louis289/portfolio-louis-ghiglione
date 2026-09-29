@@ -5,13 +5,19 @@
  * - Parallax offset on scroll
  */
 
-const COLORS = {
+let COLORS = {
   purple: '#6d4aff',
   cyan:   '#00e5ff',
 };
 
+function updateColors() {
+  const root = getComputedStyle(document.documentElement);
+  COLORS.purple = root.getPropertyValue('--color-accent').trim() || '#6d4aff';
+  COLORS.cyan   = root.getPropertyValue('--color-accent2').trim() || '#00e5ff';
+}
+
 const GRID         = 56;    // px between grid nodes (larger = sparser)
-const TRACE_ALPHA  = 0.09;  // trace line opacity
+let TRACE_ALPHA    = 0.09;  // trace line opacity
 const PULSE_COUNT  = 14;    // fewer pulses
 
 let canvas, ctx, W, H;
@@ -222,8 +228,17 @@ export function initCircuitBg() {
   document.body.insertAdjacentElement('afterbegin', canvas);
   ctx = canvas.getContext('2d');
 
+  updateColors();
   build();
   tick();
+
+  // Listen to theme changes to redraw
+  window.addEventListener('themechange', () => {
+    updateColors();
+    if (animId) cancelAnimationFrame(animId);
+    build();
+    tick();
+  });
 
   // Scroll parallax
   window.addEventListener('scroll', () => {
