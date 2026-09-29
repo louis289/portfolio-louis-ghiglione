@@ -47,9 +47,9 @@
 }
 
 .nav-logo-img--n7 {
-  height: 32px;
+  height: 34px;
   width: auto;
-  filter: brightness(0) invert(1);
+  border-radius: 3px;
 }
 
 .nav-logo-img--isae {
