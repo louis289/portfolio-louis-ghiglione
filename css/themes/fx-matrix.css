@@ -1,10 +1,23 @@
-/* fx-matrix.css (Placeholder for Game of Life / Matrix) */
-#circuit-bg { 
-  opacity: 0.2; 
-  filter: hue-rotate(120deg) brightness(1.5);
-}
-body {
-  background-image: repeating-linear-gradient(0deg, transparent, transparent 19px, var(--color-accent) 20px), repeating-linear-gradient(90deg, transparent, transparent 19px, var(--color-accent) 20px);
+/* fx-matrix.css */
+#circuit-bg { display: none !important; }
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #000;
+  background-image: 
+    linear-gradient(rgba(0, 255, 0, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 0, 0.2) 1px, transparent 1px);
   background-size: 20px 20px;
-  background-attachment: fixed;
+  z-index: -1;
+  pointer-events: none;
+}
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,255,0,0.05) 50%);
+  background-size: 100% 4px;
+  z-index: 9999;
+  pointer-events: none;
 }
