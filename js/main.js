@@ -3,9 +3,10 @@
  * Bootstraps i18n, navigation, and modal system on every page.
  */
 
-import { initI18n } from './i18n.js';
-import { initNav }  from './nav.js';
-import { initModals } from './modal.js';
+import { initI18n }      from './i18n.js';
+import { initNav }       from './nav.js';
+import { initModals }    from './modal.js';
+import { initCircuitBg } from './circuit-bg.js';
 
 /** Tries to init the Leaflet map; safe to call multiple times. */
 async function tryInitMap() {
@@ -14,6 +15,9 @@ async function tryInitMap() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+  // 0. Start circuit background animation
+  initCircuitBg();
+
   // 1. Inject nav partial first so its data-i18n elements are in the DOM
   await initNav();
 
