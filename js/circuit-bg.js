@@ -201,6 +201,13 @@ function build() {
 /* ── Public init ──────────────────────────────────────────── */
 
 export function initCircuitBg() {
+  // Create background blobs dynamically
+  const blobs = document.createElement('div');
+  blobs.className = 'bg-blobs';
+  blobs.setAttribute('aria-hidden', 'true');
+  blobs.innerHTML = '<div class="blob blob--purple"></div><div class="blob blob--cyan"></div>';
+  document.body.insertAdjacentElement('afterbegin', blobs);
+
   canvas = document.createElement('canvas');
   canvas.id = 'circuit-bg';
   canvas.style.cssText = [
