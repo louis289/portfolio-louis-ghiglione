@@ -1,0 +1,13 @@
+/* css/themes/forest-night.css */
+:root {
+  --color-bg:      #0d1a15;
+  --color-surface: #152a22;
+  --color-card:    rgba(21, 42, 34, 0.8);
+  --color-border:  #1f3e32;
+  --color-accent:  #4ade80;
+  --color-accent2: #10b981;
+  --color-text:    #dcfce7;
+  --color-muted:   #6ee7b7;
+  --bg-blobs-opacity: 1;
+}
+

@@ -1,0 +1,16 @@
+/* css/themes/sepia.css */
+:root {
+  --color-bg:      #f4ecd8;
+  --color-surface: #e9dfc1;
+  --color-card:    #f4ecd8;
+  --color-border:  #d0c3a2;
+  --color-accent:  #b85c38;
+  --color-accent2: #5c3d2e;
+  --color-text:    #4a3b32;
+  --color-muted:   #82705e;
+  --bg-blobs-opacity: 0.05;
+}
+
+body { background-color: var(--color-bg); color: var(--color-text); }
+.card { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); }
+.card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04); }

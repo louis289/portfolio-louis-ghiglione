@@ -1,0 +1,13 @@
+/* css/themes/matrix.css */
+:root {
+  --color-bg:      #0d0d0d;
+  --color-surface: #1a1a1a;
+  --color-card:    rgba(26, 26, 26, 0.8);
+  --color-border:  #00ff41;
+  --color-accent:  #00ff41;
+  --color-accent2: #008f11;
+  --color-text:    #00ff41;
+  --color-muted:   #008f11;
+  --bg-blobs-opacity: 1;
+}
+

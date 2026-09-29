@@ -1,0 +1,16 @@
+/* css/themes/mint.css */
+:root {
+  --color-bg:      #f0fff4;
+  --color-surface: #e6fffa;
+  --color-card:    #ffffff;
+  --color-border:  #b2f5ea;
+  --color-accent:  #319795;
+  --color-accent2: #38b2ac;
+  --color-text:    #234e52;
+  --color-muted:   #4fd1c5;
+  --bg-blobs-opacity: 0.05;
+}
+
+body { background-color: var(--color-bg); color: var(--color-text); }
+.card { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); }
+.card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04); }

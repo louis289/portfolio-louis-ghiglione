@@ -1,0 +1,13 @@
+/* css/themes/nord.css */
+:root {
+  --color-bg:      #2e3440;
+  --color-surface: #3b4252;
+  --color-card:    rgba(59, 66, 82, 0.8);
+  --color-border:  #434c5e;
+  --color-accent:  #88c0d0;
+  --color-accent2: #81a1c1;
+  --color-text:    #d8dee9;
+  --color-muted:   #4c566a;
+  --bg-blobs-opacity: 1;
+}
+

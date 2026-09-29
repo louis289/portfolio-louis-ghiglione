@@ -1,0 +1,13 @@
+/* css/themes/material-dark.css */
+:root {
+  --color-bg:      #121212;
+  --color-surface: #1e1e1e;
+  --color-card:    rgba(30, 30, 30, 0.8);
+  --color-border:  #333333;
+  --color-accent:  #bb86fc;
+  --color-accent2: #03dac6;
+  --color-text:    #ffffff;
+  --color-muted:   #a0a0a0;
+  --bg-blobs-opacity: 1;
+}
+

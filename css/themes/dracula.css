@@ -1,0 +1,13 @@
+/* css/themes/dracula.css */
+:root {
+  --color-bg:      #282a36;
+  --color-surface: #44475a;
+  --color-card:    rgba(68, 71, 90, 0.8);
+  --color-border:  #6272a4;
+  --color-accent:  #ff79c6;
+  --color-accent2: #bd93f9;
+  --color-text:    #f8f8f2;
+  --color-muted:   #6272a4;
+  --bg-blobs-opacity: 1;
+}
+

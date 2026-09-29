@@ -1,0 +1,16 @@
+/* css/themes/pastel-breeze.css */
+:root {
+  --color-bg:      #f0f8ff;
+  --color-surface: #e0efff;
+  --color-card:    #ffffff;
+  --color-border:  #b8d8ff;
+  --color-accent:  #ff8fab;
+  --color-accent2: #a0c4ff;
+  --color-text:    #33415c;
+  --color-muted:   #5c677d;
+  --bg-blobs-opacity: 0.05;
+}
+
+body { background-color: var(--color-bg); color: var(--color-text); }
+.card { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); }
+.card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04); }

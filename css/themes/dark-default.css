@@ -1,0 +1,13 @@
+/* css/themes/dark-default.css */
+:root {
+  --color-bg:      #080b14;
+  --color-surface: #0f1322;
+  --color-card:    rgba(8, 11, 20, 0.72);
+  --color-border:  rgba(255, 255, 255, 0.09);
+  --color-accent:  #6d4aff;
+  --color-accent2: #00d4ff;
+  --color-text:    #f0f4ff;
+  --color-muted:   #7a85a3;
+  --bg-blobs-opacity: 1;
+}
+

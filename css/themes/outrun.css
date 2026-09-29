@@ -1,0 +1,13 @@
+/* css/themes/outrun.css */
+:root {
+  --color-bg:      #110022;
+  --color-surface: #1f003b;
+  --color-card:    rgba(31, 0, 59, 0.8);
+  --color-border:  #ff0055;
+  --color-accent:  #ff00a0;
+  --color-accent2: #00e5ff;
+  --color-text:    #ffffff;
+  --color-muted:   #b366ff;
+  --bg-blobs-opacity: 1;
+}
+

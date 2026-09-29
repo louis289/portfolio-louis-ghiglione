@@ -1,0 +1,13 @@
+/* css/themes/midnight.css */
+:root {
+  --color-bg:      #0a0f25;
+  --color-surface: #121a36;
+  --color-card:    rgba(18, 26, 54, 0.8);
+  --color-border:  #1e2a52;
+  --color-accent:  #3b82f6;
+  --color-accent2: #8b5cf6;
+  --color-text:    #e0e7ff;
+  --color-muted:   #7e8cba;
+  --bg-blobs-opacity: 1;
+}
+

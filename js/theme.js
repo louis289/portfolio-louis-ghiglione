@@ -27,27 +27,27 @@ export function initTheme() {
   }
 
   // 1. URL Param overrides everything
-  if (themeParam === 'light' || themeParam === 'dark') {
+  if (themeParam) {
     setTheme(themeParam);
   } 
   // 2. Then localStorage
-  else if (storedTheme === 'light' || storedTheme === 'dark') {
+  else if (storedTheme) {
     setTheme(storedTheme);
   } 
   // 3. Then System Preference
   else if (prefersLight.matches) {
-    setTheme('light');
+    setTheme('light-default');
   } 
   // Default is dark
   else {
-    setTheme('dark');
+    setTheme('dark-default');
   }
 
   // Listen to system changes
   prefersLight.addEventListener('change', (e) => {
     // Only auto-switch if user hasn't explicitly set a preference via URL
     if (!urlParams.get('theme')) {
-        setTheme(e.matches ? 'light' : 'dark');
+        setTheme(e.matches ? 'light-default' : 'dark-default');
     }
   });
 

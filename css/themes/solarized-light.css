@@ -1,0 +1,16 @@
+/* css/themes/solarized-light.css */
+:root {
+  --color-bg:      #fdf6e3;
+  --color-surface: #eee8d5;
+  --color-card:    #eee8d5;
+  --color-border:  #93a1a1;
+  --color-accent:  #268bd2;
+  --color-accent2: #d33682;
+  --color-text:    #657b83;
+  --color-muted:   #93a1a1;
+  --bg-blobs-opacity: 0.05;
+}
+
+body { background-color: var(--color-bg); color: var(--color-text); }
+.card { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); }
+.card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04); }

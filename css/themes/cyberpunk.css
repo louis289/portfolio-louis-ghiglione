@@ -1,0 +1,13 @@
+/* css/themes/cyberpunk.css */
+:root {
+  --color-bg:      #000b18;
+  --color-surface: #001a33;
+  --color-card:    rgba(0, 26, 51, 0.8);
+  --color-border:  #ff007f;
+  --color-accent:  #fcee0a;
+  --color-accent2: #00f0ff;
+  --color-text:    #ffffff;
+  --color-muted:   #00f0ff;
+  --bg-blobs-opacity: 1;
+}
+

@@ -1,0 +1,16 @@
+/* css/themes/corporate-blue.css */
+:root {
+  --color-bg:      #f8f9fa;
+  --color-surface: #ffffff;
+  --color-card:    #ffffff;
+  --color-border:  #dee2e6;
+  --color-accent:  #003366;
+  --color-accent2: #00509e;
+  --color-text:    #212529;
+  --color-muted:   #6c757d;
+  --bg-blobs-opacity: 0.05;
+}
+
+body { background-color: var(--color-bg); color: var(--color-text); }
+.card { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); }
+.card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04); }

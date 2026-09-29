@@ -1,0 +1,16 @@
+/* css/themes/sunset.css */
+:root {
+  --color-bg:      #fff5f5;
+  --color-surface: #fff0f2;
+  --color-card:    #ffffff;
+  --color-border:  #fed7d7;
+  --color-accent:  #e53e3e;
+  --color-accent2: #dd6b20;
+  --color-text:    #4a0000;
+  --color-muted:   #9b2c2c;
+  --bg-blobs-opacity: 0.05;
+}
+
+body { background-color: var(--color-bg); color: var(--color-text); }
+.card { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); }
+.card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04); }

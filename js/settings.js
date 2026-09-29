@@ -38,15 +38,14 @@ export function initSettingsUI() {
     }
   });
 
-  // Wire up buttons in the modal
-  document.getElementById('set-theme-dark')?.addEventListener('click', () => {
-    window.dispatchEvent(new CustomEvent('request-theme', { detail: 'dark' }));
-    syncUI();
-  });
-  document.getElementById('set-theme-light')?.addEventListener('click', () => {
-    window.dispatchEvent(new CustomEvent('request-theme', { detail: 'light' }));
-    syncUI();
-  });
+  // Wire up the theme selector
+  const themeSelector = document.getElementById('theme-selector');
+  if (themeSelector) {
+    themeSelector.addEventListener('change', (e) => {
+      window.dispatchEvent(new CustomEvent('request-theme', { detail: e.target.value }));
+      syncUI();
+    });
+  }
 
   document.getElementById('set-lang-en')?.addEventListener('click', () => {
     window.dispatchEvent(new CustomEvent('request-lang', { detail: 'en' }));
@@ -69,12 +68,17 @@ export function initSettingsUI() {
 
 function syncUI() {
   const params = new URLSearchParams(window.location.search);
-  const theme = params.get('theme') || document.documentElement.getAttribute('data-theme') || 'dark';
+  const theme = params.get('theme') || document.documentElement.getAttribute('data-theme') || 'dark-default';
   const lang = params.get('lang') || document.documentElement.lang || 'en';
   const a11y = params.get('a11y') || 'false';
 
-  document.querySelectorAll('.settings-btn').forEach(btn => btn.classList.remove('active'));
-  document.getElementById(`set-theme-${theme}`)?.classList.add('active');
+  document.querySelectorAll('.settings-btn').forEach(btn => {
+    if (btn.tagName !== 'SELECT') btn.classList.remove('active');
+  });
+  
+  const themeSelector = document.getElementById('theme-selector');
+  if (themeSelector) themeSelector.value = theme;
+
   document.getElementById(`set-lang-${lang}`)?.classList.add('active');
   document.getElementById(`set-a11y-${a11y === 'true' ? 'on' : 'off'}`)?.classList.add('active');
 }
