@@ -20,26 +20,16 @@
 
 /* ── 13. Accessibility Mode (WCAG) ── */
 [data-a11y="true"] {
-  /* High contrast dark mode */
-  --color-text: #ffffff !important;
-  --color-muted: #e0e0e0 !important;
-  --color-bg: #000000 !important;
-  --color-surface: #000000 !important;
-  --color-card: #000000 !important;
-  --color-border: #ffffff !important;
-  --color-accent: #ffff00 !important; /* Yellow for high contrast */
+  /* Universal Accessible Mode: Beige paper background, dark text */
+  --color-bg: #F5F5DC !important; /* Beige paper */
+  --color-surface: #F5F5DC !important;
+  --color-card: #FFFFFF !important;
+  --color-text: #1a1a1a !important;
+  --color-muted: #333333 !important;
+  --color-border: #888888 !important;
+  --color-accent: #0000ee !important; /* Standard high-contrast blue */
+  --color-accent2: #0055aa !important;
   --bg-blobs-opacity: 0 !important; /* Disable blobs completely */
-}
-
-[data-theme="light"][data-a11y="true"] {
-  /* High contrast light mode */
-  --color-bg: #ffffff !important;
-  --color-surface: #ffffff !important;
-  --color-card: #ffffff !important;
-  --color-text: #000000 !important;
-  --color-muted: #111111 !important;
-  --color-border: #000000 !important;
-  --color-accent: #0000ee !important; /* Standard pure blue link color */
 }
 
 [data-a11y="true"] * {
@@ -48,6 +38,10 @@
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
+}
+
+[data-a11y="true"] #circuit-bg {
+  display: none !important;
 }
 
 [data-a11y="true"] :focus-visible {

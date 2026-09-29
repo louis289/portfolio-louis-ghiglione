@@ -9,10 +9,9 @@ export function initPdfGenerator() {
   if (downloadBtn) {
     downloadBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      // Wait a tiny bit for the settings modal to close before printing
-      setTimeout(() => {
-        window.print();
-      }, 300);
+      const params = new URLSearchParams(window.location.search);
+      const lang = params.get('lang') || 'en';
+      window.open(`./portfolio-doc.html?lang=${lang}&print=true`, '_blank');
     });
   }
 }

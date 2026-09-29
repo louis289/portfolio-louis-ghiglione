@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Document</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <style>
+    body {
+      background: #fff;
+      color: #000;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      padding: 2cm;
+      page-break-after: always;
+      position: relative;
+    }
+    .cover-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+    }
+    h1 { font-size: 3rem; margin-bottom: 0.5rem; color: #1a1a1a; }
+    h2 { font-size: 2rem; margin-top: 2rem; color: #333; border-bottom: 2px solid #333; padding-bottom: 0.5rem; }
+    h3 { font-size: 1.5rem; color: #444; }
+    .toc { margin-top: 2rem; }
+    .toc-item { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .content-block { margin-bottom: 2rem; }
+    .tags { font-size: 0.9rem; color: #666; font-style: italic; margin-bottom: 1rem; }
+    .article-body { text-align: justify; }
+    
+    @media print {
+      body { -webkit-print-color-adjust: exact; }
+      @page { margin: 1cm; }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="doc-root">Loading Portfolio Document...</div>
+
+  <script type="module">
+    async function renderDoc() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const lang = urlParams.get('lang') || 'en';
+      
+      const res = await fetch('./data/translations.json');
+      const data = (await res.json())[lang];
+      
+      const root = document.getElementById('doc-root');
+      let html = '';
+
+      // 1. Cover Page
+      html += `
+        <div class="page cover-page">
+          <h1>${data.config.name}</h1>
+          <h2 style="border:none;">Portfolio</h2>
+          <p>${data.config.school_name} - ${data.config.company_name}</p>
+        </div>
+      `;
+
+      // 2. Table of Contents
+      html += `
+        <div class="page">
+          <h2>Table of Contents</h2>
+          <div class="toc">
+            <div class="toc-item">1. ${data.nav.welcome}</div>
+            <div class="toc-item">2. ${data.nav.projects}</div>
+            <div class="toc-item">3. ${data.nav.career}</div>
+            <div class="toc-item">4. ${data.nav.mobility}</div>
+            <div class="toc-item">5. ${data.nav.passions}</div>
+            <div class="toc-item">6. ${data.nav.civic}</div>
+          </div>
+        </div>
+      `;
+
+      // 3. Welcome
+      html += `
+        <div class="page">
+          <h2>1. ${data.nav.welcome}</h2>
+          <p>${data.welcome.intro_desc || ''}</p>
+        </div>
+      `;
+
+      // Helper for items
+      const renderSection = (title, num, sectionData) => {
+        if (!sectionData || !sectionData.items) return '';
+        let sHtml = `<div class="page"><h2>${num}. ${title}</h2>`;
+        sectionData.items.forEach(item => {
+          sHtml += `
+            <div class="content-block">
+              <h3>${item.title || item.name || ''}</h3>
+              <p class="tags">Tags: ${(item.tags || []).join(', ')}</p>
+              <p><strong>Summary:</strong> ${item.desc || item.role || ''}</p>
+              ${item.article ? `<div class="article-body">${item.article.body}</div>` : ''}
+            </div>
+          `;
+        });
+        sHtml += `</div>`;
+        return sHtml;
+      };
+
+      // 4. Projects
+      html += renderSection(data.nav.projects, 2, data.projects);
+      
+      // 5. Career
+      html += renderSection(data.nav.career, 3, data.career.jobs);
+
+      // 6. Passions
+      html += renderSection(data.nav.passions, 5, data.passions);
+
+      // 7. Civic
+      html += renderSection(data.nav.civic, 6, data.civic);
+
+      root.innerHTML = html;
+
+      // Print if requested
+      if (urlParams.get('print') === 'true') {
+        setTimeout(() => window.print(), 500);
+      }
+    }
+    
+    renderDoc();
+  </script>
+</body>
+</html>

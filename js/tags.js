@@ -23,27 +23,29 @@ async function initTagPage() {
     const sectionsToSearch = ['projects', 'passions', 'civic', 'career'];
     
     // We recursively extract items that have a 'tags' array
-    function extractItems(node, titlePrefix = '') {
+    function extractItems(node, sectionName, titlePrefix = '') {
       if (typeof node !== 'object' || node === null) return;
       if (Array.isArray(node.tags)) {
-        // Find title or name
         const titleKey = Object.keys(node).find(k => k.endsWith('_title') || k.endsWith('name') || k === 'title');
         const descKey = Object.keys(node).find(k => k.endsWith('_desc') || k.endsWith('role') || k === 'description' || k === 'text');
         
         allItems.push({
           title: node[titleKey] || titlePrefix || 'Unnamed Item',
           desc: node[descKey] || '',
-          tags: node.tags
+          tags: node.tags,
+          page: sectionName // e.g. 'projects'
         });
       }
       for (const [key, val] of Object.entries(node)) {
         if (typeof val === 'object') {
-          extractItems(val, key);
+          // If the key is one of our main sections, pass it down, otherwise keep current
+          const newSection = sectionsToSearch.includes(key) ? key : sectionName;
+          extractItems(val, newSection, key);
         }
       }
     }
     
-    extractItems(langData);
+    extractItems(langData, 'home');
 
     // Find items matching this tag
     const matchingItems = allItems.filter(item => item.tags.includes(currentTag));
@@ -80,10 +82,12 @@ async function initTagPage() {
     if (matchingItems.length > 0) {
       html += `<ul class="grid-2" role="list">`;
       matchingItems.forEach(item => {
+        const pageLink = item.page && sectionsToSearch.includes(item.page) ? `${item.page}.html` : 'index.html';
         html += `
-          <li class="card">
+          <li class="card" onclick="window.location.href='./${pageLink}'" style="cursor:pointer; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 16px 50px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='none'; this.style.boxShadow='none'">
             <h3 class="card__title">${item.title}</h3>
             <p class="card__body">${item.desc}</p>
+            <div style="margin-top: 1rem;"><a href="./${pageLink}" class="nav-link" style="font-size:0.9rem; font-weight:bold;">View Details &rarr;</a></div>
           </li>
         `;
       });

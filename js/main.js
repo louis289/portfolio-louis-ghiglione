@@ -12,6 +12,7 @@ import { initTheme }     from './theme.js';
 import { initSettingsUI } from './settings.js';
 import { initA11y }      from './a11y.js';
 import { initPdfGenerator } from './pdf-generator.js';
+import { renderDynamicContent } from './renderer.js';
 
 /** Tries to init the Leaflet map; safe to call multiple times. */
 async function tryInitMap() {
@@ -60,12 +61,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 2. Load translations & apply language to the full page (including nav)
   const translations = await initI18n('en', './data/translations.json');
 
-  // 3. Wire card modals (pages that have [data-modal] cards)
+  function renderPageDynamicData() {
+    const lang = localStorage.getItem('site_lang') || (new URLSearchParams(window.location.search).get('lang')) || 'en';
+    renderDynamicContent(translations[lang]);
+    initModals(translations); // Wire up the newly created modals
+  }
+
+  // 3. Wire card modals & Render dynamic arrays
   if (translations) {
-    initModals(translations);
+    renderPageDynamicData();
 
     // Re-wire after language switch
-    document.addEventListener('langchange', () => initModals(translations));
+    document.addEventListener('langchange', renderPageDynamicData);
   }
 
   // 4. Initialize filters (if any on page)

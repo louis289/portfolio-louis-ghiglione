@@ -82,83 +82,93 @@
       "tag": "Projects",
       "title": "My Work",
       "desc": "Projects from N7, my apprenticeship at ISAE-Supaero, and prior work in my field of expertise.",
-      "p1_title": "ASIC & FPGA Design — ISAE-Supaero (CIMI)",
-      "p1_desc": "Hardware architecture definition and VHDL implementation of control routines, verified on Xilinx FPGA (Vivado). Design of CMOS readout circuit architectures using CADENCE, including synthesis, placement and routing for ASIC delivery.",
-      "p2_title": "Automation & IoT Engineering — Fare Ingenierie",
-      "p2_desc": "Work-study automation engineer at Fare Ingenierie: PLC programming, LoRaWAN IoT architecture for the ITER nuclear site, yacht automation, and secure web backend.",
-      "p3_title": "Park4Move — LoRaWAN Smart Parking",
-      "p3_desc": "Connected urban mobility solution for disabled users: LoRaWAN sensors, FastAPI backend, interactive PWA. Winner of the AMU Service Learning award, presented at the European forum in Bucharest.",
-      "p1_article": {
-        "title": "ASIC & FPGA Design — ISAE-SUPAERO (CIME-DEOS)",
-        "tag": "Project",
-        "body": "<p>As an apprentice engineer in the <strong>CIME-DEOS group</strong> (Integrated Image Sensors) at ISAE-SUPAERO, I work on the full design chain for CMOS image sensor readout circuits.</p><ul><li><strong>CMOS readout circuit architectures</strong> — designed with CADENCE (Virtuoso)</li><li><strong>VHDL control routines</strong> — implemented and verified on Xilinx FPGA (Vivado)</li><li><strong>Full ASIC flow</strong> — synthesis, placement and routing</li><li>Integration in the <strong>CIMI research group</strong>, working on sensor systems for space and industrial imaging applications</li></ul><p>This apprenticeship directly connects my academic training in electronics (3EA, N7) with cutting-edge research in microelectronics.</p>",
-        "tags": [
-          "ISAE-SUPAERO",
-          "CIME-DEOS",
-          "CMOS",
-          "ASIC",
-          "FPGA",
-          "CADENCE",
-          "VHDL",
-          "Xilinx",
-          "2025-2026"
-        ]
-      },
-      "p2_article": {
-        "title": "Fare Ingenierie — Automation & IoT",
-        "tag": "Project / Work-Study",
-        "body": "<p>Two experiences at <strong>Fare Ingenierie</strong>, a technical engineering firm specialising in automation and supervision systems:</p><p><strong>Internship (Mar–Jun 2025, 4 months):</strong></p><ul><li>Full overhaul of the PLC programme for the <strong>SY Tiara II</strong> — an 80-metre superyacht</li><li>LoRaWAN sensor integration and internal web management application</li><li>Backend: <strong>Python</strong>, MySQL, Docker</li></ul><p><strong>Work-Study (Sep 2025 – Aug 2026, 1 year):</strong></p><ul><li>Design and integration of PLC programmes and supervision systems</li><li>R&D IoT architecture: <strong>LoRaWAN sensors via MQTT protocol on PLCs</strong> for safety monitoring at the <strong>ITER nuclear fusion site</strong></li><li>Secure web backend: <strong>Python / FastAPI / Docker / MySQL</strong></li></ul>",
-        "tags": [
-          "Fare Ingenierie",
-          "PLC",
-          "ITER",
-          "LoRaWAN",
-          "MQTT",
-          "Python",
-          "FastAPI",
-          "Docker",
-          "MySQL",
-          "2024-2026"
-        ]
-      },
-      "p3_article": {
-        "title": "Park4Move — LoRaWAN Smart Parking",
-        "tag": "Project",
-        "body": "<p><strong>Park4Move</strong> is an end-to-end connected urban mobility solution developed within the PIA student association at IUT Salon-de-Provence. The system enables real-time detection of parking space availability for people with reduced mobility (PMR).</p><p><strong>Technical stack:</strong></p><ul><li><strong>LoRaWAN sensors</strong> deployed on parking spaces, transmitting via <strong>MQTT</strong> protocol</li><li><strong>Python / FastAPI</strong> secure web backend with <strong>Docker</strong></li><li><strong>MySQL</strong> database</li><li><strong>Progressive Web App</strong> with interactive Leaflet map (park4move.fr)</li></ul><p><strong>Impact:</strong> European Service Learning award winner — presented at the European forum in Bucharest representing Aix-Marseille University. Demonstrated to the French Minister of Higher Education.</p>",
-        "tags": [
-          "LoRaWAN",
-          "MQTT",
-          "Python",
-          "FastAPI",
-          "Docker",
-          "MySQL",
-          "PWA",
-          "PIA",
-          "Service Learning"
-        ],
-        "links": [
-          {
-            "label": "park4move.fr",
-            "url": "https://park4move.fr"
-          }
-        ]
-      },
-      "p4_title": "Student Robotics — 3 National Competitions",
-      "p4_desc": "3 national robotics competitions at IUT Salon — full engineering cycle: PCB design, embedded C/C++ firmware, mechanical prototyping, competition strategy.",
-      "p4_article": {
-        "title": "Robotics — 3 National Competitions",
-        "tag": "Project",
-        "body": "<p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), I participated in <strong>3 national student robotics competitions</strong>, covering the full engineering cycle from design to competition.</p><ul><li><strong>Mechanical design</strong> — chassis, actuators and structural components</li><li><strong>Embedded electronics</strong> — PCB design, motor drivers, sensor integration</li><li><strong>Embedded software</strong> — C/C++ firmware, Arduino and custom microcontroller programming</li><li><strong>Prototyping and maintenance</strong> — rapid iteration during competition prep</li></ul><p>These competitions trained working under pressure, managing tight deadlines, and collaborating in a multidisciplinary team.</p>",
-        "tags": [
-          "Robotics",
-          "C/C++",
-          "PCB",
-          "Arduino",
-          "Embedded",
-          "IUT Salon",
-          "2023-2026"
-        ]
-      }
+      "items": [
+        {
+          "title": "ASIC & FPGA Design — ISAE-Supaero (CIMI)",
+          "desc": "Hardware architecture definition and VHDL implementation of control routines, verified on Xilinx FPGA (Vivado). Design of CMOS readout circuit architectures using CADENCE, including synthesis, placement and routing for ASIC delivery.",
+          "article": {
+            "title": "ASIC & FPGA Design — ISAE-SUPAERO (CIME-DEOS)",
+            "tag": "Project",
+            "body": "<p>As an apprentice engineer in the <strong>CIME-DEOS group</strong> (Integrated Image Sensors) at ISAE-SUPAERO, I work on the full design chain for CMOS image sensor readout circuits.</p><ul><li><strong>CMOS readout circuit architectures</strong> — designed with CADENCE (Virtuoso)</li><li><strong>VHDL control routines</strong> — implemented and verified on Xilinx FPGA (Vivado)</li><li><strong>Full ASIC flow</strong> — synthesis, placement and routing</li><li>Integration in the <strong>CIMI research group</strong>, working on sensor systems for space and industrial imaging applications</li></ul><p>This apprenticeship directly connects my academic training in electronics (3EA, N7) with cutting-edge research in microelectronics.</p>"
+          },
+          "tags": [
+            "ISAE-SUPAERO",
+            "CIME-DEOS",
+            "CMOS",
+            "ASIC",
+            "FPGA",
+            "CADENCE",
+            "VHDL",
+            "Xilinx",
+            "2025-2026"
+          ]
+        },
+        {
+          "title": "Automation & IoT Engineering — Fare Ingenierie",
+          "desc": "Work-study automation engineer at Fare Ingenierie: PLC programming, LoRaWAN IoT architecture for the ITER nuclear site, yacht automation, and secure web backend.",
+          "article": {
+            "title": "Fare Ingenierie — Automation & IoT",
+            "tag": "Project / Work-Study",
+            "body": "<p>Two experiences at <strong>Fare Ingenierie</strong>, a technical engineering firm specialising in automation and supervision systems:</p><p><strong>Internship (Mar–Jun 2025, 4 months):</strong></p><ul><li>Full overhaul of the PLC programme for the <strong>SY Tiara II</strong> — an 80-metre superyacht</li><li>LoRaWAN sensor integration and internal web management application</li><li>Backend: <strong>Python</strong>, MySQL, Docker</li></ul><p><strong>Work-Study (Sep 2025 – Aug 2026, 1 year):</strong></p><ul><li>Design and integration of PLC programmes and supervision systems</li><li>R&D IoT architecture: <strong>LoRaWAN sensors via MQTT protocol on PLCs</strong> for safety monitoring at the <strong>ITER nuclear fusion site</strong></li><li>Secure web backend: <strong>Python / FastAPI / Docker / MySQL</strong></li></ul>"
+          },
+          "tags": [
+            "Fare Ingenierie",
+            "PLC",
+            "ITER",
+            "LoRaWAN",
+            "MQTT",
+            "Python",
+            "FastAPI",
+            "Docker",
+            "MySQL",
+            "2024-2026"
+          ]
+        },
+        {
+          "title": "Park4Move — LoRaWAN Smart Parking",
+          "desc": "Connected urban mobility solution for disabled users: LoRaWAN sensors, FastAPI backend, interactive PWA. Winner of the AMU Service Learning award, presented at the European forum in Bucharest.",
+          "article": {
+            "title": "Park4Move — LoRaWAN Smart Parking",
+            "tag": "Project",
+            "body": "<p><strong>Park4Move</strong> is an end-to-end connected urban mobility solution developed within the PIA student association at IUT Salon-de-Provence. The system enables real-time detection of parking space availability for people with reduced mobility (PMR).</p><p><strong>Technical stack:</strong></p><ul><li><strong>LoRaWAN sensors</strong> deployed on parking spaces, transmitting via <strong>MQTT</strong> protocol</li><li><strong>Python / FastAPI</strong> secure web backend with <strong>Docker</strong></li><li><strong>MySQL</strong> database</li><li><strong>Progressive Web App</strong> with interactive Leaflet map (park4move.fr)</li></ul><p><strong>Impact:</strong> European Service Learning award winner — presented at the European forum in Bucharest representing Aix-Marseille University. Demonstrated to the French Minister of Higher Education.</p>",
+            "links": [
+              {
+                "label": "park4move.fr",
+                "url": "https://park4move.fr"
+              }
+            ]
+          },
+          "tags": [
+            "LoRaWAN",
+            "MQTT",
+            "Python",
+            "FastAPI",
+            "Docker",
+            "MySQL",
+            "PWA",
+            "PIA",
+            "Service Learning"
+          ]
+        },
+        {
+          "title": "Student Robotics — 3 National Competitions",
+          "desc": "3 national robotics competitions at IUT Salon — full engineering cycle: PCB design, embedded C/C++ firmware, mechanical prototyping, competition strategy.",
+          "article": {
+            "title": "Robotics — 3 National Competitions",
+            "tag": "Project",
+            "body": "<p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), I participated in <strong>3 national student robotics competitions</strong>, covering the full engineering cycle from design to competition.</p><ul><li><strong>Mechanical design</strong> — chassis, actuators and structural components</li><li><strong>Embedded electronics</strong> — PCB design, motor drivers, sensor integration</li><li><strong>Embedded software</strong> — C/C++ firmware, Arduino and custom microcontroller programming</li><li><strong>Prototyping and maintenance</strong> — rapid iteration during competition prep</li></ul><p>These competitions trained working under pressure, managing tight deadlines, and collaborating in a multidisciplinary team.</p>"
+          },
+          "tags": [
+            "Robotics",
+            "C/C++",
+            "PCB",
+            "Arduino",
+            "Embedded",
+            "IUT Salon",
+            "2023-2026"
+          ]
+        }
+      ]
     },
     "career": {
       "tag": "Career",
@@ -201,139 +211,159 @@
       "tag": "Passions",
       "title": "What Drives Me",
       "desc": "The things I love outside of work — they say something about who I am.",
-      "p1_title": "Mountain Biking",
-      "p1_desc": "Rocky trails, steep descents, and mountain air — VTT is my way to decompress and push limits.",
-      "p1_article": {
-        "title": "Mountain Biking",
-        "tag": "Passion",
-        "img": "./images/passion_vtt.jpg",
-        "body": "<p>I ride mountain bike regularly — a sport that perfectly combines technical challenge, physical endurance, and time in nature. Whether on rocky descents in the Luberon or forest trails near Toulouse, VTT gives me a sense of freedom and resilience that feeds back into how I approach engineering problems.</p><p>The mental process is surprisingly similar to debugging: read the terrain, adjust your line, commit to the move. There's no shortcut, just method and practice.</p>",
-        "tags": [
-          "MTB",
-          "VTT",
-          "Outdoors",
-          "Endurance"
-        ]
-      },
-      "p2_title": "Bouldering & Climbing",
-      "p2_desc": "Bouldering addict — currently at 6B+ level. A wall problem and a circuit board have more in common than you'd think.",
-      "p2_article": {
-        "title": "Bouldering & Rock Climbing",
-        "tag": "Passion",
-        "img": "./images/passion_climbing.jpg",
-        "body": "<p>I am especially passionate about bouldering, currently climbing at the <strong>6B+ level</strong>. What draws me to bouldering over sport climbing is the problem-solving aspect: each route is a puzzle with a unique sequence of moves, and finding the right beta (solution) takes the same methodical thinking as debugging a VHDL routine.</p><p>The discipline also demands the ability to step back, rest, and return with fresh eyes — a lesson that transfers directly to research and engineering work.</p>",
-        "tags": [
-          "Bouldering",
-          "6B+",
-          "Rock Climbing",
-          "Problem Solving"
-        ]
-      },
-      "p3_title": "Maker Culture & Home Automation",
-      "p3_desc": "DIY electronics, home automation, and technological reappropriation — from PCB prototyping to custom IoT systems.",
-      "p3_article": {
-        "title": "Maker Culture & Home Automation",
-        "tag": "Passion",
-        "body": "<p>I believe in understanding and building the tools around you. My maker practice ranges from PCB design and prototyping (Eagle, EasyEDA, KiCad) to building home automation systems and custom IoT devices.</p><p>This DIY mindset directly feeds my professional skills: the Park4Move LoRaWAN sensor network started as a maker project before becoming an award-winning solution. At home, I have built several automation projects including custom sensor nodes and web dashboards.</p><ul><li>PCB design and routing (Eagle, EasyEDA, KiCad)</li><li>Home automation with custom firmware</li><li>IoT sensor networks and MQTT integration</li><li>3D printing and mechanical prototyping</li></ul>",
-        "tags": [
-          "DIY",
-          "PCB Design",
-          "IoT",
-          "Home Automation",
-          "Maker"
-        ]
-      },
-      "p4_title": "Scouting",
-      "p4_desc": "Scout Leader for over 10 years — leading teams, designing educational projects, Roverway 2024 in Norway.",
-      "p4_article": {
-        "title": "Scouting — Chef Scout",
-        "tag": "Passion & Leadership",
-        "img": "./images/passion_scouting.jpg",
-        "body": "<p>I have been involved in scouting for over <strong>10 years</strong>, progressing from scout to <strong>Chef Scout (Scout Leader)</strong>. In this role, I design and lead educational programmes for young people: outdoor projects, citizenship activities, and team challenges.</p><p>The highlight was my <strong>autonomous participation in Roverway 2024</strong> — the European scout gathering held in Norway — where I collaborated with scouts from across the continent over two weeks of travel and shared projects.</p><p>Scouting has been my primary school of leadership: making decisions with incomplete information, motivating a group, and creating conditions where each person can grow independently.</p>",
-        "tags": [
-          "Chef Scout",
-          "Leadership",
-          "10+ years",
-          "Roverway 2024",
-          "Norway"
-        ]
-      },
-      "p5_title": "Space & Aeronautics",
-      "p5_desc": "BIA-certified, joining Tolosat this year — N7's student CubeSat project with ISAE-SUPAERO.",
-      "p5_article": {
-        "title": "Space & Aeronautics",
-        "tag": "Passion",
-        "img": "./images/passion_space.jpg",
-        "body": "<p>My interest in space and aeronautics goes back to obtaining my <strong>BIA (Brevet d'Initiation Aéronautique)</strong> — the French aeronautics initiation diploma. This certified interest in flight mechanics, navigation, and aerospace engineering.</p><p>This year, I am joining <strong>Tolosat</strong> — the student CubeSat project run jointly by N7 (ENSEEIHT) and ISAE-SUPAERO. Tolosat aims to design, build, and launch a 1U CubeSat, providing students with a complete hands-on mission from system design to orbital operations.</p><p>This aligns directly with my microelectronics work at CIME-DEOS (ISAE-SUPAERO), where image sensor design for space applications is one of the research directions. I also follow the clubs <strong>N7 Racing Team</strong> and <strong>7Robot</strong> at N7 — student clubs that compete in national engineering challenges.</p>",
-        "tags": [
-          "BIA",
-          "Tolosat",
-          "CubeSat",
-          "ISAE-SUPAERO",
-          "N7"
-        ],
-        "links": [
-          {
-            "label": "Tolosat website",
-            "url": "https://tolosat.fr/"
-          }
-        ]
-      }
+      "items": [
+        {
+          "title": "Mountain Biking",
+          "desc": "Rocky trails, steep descents, and mountain air — VTT is my way to decompress and push limits.",
+          "article": {
+            "title": "Mountain Biking",
+            "tag": "Passion",
+            "img": "./images/passion_vtt.jpg",
+            "body": "<p>I ride mountain bike regularly — a sport that perfectly combines technical challenge, physical endurance, and time in nature. Whether on rocky descents in the Luberon or forest trails near Toulouse, VTT gives me a sense of freedom and resilience that feeds back into how I approach engineering problems.</p><p>The mental process is surprisingly similar to debugging: read the terrain, adjust your line, commit to the move. There's no shortcut, just method and practice.</p>"
+          },
+          "tags": [
+            "MTB",
+            "VTT",
+            "Outdoors",
+            "Endurance"
+          ]
+        },
+        {
+          "title": "Bouldering & Climbing",
+          "desc": "Bouldering addict — currently at 6B+ level. A wall problem and a circuit board have more in common than you'd think.",
+          "article": {
+            "title": "Bouldering & Rock Climbing",
+            "tag": "Passion",
+            "img": "./images/passion_climbing.jpg",
+            "body": "<p>I am especially passionate about bouldering, currently climbing at the <strong>6B+ level</strong>. What draws me to bouldering over sport climbing is the problem-solving aspect: each route is a puzzle with a unique sequence of moves, and finding the right beta (solution) takes the same methodical thinking as debugging a VHDL routine.</p><p>The discipline also demands the ability to step back, rest, and return with fresh eyes — a lesson that transfers directly to research and engineering work.</p>"
+          },
+          "tags": [
+            "Bouldering",
+            "6B+",
+            "Rock Climbing",
+            "Problem Solving"
+          ]
+        },
+        {
+          "title": "Maker Culture & Home Automation",
+          "desc": "DIY electronics, home automation, and technological reappropriation — from PCB prototyping to custom IoT systems.",
+          "article": {
+            "title": "Maker Culture & Home Automation",
+            "tag": "Passion",
+            "body": "<p>I believe in understanding and building the tools around you. My maker practice ranges from PCB design and prototyping (Eagle, EasyEDA, KiCad) to building home automation systems and custom IoT devices.</p><p>This DIY mindset directly feeds my professional skills: the Park4Move LoRaWAN sensor network started as a maker project before becoming an award-winning solution. At home, I have built several automation projects including custom sensor nodes and web dashboards.</p><ul><li>PCB design and routing (Eagle, EasyEDA, KiCad)</li><li>Home automation with custom firmware</li><li>IoT sensor networks and MQTT integration</li><li>3D printing and mechanical prototyping</li></ul>"
+          },
+          "tags": [
+            "DIY",
+            "PCB Design",
+            "IoT",
+            "Home Automation",
+            "Maker"
+          ]
+        },
+        {
+          "title": "Scouting",
+          "desc": "Scout Leader for over 10 years — leading teams, designing educational projects, Roverway 2024 in Norway.",
+          "article": {
+            "title": "Scouting — Chef Scout",
+            "tag": "Passion & Leadership",
+            "img": "./images/passion_scouting.jpg",
+            "body": "<p>I have been involved in scouting for over <strong>10 years</strong>, progressing from scout to <strong>Chef Scout (Scout Leader)</strong>. In this role, I design and lead educational programmes for young people: outdoor projects, citizenship activities, and team challenges.</p><p>The highlight was my <strong>autonomous participation in Roverway 2024</strong> — the European scout gathering held in Norway — where I collaborated with scouts from across the continent over two weeks of travel and shared projects.</p><p>Scouting has been my primary school of leadership: making decisions with incomplete information, motivating a group, and creating conditions where each person can grow independently.</p>"
+          },
+          "tags": [
+            "Chef Scout",
+            "Leadership",
+            "10+ years",
+            "Roverway 2024",
+            "Norway"
+          ]
+        },
+        {
+          "title": "Space & Aeronautics",
+          "desc": "BIA-certified, joining Tolosat this year — N7's student CubeSat project with ISAE-SUPAERO.",
+          "article": {
+            "title": "Space & Aeronautics",
+            "tag": "Passion",
+            "img": "./images/passion_space.jpg",
+            "body": "<p>My interest in space and aeronautics goes back to obtaining my <strong>BIA (Brevet d'Initiation Aéronautique)</strong> — the French aeronautics initiation diploma. This certified interest in flight mechanics, navigation, and aerospace engineering.</p><p>This year, I am joining <strong>Tolosat</strong> — the student CubeSat project run jointly by N7 (ENSEEIHT) and ISAE-SUPAERO. Tolosat aims to design, build, and launch a 1U CubeSat, providing students with a complete hands-on mission from system design to orbital operations.</p><p>This aligns directly with my microelectronics work at CIME-DEOS (ISAE-SUPAERO), where image sensor design for space applications is one of the research directions. I also follow the clubs <strong>N7 Racing Team</strong> and <strong>7Robot</strong> at N7 — student clubs that compete in national engineering challenges.</p>",
+            "links": [
+              {
+                "label": "Tolosat website",
+                "url": "https://tolosat.fr/"
+              }
+            ]
+          },
+          "tags": [
+            "BIA",
+            "Tolosat",
+            "CubeSat",
+            "ISAE-SUPAERO",
+            "N7"
+          ]
+        }
+      ]
     },
     "civic": {
       "tag": "Civic Engagement",
       "title": "Giving Back",
       "desc": "Volunteer work, associations, and community involvement.",
-      "a1_title": "Scouting — Scout Leader",
-      "a1_desc": "Over 10 years of scouting experience, including serving as Scout Leader. I designed and led educational projects, managed teams, and participated in Roverway 2024 (Norway).",
-      "a1_article": {
-        "title": "Scouting — Scout Leader",
-        "tag": "Civic Engagement",
-        "img": "./images/passion_scouting.jpg",
-        "body": "<p>Over <strong>10 years of scouting</strong>, including serving as <strong>Chef Scout (Scout Leader)</strong>. My role involved designing and running educational programmes for young people — outdoor expeditions, citizenship projects, and team-building challenges.</p><p>In 2024, I participated autonomously in <strong>Roverway 2024</strong>, the European scout gathering held in Norway, collaborating with scouts from across Europe over two weeks of travel, shared projects and intercultural exchange.</p>",
-        "tags": [
-          "Chef Scout",
-          "10+ years",
-          "Roverway 2024",
-          "Norway",
-          "Youth Leadership"
-        ]
-      },
-      "a2_title": "Vice-President, Student Union (BDE) — IUT Salon",
-      "a2_desc": "VP of the student union at IUT Salon (2024-2025), co-organised the national GEII symposium 2024.",
-      "a2_article": {
-        "title": "Vice-President, Student Union — IUT Salon",
-        "tag": "Civic Engagement",
-        "body": "<p>Served as <strong>Vice-President of the BDE</strong> (Bureau Des Étudiants) at IUT Aix-Marseille, Salon-de-Provence campus during the academic year 2024-2025.</p><p>I co-organised the <strong>national GEII symposium in 2024</strong>, which brought together students and professionals from electrical engineering and industrial computing departments across France. Managing logistics, communication, and programme for a national-scale event was a formative leadership experience.</p>",
-        "tags": [
-          "BDE",
-          "VP",
-          "2024-2025",
-          "GEII Symposium",
-          "IUT Salon"
-        ]
-      },
-      "a3_title": "Secretary — Provençal Intelligence Agency (PIA)",
-      "a3_desc": "Secretary of the PIA student association at IUT Salon. Contributed to the award-winning Park4Move project.",
-      "a3_article": {
-        "title": "Provençal Intelligence Agency — Park4Move",
-        "tag": "Civic Engagement",
-        "body": "<p>As <strong>Secretary of the PIA</strong> (Provençal Intelligence Agency) — a student association at IUT Salon-de-Provence — I contributed to the <strong>Park4Move</strong> project: an open-source connected urban mobility solution designed for people with reduced mobility (PMR) and the elderly.</p><p>The system uses <strong>LoRaWAN sensors</strong> deployed across parking spaces in Salon-de-Provence to detect availability in real time. The data is displayed on an interactive Progressive Web App accessible at <strong>park4move.fr</strong>.</p><p><strong>Key achievements:</strong></p><ul><li>Winner of the Aix-Marseille University <strong>Service Learning award</strong></li><li>Selected to represent AMU at the <strong>European Service Learning Forum in Bucharest</strong> (among 10 projects from 5 European universities)</li><li>Presentation to the French Minister of Higher Education and local elected officials</li></ul>",
-        "tags": [
-          "PIA",
-          "Park4Move",
-          "LoRaWAN",
-          "Service Learning",
-          "European Award",
-          "2023-2025"
-        ],
-        "links": [
-          {
-            "label": "park4move.fr",
-            "url": "https://park4move.fr"
-          }
-        ]
-      }
+      "items": [
+        {
+          "title": "Scouting — Scout Leader",
+          "desc": "Over 10 years of scouting experience, including serving as Scout Leader. I designed and led educational projects, managed teams, and participated in Roverway 2024 (Norway).",
+          "article": {
+            "title": "Scouting — Scout Leader",
+            "tag": "Civic Engagement",
+            "img": "./images/passion_scouting.jpg",
+            "body": "<p>Over <strong>10 years of scouting</strong>, including serving as <strong>Chef Scout (Scout Leader)</strong>. My role involved designing and running educational programmes for young people — outdoor expeditions, citizenship projects, and team-building challenges.</p><p>In 2024, I participated autonomously in <strong>Roverway 2024</strong>, the European scout gathering held in Norway, collaborating with scouts from across Europe over two weeks of travel, shared projects and intercultural exchange.</p>"
+          },
+          "tags": [
+            "Chef Scout",
+            "10+ years",
+            "Roverway 2024",
+            "Norway",
+            "Youth Leadership"
+          ]
+        },
+        {
+          "title": "Vice-President, Student Union (BDE) — IUT Salon",
+          "desc": "VP of the student union at IUT Salon (2024-2025), co-organised the national GEII symposium 2024.",
+          "article": {
+            "title": "Vice-President, Student Union — IUT Salon",
+            "tag": "Civic Engagement",
+            "body": "<p>Served as <strong>Vice-President of the BDE</strong> (Bureau Des Étudiants) at IUT Aix-Marseille, Salon-de-Provence campus during the academic year 2024-2025.</p><p>I co-organised the <strong>national GEII symposium in 2024</strong>, which brought together students and professionals from electrical engineering and industrial computing departments across France. Managing logistics, communication, and programme for a national-scale event was a formative leadership experience.</p>"
+          },
+          "tags": [
+            "BDE",
+            "VP",
+            "2024-2025",
+            "GEII Symposium",
+            "IUT Salon"
+          ]
+        },
+        {
+          "title": "Secretary — Provençal Intelligence Agency (PIA)",
+          "desc": "Secretary of the PIA student association at IUT Salon. Contributed to the award-winning Park4Move project.",
+          "article": {
+            "title": "Provençal Intelligence Agency — Park4Move",
+            "tag": "Civic Engagement",
+            "body": "<p>As <strong>Secretary of the PIA</strong> (Provençal Intelligence Agency) — a student association at IUT Salon-de-Provence — I contributed to the <strong>Park4Move</strong> project: an open-source connected urban mobility solution designed for people with reduced mobility (PMR) and the elderly.</p><p>The system uses <strong>LoRaWAN sensors</strong> deployed across parking spaces in Salon-de-Provence to detect availability in real time. The data is displayed on an interactive Progressive Web App accessible at <strong>park4move.fr</strong>.</p><p><strong>Key achievements:</strong></p><ul><li>Winner of the Aix-Marseille University <strong>Service Learning award</strong></li><li>Selected to represent AMU at the <strong>European Service Learning Forum in Bucharest</strong> (among 10 projects from 5 European universities)</li><li>Presentation to the French Minister of Higher Education and local elected officials</li></ul>",
+            "links": [
+              {
+                "label": "park4move.fr",
+                "url": "https://park4move.fr"
+              }
+            ]
+          },
+          "tags": [
+            "PIA",
+            "Park4Move",
+            "LoRaWAN",
+            "Service Learning",
+            "European Award",
+            "2023-2025"
+          ]
+        }
+      ]
     },
     "contact": {
       "tag": "Get in touch",
@@ -441,83 +471,93 @@
       "tag": "Projets",
       "title": "Mes Réalisations",
       "desc": "Projets issus de N7, de mon alternance à l'ISAE-Supaero et de mes travaux précédents.",
-      "p1_title": "Conception ASIC & FPGA — ISAE-Supaero (CIMI)",
-      "p1_desc": "Définition d'architectures matérielles et implémentation de routines de commande en VHDL, vérifiées sur FPGA Xilinx (Vivado). Conception d'architectures de circuits de lecture CMOS sous CADENCE, incluant synthèse, placement et routage.",
-      "p2_title": "Automatisme & IoT — Fare Ingenierie",
-      "p2_desc": "Apprenti automaticien en bureau d'études chez Fare Ingenierie : programmation d'automates, architecture IoT LoRaWAN pour le site nucléaire ITER, automatisation d'un yacht 80m, backend web sécurisé.",
-      "p3_title": "Park4Move — Stationnement Connecté LoRaWAN",
-      "p3_desc": "Solution de mobilité urbaine connectée pour PMR : capteurs LoRaWAN, backend FastAPI, PWA interactive. Prix Service Learning AMU, forum européen à Bucarest.",
-      "p1_article": {
-        "title": "Conception ASIC & FPGA — ISAE-SUPAERO (CIME-DEOS)",
-        "tag": "Projet",
-        "body": "<p>En tant qu'apprenti ingénieur dans le groupe <strong>CIME-DEOS</strong> (Capteurs d'Image Intégrés) à l'ISAE-SUPAERO, je travaille sur la chaîne de conception complète des circuits de lecture CMOS pour capteurs d'image.</p><ul><li><strong>Architectures de circuits de lecture CMOS</strong> — conçus sous CADENCE (Virtuoso)</li><li><strong>Routines de commande VHDL</strong> — implémentées et vérifiées sur FPGA Xilinx (Vivado)</li><li><strong>Flux ASIC complet</strong> — synthèse, placement et routage</li><li>Intégration dans le <strong>groupe de recherche CIMI</strong>, travaillant sur des systèmes de capteurs pour l'imagerie spatiale et industrielle</li></ul><p>Cette alternance connecte directement ma formation académique en électronique (3EA, N7) à la recherche de pointe en microélectronique.</p>",
-        "tags": [
-          "ISAE-SUPAERO",
-          "CIME-DEOS",
-          "CMOS",
-          "ASIC",
-          "FPGA",
-          "CADENCE",
-          "VHDL",
-          "Xilinx",
-          "2025-2026"
-        ]
-      },
-      "p2_article": {
-        "title": "Fare Ingenierie — Automatisme & IoT",
-        "tag": "Projet / Alternance",
-        "body": "<p>Deux expériences chez <strong>Fare Ingenierie</strong>, bureau d'études spécialisé en automatisme et supervision :</p><p><strong>Stage (Mars–Juin 2025, 4 mois) :</strong></p><ul><li>Refonte complète du programme automate du <strong>SY Tiara II</strong> — un superyacht de 80 mètres</li><li>Intégration de capteurs LoRaWAN et développement d'une application web interne de gestion d'entreprise</li><li>Backend : <strong>Python</strong>, MySQL, Docker</li></ul><p><strong>Alternance (Sept. 2025 – Août 2026, 1 an) :</strong></p><ul><li>Conception et intégration de programmes d'automates et réalisation de supervisions</li><li>Développement R&D d'une architecture IoT : <strong>capteurs LoRaWAN via MQTT sur automates</strong> pour la surveillance de sécurité du <strong>site de fusion nucléaire ITER</strong></li><li>Backend web sécurisé : <strong>Python / FastAPI / Docker / MySQL</strong></li></ul>",
-        "tags": [
-          "Fare Ingenierie",
-          "Automate",
-          "ITER",
-          "LoRaWAN",
-          "MQTT",
-          "Python",
-          "FastAPI",
-          "Docker",
-          "MySQL",
-          "2024-2026"
-        ]
-      },
-      "p3_article": {
-        "title": "Park4Move — Stationnement Connecté",
-        "tag": "Projet",
-        "body": "<p><strong>Park4Move</strong> est une solution de mobilité urbaine connectée de bout en bout développée au sein de l'association étudiante PIA à l'IUT de Salon-de-Provence. Le système permet la détection en temps réel des places de stationnement disponibles pour les PMR.</p><p><strong>Stack technique :</strong></p><ul><li><strong>Capteurs LoRaWAN</strong> déployés sur les places, transmettant via <strong>MQTT</strong></li><li>Backend <strong>Python / FastAPI</strong> conteneurisé avec <strong>Docker</strong></li><li>Base de données <strong>MySQL</strong></li><li><strong>Progressive Web App</strong> avec carte Leaflet interactive (park4move.fr)</li></ul><p><strong>Impact :</strong> Lauréat du prix Service Learning européen — présenté au forum de Bucarest représentant AMU. Démonstration à la Ministre de l'Enseignement Supérieur.</p>",
-        "tags": [
-          "LoRaWAN",
-          "MQTT",
-          "Python",
-          "FastAPI",
-          "Docker",
-          "MySQL",
-          "PWA",
-          "PIA",
-          "Service Learning"
-        ],
-        "links": [
-          {
-            "label": "park4move.fr",
-            "url": "https://park4move.fr"
-          }
-        ]
-      },
-      "p4_title": "Robotique Étudiante — 3 Compétitions Nationales",
-      "p4_desc": "3 compétitions nationales de robotique à l'IUT Salon — cycle ingénierie complet : conception PCB, firmware embarqué C/C++, prototypage mécanique.",
-      "p4_article": {
-        "title": "Robotique — 3 Compétitions Nationales",
-        "tag": "Projet",
-        "body": "<p>Durant mon BUT GEII à l'IUT Aix-Marseille (Salon-de-Provence), j'ai participé à <strong>3 compétitions nationales de robotique étudiante</strong>, couvrant le cycle ingénierie complet de la conception jusqu'à la compétition.</p><ul><li><strong>Conception mécanique</strong> — châssis, actionneurs et éléments structuraux</li><li><strong>Électronique embarquée</strong> — conception PCB, drivers moteurs, intégration capteurs</li><li><strong>Logiciel embarqué</strong> — firmware C/C++, Arduino et microcontrôleurs sur mesure</li><li><strong>Prototypage et maintenance</strong> — itération rapide lors de la préparation</li></ul><p>Ces compétitions ont été formatrices pour travailler sous pression, gérer des délais serrés et collaborer en équipe pluridisciplinaire.</p>",
-        "tags": [
-          "Robotique",
-          "C/C++",
-          "PCB",
-          "Arduino",
-          "Embarqué",
-          "IUT Salon",
-          "2023-2026"
-        ]
-      }
+      "items": [
+        {
+          "title": "Conception ASIC & FPGA — ISAE-Supaero (CIMI)",
+          "desc": "Définition d'architectures matérielles et implémentation de routines de commande en VHDL, vérifiées sur FPGA Xilinx (Vivado). Conception d'architectures de circuits de lecture CMOS sous CADENCE, incluant synthèse, placement et routage.",
+          "article": {
+            "title": "Conception ASIC & FPGA — ISAE-SUPAERO (CIME-DEOS)",
+            "tag": "Projet",
+            "body": "<p>En tant qu'apprenti ingénieur dans le groupe <strong>CIME-DEOS</strong> (Capteurs d'Image Intégrés) à l'ISAE-SUPAERO, je travaille sur la chaîne de conception complète des circuits de lecture CMOS pour capteurs d'image.</p><ul><li><strong>Architectures de circuits de lecture CMOS</strong> — conçus sous CADENCE (Virtuoso)</li><li><strong>Routines de commande VHDL</strong> — implémentées et vérifiées sur FPGA Xilinx (Vivado)</li><li><strong>Flux ASIC complet</strong> — synthèse, placement et routage</li><li>Intégration dans le <strong>groupe de recherche CIMI</strong>, travaillant sur des systèmes de capteurs pour l'imagerie spatiale et industrielle</li></ul><p>Cette alternance connecte directement ma formation académique en électronique (3EA, N7) à la recherche de pointe en microélectronique.</p>"
+          },
+          "tags": [
+            "ISAE-SUPAERO",
+            "CIME-DEOS",
+            "CMOS",
+            "ASIC",
+            "FPGA",
+            "CADENCE",
+            "VHDL",
+            "Xilinx",
+            "2025-2026"
+          ]
+        },
+        {
+          "title": "Automatisme & IoT — Fare Ingenierie",
+          "desc": "Apprenti automaticien en bureau d'études chez Fare Ingenierie : programmation d'automates, architecture IoT LoRaWAN pour le site nucléaire ITER, automatisation d'un yacht 80m, backend web sécurisé.",
+          "article": {
+            "title": "Fare Ingenierie — Automatisme & IoT",
+            "tag": "Projet / Alternance",
+            "body": "<p>Deux expériences chez <strong>Fare Ingenierie</strong>, bureau d'études spécialisé en automatisme et supervision :</p><p><strong>Stage (Mars–Juin 2025, 4 mois) :</strong></p><ul><li>Refonte complète du programme automate du <strong>SY Tiara II</strong> — un superyacht de 80 mètres</li><li>Intégration de capteurs LoRaWAN et développement d'une application web interne de gestion d'entreprise</li><li>Backend : <strong>Python</strong>, MySQL, Docker</li></ul><p><strong>Alternance (Sept. 2025 – Août 2026, 1 an) :</strong></p><ul><li>Conception et intégration de programmes d'automates et réalisation de supervisions</li><li>Développement R&D d'une architecture IoT : <strong>capteurs LoRaWAN via MQTT sur automates</strong> pour la surveillance de sécurité du <strong>site de fusion nucléaire ITER</strong></li><li>Backend web sécurisé : <strong>Python / FastAPI / Docker / MySQL</strong></li></ul>"
+          },
+          "tags": [
+            "Fare Ingenierie",
+            "Automate",
+            "ITER",
+            "LoRaWAN",
+            "MQTT",
+            "Python",
+            "FastAPI",
+            "Docker",
+            "MySQL",
+            "2024-2026"
+          ]
+        },
+        {
+          "title": "Park4Move — Stationnement Connecté LoRaWAN",
+          "desc": "Solution de mobilité urbaine connectée pour PMR : capteurs LoRaWAN, backend FastAPI, PWA interactive. Prix Service Learning AMU, forum européen à Bucarest.",
+          "article": {
+            "title": "Park4Move — Stationnement Connecté",
+            "tag": "Projet",
+            "body": "<p><strong>Park4Move</strong> est une solution de mobilité urbaine connectée de bout en bout développée au sein de l'association étudiante PIA à l'IUT de Salon-de-Provence. Le système permet la détection en temps réel des places de stationnement disponibles pour les PMR.</p><p><strong>Stack technique :</strong></p><ul><li><strong>Capteurs LoRaWAN</strong> déployés sur les places, transmettant via <strong>MQTT</strong></li><li>Backend <strong>Python / FastAPI</strong> conteneurisé avec <strong>Docker</strong></li><li>Base de données <strong>MySQL</strong></li><li><strong>Progressive Web App</strong> avec carte Leaflet interactive (park4move.fr)</li></ul><p><strong>Impact :</strong> Lauréat du prix Service Learning européen — présenté au forum de Bucarest représentant AMU. Démonstration à la Ministre de l'Enseignement Supérieur.</p>",
+            "links": [
+              {
+                "label": "park4move.fr",
+                "url": "https://park4move.fr"
+              }
+            ]
+          },
+          "tags": [
+            "LoRaWAN",
+            "MQTT",
+            "Python",
+            "FastAPI",
+            "Docker",
+            "MySQL",
+            "PWA",
+            "PIA",
+            "Service Learning"
+          ]
+        },
+        {
+          "title": "Robotique Étudiante — 3 Compétitions Nationales",
+          "desc": "3 compétitions nationales de robotique à l'IUT Salon — cycle ingénierie complet : conception PCB, firmware embarqué C/C++, prototypage mécanique.",
+          "article": {
+            "title": "Robotique — 3 Compétitions Nationales",
+            "tag": "Projet",
+            "body": "<p>Durant mon BUT GEII à l'IUT Aix-Marseille (Salon-de-Provence), j'ai participé à <strong>3 compétitions nationales de robotique étudiante</strong>, couvrant le cycle ingénierie complet de la conception jusqu'à la compétition.</p><ul><li><strong>Conception mécanique</strong> — châssis, actionneurs et éléments structuraux</li><li><strong>Électronique embarquée</strong> — conception PCB, drivers moteurs, intégration capteurs</li><li><strong>Logiciel embarqué</strong> — firmware C/C++, Arduino et microcontrôleurs sur mesure</li><li><strong>Prototypage et maintenance</strong> — itération rapide lors de la préparation</li></ul><p>Ces compétitions ont été formatrices pour travailler sous pression, gérer des délais serrés et collaborer en équipe pluridisciplinaire.</p>"
+          },
+          "tags": [
+            "Robotique",
+            "C/C++",
+            "PCB",
+            "Arduino",
+            "Embarqué",
+            "IUT Salon",
+            "2023-2026"
+          ]
+        }
+      ]
     },
     "career": {
       "tag": "Carrière",
@@ -560,139 +600,159 @@
       "tag": "Passions",
       "title": "Ce Qui Me Passionne",
       "desc": "Ce que j'aime en dehors du travail — des passions qui me définissent.",
-      "p1_title": "VTT",
-      "p1_desc": "Sentiers rocailleux, descentes raides et air de montagne — le VTT est ma façon de me ressourcer et de repousser mes limites.",
-      "p1_article": {
-        "title": "VTT",
-        "tag": "Passion",
-        "img": "./images/passion_vtt.jpg",
-        "body": "<p>Je roule régulièrement en VTT — un sport qui combine parfaitement défi technique, endurance physique et temps en nature. Que ce soit sur les sentiers du Luberon ou les forêts autour de Toulouse, le VTT me donne un sens de la liberté et de la résilience qui alimente ma façon d'aborder les problèmes d'ingénierie.</p><p>Le processus mental est étonnamment similaire au débogage : lire le terrain, ajuster sa trajectoire, s'engager dans le mouvement. Pas de raccourci, juste de la méthode et de la pratique.</p>",
-        "tags": [
-          "MTB",
-          "VTT",
-          "Nature",
-          "Endurance"
-        ]
-      },
-      "p2_title": "Escalade & Bloc",
-      "p2_desc": "Accro au bloc — niveau 6B+ actuel. Un problème sur un mur et un circuit ont plus en commun qu'on ne le croit.",
-      "p2_article": {
-        "title": "Escalade & Bloc",
-        "tag": "Passion",
-        "img": "./images/passion_climbing.jpg",
-        "body": "<p>Je suis particulièrement passionné par l'escalade en bloc, avec un niveau actuel de <strong>6B+</strong>. Ce qui m'attire dans le bloc c'est l'aspect résolution de problèmes : chaque voie est un puzzle avec une séquence de mouvements unique, et trouver le bon beta demande la même pensée méthodique que le débogage d'une routine VHDL.</p><p>La discipline exige aussi de savoir prendre du recul, se reposer, et revenir avec un regard neuf — une leçon qui se transpose directement en recherche et en ingénierie.</p>",
-        "tags": [
-          "Bloc",
-          "6B+",
-          "Escalade",
-          "Résolution de problèmes"
-        ]
-      },
-      "p3_title": "Culture Maker & Domotique",
-      "p3_desc": "Électronique DIY, domotique et réappropriation technologique — du prototypage PCB aux systèmes IoT personnalisés.",
-      "p3_article": {
-        "title": "Culture Maker & Domotique",
-        "tag": "Passion",
-        "body": "<p>Je crois à comprendre et construire les outils qui m'entourent. Ma pratique maker va de la conception PCB et du prototypage (Eagle, EasyEDA, KiCad) à la construction de systèmes domotiques et d'objets IoT sur mesure.</p><p>Cet état d'esprit DIY alimente directement mes compétences professionnelles : le réseau de capteurs LoRaWAN de Park4Move a commencé comme projet maker avant de devenir une solution primée. Chez moi, j'ai construit plusieurs projets d'automatisation incluant des noeuds capteurs personnalisés et des dashboards web.</p><ul><li>Conception et routage PCB (Eagle, EasyEDA, KiCad)</li><li>Domotique avec firmware personnalisé</li><li>Réseaux de capteurs IoT et intégration MQTT</li><li>Impression 3D et prototypage mécanique</li></ul>",
-        "tags": [
-          "DIY",
-          "PCB",
-          "IoT",
-          "Domotique",
-          "Maker"
-        ]
-      },
-      "p4_title": "Scoutisme",
-      "p4_desc": "Chef Scout depuis plus de 10 ans — animation de projets éducatifs, encadrement d'équipes, Roverway 2024 en Norvège.",
-      "p4_article": {
-        "title": "Scoutisme — Chef Scout",
-        "tag": "Passion & Leadership",
-        "img": "./images/passion_scouting.jpg",
-        "body": "<p>Je suis impliqué dans le scoutisme depuis plus de <strong>10 ans</strong>, en progressant jusqu'au rôle de <strong>Chef Scout</strong>. Ce rôle consiste à concevoir et animer des programmes éducatifs pour les jeunes : projets de plein air, activités citoyennes, défis en équipe.</p><p>Le point fort a été ma <strong>participation autonome à Roverway 2024</strong> — le rassemblement européen scout en Norvège — où j'ai collaboré avec des scouts de toute l'Europe pendant deux semaines de voyage et de projets partagés.</p><p>Le scoutisme a été ma principale école de leadership : prendre des décisions avec des informations incomplètes, motiver un groupe, et créer les conditions pour que chacun puisse progresser de façon autonome.</p>",
-        "tags": [
-          "Chef Scout",
-          "Leadership",
-          "10+ ans",
-          "Roverway 2024",
-          "Norvège"
-        ]
-      },
-      "p5_title": "Espace & Aéronautique",
-      "p5_desc": "Titulaire du BIA, je rejoins Tolosat cette année — le projet CubeSat étudiant de N7 / ISAE-SUPAERO.",
-      "p5_article": {
-        "title": "Espace & Aéronautique",
-        "tag": "Passion",
-        "img": "./images/passion_space.jpg",
-        "body": "<p>Mon intérêt pour l'espace et l'aéronautique remonte à l'obtention de mon <strong>BIA (Brevet d'Initiation Aéronautique)</strong> — le diplôme français d'initiation à l'aéronautique, couvrant la mécanique du vol, la navigation et les systèmes aérospatiaux.</p><p>Cette année, je rejoins <strong>Tolosat</strong> — le projet CubeSat étudiant porté conjointement par N7 (ENSEEIHT) et l'ISAE-SUPAERO. Tolosat a pour objectif de concevoir, construire et lancer un CubeSat 1U, en offrant aux étudiants une mission complète depuis la conception système jusqu'aux opérations orbitales.</p><p>Cela s'aligne directement avec mon travail en microélectronique au sein de CIME-DEOS (ISAE-SUPAERO), où la conception de capteurs d'image pour les applications spatiales est une direction de recherche. Je suis également les clubs <strong>N7 Racing Team</strong> et <strong>7Robot</strong> à N7.</p>",
-        "tags": [
-          "BIA",
-          "Tolosat",
-          "CubeSat",
-          "ISAE-SUPAERO",
-          "N7"
-        ],
-        "links": [
-          {
-            "label": "Site Tolosat",
-            "url": "https://tolosat.fr/"
-          }
-        ]
-      }
+      "items": [
+        {
+          "title": "VTT",
+          "desc": "Sentiers rocailleux, descentes raides et air de montagne — le VTT est ma façon de me ressourcer et de repousser mes limites.",
+          "article": {
+            "title": "VTT",
+            "tag": "Passion",
+            "img": "./images/passion_vtt.jpg",
+            "body": "<p>Je roule régulièrement en VTT — un sport qui combine parfaitement défi technique, endurance physique et temps en nature. Que ce soit sur les sentiers du Luberon ou les forêts autour de Toulouse, le VTT me donne un sens de la liberté et de la résilience qui alimente ma façon d'aborder les problèmes d'ingénierie.</p><p>Le processus mental est étonnamment similaire au débogage : lire le terrain, ajuster sa trajectoire, s'engager dans le mouvement. Pas de raccourci, juste de la méthode et de la pratique.</p>"
+          },
+          "tags": [
+            "MTB",
+            "VTT",
+            "Nature",
+            "Endurance"
+          ]
+        },
+        {
+          "title": "Escalade & Bloc",
+          "desc": "Accro au bloc — niveau 6B+ actuel. Un problème sur un mur et un circuit ont plus en commun qu'on ne le croit.",
+          "article": {
+            "title": "Escalade & Bloc",
+            "tag": "Passion",
+            "img": "./images/passion_climbing.jpg",
+            "body": "<p>Je suis particulièrement passionné par l'escalade en bloc, avec un niveau actuel de <strong>6B+</strong>. Ce qui m'attire dans le bloc c'est l'aspect résolution de problèmes : chaque voie est un puzzle avec une séquence de mouvements unique, et trouver le bon beta demande la même pensée méthodique que le débogage d'une routine VHDL.</p><p>La discipline exige aussi de savoir prendre du recul, se reposer, et revenir avec un regard neuf — une leçon qui se transpose directement en recherche et en ingénierie.</p>"
+          },
+          "tags": [
+            "Bloc",
+            "6B+",
+            "Escalade",
+            "Résolution de problèmes"
+          ]
+        },
+        {
+          "title": "Culture Maker & Domotique",
+          "desc": "Électronique DIY, domotique et réappropriation technologique — du prototypage PCB aux systèmes IoT personnalisés.",
+          "article": {
+            "title": "Culture Maker & Domotique",
+            "tag": "Passion",
+            "body": "<p>Je crois à comprendre et construire les outils qui m'entourent. Ma pratique maker va de la conception PCB et du prototypage (Eagle, EasyEDA, KiCad) à la construction de systèmes domotiques et d'objets IoT sur mesure.</p><p>Cet état d'esprit DIY alimente directement mes compétences professionnelles : le réseau de capteurs LoRaWAN de Park4Move a commencé comme projet maker avant de devenir une solution primée. Chez moi, j'ai construit plusieurs projets d'automatisation incluant des noeuds capteurs personnalisés et des dashboards web.</p><ul><li>Conception et routage PCB (Eagle, EasyEDA, KiCad)</li><li>Domotique avec firmware personnalisé</li><li>Réseaux de capteurs IoT et intégration MQTT</li><li>Impression 3D et prototypage mécanique</li></ul>"
+          },
+          "tags": [
+            "DIY",
+            "PCB",
+            "IoT",
+            "Domotique",
+            "Maker"
+          ]
+        },
+        {
+          "title": "Scoutisme",
+          "desc": "Chef Scout depuis plus de 10 ans — animation de projets éducatifs, encadrement d'équipes, Roverway 2024 en Norvège.",
+          "article": {
+            "title": "Scoutisme — Chef Scout",
+            "tag": "Passion & Leadership",
+            "img": "./images/passion_scouting.jpg",
+            "body": "<p>Je suis impliqué dans le scoutisme depuis plus de <strong>10 ans</strong>, en progressant jusqu'au rôle de <strong>Chef Scout</strong>. Ce rôle consiste à concevoir et animer des programmes éducatifs pour les jeunes : projets de plein air, activités citoyennes, défis en équipe.</p><p>Le point fort a été ma <strong>participation autonome à Roverway 2024</strong> — le rassemblement européen scout en Norvège — où j'ai collaboré avec des scouts de toute l'Europe pendant deux semaines de voyage et de projets partagés.</p><p>Le scoutisme a été ma principale école de leadership : prendre des décisions avec des informations incomplètes, motiver un groupe, et créer les conditions pour que chacun puisse progresser de façon autonome.</p>"
+          },
+          "tags": [
+            "Chef Scout",
+            "Leadership",
+            "10+ ans",
+            "Roverway 2024",
+            "Norvège"
+          ]
+        },
+        {
+          "title": "Espace & Aéronautique",
+          "desc": "Titulaire du BIA, je rejoins Tolosat cette année — le projet CubeSat étudiant de N7 / ISAE-SUPAERO.",
+          "article": {
+            "title": "Espace & Aéronautique",
+            "tag": "Passion",
+            "img": "./images/passion_space.jpg",
+            "body": "<p>Mon intérêt pour l'espace et l'aéronautique remonte à l'obtention de mon <strong>BIA (Brevet d'Initiation Aéronautique)</strong> — le diplôme français d'initiation à l'aéronautique, couvrant la mécanique du vol, la navigation et les systèmes aérospatiaux.</p><p>Cette année, je rejoins <strong>Tolosat</strong> — le projet CubeSat étudiant porté conjointement par N7 (ENSEEIHT) et l'ISAE-SUPAERO. Tolosat a pour objectif de concevoir, construire et lancer un CubeSat 1U, en offrant aux étudiants une mission complète depuis la conception système jusqu'aux opérations orbitales.</p><p>Cela s'aligne directement avec mon travail en microélectronique au sein de CIME-DEOS (ISAE-SUPAERO), où la conception de capteurs d'image pour les applications spatiales est une direction de recherche. Je suis également les clubs <strong>N7 Racing Team</strong> et <strong>7Robot</strong> à N7.</p>",
+            "links": [
+              {
+                "label": "Site Tolosat",
+                "url": "https://tolosat.fr/"
+              }
+            ]
+          },
+          "tags": [
+            "BIA",
+            "Tolosat",
+            "CubeSat",
+            "ISAE-SUPAERO",
+            "N7"
+          ]
+        }
+      ]
     },
     "civic": {
       "tag": "Engagement Civique",
       "title": "S'Investir",
       "desc": "Bénévolat, associations et engagement communautaire.",
-      "a1_title": "Scoutisme — Chef Scout",
-      "a1_desc": "Plus de 10 ans de scoutisme dont le rôle de Chef Scout. Projets éducatifs, encadrement d'équipes, Roverway 2024 (Norvège).",
-      "a2_title": "Vice-Président BDE — IUT Salon",
-      "a2_desc": "VP du BDE à l'IUT Salon (2024-2025), co-organisateur du symposium national GEII 2024.",
-      "a3_title": "Secrétaire — Provençal Intelligence Agency (PIA)",
-      "a3_desc": "Secrétaire de l'association étudiante PIA à l'IUT de Salon. Contribution au projet Park4Move, primé au niveau européen.",
-      "a1_article": {
-        "title": "Scoutisme — Chef Scout",
-        "tag": "Engagement Civique",
-        "img": "./images/passion_scouting.jpg",
-        "body": "<p>Plus de <strong>10 ans de scoutisme</strong>, dont le rôle de <strong>Chef Scout</strong>. Mon rôle a consisté à concevoir et animer des programmes éducatifs pour les jeunes — expéditions en plein air, projets citoyens, et défis en équipe.</p><p>En 2024, j'ai participé de façon autonome à <strong>Roverway 2024</strong>, le rassemblement européen scout en Norvège, en collaborant avec des scouts de toute l'Europe pendant deux semaines de voyage, de projets partagés et d'échanges interculturels.</p>",
-        "tags": [
-          "Chef Scout",
-          "10+ ans",
-          "Roverway 2024",
-          "Norvège",
-          "Leadership jeunesse"
-        ]
-      },
-      "a2_article": {
-        "title": "Vice-Président BDE — IUT Salon",
-        "tag": "Engagement Civique",
-        "body": "<p>Vice-Président du <strong>BDE</strong> (Bureau Des Étudiants) à l'IUT Aix-Marseille, campus de Salon-de-Provence, durant l'année 2024-2025.</p><p>J'ai co-organisé le <strong>symposium national GEII 2024</strong>, rassemblant étudiants et professionnels du génie électrique et de l'informatique industrielle de toute la France. Gérer la logistique, la communication et le programme d'un événement à échelle nationale a été une expérience de leadership formatrice.</p>",
-        "tags": [
-          "BDE",
-          "VP",
-          "2024-2025",
-          "Symposium GEII",
-          "IUT Salon"
-        ]
-      },
-      "a3_article": {
-        "title": "Provençal Intelligence Agency — Park4Move",
-        "tag": "Engagement Civique",
-        "body": "<p>En tant que <strong>Secrétaire de la PIA</strong> (Provençal Intelligence Agency) — une association étudiante de l'IUT de Salon-de-Provence — j'ai contribué au projet <strong>Park4Move</strong> : une solution open-source de mobilité urbaine connectée conçue pour les personnes à mobilité réduite (PMR) et les seniors.</p><p>Le système utilise des <strong>capteurs LoRaWAN</strong> déployés sur des places de stationnement à Salon-de-Provence pour détecter leur disponibilité en temps réel. Les données sont affichées sur une Progressive Web App interactive accessible sur <strong>park4move.fr</strong>.</p><p><strong>Résultats clés :</strong></p><ul><li>Lauréat du prix <strong>Service Learning</strong> d'Aix-Marseille Université</li><li>Sélectionné pour représenter AMU au <strong>Forum européen Service Learning à Bucarest</strong> (parmi 10 projets de 5 universités européennes)</li><li>Présentation à la Ministre de l'Enseignement Supérieur et aux élus locaux</li></ul>",
-        "tags": [
-          "PIA",
-          "Park4Move",
-          "LoRaWAN",
-          "Service Learning",
-          "Prix européen",
-          "2023-2025"
-        ],
-        "links": [
-          {
-            "label": "park4move.fr",
-            "url": "https://park4move.fr"
-          }
-        ]
-      }
+      "items": [
+        {
+          "title": "Scoutisme — Chef Scout",
+          "desc": "Plus de 10 ans de scoutisme dont le rôle de Chef Scout. Projets éducatifs, encadrement d'équipes, Roverway 2024 (Norvège).",
+          "article": {
+            "title": "Scoutisme — Chef Scout",
+            "tag": "Engagement Civique",
+            "img": "./images/passion_scouting.jpg",
+            "body": "<p>Plus de <strong>10 ans de scoutisme</strong>, dont le rôle de <strong>Chef Scout</strong>. Mon rôle a consisté à concevoir et animer des programmes éducatifs pour les jeunes — expéditions en plein air, projets citoyens, et défis en équipe.</p><p>En 2024, j'ai participé de façon autonome à <strong>Roverway 2024</strong>, le rassemblement européen scout en Norvège, en collaborant avec des scouts de toute l'Europe pendant deux semaines de voyage, de projets partagés et d'échanges interculturels.</p>"
+          },
+          "tags": [
+            "Chef Scout",
+            "10+ ans",
+            "Roverway 2024",
+            "Norvège",
+            "Leadership jeunesse"
+          ]
+        },
+        {
+          "title": "Vice-Président BDE — IUT Salon",
+          "desc": "VP du BDE à l'IUT Salon (2024-2025), co-organisateur du symposium national GEII 2024.",
+          "article": {
+            "title": "Vice-Président BDE — IUT Salon",
+            "tag": "Engagement Civique",
+            "body": "<p>Vice-Président du <strong>BDE</strong> (Bureau Des Étudiants) à l'IUT Aix-Marseille, campus de Salon-de-Provence, durant l'année 2024-2025.</p><p>J'ai co-organisé le <strong>symposium national GEII 2024</strong>, rassemblant étudiants et professionnels du génie électrique et de l'informatique industrielle de toute la France. Gérer la logistique, la communication et le programme d'un événement à échelle nationale a été une expérience de leadership formatrice.</p>"
+          },
+          "tags": [
+            "BDE",
+            "VP",
+            "2024-2025",
+            "Symposium GEII",
+            "IUT Salon"
+          ]
+        },
+        {
+          "title": "Secrétaire — Provençal Intelligence Agency (PIA)",
+          "desc": "Secrétaire de l'association étudiante PIA à l'IUT de Salon. Contribution au projet Park4Move, primé au niveau européen.",
+          "article": {
+            "title": "Provençal Intelligence Agency — Park4Move",
+            "tag": "Engagement Civique",
+            "body": "<p>En tant que <strong>Secrétaire de la PIA</strong> (Provençal Intelligence Agency) — une association étudiante de l'IUT de Salon-de-Provence — j'ai contribué au projet <strong>Park4Move</strong> : une solution open-source de mobilité urbaine connectée conçue pour les personnes à mobilité réduite (PMR) et les seniors.</p><p>Le système utilise des <strong>capteurs LoRaWAN</strong> déployés sur des places de stationnement à Salon-de-Provence pour détecter leur disponibilité en temps réel. Les données sont affichées sur une Progressive Web App interactive accessible sur <strong>park4move.fr</strong>.</p><p><strong>Résultats clés :</strong></p><ul><li>Lauréat du prix <strong>Service Learning</strong> d'Aix-Marseille Université</li><li>Sélectionné pour représenter AMU au <strong>Forum européen Service Learning à Bucarest</strong> (parmi 10 projets de 5 universités européennes)</li><li>Présentation à la Ministre de l'Enseignement Supérieur et aux élus locaux</li></ul>",
+            "links": [
+              {
+                "label": "park4move.fr",
+                "url": "https://park4move.fr"
+              }
+            ]
+          },
+          "tags": [
+            "PIA",
+            "Park4Move",
+            "LoRaWAN",
+            "Service Learning",
+            "Prix européen",
+            "2023-2025"
+          ]
+        }
+      ]
     },
     "contact": {
       "tag": "Me contacter",
