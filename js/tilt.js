@@ -13,8 +13,9 @@ export function initTilt() {
   const MAX_TILT = 15; // Max rotation in degrees
 
   function applyTilt(xPercent, yPercent) {
-    const rotateX = (MAX_TILT / 2 - yPercent * MAX_TILT).toFixed(2);
-    const rotateY = (xPercent * MAX_TILT - MAX_TILT / 2).toFixed(2);
+    // Inverted parallax calculation
+    const rotateX = (yPercent * MAX_TILT - MAX_TILT / 2).toFixed(2);
+    const rotateY = (MAX_TILT / 2 - xPercent * MAX_TILT).toFixed(2);
 
     card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
     glare.style.opacity = '1';
