@@ -27,16 +27,16 @@ export function initTilt() {
     const shadowX = ((xPercent - 0.5) * -35).toFixed(1);
     const shadowY = ((yPercent - 0.5) * -35).toFixed(1);
 
-    // Apply amplified 3D transform with depth pop
+    // Apply 3D transform with dynamic depth
     card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.04, 1.04, 1.04)`;
-    card.style.boxShadow = `${shadowX}px ${shadowY}px 55px rgba(0, 0, 0, 0.55), 0 0 50px rgba(0, 212, 255, 0.35), 0 0 30px rgba(109, 74, 255, 0.25)`;
-    card.style.borderColor = 'rgba(0, 212, 255, 0.45)';
+    card.style.boxShadow = `${shadowX}px ${shadowY}px 45px rgba(0, 0, 0, 0.4), 0 0 30px rgba(109, 74, 255, 0.15)`;
+    card.style.borderColor = 'rgba(255, 255, 255, 0.22)';
 
-    // Amplified radiant glare with prismatic light rings
+    // Subtle, natural specular glare as originally designed
     const gx = (xPercent * 100).toFixed(1);
     const gy = (yPercent * 100).toFixed(1);
     glare.style.opacity = '1';
-    glare.style.background = `radial-gradient(circle at ${gx}% ${gy}%, rgba(255, 255, 255, 0.55) 0%, rgba(0, 212, 255, 0.38) 22%, rgba(109, 74, 255, 0.20) 48%, transparent 72%)`;
+    glare.style.background = `radial-gradient(circle at ${gx}% ${gy}%, rgba(255, 255, 255, 0.22) 0%, transparent 55%)`;
   }
 
   function resetTilt() {

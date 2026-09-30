@@ -1,3 +1,10 @@
+/**
+ * renderer.js — Dynamic content renderer for portfolio grids and lists
+ * Renders projects, passions, civic, mobility, career lists, and dynamic contact links from translations data.
+ */
+
+import { getContactData, getChannelIconSvg } from './contact-export.js';
+
 export function renderDynamicContent(langData) {
   const page = document.body.dataset.page;
   
@@ -7,8 +14,12 @@ export function renderDynamicContent(langData) {
     renderGrid('passions', langData.passions.items);
   } else if (page === 'civic' && langData.civic && langData.civic.items) {
     renderGrid('civic', langData.civic.items);
+  } else if (page === 'mobility' && langData.mobility && langData.mobility.items) {
+    renderGrid('mobility', langData.mobility.items);
   } else if (page === 'career' && langData.career && langData.career.jobs && langData.career.jobs.items) {
-    renderCareerList(langData.career.jobs.items);
+    renderCareerJobs(langData.career.jobs.items);
+  } else if (page === 'contact') {
+    renderContactLinks();
   }
 }
 
@@ -24,7 +35,19 @@ function renderGrid(sectionName, items) {
     li.dataset.status = item.status || 'past';
     li.dataset.modal = `${sectionName}_item_${index}`;
     li.tabIndex = 0;
+    li.setAttribute('role', 'button');
     li.style.cursor = 'pointer';
+    
+    // Thumbnail if image provided
+    const imgSrc = item.image || item.img || item.article?.img;
+    if (imgSrc) {
+      const img = document.createElement('img');
+      img.src = imgSrc;
+      img.alt = item.title || item.name || '';
+      img.className = 'card__thumb';
+      img.loading = 'lazy';
+      li.appendChild(img);
+    }
     
     // Icon (01, 02...)
     const icon = document.createElement('span');
@@ -53,7 +76,7 @@ function renderGrid(sectionName, items) {
         const encTag = encodeURIComponent(t);
         const a = document.createElement('a');
         a.href = `./tag.html?tag=${encTag}`;
-        a.className = 'badge nav-link';
+        a.className = 'badge';
         a.textContent = t;
         a.addEventListener('click', (e) => {
           e.stopPropagation();
@@ -67,8 +90,8 @@ function renderGrid(sectionName, items) {
   });
 }
 
-function renderCareerList(items) {
-  const list = document.querySelector('.career-list');
+function renderCareerJobs(items) {
+  const list = document.querySelector('.career-jobs-list') || document.querySelector('.career-list');
   if (!list) return;
   list.innerHTML = '';
   
@@ -77,6 +100,7 @@ function renderCareerList(items) {
     li.className = 'career-item';
     li.dataset.modal = `career_item_${index}`;
     li.tabIndex = 0;
+    li.setAttribute('role', 'button');
     li.style.cursor = 'pointer';
     
     const num = document.createElement('div');
@@ -89,12 +113,18 @@ function renderCareerList(items) {
     
     const title = document.createElement('h3');
     title.className = 'career-item__title';
-    title.textContent = item.title || '';
+    title.textContent = item.role || item.title || '';
     content.appendChild(title);
     
     const meta = document.createElement('div');
     meta.className = 'career-item__meta';
-    meta.textContent = item.meta || '';
+    meta.style.display = 'flex';
+    meta.style.gap = '0.6rem';
+    meta.style.flexWrap = 'wrap';
+    meta.style.fontSize = '0.85rem';
+    meta.style.color = 'var(--color-accent2)';
+    meta.style.marginBottom = '0.4rem';
+    meta.innerHTML = `<span><strong>${item.company || ''}</strong></span> • <span>${item.period || ''}</span> • <span>${item.location || ''}</span>`;
     content.appendChild(meta);
     
     const desc = document.createElement('p');
@@ -109,7 +139,7 @@ function renderCareerList(items) {
         const encTag = encodeURIComponent(t);
         const a = document.createElement('a');
         a.href = `./tag.html?tag=${encTag}`;
-        a.className = 'badge nav-link';
+        a.className = 'badge';
         a.textContent = t;
         a.addEventListener('click', (e) => {
           e.stopPropagation();
@@ -121,5 +151,23 @@ function renderCareerList(items) {
     
     li.appendChild(content);
     list.appendChild(li);
+  });
+}
+
+function renderContactLinks() {
+  const container = document.querySelector('.contact-card__links');
+  if (!container) return;
+  const info = getContactData();
+  container.innerHTML = '';
+  info.channels.forEach(ch => {
+    const a = document.createElement('a');
+    a.href = ch.url;
+    a.className = 'contact-card__link';
+    if (!ch.url.startsWith('mailto:') && !ch.url.startsWith('tel:')) {
+      a.target = '_blank';
+      a.rel = 'noopener';
+    }
+    a.innerHTML = `${getChannelIconSvg(ch.type)}<span>${ch.label}</span>`;
+    container.appendChild(a);
   });
 }

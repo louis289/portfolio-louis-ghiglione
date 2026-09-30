@@ -34,49 +34,65 @@
         <p class="section-desc"   data-i18n="career.desc"></p>
       </header>
 
-      <ol class="career-list">
+      <section class="career-section">
+        <h2 class="section-subtitle" style="font-size: 1.4rem; font-weight: 700; margin-bottom: var(--space-lg); display: flex; align-items: center; gap: 0.6rem;">
+          <span class="section-tag" style="margin: 0;" data-i18n="career.jobs_tag"></span>
+          <span data-i18n="career.jobs_title"></span>
+        </h2>
+        <ol class="career-list career-jobs-list" role="list">
+          <!-- Dynamically rendered by renderer.js: past jobs, roles, related projects & mobilities -->
+        </ol>
+      </section>
 
-        <li class="career-item">
-          <span class="career-item__num" aria-hidden="true">1</span>
-          <div class="career-item__content">
-            <h2 data-i18n="career.item1_title"></h2>
-            <p  data-i18n="career.item1_desc"></p>
-             <p>→ <a href="#" class="ext-link" data-i18n="career.item1_link"></a></p>
-            <div class="career-item__links">
-              <a href="#" class="badge" target="_blank" rel="noopener" data-i18n="career.item1_cv" data-bind="href:config.cv_url"></a>
-              <a href="#" class="badge" data-i18n="career.item1_cover"></a>
+      <section class="career-section" style="margin-top: var(--space-2xl);">
+        <h2 class="section-subtitle" style="font-size: 1.4rem; font-weight: 700; margin-bottom: var(--space-lg); display: flex; align-items: center; gap: 0.6rem;">
+          <span class="section-tag" style="margin: 0;" data-i18n="career.milestones_tag"></span>
+          <span data-i18n="career.milestones_title"></span>
+        </h2>
+        <ol class="career-list">
+
+          <li class="career-item">
+            <span class="career-item__num" aria-hidden="true">1</span>
+            <div class="career-item__content">
+              <h2 data-i18n="career.item1_title"></h2>
+              <p  data-i18n="career.item1_desc"></p>
+               <p>→ <a href="#" class="ext-link" data-i18n="career.item1_link"></a></p>
+              <div class="career-item__links">
+                <a href="#" class="badge" target="_blank" rel="noopener" data-i18n="career.item1_cv" data-bind="href:config.cv_url"></a>
+                <a href="#" class="badge" data-i18n="career.item1_cover"></a>
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <li class="career-item">
-          <span class="career-item__num" aria-hidden="true">2</span>
-          <div class="career-item__content">
-            <h2 data-i18n="career.item2_title"></h2>
-            <p  data-i18n="career.item2_desc"></p>
-             <p>→ <a href="https://www.linkedin.com/in/louis-ghiglione-722165294/" class="ext-link" target="_blank" rel="noopener" data-i18n="career.item2_link"></a></p>
-          </div>
-        </li>
+          <li class="career-item">
+            <span class="career-item__num" aria-hidden="true">2</span>
+            <div class="career-item__content">
+              <h2 data-i18n="career.item2_title"></h2>
+              <p  data-i18n="career.item2_desc"></p>
+               <p>→ <a href="https://www.linkedin.com/in/louis-ghiglione-722165294/" class="ext-link" target="_blank" rel="noopener" data-i18n="career.item2_link"></a></p>
+            </div>
+          </li>
 
-        <li class="career-item">
-          <span class="career-item__num" aria-hidden="true">3</span>
-          <div class="career-item__content">
-            <h2 data-i18n="career.item3_title"></h2>
-            <p><strong data-i18n="career.item3_person"></strong></p>
-            <p data-i18n="career.item3_learnt"></p>
-          </div>
-        </li>
+          <li class="career-item">
+            <span class="career-item__num" aria-hidden="true">3</span>
+            <div class="career-item__content">
+              <h2 data-i18n="career.item3_title"></h2>
+              <p><strong data-i18n="career.item3_person"></strong></p>
+              <p data-i18n="career.item3_learnt"></p>
+            </div>
+          </li>
 
-        <li class="career-item">
-          <span class="career-item__num" aria-hidden="true">4</span>
-          <div class="career-item__content">
-            <h2 data-i18n="career.item4_title"></h2>
-            <p><strong data-i18n="career.item4_person"></strong></p>
-            <p data-i18n="career.item4_learnt"></p>
-          </div>
-        </li>
+          <li class="career-item">
+            <span class="career-item__num" aria-hidden="true">4</span>
+            <div class="career-item__content">
+              <h2 data-i18n="career.item4_title"></h2>
+              <p><strong data-i18n="career.item4_person"></strong></p>
+              <p data-i18n="career.item4_learnt"></p>
+            </div>
+          </li>
 
-      </ol>
+        </ol>
+      </section>
 
     </div>
   </main>

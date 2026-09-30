@@ -82,8 +82,9 @@ export function openModal(articleKey, translations) {
 
   // Image
   const img = document.getElementById('modal-img');
-  if (article.img) {
-    img.src = article.img;
+  const imgSrc = article.img || article.image;
+  if (imgSrc) {
+    img.src = imgSrc;
     img.alt = article.title || '';
     img.style.display = 'block';
   } else {
@@ -96,7 +97,7 @@ export function openModal(articleKey, translations) {
   if (article.tags && article.tags.length) {
     article.tags.forEach(tag => {
       const a = document.createElement('a');
-      a.className = 'badge nav-link';
+      a.className = 'badge';
       a.href = `./tag.html?tag=${encodeURIComponent(tag)}`;
       a.textContent = tag;
       tagsEl.appendChild(a);

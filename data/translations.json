@@ -89,7 +89,8 @@
           "article": {
             "title": "ASIC & FPGA Design — ISAE-SUPAERO (CIME-DEOS)",
             "tag": "Project",
-            "body": "<p>As an apprentice engineer in the <strong>CIME-DEOS group</strong> (Integrated Image Sensors) at ISAE-SUPAERO, I work on the full design chain for CMOS image sensor readout circuits.</p><ul><li><strong>CMOS readout circuit architectures</strong> — designed with CADENCE (Virtuoso)</li><li><strong>VHDL control routines</strong> — implemented and verified on Xilinx FPGA (Vivado)</li><li><strong>Full ASIC flow</strong> — synthesis, placement and routing</li><li>Integration in the <strong>CIMI research group</strong>, working on sensor systems for space and industrial imaging applications</li></ul><p>This apprenticeship directly connects my academic training in electronics (3EA, N7) with cutting-edge research in microelectronics.</p>"
+            "body": "<p>As an apprentice engineer in the <strong>CIME-DEOS group</strong> (Integrated Image Sensors) at ISAE-SUPAERO, I work on the full design chain for CMOS image sensor readout circuits.</p><ul><li><strong>CMOS readout circuit architectures</strong> — designed with CADENCE (Virtuoso)</li><li><strong>VHDL control routines</strong> — implemented and verified on Xilinx FPGA (Vivado)</li><li><strong>Full ASIC flow</strong> — synthesis, placement and routing</li><li>Integration in the <strong>CIMI research group</strong>, working on sensor systems for space and industrial imaging applications</li></ul><p>This apprenticeship directly connects my academic training in electronics (3EA, N7) with cutting-edge research in microelectronics.</p>",
+            "img": "./images/logo_isae.png"
           },
           "tags": [
             "ISAE-SUPAERO",
@@ -104,7 +105,8 @@
             "Hardware",
             "N7",
             "2025-2026"
-          ]
+          ],
+          "image": "./images/logo_isae.png"
         },
         {
           "title": "Automation & IoT Engineering — Fare Ingenierie",
@@ -112,7 +114,8 @@
           "article": {
             "title": "Fare Ingenierie — Automation & IoT",
             "tag": "Project / Work-Study",
-            "body": "<p>Two experiences at <strong>Fare Ingenierie</strong>, a technical engineering firm specialising in automation and supervision systems:</p><p><strong>Internship (Mar–Jun 2025, 4 months):</strong></p><ul><li>Full overhaul of the PLC programme for the <strong>SY Tiara II</strong> — an 80-metre superyacht</li><li>LoRaWAN sensor integration and internal web management application</li><li>Backend: <strong>Python</strong>, MySQL, Docker</li></ul><p><strong>Work-Study (Sep 2025 – Aug 2026, 1 year):</strong></p><ul><li>Design and integration of PLC programmes and supervision systems</li><li>R&D IoT architecture: <strong>LoRaWAN sensors via MQTT protocol on PLCs</strong> for safety monitoring at the <strong>ITER nuclear fusion site</strong></li><li>Secure web backend: <strong>Python / FastAPI / Docker / MySQL</strong></li></ul>"
+            "body": "<p>Two experiences at <strong>Fare Ingenierie</strong>, a technical engineering firm specialising in automation and supervision systems:</p><p><strong>Internship (Mar–Jun 2025, 4 months):</strong></p><ul><li>Full overhaul of the PLC programme for the <strong>SY Tiara II</strong> — an 80-metre superyacht</li><li>LoRaWAN sensor integration and internal web management application</li><li>Backend: <strong>Python</strong>, MySQL, Docker</li></ul><p><strong>Work-Study (Sep 2025 – Aug 2026, 1 year):</strong></p><ul><li>Design and integration of PLC programmes and supervision systems</li><li>R&D IoT architecture: <strong>LoRaWAN sensors via MQTT protocol on PLCs</strong> for safety monitoring at the <strong>ITER nuclear fusion site</strong></li><li>Secure web backend: <strong>Python / FastAPI / Docker / MySQL</strong></li></ul>",
+            "img": "./images/project_iter.jpg"
           },
           "tags": [
             "Fare Ingenierie",
@@ -127,7 +130,8 @@
             "Automation",
             "Hardware",
             "2024-2026"
-          ]
+          ],
+          "image": "./images/project_iter.jpg"
         },
         {
           "title": "Park4Move — LoRaWAN Smart Parking",
@@ -141,7 +145,8 @@
                 "label": "park4move.fr",
                 "url": "https://park4move.fr"
               }
-            ]
+            ],
+            "img": "./images/project_park4move.jpg"
           },
           "tags": [
             "PIA",
@@ -157,7 +162,8 @@
             "Service Learning",
             "IUT Salon",
             "2023-2025"
-          ]
+          ],
+          "image": "./images/project_park4move.jpg"
         },
         {
           "title": "Student Robotics — 3 National Competitions",
@@ -165,7 +171,8 @@
           "article": {
             "title": "Robotics — 3 National Competitions",
             "tag": "Project",
-            "body": "<p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), I participated in <strong>3 national student robotics competitions</strong>, covering the full engineering cycle from design to competition.</p><ul><li><strong>Mechanical design</strong> — chassis, actuators and structural components</li><li><strong>Embedded electronics</strong> — PCB design, motor drivers, sensor integration</li><li><strong>Embedded software</strong> — C/C++ firmware, Arduino and custom microcontroller programming</li><li><strong>Prototyping and maintenance</strong> — rapid iteration during competition prep</li></ul><p>These competitions trained working under pressure, managing tight deadlines, and collaborating in a multidisciplinary team.</p>"
+            "body": "<p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), I participated in <strong>3 national student robotics competitions</strong>, covering the full engineering cycle from design to competition.</p><ul><li><strong>Mechanical design</strong> — chassis, actuators and structural components</li><li><strong>Embedded electronics</strong> — PCB design, motor drivers, sensor integration</li><li><strong>Embedded software</strong> — C/C++ firmware, Arduino and custom microcontroller programming</li><li><strong>Prototyping and maintenance</strong> — rapid iteration during competition prep</li></ul><p>These competitions trained working under pressure, managing tight deadlines, and collaborating in a multidisciplinary team.</p>",
+            "img": "./images/passion_space.jpg"
           },
           "tags": [
             "Robotics",
@@ -177,7 +184,8 @@
             "IUT Salon",
             "Problem Solving",
             "2023-2026"
-          ]
+          ],
+          "image": "./images/passion_space.jpg"
         }
       ]
     },
@@ -198,7 +206,185 @@
       "item3_learnt": "Interview to be conducted before Class 5. Details — who, why, and key takeaways — will be added here.",
       "item4_title": "My Job Glasses — Interview #2",
       "item4_person": "To be completed after interview",
-      "item4_learnt": "Interview to be conducted before Class 5. Details — who, why, and key takeaways — will be added here."
+      "item4_learnt": "Interview to be conducted before Class 5. Details — who, why, and key takeaways — will be added here.",
+      "jobs_tag": "EXPERIENCE",
+      "jobs_title": "Past Jobs & Positions Held",
+      "milestones_tag": "MILESTONES",
+      "milestones_title": "Career Preparation & Network",
+      "jobs": {
+        "items": [
+          {
+            "company": "ISAE-SUPAERO (CIME-DEOS)",
+            "role": "Apprentice Microelectronics Design Engineer",
+            "period": "Sep. 2026 – Present",
+            "location": "Toulouse, France",
+            "desc": "Design of space CMOS integrated image sensors, analog readout circuits, VHDL routines, and ASIC flow.",
+            "image": "./images/logo_isae.png",
+            "tags": [
+              "ISAE-SUPAERO",
+              "Microelectronics",
+              "CMOS",
+              "Analog",
+              "Digital",
+              "Tolosat",
+              "Cadence",
+              "VHDL"
+            ],
+            "article": {
+              "title": "ISAE-SUPAERO · Apprentice Microelectronics Design Engineer",
+              "tag": "Work Experience",
+              "img": "./images/logo_isae.png",
+              "body": "<h4>Positions Held</h4><p><strong>Apprentice Microelectronics Design Engineer (Analog & Digital)</strong> within the CIMI research team (Integrated Image Sensors) at ISAE-SUPAERO (Toulouse), pursuing an engineering degree (FISA) at ENSEEIHT.</p><h4>Related Projects</h4><ul><li><strong>CMOS Image Sensors for Space Applications:</strong> Design and simulation of pixel analog readout chains, low-noise analog-to-digital converters (ADC), and radiation-tolerant architectures using Cadence Virtuoso.</li><li><strong>Tolosat 3U CubeSat:</strong> Payload electronic readout subsystems verification and FPGA integration.</li></ul><h4>Eventual Mobilities</h4><p>Based in <strong>Toulouse (Occitanie)</strong>. Regular scientific exchanges and technical reviews with CNES, ONERA, and European space consortium partners.</p>",
+              "tags": [
+                "ISAE-SUPAERO",
+                "Microelectronics",
+                "CMOS",
+                "Analog",
+                "Digital",
+                "Tolosat",
+                "Cadence",
+                "VHDL"
+              ],
+              "links": [
+                {
+                  "label": "ISAE-SUPAERO Website",
+                  "url": "https://www.isae-supaero.fr/"
+                },
+                {
+                  "label": "LinkedIn Profile",
+                  "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
+                }
+              ]
+            }
+          },
+          {
+            "company": "FARE INGÉNIERIE",
+            "role": "Work-Study Automation Engineer",
+            "period": "Sep. 2025 – Aug. 2026 (1 year)",
+            "location": "Salon-de-Provence & Cadarache, France",
+            "desc": "End-to-end IoT LoRaWAN/MQTT architecture for the ITER nuclear fusion facility, industrial PLCs, and secure FastAPI backend.",
+            "image": "./images/project_iter.jpg",
+            "tags": [
+              "Fare Ingenierie",
+              "ITER",
+              "LoRaWAN",
+              "MQTT",
+              "Automation",
+              "Python",
+              "FastAPI",
+              "Docker",
+              "MySQL"
+            ],
+            "article": {
+              "title": "FARE INGÉNIERIE · Work-Study Automation Engineer",
+              "tag": "Work Experience",
+              "img": "./images/project_iter.jpg",
+              "body": "<h4>Positions Held</h4><p><strong>Work-Study Automation & IoT Systems Engineer</strong> at FARE Ingénierie (Salon-de-Provence), an engineering consulting firm specialised in critical automation systems.</p><h4>Related Projects</h4><ul><li><strong>ITER Nuclear Project:</strong> R&D design and deployment of an end-to-end IoT sensor network communicating via MQTT over PLCs (Schneider / Unity Pro) for safety monitoring at the international ITER fusion facility in Cadarache.</li><li><strong>Secure Supervision Backend:</strong> Production-grade Python/FastAPI web service containerised with Docker and backed by MySQL, compliant with strict security standards.</li></ul><h4>Eventual Mobilities</h4><p>On-site assignments in <strong>Salon-de-Provence</strong> and field technical interventions at the <strong>ITER nuclear fusion research site in Cadarache</strong>.</p>",
+              "tags": [
+                "Fare Ingenierie",
+                "ITER",
+                "LoRaWAN",
+                "MQTT",
+                "Automation",
+                "Python",
+                "FastAPI",
+                "Docker",
+                "MySQL"
+              ],
+              "links": [
+                {
+                  "label": "ITER Website",
+                  "url": "https://www.iter.org/"
+                },
+                {
+                  "label": "LinkedIn Profile",
+                  "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
+                }
+              ]
+            }
+          },
+          {
+            "company": "FARE INGÉNIERIE",
+            "role": "Automation Engineering Intern",
+            "period": "Mar. 2025 – Jun. 2025 (4 months)",
+            "location": "Salon-de-Provence & La Ciotat, France",
+            "desc": "Full overhaul of the automation PLC program on the 80m SY Tiara II superyacht, LoRaWAN sensors, and internal management web app.",
+            "image": "./images/passion_vtt.jpg",
+            "tags": [
+              "Fare Ingenierie",
+              "Automation",
+              "SY Tiara II",
+              "Yachting",
+              "LoRaWAN",
+              "Python",
+              "MySQL"
+            ],
+            "article": {
+              "title": "FARE INGÉNIERIE · Automation Engineering Intern",
+              "tag": "Work Experience",
+              "img": "./images/project_iter.jpg",
+              "body": "<h4>Positions Held</h4><p><strong>Automation Engineering Intern</strong> at FARE Ingénierie (4-month technical internship during BUT GEII).</p><h4>Related Projects</h4><ul><li><strong>SY Tiara II (80m Superyacht):</strong> Complete overhaul of the onboard automation supervision and PLC control system (Schneider Electric / Unity Pro).</li><li><strong>IoT & Business Application:</strong> Integration of LoRaWAN wireless sensor nodes and design of an internal corporate operations web portal in Python & MySQL.</li></ul><h4>Eventual Mobilities</h4><p>Field engineering visits to superyacht shipyards in <strong>La Ciotat and Marseille</strong>.</p>",
+              "tags": [
+                "Fare Ingenierie",
+                "Automation",
+                "SY Tiara II",
+                "Yachting",
+                "LoRaWAN",
+                "Python",
+                "MySQL"
+              ],
+              "links": [
+                {
+                  "label": "LinkedIn Profile",
+                  "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
+                }
+              ]
+            }
+          },
+          {
+            "company": "IUT d'Aix-Marseille & PIA",
+            "role": "BUT GEII Student & Co-Founder / Tech Lead PIA",
+            "period": "Sep. 2023 – Aug. 2026 (3 years)",
+            "location": "Salon-de-Provence & Bucharest, Romania",
+            "desc": "Conception of Park4Move (CISAM+ Service-Learning award winner, Bucharest European Forum) and 3 editions of French Robotics Cup.",
+            "image": "./images/project_park4move.jpg",
+            "tags": [
+              "Park4Move",
+              "BUT GEII",
+              "CISAM+",
+              "Bucharest",
+              "Robotics",
+              "LoRaWAN",
+              "PMR"
+            ],
+            "article": {
+              "title": "IUT Aix-Marseille & PIA · Student & Tech Lead",
+              "tag": "Education & Projects",
+              "img": "./images/project_park4move.jpg",
+              "body": "<h4>Positions Held</h4><p><strong>BUT Electrical Engineering and Industrial Computing (GEII) Student</strong> and Co-Founder / Technical Lead of the student association <em>Provençal Intelligence Agency (PIA)</em>.</p><h4>Related Projects</h4><ul><li><strong>Park4Move:</strong> Smart real-time parking detection for disabled drivers (PMR) using LoRaWAN magnetometers and mobile PWA. Awarded Best Project at Aix-Marseille University Service-Learning (CISAM+ France 2030) and presented at the European Forum in Bucharest.</li><li><strong>French Robotics Cup:</strong> Team leader and embedded electronics designer across 3 consecutive national competitions (2024, 2025, 2026).</li></ul><h4>Eventual Mobilities</h4><p>International delegation to the <strong>European Service-Learning Forum in Bucharest (Romania)</strong> in June 2024, and national robotics championships in <strong>La Roche-sur-Yon</strong>.</p>",
+              "tags": [
+                "Park4Move",
+                "BUT GEII",
+                "CISAM+",
+                "Bucharest",
+                "Robotics",
+                "LoRaWAN",
+                "PMR"
+              ],
+              "links": [
+                {
+                  "label": "Park4Move CISAM+ Article",
+                  "url": "https://cisam-innovation.com/2024/05/07/le-projet-park4move-elu-meilleur-projet-du-service-learning-daix-marseille-universite-en-route-vers-le-forum-europeen-de-bucarest/"
+                },
+                {
+                  "label": "LinkedIn Profile",
+                  "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "mobility": {
       "tag": "Mobility",
@@ -216,7 +402,104 @@
       "d3_title": "Singapore",
       "d3_desc": "Industrial project at NUS (National University of Singapore) — Asia-Pacific hub, international exposure and innovation culture.",
       "d3_country": "Singapore",
-      "d3_period": "Fall 2027"
+      "d3_period": "Fall 2027",
+      "items": [
+        {
+          "title": "Barcelona, Spain",
+          "desc": "Academic exchange semester at UPC (Universitat Politècnica de Catalunya) — immersion in Southern European tech ecosystem, advanced microelectronics, and Spanish language.",
+          "image": "./images/mobility_barcelona.jpg",
+          "tags": [
+            "UPC",
+            "Spain",
+            "Barcelona",
+            "Exchange",
+            "Microelectronics",
+            "Europe"
+          ],
+          "article": {
+            "title": "Barcelona, Spain · Universitat Politècnica de Catalunya (UPC)",
+            "tag": "International Mobility",
+            "img": "./images/mobility_barcelona.jpg",
+            "body": "<p>Academic study semester at <strong>Universitat Politècnica de Catalunya (UPC)</strong>, renowned for engineering excellence and microelectronics design.</p><h4>Academic & Professional Objectives</h4><ul><li>In-depth coursework in integrated circuit architecture, CMOS design, and advanced communications.</li><li>Immersion within Barcelona's thriving tech ecosystem and developing bilingual fluency (Spanish / English).</li><li>Alignment with employer needs on European joint industrial projects.</li></ul><p><strong>Planned Period:</strong> Spring 2026 (Semester 6 / FISA S6).</p>",
+            "tags": [
+              "UPC",
+              "Spain",
+              "Barcelona",
+              "Exchange",
+              "Microelectronics",
+              "Europe"
+            ],
+            "links": [
+              {
+                "label": "UPC Barcelona Website",
+                "url": "https://www.upc.edu/"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Montréal, Canada",
+          "desc": "Applied research internship at Polytechnique Montréal — French-speaking North American research environment, cutting-edge microelectronics and quantum hardware laboratories.",
+          "image": "./images/mobility_montreal.jpg",
+          "tags": [
+            "Polytechnique Montréal",
+            "Canada",
+            "Research",
+            "Microelectronics",
+            "Québec"
+          ],
+          "article": {
+            "title": "Montréal, Canada · Polytechnique Montréal",
+            "tag": "International Mobility",
+            "img": "./images/mobility_montreal.jpg",
+            "body": "<p>Applied research laboratory placement at <strong>Polytechnique Montréal</strong>, a premier North American hub for quantum computing and micro/nano-electronic devices.</p><h4>Objectives & Impact</h4><ul><li>Hands-on research in cleanroom microfabrication and characterization of semiconductor components under extreme conditions.</li><li>Adopting North American agile R&D methodologies.</li><li>Direct knowledge transfer to CMOS image sensor development at ISAE-SUPAERO.</li></ul><p><strong>Planned Period:</strong> Summer 2026.</p>",
+            "tags": [
+              "Polytechnique Montréal",
+              "Canada",
+              "Research",
+              "Microelectronics",
+              "Québec"
+            ],
+            "links": [
+              {
+                "label": "Polytechnique Montréal Website",
+                "url": "https://www.polymtl.ca/"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Singapore",
+          "desc": "Industrial project or academic mission in Singapore (NUS / NTU) — Asia-Pacific semiconductor capital, international exposure, and semiconductor supply chain innovation.",
+          "image": "./images/mobility_singapore.jpg",
+          "tags": [
+            "Singapore",
+            "NUS",
+            "Semiconductors",
+            "Asia-Pacific",
+            "Innovation"
+          ],
+          "article": {
+            "title": "Singapore · Asia-Pacific Semiconductor Hub (NUS / NTU)",
+            "tag": "International Mobility",
+            "img": "./images/mobility_singapore.jpg",
+            "body": "<p>Industrial capstone or research mission in Singapore, one of the world's most critical semiconductor fabrication and advanced packaging epicenters.</p><h4>Perspectives & Skills</h4><ul><li>Direct exposure to global semiconductor leaders (foundries, testing, and advanced packaging).</li><li>Professional immersion in a fast-paced, 100% English-speaking global business environment.</li><li>Comprehensive understanding of international semiconductor supply chains and silicon manufacturing.</li></ul><p><strong>Planned Period:</strong> Fall 2027.</p>",
+            "tags": [
+              "Singapore",
+              "NUS",
+              "Semiconductors",
+              "Asia-Pacific",
+              "Innovation"
+            ],
+            "links": [
+              {
+                "label": "NUS Singapore Website",
+                "url": "https://nus.edu.sg/"
+              }
+            ]
+          }
+        }
+      ]
     },
     "passions": {
       "tag": "Passions",
@@ -354,7 +637,8 @@
             "10+ years",
             "Roverway 2024",
             "Norway"
-          ]
+          ],
+          "image": "./images/passion_scouting.jpg"
         },
         {
           "title": "Vice-President, Student Union (BDE) — IUT Salon",
@@ -362,7 +646,8 @@
           "article": {
             "title": "Vice-President, Student Union — IUT Salon",
             "tag": "Civic Engagement",
-            "body": "<p>Served as <strong>Vice-President of the BDE</strong> (Bureau Des Étudiants) at IUT Aix-Marseille, Salon-de-Provence campus during the academic year 2024-2025.</p><p>I co-organised the <strong>national GEII symposium in 2024</strong>, which brought together students and professionals from electrical engineering and industrial computing departments across France. Managing logistics, communication, and programme for a national-scale event was a formative leadership experience.</p>"
+            "body": "<p>Served as <strong>Vice-President of the BDE</strong> (Bureau Des Étudiants) at IUT Aix-Marseille, Salon-de-Provence campus during the academic year 2024-2025.</p><p>I co-organised the <strong>national GEII symposium in 2024</strong>, which brought together students and professionals from electrical engineering and industrial computing departments across France. Managing logistics, communication, and programme for a national-scale event was a formative leadership experience.</p>",
+            "img": "./images/civic_bde.jpg"
           },
           "tags": [
             "BDE",
@@ -371,7 +656,8 @@
             "Teamwork",
             "Engagement",
             "2024-2025"
-          ]
+          ],
+          "image": "./images/civic_bde.jpg"
         },
         {
           "title": "Secretary — Provençal Intelligence Agency (PIA)",
@@ -385,7 +671,8 @@
                 "label": "park4move.fr",
                 "url": "https://park4move.fr"
               }
-            ]
+            ],
+            "img": "./images/project_park4move.jpg"
           },
           "tags": [
             "PIA",
@@ -398,17 +685,42 @@
             "IUT Salon",
             "Engagement",
             "2023-2025"
-          ]
+          ],
+          "image": "./images/project_park4move.jpg"
         }
       ]
     },
     "contact": {
       "tag": "Get in touch",
       "title": "Contact me",
-      "desc": "Feel free to reach out to me via email or LinkedIn for any inquiries or opportunities.",
+      "desc": "Feel free to reach out to me via email, phone, LinkedIn or social channels for any inquiries or opportunities.",
       "contact_sub": "Engineering student at ENSEEIHT | Microelectronics apprentice at ISAE-SUPAERO",
-      "email": "Email",
-      "linkedin": "LinkedIn"
+      "name": "Louis Ghiglione",
+      "first_name": "Louis",
+      "last_name": "Ghiglione",
+      "title_role": "Élève-Ingénieur Microélectronique & Automatique",
+      "org": "INP-ENSEEIHT - ISAE-SUPAERO",
+      "avatar_url": "./images/avatar.jpg",
+      "location": "Toulouse, France",
+      "note": "Ingénieur en apprentissage (FISA S5). Spécialité Microélectronique & Automatique. Projets: Tolosat, Park4Move, Fare Ingénierie ITER.",
+      "channels": [
+        {
+          "type": "email",
+          "label": "louis.ghiglione@etu.toulouse-inp.fr",
+          "url": "mailto:louis.ghiglione@etu.toulouse-inp.fr",
+          "pref": true
+        },
+        {
+          "type": "linkedin",
+          "label": "linkedin.com/in/louis-ghiglione-722165294",
+          "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
+        },
+        {
+          "type": "github",
+          "label": "github.com/louis289",
+          "url": "https://github.com/louis289"
+        }
+      ]
     },
     "settings": {
       "title": "Settings",
@@ -782,7 +1094,8 @@
           "article": {
             "title": "Conception ASIC & FPGA — ISAE-SUPAERO (CIME-DEOS)",
             "tag": "Projet",
-            "body": "<p>En tant qu'apprenti ingénieur dans le groupe <strong>CIME-DEOS</strong> (Capteurs d'Image Intégrés) à l'ISAE-SUPAERO, je travaille sur la chaîne de conception complète des circuits de lecture CMOS pour capteurs d'image.</p><ul><li><strong>Architectures de circuits de lecture CMOS</strong> — conçus sous CADENCE (Virtuoso)</li><li><strong>Routines de commande VHDL</strong> — implémentées et vérifiées sur FPGA Xilinx (Vivado)</li><li><strong>Flux ASIC complet</strong> — synthèse, placement et routage</li><li>Intégration dans le <strong>groupe de recherche CIMI</strong>, travaillant sur des systèmes de capteurs pour l'imagerie spatiale et industrielle</li></ul><p>Cette alternance connecte directement ma formation académique en électronique (3EA, N7) à la recherche de pointe en microélectronique.</p>"
+            "body": "<p>En tant qu'apprenti ingénieur dans le groupe <strong>CIME-DEOS</strong> (Capteurs d'Image Intégrés) à l'ISAE-SUPAERO, je travaille sur la chaîne de conception complète des circuits de lecture CMOS pour capteurs d'image.</p><ul><li><strong>Architectures de circuits de lecture CMOS</strong> — conçus sous CADENCE (Virtuoso)</li><li><strong>Routines de commande VHDL</strong> — implémentées et vérifiées sur FPGA Xilinx (Vivado)</li><li><strong>Flux ASIC complet</strong> — synthèse, placement et routage</li><li>Intégration dans le <strong>groupe de recherche CIMI</strong>, travaillant sur des systèmes de capteurs pour l'imagerie spatiale et industrielle</li></ul><p>Cette alternance connecte directement ma formation académique en électronique (3EA, N7) à la recherche de pointe en microélectronique.</p>",
+            "img": "./images/logo_isae.png"
           },
           "tags": [
             "ISAE-SUPAERO",
@@ -797,7 +1110,8 @@
             "Hardware",
             "N7",
             "2025-2026"
-          ]
+          ],
+          "image": "./images/logo_isae.png"
         },
         {
           "title": "Automatisme & IoT — Fare Ingenierie",
@@ -805,7 +1119,8 @@
           "article": {
             "title": "Fare Ingenierie — Automatisme & IoT",
             "tag": "Projet / Alternance",
-            "body": "<p>Deux expériences chez <strong>Fare Ingenierie</strong>, bureau d'études spécialisé en automatisme et supervision :</p><p><strong>Stage (Mars–Juin 2025, 4 mois) :</strong></p><ul><li>Refonte complète du programme automate du <strong>SY Tiara II</strong> — un superyacht de 80 mètres</li><li>Intégration de capteurs LoRaWAN et développement d'une application web interne de gestion d'entreprise</li><li>Backend : <strong>Python</strong>, MySQL, Docker</li></ul><p><strong>Alternance (Sept. 2025 – Août 2026, 1 an) :</strong></p><ul><li>Conception et intégration de programmes d'automates et réalisation de supervisions</li><li>Développement R&D d'une architecture IoT : <strong>capteurs LoRaWAN via MQTT sur automates</strong> pour la surveillance de sécurité du <strong>site de fusion nucléaire ITER</strong></li><li>Backend web sécurisé : <strong>Python / FastAPI / Docker / MySQL</strong></li></ul>"
+            "body": "<p>Deux expériences chez <strong>Fare Ingenierie</strong>, bureau d'études spécialisé en automatisme et supervision :</p><p><strong>Stage (Mars–Juin 2025, 4 mois) :</strong></p><ul><li>Refonte complète du programme automate du <strong>SY Tiara II</strong> — un superyacht de 80 mètres</li><li>Intégration de capteurs LoRaWAN et développement d'une application web interne de gestion d'entreprise</li><li>Backend : <strong>Python</strong>, MySQL, Docker</li></ul><p><strong>Alternance (Sept. 2025 – Août 2026, 1 an) :</strong></p><ul><li>Conception et intégration de programmes d'automates et réalisation de supervisions</li><li>Développement R&D d'une architecture IoT : <strong>capteurs LoRaWAN via MQTT sur automates</strong> pour la surveillance de sécurité du <strong>site de fusion nucléaire ITER</strong></li><li>Backend web sécurisé : <strong>Python / FastAPI / Docker / MySQL</strong></li></ul>",
+            "img": "./images/project_iter.jpg"
           },
           "tags": [
             "Fare Ingenierie",
@@ -820,7 +1135,8 @@
             "Automatisme",
             "Hardware",
             "2024-2026"
-          ]
+          ],
+          "image": "./images/project_iter.jpg"
         },
         {
           "title": "Park4Move — Stationnement Connecté LoRaWAN",
@@ -834,7 +1150,8 @@
                 "label": "park4move.fr",
                 "url": "https://park4move.fr"
               }
-            ]
+            ],
+            "img": "./images/project_park4move.jpg"
           },
           "tags": [
             "PIA",
@@ -850,7 +1167,8 @@
             "Service Learning",
             "IUT Salon",
             "2023-2025"
-          ]
+          ],
+          "image": "./images/project_park4move.jpg"
         },
         {
           "title": "Robotique Étudiante — 3 Compétitions Nationales",
@@ -858,7 +1176,8 @@
           "article": {
             "title": "Robotique — 3 Compétitions Nationales",
             "tag": "Projet",
-            "body": "<p>Durant mon BUT GEII à l'IUT Aix-Marseille (Salon-de-Provence), j'ai participé à <strong>3 compétitions nationales de robotique étudiante</strong>, couvrant le cycle ingénierie complet de la conception jusqu'à la compétition.</p><ul><li><strong>Conception mécanique</strong> — châssis, actionneurs et éléments structuraux</li><li><strong>Électronique embarquée</strong> — conception PCB, drivers moteurs, intégration capteurs</li><li><strong>Logiciel embarqué</strong> — firmware C/C++, Arduino et microcontrôleurs sur mesure</li><li><strong>Prototypage et maintenance</strong> — itération rapide lors de la préparation</li></ul><p>Ces compétitions ont été formatrices pour travailler sous pression, gérer des délais serrés et collaborer en équipe pluridisciplinaire.</p>"
+            "body": "<p>Durant mon BUT GEII à l'IUT Aix-Marseille (Salon-de-Provence), j'ai participé à <strong>3 compétitions nationales de robotique étudiante</strong>, couvrant le cycle ingénierie complet de la conception jusqu'à la compétition.</p><ul><li><strong>Conception mécanique</strong> — châssis, actionneurs et éléments structuraux</li><li><strong>Électronique embarquée</strong> — conception PCB, drivers moteurs, intégration capteurs</li><li><strong>Logiciel embarqué</strong> — firmware C/C++, Arduino et microcontrôleurs sur mesure</li><li><strong>Prototypage et maintenance</strong> — itération rapide lors de la préparation</li></ul><p>Ces compétitions ont été formatrices pour travailler sous pression, gérer des délais serrés et collaborer en équipe pluridisciplinaire.</p>",
+            "img": "./images/passion_space.jpg"
           },
           "tags": [
             "Robotique",
@@ -870,7 +1189,8 @@
             "IUT Salon",
             "Résolution de problèmes",
             "2023-2026"
-          ]
+          ],
+          "image": "./images/passion_space.jpg"
         }
       ]
     },
@@ -891,7 +1211,185 @@
       "item3_learnt": "Interview à mener avant la Séance 5. Le nom, le poste, les raisons et les enseignements clés seront ajoutés ici.",
       "item4_title": "My Job Glasses — Interview #2",
       "item4_person": "À compléter après l'interview",
-      "item4_learnt": "Interview à mener avant la Séance 5. Le nom, le poste, les raisons et les enseignements clés seront ajoutés ici."
+      "item4_learnt": "Interview à mener avant la Séance 5. Le nom, le poste, les raisons et les enseignements clés seront ajoutés ici.",
+      "jobs_tag": "EXPÉRIENCES",
+      "jobs_title": "Emplois Passés & Postes Occupés",
+      "milestones_tag": "OBJECTIFS",
+      "milestones_title": "Préparation & Réseau Professionnel",
+      "jobs": {
+        "items": [
+          {
+            "company": "ISAE-SUPAERO (CIME-DEOS)",
+            "role": "Apprenti ingénieur conception microélectronique analogique numérique",
+            "period": "Sept. 2026 – En cours",
+            "location": "Toulouse, France",
+            "desc": "Conception de capteurs d'image CMOS spatiaux, simulation et caractérisation de blocs de lecture analogique et numérique.",
+            "image": "./images/logo_isae.png",
+            "tags": [
+              "ISAE-SUPAERO",
+              "Microélectronique",
+              "CMOS",
+              "Analogique",
+              "Numérique",
+              "Tolosat",
+              "Cadence",
+              "VHDL"
+            ],
+            "article": {
+              "title": "ISAE-SUPAERO · Apprenti Ingénieur Conception Microélectronique",
+              "tag": "Expérience Professionnelle",
+              "img": "./images/logo_isae.png",
+              "body": "<h4>Postes occupés</h4><p><strong>Apprenti Ingénieur en Conception Microélectronique Analogique et Numérique</strong> au sein de l'équipe CIMI (Capteurs d'Images et Systèmes Intégrés) du département CIME-DEOS à l'ISAE-SUPAERO (Toulouse). Formation en alternance sous statut d'élève-ingénieur FISA à l'ENSEEIHT.</p><h4>Projets liés</h4><ul><li><strong>Capteurs d'image CMOS pour l'espace :</strong> Conception et modélisation de blocs de lecture analogique de pixels, convertisseurs analogique-numérique (ADC) et chaînes d'acquisition bas-bruit sous contraintes radiatives spatiales.</li><li><strong>CubeSat Tolosat (Nanosatellite 3U) :</strong> Intégration de charges utiles scientifiques et validation de chaînes de mesure électroniques.</li></ul><h4>Mobilités éventuelles</h4><p>Poste basé à <strong>Toulouse (Occitanie)</strong>. Collaborations et échanges techniques avec le CNES, les équipes de recherche spatiale de l'ONERA et les partenaires européens du consortium spatial.</p>",
+              "tags": [
+                "ISAE-SUPAERO",
+                "Microélectronique",
+                "CMOS",
+                "Analogique",
+                "Numérique",
+                "Tolosat",
+                "Cadence",
+                "VHDL"
+              ],
+              "links": [
+                {
+                  "label": "Site ISAE-SUPAERO",
+                  "url": "https://www.isae-supaero.fr/"
+                },
+                {
+                  "label": "Profil LinkedIn",
+                  "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
+                }
+              ]
+            }
+          },
+          {
+            "company": "FARE INGÉNIERIE",
+            "role": "Alternant automaticien en bureau d'études",
+            "period": "Sept. 2025 – Août 2026 (1 an)",
+            "location": "Salon-de-Provence & Cadarache, France",
+            "desc": "Architecture IoT LoRaWAN/MQTT pour le site nucléaire d'ITER, programmes automates industriels et backend web FastAPI sécurisé.",
+            "image": "./images/project_iter.jpg",
+            "tags": [
+              "Fare Ingénierie",
+              "ITER",
+              "LoRaWAN",
+              "MQTT",
+              "Automatisme",
+              "Python",
+              "FastAPI",
+              "Docker",
+              "MySQL"
+            ],
+            "article": {
+              "title": "FARE INGÉNIERIE · Alternant Automaticien en Bureau d'Études",
+              "tag": "Expérience Professionnelle",
+              "img": "./images/project_iter.jpg",
+              "body": "<h4>Postes occupés</h4><p><strong>Alternant Automaticien & Développeur IoT en Bureau d'Études</strong> chez FARE Ingénierie (Salon-de-Provence), société d'ingénierie spécialisée dans l'automatisme industriel et les systèmes critiques.</p><h4>Projets liés</h4><ul><li><strong>Projet ITER (Nucléaire & Sécurité) :</strong> Conception et déploiement R&D d'une architecture IoT de bout en bout intégrant des capteurs LoRaWAN communicant en MQTT directement avec des automates programmables industriels (PLC) sur le chantier de fusion nucléaire ITER à Cadarache.</li><li><strong>Backend & Supervision sécurisée :</strong> Développement d'une API backend robuste en Python / FastAPI, conteneurisée sous Docker avec persistance de données MySQL selon un cahier des charges rigoureux.</li></ul><h4>Mobilités éventuelles</h4><p>Interventions régulières sur site à <strong>Salon-de-Provence</strong> et déplacements techniques sur le site de recherche nucléaire international <strong>ITER à Cadarache (Saint-Paul-lès-Durance)</strong>.</p>",
+              "tags": [
+                "Fare Ingénierie",
+                "ITER",
+                "LoRaWAN",
+                "MQTT",
+                "Automatisme",
+                "Python",
+                "FastAPI",
+                "Docker",
+                "MySQL"
+              ],
+              "links": [
+                {
+                  "label": "Site ITER",
+                  "url": "https://www.iter.org/"
+                },
+                {
+                  "label": "Profil LinkedIn",
+                  "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
+                }
+              ]
+            }
+          },
+          {
+            "company": "FARE INGÉNIERIE",
+            "role": "Stagiaire automaticien en bureau d'études",
+            "period": "Mars 2025 – Juin 2025 (4 mois)",
+            "location": "Salon-de-Provence & La Ciotat, France",
+            "desc": "Refonte intégrale du programme automate du yacht SY Tiara II (80 m), capteurs LoRaWAN et progiciel web interne.",
+            "image": "./images/passion_vtt.jpg",
+            "tags": [
+              "Fare Ingénierie",
+              "Automatisme",
+              "SY Tiara II",
+              "Yachting",
+              "LoRaWAN",
+              "Python",
+              "MySQL"
+            ],
+            "article": {
+              "title": "FARE INGÉNIERIE · Stagiaire Automaticien en Bureau d'Études",
+              "tag": "Expérience Professionnelle",
+              "img": "./images/project_iter.jpg",
+              "body": "<h4>Postes occupés</h4><p><strong>Stagiaire Automaticien en Bureau d'Études</strong> chez FARE Ingénierie (stage technique de BUT GEII de 4 mois).</p><h4>Projets liés</h4><ul><li><strong>Superyacht SY Tiara II (80 m) :</strong> Pilotage complet de la refonte du programme automate de supervision et de contrôle commande bord (automates Schneider / Unity Pro).</li><li><strong>Capteurs IoT & Gestion d'entreprise :</strong> Intégration de capteurs LoRaWAN et conception d'une application web interne de gestion d'entreprise en Python/MySQL.</li></ul><h4>Mobilités éventuelles</h4><p>Salon-de-Provence et missions sur les chantiers navals de haute plaisance à <strong>La Ciotat et Marseille</strong>.</p>",
+              "tags": [
+                "Fare Ingénierie",
+                "Automatisme",
+                "SY Tiara II",
+                "Yachting",
+                "LoRaWAN",
+                "Python",
+                "MySQL"
+              ],
+              "links": [
+                {
+                  "label": "Profil LinkedIn",
+                  "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
+                }
+              ]
+            }
+          },
+          {
+            "company": "IUT d'Aix-Marseille & PIA",
+            "role": "Étudiant BUT GEII & Co-fondateur / Lead Technique PIA",
+            "period": "Sept. 2023 – Août 2026 (3 ans)",
+            "location": "Salon-de-Provence & Bucarest, Roumanie",
+            "desc": "Conception du projet Park4Move (lauréat Service-Learning CISAM+, Forum de Bucarest) et 3 participations à la Coupe de France de Robotique.",
+            "image": "./images/project_park4move.jpg",
+            "tags": [
+              "Park4Move",
+              "BUT GEII",
+              "CISAM+",
+              "Bucarest",
+              "Robotique",
+              "LoRaWAN",
+              "PMR"
+            ],
+            "article": {
+              "title": "IUT d'Aix-Marseille & PIA · Étudiant & Lead Technique",
+              "tag": "Formation & Projets",
+              "img": "./images/project_park4move.jpg",
+              "body": "<h4>Postes occupés</h4><p><strong>Étudiant en BUT Génie Électrique et Informatique Industrielle (GEII)</strong> et membre co-fondateur / responsable technique de l'association étudiante <em>Provençal Intelligence Agency (PIA)</em>.</p><h4>Projets liés</h4><ul><li><strong>Park4Move :</strong> Système intelligent de guidage vers les places de stationnement PMR via réseau de capteurs LoRaWAN et application mobile/PWA. Projet élu meilleur projet du Service-Learning d'Aix-Marseille Université (CISAM+ France 2030) et présenté devant 5 universités européennes.</li><li><strong>Coupe de France de Robotique :</strong> Chef d'équipe et concepteur électronique/embarqué sur 3 éditions consécutives (2024, 2025, 2026).</li></ul><h4>Mobilités éventuelles</h4><p>Représentation internationale au <strong>Forum Européen de Service-Learning à Bucarest (Roumanie)</strong> en juin 2024, ainsi qu'aux compétitions nationales de robotique à <strong>La Roche-sur-Yon</strong>.</p>",
+              "tags": [
+                "Park4Move",
+                "BUT GEII",
+                "CISAM+",
+                "Bucarest",
+                "Robotique",
+                "LoRaWAN",
+                "PMR"
+              ],
+              "links": [
+                {
+                  "label": "Projet Park4Move CISAM+",
+                  "url": "https://cisam-innovation.com/2024/05/07/le-projet-park4move-elu-meilleur-projet-du-service-learning-daix-marseille-universite-en-route-vers-le-forum-europeen-de-bucarest/"
+                },
+                {
+                  "label": "Profil LinkedIn",
+                  "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "mobility": {
       "tag": "Mobilité",
@@ -909,7 +1407,104 @@
       "d3_title": "Singapour",
       "d3_desc": "Projet industriel à NUS (National University of Singapore) — hub Asie-Pacifique, ouverture internationale et culture de l'innovation.",
       "d3_country": "Singapour",
-      "d3_period": "Automne 2027"
+      "d3_period": "Automne 2027",
+      "items": [
+        {
+          "title": "Barcelone, Espagne",
+          "desc": "Semestre d'échange académique à l'UPC (Universitat Politècnica de Catalunya) — immersion dans l'écosystème tech catalan, microélectronique avancée et perfectionnement linguistique.",
+          "image": "./images/mobility_barcelona.jpg",
+          "tags": [
+            "UPC",
+            "Espagne",
+            "Barcelone",
+            "Échange",
+            "Microélectronique",
+            "Europe"
+          ],
+          "article": {
+            "title": "Barcelone, Espagne · Universitat Politècnica de Catalunya (UPC)",
+            "tag": "Mobilité Internationale",
+            "img": "./images/mobility_barcelona.jpg",
+            "body": "<p>Semestre d'études académique à l'<strong>Universitat Politècnica de Catalunya (UPC)</strong>, réputée pour ses cursus d'excellence en ingénierie et microélectronique.</p><h4>Objectifs académiques & professionnels</h4><ul><li>Approfondissement des cours de conception de circuits intégrés et télécommunications.</li><li>Immersion au sein de l'écosystème tech barcelonais et renforcement bilingue (Espagnol / Anglais).</li><li>Cohérence avec les besoins de mon entreprise d'apprentissage pour des projets européens.</li></ul><p><strong>Période envisagée :</strong> Printemps 2026 (Semestre 6 / FISA S6).</p>",
+            "tags": [
+              "UPC",
+              "Espagne",
+              "Barcelone",
+              "Échange",
+              "Microélectronique",
+              "Europe"
+            ],
+            "links": [
+              {
+                "label": "Site UPC Barcelona",
+                "url": "https://www.upc.edu/"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Montréal, Canada",
+          "desc": "Stage de recherche appliquée à Polytechnique Montréal — environnement nord-américain d'excellence, laboratoires de pointe en microélectronique et technologies quantiques.",
+          "image": "./images/mobility_montreal.jpg",
+          "tags": [
+            "Polytechnique Montréal",
+            "Canada",
+            "Recherche",
+            "Microélectronique",
+            "Québec"
+          ],
+          "article": {
+            "title": "Montréal, Canada · Polytechnique Montréal",
+            "tag": "Mobilité Internationale",
+            "img": "./images/mobility_montreal.jpg",
+            "body": "<p>Stage de recherche appliquée en laboratoire au sein de <strong>Polytechnique Montréal</strong>, pôle majeur de recherche en technologies quantiques et micro/nano-électronique.</p><h4>Objectifs et valeur ajoutée</h4><ul><li>Travail en laboratoire de microfabrication et caractérisation de composants sous contraintes extrêmes.</li><li>Découverte des méthodologies de recherche et développement nord-américaines.</li><li>Valorisation directe pour les capteurs d'image spatiaux développés à l'ISAE-SUPAERO.</li></ul><p><strong>Période envisagée :</strong> Été 2026.</p>",
+            "tags": [
+              "Polytechnique Montréal",
+              "Canada",
+              "Recherche",
+              "Microélectronique",
+              "Québec"
+            ],
+            "links": [
+              {
+                "label": "Site Polytechnique Montréal",
+                "url": "https://www.polymtl.ca/"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Singapour",
+          "desc": "Projet industriel ou capstone à Singapour (NUS / NTU) — carrefour mondial des semi-conducteurs, exposition internationale de premier plan et vision globale des supply chains de puces.",
+          "image": "./images/mobility_singapore.jpg",
+          "tags": [
+            "Singapour",
+            "NUS",
+            "Semi-conducteurs",
+            "Asie-Pacifique",
+            "Innovation"
+          ],
+          "article": {
+            "title": "Singapour · Hub Semi-conducteurs Asie-Pacifique (NUS / NTU)",
+            "tag": "Mobilité Internationale",
+            "img": "./images/mobility_singapore.jpg",
+            "body": "<p>Projet de fin d'études ou mission industrielle à Singapour, l'un des plus grands hubs mondiaux de fonderies et de packaging semi-conducteurs avancés.</p><h4>Perspectives et compétences</h4><ul><li>Exposition directe aux grands industriels mondiaux des semi-conducteurs (fonderies, test, packaging avancé).</li><li>Travail dans un environnement 100% anglophone hautement cosmopolite et exigeant.</li><li>Apport d'une vision globale des chaînes d'approvisionnement des puces électroniques.</li></ul><p><strong>Période envisagée :</strong> Automne 2027.</p>",
+            "tags": [
+              "Singapour",
+              "NUS",
+              "Semi-conducteurs",
+              "Asie-Pacifique",
+              "Innovation"
+            ],
+            "links": [
+              {
+                "label": "Site NUS Singapore",
+                "url": "https://nus.edu.sg/"
+              }
+            ]
+          }
+        }
+      ]
     },
     "passions": {
       "tag": "Passions",
@@ -1047,7 +1642,8 @@
             "10+ ans",
             "Roverway 2024",
             "Norvège"
-          ]
+          ],
+          "image": "./images/passion_scouting.jpg"
         },
         {
           "title": "Vice-Président BDE — IUT Salon",
@@ -1055,7 +1651,8 @@
           "article": {
             "title": "Vice-Président BDE — IUT Salon",
             "tag": "Engagement Civique",
-            "body": "<p>Vice-Président du <strong>BDE</strong> (Bureau Des Étudiants) à l'IUT Aix-Marseille, campus de Salon-de-Provence, durant l'année 2024-2025.</p><p>J'ai co-organisé le <strong>symposium national GEII 2024</strong>, rassemblant étudiants et professionnels du génie électrique et de l'informatique industrielle de toute la France. Gérer la logistique, la communication et le programme d'un événement à échelle nationale a été une expérience de leadership formatrice.</p>"
+            "body": "<p>Vice-Président du <strong>BDE</strong> (Bureau Des Étudiants) à l'IUT Aix-Marseille, campus de Salon-de-Provence, durant l'année 2024-2025.</p><p>J'ai co-organisé le <strong>symposium national GEII 2024</strong>, rassemblant étudiants et professionnels du génie électrique et de l'informatique industrielle de toute la France. Gérer la logistique, la communication et le programme d'un événement à échelle nationale a été une expérience de leadership formatrice.</p>",
+            "img": "./images/civic_bde.jpg"
           },
           "tags": [
             "BDE",
@@ -1064,7 +1661,8 @@
             "Teamwork",
             "Engagement",
             "2024-2025"
-          ]
+          ],
+          "image": "./images/civic_bde.jpg"
         },
         {
           "title": "Secrétaire — Provençal Intelligence Agency (PIA)",
@@ -1078,7 +1676,8 @@
                 "label": "park4move.fr",
                 "url": "https://park4move.fr"
               }
-            ]
+            ],
+            "img": "./images/project_park4move.jpg"
           },
           "tags": [
             "PIA",
@@ -1091,17 +1690,42 @@
             "IUT Salon",
             "Engagement",
             "2023-2025"
-          ]
+          ],
+          "image": "./images/project_park4move.jpg"
         }
       ]
     },
     "contact": {
       "tag": "Me contacter",
-      "title": "Contact",
-      "desc": "N'hésitez pas à me contacter par e-mail ou sur LinkedIn pour toute question ou opportunité.",
-      "contact_sub": "Élève-Ingénieur à l'ENSEEIHT | Apprenti microélectronique à l'ISAE-SUPAERO",
-      "email": "E-mail",
-      "linkedin": "LinkedIn"
+      "title": "Entrer en contact",
+      "desc": "N'hésitez pas à me contacter par email, téléphone, LinkedIn ou réseaux sociaux pour toute opportunité ou échange technique.",
+      "contact_sub": "Élève-Ingénieur ENSEEIHT | Apprenti en microélectronique à l'ISAE-SUPAERO",
+      "name": "Louis Ghiglione",
+      "first_name": "Louis",
+      "last_name": "Ghiglione",
+      "title_role": "Élève-Ingénieur Microélectronique & Automatique",
+      "org": "INP-ENSEEIHT - ISAE-SUPAERO",
+      "avatar_url": "./images/avatar.jpg",
+      "location": "Toulouse, France",
+      "note": "Ingénieur en apprentissage (FISA S5). Spécialité Microélectronique & Automatique. Projets: Tolosat, Park4Move, Fare Ingénierie ITER.",
+      "channels": [
+        {
+          "type": "email",
+          "label": "louis.ghiglione@etu.toulouse-inp.fr",
+          "url": "mailto:louis.ghiglione@etu.toulouse-inp.fr",
+          "pref": true
+        },
+        {
+          "type": "linkedin",
+          "label": "linkedin.com/in/louis-ghiglione-722165294",
+          "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
+        },
+        {
+          "type": "github",
+          "label": "github.com/louis289",
+          "url": "https://github.com/louis289"
+        }
+      ]
     },
     "settings": {
       "title": "Paramètres",

@@ -136,7 +136,7 @@ async function initTagPage() {
           const enc = encodeURIComponent(t);
           const isCurrent = t.toLowerCase() === currentTagNorm;
           const style = isCurrent ? 'background: var(--color-accent); color:#fff; border-color:var(--color-accent);' : '';
-          return `<a href="./tag.html?tag=${enc}" class="badge nav-link" style="${style}" onclick="event.stopPropagation();">${t}</a>`;
+          return `<a href="./tag.html?tag=${enc}" class="badge" style="${style}" onclick="event.stopPropagation();">${t}</a>`;
         }).join(' ');
 
         html += `
@@ -175,7 +175,7 @@ async function initTagPage() {
       html += `<div class="related-tags" style="display:flex; flex-wrap:wrap; gap:0.5rem;">`;
       relatedTags.slice(0, 12).forEach(t => {
         const encTag = encodeURIComponent(t);
-        html += `<a href="./tag.html?tag=${encTag}" class="badge nav-link" style="padding:0.4rem 0.9rem; font-size:0.85rem;">#${t}</a>`;
+        html += `<a href="./tag.html?tag=${encTag}" class="badge" style="padding:0.25rem 0.75rem; font-size:0.8rem;">#${t}</a>`;
       });
       html += `</div>`;
     }
