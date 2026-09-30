@@ -57,11 +57,10 @@ export function getContactData() {
     name,
     firstName,
     lastName,
-    title: contact.contact_sub || contact.title_role || 'Élève-Ingénieur Microélectronique & Automatique',
+    title: contact.contact_sub || contact.title_role || 'Engineering Student',
     org: contact.org || 'INP-ENSEEIHT - ISAE-SUPAERO',
     avatarUrl: contact.avatar_url || config.avatar_url || './images/avatar.jpg',
     location: contact.location || 'Toulouse, France',
-    note: contact.note || 'Ingénieur en apprentissage à ISAE-SUPAERO & ENSEEIHT.',
     portfolio: config.portfolio_pdf_url || window.location.origin + window.location.pathname.replace(/\/contact\.html$/, '/'),
     channels
   };
@@ -181,9 +180,6 @@ export async function generateVcfContent() {
 
   if (info.portfolio) {
     vcf.push(`URL;TYPE=Portfolio:${info.portfolio}`);
-  }
-  if (info.note) {
-    vcf.push(`NOTE:${info.note}`);
   }
 
   if (photoBase64) {

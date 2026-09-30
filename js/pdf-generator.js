@@ -4,16 +4,14 @@
  * Uses @media print styles to ensure it looks like a clean document.
  */
 
+import { getCurrentLang } from './i18n.js';
+
 export function initPdfGenerator() {
   const downloadBtn = document.getElementById('btn-download-pdf');
   if (downloadBtn) {
     downloadBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      const langRadios = document.querySelectorAll('input[name="pdf-lang"]');
-      let pdfLang = 'en';
-      for (const r of langRadios) {
-        if (r.checked) pdfLang = r.value;
-      }
+      const pdfLang = getCurrentLang() || 'en';
       window.open(`./portfolio-doc.html?lang=${pdfLang}&print=true`, '_blank');
     });
   }

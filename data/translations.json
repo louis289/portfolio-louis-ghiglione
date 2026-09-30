@@ -842,7 +842,7 @@
       "org": "INP-ENSEEIHT - ISAE-SUPAERO",
       "avatar_url": "./images/avatar.jpg",
       "location": "Toulouse, France",
-      "note": "Ingénieur en apprentissage (FISA S5). Spécialité Microélectronique & Automatique. Projets: Tolosat, Park4Move, Fare Ingénierie ITER.",
+      "download_btn_vcf": "Download Contact (.vcf)",
       "channels": [
         {
           "type": "email",
@@ -1982,7 +1982,7 @@
       "org": "INP-ENSEEIHT - ISAE-SUPAERO",
       "avatar_url": "./images/avatar.jpg",
       "location": "Toulouse, France",
-      "note": "Ingénieur en apprentissage (FISA S5). Spécialité Microélectronique & Automatique. Projets: Tolosat, Park4Move, Fare Ingénierie ITER.",
+      "download_btn_vcf": "Télécharger Contact (.vcf)",
       "channels": [
         {
           "type": "email",

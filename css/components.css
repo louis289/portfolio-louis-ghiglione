@@ -1095,11 +1095,16 @@ a.badge:hover {
 }
 
 @media (max-width: 768px) {
+  .page-header {
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+
   .contact-header-content {
     flex-direction: column;
     align-items: stretch;
-    gap: var(--space-sm);
-    margin-top: var(--space-sm);
+    gap: 0.5rem;
+    margin-top: 0.5rem;
   }
 
   .btn-export-download {
