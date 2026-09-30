@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +8,7 @@
   <meta name="description" content="Contact Louis Ghiglione via LinkedIn or Email." />
   <link rel="canonical" href="https://louis289.github.io/portfolio-louis-ghiglione/contact.html" />
   <meta property="og:title" content="Contact — Louis Ghiglione" />
-  <meta property="og:type"  content="website" />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet" />
@@ -19,6 +20,7 @@
   <link id="theme-fx" rel="stylesheet" href="./css/themes/electric.css" />
   <link id="theme-a11y" rel="stylesheet" href="" />
 </head>
+
 <body data-page="contact">
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -33,8 +35,10 @@
         <h1 class="section-title" data-i18n="contact.title"></h1>
         <div class="contact-header-content">
           <p class="section-desc" data-i18n="contact.desc"></p>
-          <button type="button" class="btn-export-download" id="btn-export-contact" data-bind="title:contact.download_btn_vcf" title="Télécharger la fiche contact (.vcf)">
-            <svg class="download-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <button type="button" class="btn-export-download" id="btn-export-contact"
+            data-bind="title:contact.download_btn_vcf" title="Télécharger Contact (.vcf)">
+            <svg class="download-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
@@ -47,21 +51,31 @@
       <div class="contact-card-wrapper" id="contact-tilt-wrapper">
         <div class="contact-card" id="contact-tilt-card">
           <div class="contact-card__glare" id="contact-tilt-glare"></div>
-          
+
           <div class="contact-card__content">
             <img src="" alt="" class="contact-card__avatar" data-bind="src:config.avatar_url; alt:config.name" />
-            
+
             <div class="contact-card__info">
               <h2 class="contact-card__name" data-bind="text:config.name"></h2>
               <p class="contact-card__title" data-i18n="contact.contact_sub"></p>
-              
+
               <div class="contact-card__links">
                 <a href="#" class="contact-card__link" data-bind="href:config.email_mailto">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
                   <span data-bind="text:config.email_display"></span>
                 </a>
-                <a href="#" class="contact-card__link" target="_blank" rel="noopener" data-bind="href:config.linkedin_url">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <a href="#" class="contact-card__link" target="_blank" rel="noopener"
+                  data-bind="href:config.linkedin_url">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
                   <span data-bind="text:config.linkedin_display"></span>
                 </a>
               </div>
@@ -81,4 +95,5 @@
 
   <script type="module" src="./js/main.js"></script>
 </body>
+
 </html>
