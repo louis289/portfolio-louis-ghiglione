@@ -52,3 +52,9 @@
 - [x] Implemented RFC 5545 iCalendar (`.ics`) generator with embedded base64 profile photo, emails, and LinkedIn URL.
 - [x] Implemented vCard 3.0 (`.vcf`) generator for native iOS/Android contact saving with embedded base64 photo, emails, and LinkedIn URL.
 - [x] Designed glassmorphic modal with contact preview, direct download buttons, and 1-click clipboard copy.
+
+### 10. Contact Card 3D Amplification & Header Download Button (COMPLETED on 2026-09-30)
+- [x] Replaced export button icon with the official download SVG arrow (tray/arrow symbol) and moved it to the end of the header paragraph, removing it from the 3D card.
+- [x] Amplified 3D perspective to 26° on `js/tilt.js` with dynamic directional shadows and radiant multi-color specular glare.
+- [x] Added mobile touchscreen support (drag & swipe tilt) and calibrated gyroscope sensitivity on smartphones.
+- [x] Added prismatic border reflection and enhanced pop-out parallax depth on the avatar, name, and contact links.
