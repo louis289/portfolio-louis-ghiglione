@@ -58,7 +58,7 @@ export function initTilt() {
     window.addEventListener('deviceorientation', (e) => {
       if (e.gamma === null || e.beta === null) return;
       let gamma = Math.max(-30, Math.min(30, e.gamma));
-      let beta = Math.max(0, Math.min(60, beta)) - 30;
+      let beta = Math.max(0, Math.min(60, e.beta)) - 30;
       const xPercent = (gamma + 30) / 60;
       const yPercent = (beta + 30) / 60;
       applyTilt(xPercent, yPercent);
