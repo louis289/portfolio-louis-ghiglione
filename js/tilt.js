@@ -39,20 +39,20 @@ export function initTilt() {
   wrapper.addEventListener('mouseleave', () => {
     resetTilt();
   });
-
-  // --- TOUCH (Mobile) ---
-  wrapper.addEventListener('touchmove', (e) => {
-    if (e.touches.length === 1) {
-      const rect = wrapper.getBoundingClientRect();
-      const touch = e.touches[0];
-      const x = touch.clientX - rect.left;
-      const y = touch.clientY - rect.top;
-      applyTilt(Math.max(0, Math.min(1, x / rect.width)), Math.max(0, Math.min(1, y / rect.height)));
-    }
-  }, { passive: true });
-
-  wrapper.addEventListener('touchend', resetTilt, { passive: true });
-
+  /*
+    // --- TOUCH (Mobile) ---
+    wrapper.addEventListener('touchmove', (e) => {
+      if (e.touches.length === 1) {
+        const rect = wrapper.getBoundingClientRect();
+        const touch = e.touches[0];
+        const x = touch.clientX - rect.left;
+        const y = touch.clientY - rect.top;
+        applyTilt(Math.max(0, Math.min(1, x / rect.width)), Math.max(0, Math.min(1, y / rect.height)));
+      }
+    }, { passive: true });
+  
+    wrapper.addEventListener('touchend', resetTilt, { passive: true });
+  */
   // --- GYROSCOPE (Mobile) ---
   if (window.DeviceOrientationEvent) {
     window.addEventListener('deviceorientation', (e) => {
