@@ -13,8 +13,13 @@
 }
 
 /* Specific light mode overrides */
-body {
+html {
   background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+body {
+  background-color: transparent;
   color: var(--color-text);
 }
 

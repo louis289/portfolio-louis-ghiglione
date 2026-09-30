@@ -60,8 +60,20 @@ export function openModal(articleKey, translations) {
   const lang = getCurrentLang();
   const t = translations[lang];
 
-  // Resolve nested key like "passions.p1_article"
-  const article = articleKey.split('.').reduce((o, k) => o?.[k], t);
+  // Resolve nested key like "passions.p1_article" or "projects_item_0"
+  let article = null;
+  if (articleKey.includes('_item_')) {
+    const parts = articleKey.split('_item_');
+    const sec = parts[0];
+    const idx = parseInt(parts[1], 10);
+    if (sec === 'career') {
+      article = t?.career?.jobs?.items?.[idx]?.article;
+    } else {
+      article = t?.[sec]?.items?.[idx]?.article;
+    }
+  } else if (articleKey.includes('.')) {
+    article = articleKey.split('.').reduce((o, k) => o?.[k], t);
+  }
   if (!article) return;
 
   document.getElementById('modal-title').textContent  = article.title  || '';
@@ -83,10 +95,11 @@ export function openModal(articleKey, translations) {
   tagsEl.innerHTML = '';
   if (article.tags && article.tags.length) {
     article.tags.forEach(tag => {
-      const s = document.createElement('span');
-      s.className = 'badge';
-      s.textContent = tag;
-      tagsEl.appendChild(s);
+      const a = document.createElement('a');
+      a.className = 'badge nav-link';
+      a.href = `./tag.html?tag=${encodeURIComponent(tag)}`;
+      a.textContent = tag;
+      tagsEl.appendChild(a);
     });
   }
 

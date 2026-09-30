@@ -119,21 +119,7 @@ a {
   z-index: 1;
 }
 
-/* Frosted-mat band behind the reading column */
-.page-content::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  /* Gradient: fully transparent on far left/right, dark in center column */
-  background: radial-gradient(
-    ellipse 62% 100% at 50% 50%,
-    color-mix(in srgb, var(--color-bg) 54%, transparent) 0%,
-    color-mix(in srgb, var(--color-bg) 26%, transparent) 60%,
-    transparent 100%
-  );
-  pointer-events: none;
-  z-index: 0;
-}
+
 
 /* ── 7. Background blobs ── */
 /* ── 11. Responsive ── */

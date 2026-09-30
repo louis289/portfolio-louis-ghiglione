@@ -13,6 +13,8 @@ import { initSettingsUI } from './settings.js';
 import { initA11y }      from './a11y.js';
 import { initPdfGenerator } from './pdf-generator.js';
 import { renderDynamicContent } from './renderer.js';
+import { initLuminanceEngine, evaluateLuminance } from './luminance.js';
+import { initContactExport } from './contact-export.js';
 
 /** Tries to init the Leaflet map; safe to call multiple times. */
 async function tryInitMap() {
@@ -44,8 +46,9 @@ function initFilters() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  // 0. Initialize theme (light/dark mode) and accessibility
+  // 0. Initialize theme (light/dark mode), luminance engine and accessibility
   initTheme();
+  initLuminanceEngine();
   initA11y();
 
   // 1. Start circuit background animation
@@ -54,8 +57,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 1.5 Inject nav partial first so its data-i18n elements are in the DOM
   await initNav();
   
-  // 1.6 Init settings modal UI (after nav is loaded)
+  // 1.6 Init settings modal UI and contact long-press export (after nav is loaded)
   initSettingsUI();
+  initContactExport();
   initPdfGenerator();
 
   // 2. Load translations & apply language to the full page (including nav)
@@ -65,6 +69,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const lang = localStorage.getItem('site_lang') || (new URLSearchParams(window.location.search).get('lang')) || 'en';
     renderDynamicContent(translations[lang]);
     initModals(translations); // Wire up the newly created modals
+    evaluateLuminance(); // Recalculate contrast for newly injected cards
   }
 
   // 3. Wire card modals & Render dynamic arrays

@@ -94,12 +94,15 @@
           "tags": [
             "ISAE-SUPAERO",
             "CIME-DEOS",
+            "Microelectronics",
             "CMOS",
             "ASIC",
             "FPGA",
             "CADENCE",
             "VHDL",
             "Xilinx",
+            "Hardware",
+            "N7",
             "2025-2026"
           ]
         },
@@ -113,14 +116,16 @@
           },
           "tags": [
             "Fare Ingenierie",
-            "PLC",
-            "ITER",
+            "IoT",
             "LoRaWAN",
             "MQTT",
             "Python",
             "FastAPI",
             "Docker",
             "MySQL",
+            "ITER",
+            "Automation",
+            "Hardware",
             "2024-2026"
           ]
         },
@@ -139,15 +144,19 @@
             ]
           },
           "tags": [
+            "PIA",
+            "Park4Move",
             "LoRaWAN",
+            "IoT",
             "MQTT",
             "Python",
             "FastAPI",
             "Docker",
-            "MySQL",
-            "PWA",
-            "PIA",
-            "Service Learning"
+            "PMR",
+            "Handicap",
+            "Service Learning",
+            "IUT Salon",
+            "2023-2025"
           ]
         },
         {
@@ -160,11 +169,13 @@
           },
           "tags": [
             "Robotics",
-            "C/C++",
-            "PCB",
-            "Arduino",
             "Embedded",
+            "PCB",
+            "Hardware",
+            "C/C++",
+            "Arduino",
             "IUT Salon",
+            "Problem Solving",
             "2023-2026"
           ]
         }
@@ -225,6 +236,7 @@
             "MTB",
             "VTT",
             "Outdoors",
+            "Nature",
             "Endurance"
           ]
         },
@@ -239,9 +251,13 @@
           },
           "tags": [
             "Bouldering",
+            "Escalade",
+            "Bloc",
             "6B+",
-            "Rock Climbing",
-            "Problem Solving"
+            "Outdoors",
+            "Nature",
+            "Problem Solving",
+            "Endurance"
           ]
         },
         {
@@ -253,11 +269,14 @@
             "body": "<p>I believe in understanding and building the tools around you. My maker practice ranges from PCB design and prototyping (Eagle, EasyEDA, KiCad) to building home automation systems and custom IoT devices.</p><p>This DIY mindset directly feeds my professional skills: the Park4Move LoRaWAN sensor network started as a maker project before becoming an award-winning solution. At home, I have built several automation projects including custom sensor nodes and web dashboards.</p><ul><li>PCB design and routing (Eagle, EasyEDA, KiCad)</li><li>Home automation with custom firmware</li><li>IoT sensor networks and MQTT integration</li><li>3D printing and mechanical prototyping</li></ul>"
           },
           "tags": [
+            "Maker",
             "DIY",
-            "PCB Design",
+            "PCB",
+            "Hardware",
             "IoT",
-            "Home Automation",
-            "Maker"
+            "LoRaWAN",
+            "Embedded",
+            "Home Automation"
           ]
         },
         {
@@ -270,8 +289,13 @@
             "body": "<p>I have been involved in scouting for over <strong>10 years</strong>, progressing from scout to <strong>Chef Scout (Scout Leader)</strong>. In this role, I design and lead educational programmes for young people: outdoor projects, citizenship activities, and team challenges.</p><p>The highlight was my <strong>autonomous participation in Roverway 2024</strong> — the European scout gathering held in Norway — where I collaborated with scouts from across the continent over two weeks of travel and shared projects.</p><p>Scouting has been my primary school of leadership: making decisions with incomplete information, motivating a group, and creating conditions where each person can grow independently.</p>"
           },
           "tags": [
+            "Scouting",
             "Chef Scout",
             "Leadership",
+            "Teamwork",
+            "Engagement",
+            "Outdoors",
+            "Nature",
             "10+ years",
             "Roverway 2024",
             "Norway"
@@ -293,10 +317,13 @@
             ]
           },
           "tags": [
-            "BIA",
+            "Space",
+            "Aeronautics",
+            "ISAE-SUPAERO",
+            "Microelectronics",
             "Tolosat",
             "CubeSat",
-            "ISAE-SUPAERO",
+            "BIA",
             "N7"
           ]
         }
@@ -317,11 +344,16 @@
             "body": "<p>Over <strong>10 years of scouting</strong>, including serving as <strong>Chef Scout (Scout Leader)</strong>. My role involved designing and running educational programmes for young people — outdoor expeditions, citizenship projects, and team-building challenges.</p><p>In 2024, I participated autonomously in <strong>Roverway 2024</strong>, the European scout gathering held in Norway, collaborating with scouts from across Europe over two weeks of travel, shared projects and intercultural exchange.</p>"
           },
           "tags": [
+            "Scouting",
             "Chef Scout",
+            "Leadership",
+            "Teamwork",
+            "Engagement",
+            "Outdoors",
+            "Nature",
             "10+ years",
             "Roverway 2024",
-            "Norway",
-            "Youth Leadership"
+            "Norway"
           ]
         },
         {
@@ -334,10 +366,11 @@
           },
           "tags": [
             "BDE",
-            "VP",
-            "2024-2025",
-            "GEII Symposium",
-            "IUT Salon"
+            "IUT Salon",
+            "Leadership",
+            "Teamwork",
+            "Engagement",
+            "2024-2025"
           ]
         },
         {
@@ -358,8 +391,12 @@
             "PIA",
             "Park4Move",
             "LoRaWAN",
+            "IoT",
+            "PMR",
+            "Handicap",
             "Service Learning",
-            "European Award",
+            "IUT Salon",
+            "Engagement",
             "2023-2025"
           ]
         }
@@ -386,7 +423,274 @@
       "download_btn": "Download Portfolio as PDF"
     },
     "footer_custom": "Portfolio of Louis Ghiglione",
-    "footer_credits": "Created by Louis Ghiglione based on the CAM course guidelines 2026/2027 for FISA students (CAREERS AND MANAGEMENT - Fabienne Iché & Genevieve Casey) and the AI tool Antigravity. <br/> <a href=\"https://github.com/louis289/portfolio-louis-ghiglione.git\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--color-accent);\">Clone the Original GitHub Repo</a>"
+    "footer_credits": "Created by Louis Ghiglione based on the CAM course guidelines 2026/2027 for FISA students (CAREERS AND MANAGEMENT - Fabienne Iché & Genevieve Casey) and the AI tool Antigravity. <br/> <a href=\"https://github.com/louis289/portfolio-louis-ghiglione.git\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--color-accent);\">Clone the Original GitHub Repo</a>",
+    "tags_info": {
+      "ISAE-SUPAERO": {
+        "category": "Institution & Research",
+        "description": "ISAE-SUPAERO (Institut Supérieur de l'Aéronautique et de l'Espace) in Toulouse is the world-leading higher education institution for aerospace engineering. Louis conducts his engineering apprenticeship here within the CIME-DEOS research group on CMOS image sensor readout circuits.",
+        "link": "https://www.isae-supaero.fr/en/"
+      },
+      "Microelectronics": {
+        "category": "Core Engineering Discipline",
+        "description": "The branch of electronics focused on designing, modeling, and fabricating microscopic integrated circuits (ICs) on semiconductor silicon wafers (ASIC, FPGA, CMOS image sensors). This is Louis's primary engineering specialization.",
+        "link": "https://en.wikipedia.org/wiki/Microelectronics"
+      },
+      "Microélectronique": {
+        "category": "Core Engineering Discipline",
+        "description": "The branch of electronics focused on designing, modeling, and fabricating microscopic integrated circuits on silicon wafers (ASIC, FPGA, CMOS image sensors). This is Louis's primary engineering specialization.",
+        "link": "https://en.wikipedia.org/wiki/Microelectronics"
+      },
+      "CIME-DEOS": {
+        "category": "Research Laboratory",
+        "description": "The CIME research group (Capteurs d'Images Intégrés) within the DEOS department at ISAE-SUPAERO designs cutting-edge CMOS image sensor architectures with ultra-low noise and radiation hardness for space missions and scientific imaging.",
+        "link": "https://www.isae-supaero.fr/departement-electronique-optronique-et-signal/groupe-de-recherche-capteurs-dimages-integres-cimi/"
+      },
+      "CMOS": {
+        "category": "Silicon Technology",
+        "description": "Complementary Metal-Oxide-Semiconductor: the foundational semiconductor fabrication process combining NMOS and PMOS transistors to deliver high component density and ultra-low power consumption for digital circuits and image sensors.",
+        "link": "https://en.wikipedia.org/wiki/CMOS"
+      },
+      "ASIC": {
+        "category": "Integrated Circuit",
+        "description": "Application-Specific Integrated Circuit: an integrated circuit customized and manufactured for a dedicated purpose rather than general computing, achieving maximum processing speed, minimal silicon surface, and optimal power efficiency.",
+        "link": "https://en.wikipedia.org/wiki/Application-specific_integrated_circuit"
+      },
+      "FPGA": {
+        "category": "Programmable Logic",
+        "description": "Field-Programmable Gate Array: an integrated circuit containing configurable logic blocks and programmable interconnects reconfigurable via hardware description languages (VHDL), enabling high-speed real-time signal and image processing.",
+        "link": "https://en.wikipedia.org/wiki/Field-programmable_gate_array"
+      },
+      "CADENCE": {
+        "category": "Electronic Design Automation (EDA)",
+        "description": "The premier worldwide software suite (including Virtuoso and Innovus) utilized by semiconductor foundries and laboratories for schematic capture, analog/mixed-signal simulation, silicon layout, and DRC/LVS physical verification.",
+        "link": "https://www.cadence.com"
+      },
+      "VHDL": {
+        "category": "Hardware Description",
+        "description": "VHSIC Hardware Description Language: an IEEE standardized hardware description language used in digital circuit automation to model, simulate, and synthesize FPGA routines and ASIC architectures.",
+        "link": "https://en.wikipedia.org/wiki/VHDL"
+      },
+      "Xilinx": {
+        "category": "FPGA Manufacturer & EDA",
+        "description": "The global pioneer in programmable logic devices (now part of AMD). Their Vivado Design Suite is used by Louis for VHDL routine synthesis, implementation, timing analysis, and hardware debugging.",
+        "link": "https://www.xilinx.com"
+      },
+      "LoRaWAN": {
+        "category": "IoT Wireless Protocol",
+        "description": "Long Range Wide Area Network: a low-power, long-range wireless communication standard (LPWAN) designed for battery-powered Internet of Things sensors operating over distances of several miles for years on a single battery.",
+        "link": "https://lora-alliance.org"
+      },
+      "IoT": {
+        "category": "Connected Systems",
+        "description": "Internet of Things: the interconnected network of physical devices (sensors, actuators, PLCs) capable of collecting, exchanging, and processing telemetry data autonomously across wireless and wired communication networks.",
+        "link": "https://en.wikipedia.org/wiki/Internet_of_things"
+      },
+      "Fare Ingenierie": {
+        "category": "Enterprise & Industry",
+        "description": "A specialized technical engineering consultancy focused on industrial automation, SCADA supervision, and safety-critical IoT systems (SY Tiara II luxury superyacht, ITER nuclear fusion site). Louis completed 16 months here as an intern and apprentice.",
+        "link": "https://fare-ingenierie.fr"
+      },
+      "ITER": {
+        "category": "International Science Project",
+        "description": "The world's largest magnetic confinement plasma physics experiment, based in Cadarache (France), aiming to demonstrate the industrial feasibility of nuclear fusion as a clean, abundant energy source.",
+        "link": "https://www.iter.org"
+      },
+      "Park4Move": {
+        "category": "Project & Platform",
+        "description": "An award-winning smart urban mobility platform assisting people with disabilities (PMR) through real-time reserved parking spot detection using LoRaWAN sensors, a FastAPI backend, and an interactive progressive web app.",
+        "link": "https://park4move.fr"
+      },
+      "PIA": {
+        "category": "Student Association",
+        "description": "Provençal Intelligence Agency: an engineering student non-profit at IUT Salon-de-Provence where Louis served as Secretary General, pioneering the Park4Move initiative and social innovation projects.",
+        "link": "https://park4move.fr"
+      },
+      "Service Learning": {
+        "category": "Civic Pedagogy",
+        "description": "An international university teaching framework uniting high-level technical academic learning with community-focused volunteer service, empowering students to tackle real-world societal challenges.",
+        "link": "https://www.service-learning.org"
+      },
+      "Tolosat": {
+        "category": "Student Space Mission",
+        "description": "An inter-school CubeSat nanosatellite mission designed by engineering students in Toulouse (including ENSEEIHT and ISAE-SUPAERO) to test optical and RF space communications in low Earth orbit.",
+        "link": "https://tolosat.fr"
+      },
+      "BIA": {
+        "category": "Aeronautics Diploma",
+        "description": "Brevet d'Initiation Aéronautique: an official French national certification demonstrating comprehensive theoretical mastery of aerodynamics, aircraft mechanics, flight principles, meteorology, and space history.",
+        "link": "https://www.education.gouv.fr/le-brevet-d-initiation-aeronautique-bia-850"
+      },
+      "N7": {
+        "category": "Engineering Graduate School",
+        "description": "INP-ENSEEIHT (N7) in Toulouse is one of France's top Grandes Écoles, celebrated for its excellence in electrical engineering, electronics, automation (3EA), telecommunications, and computer science.",
+        "link": "https://www.enseeiht.fr/fr/index.html"
+      },
+      "Scoutisme": {
+        "category": "Engagement & Leadership",
+        "description": "Over 10 years of active scouting leadership: designing youth education programs, crisis prevention, wilderness safety, and representing France at Roverway 2024 in Norway.",
+        "link": "https://www.scouts-europe.org"
+      },
+      "Scouting": {
+        "category": "Engagement & Leadership",
+        "description": "Over 10 years of active scouting leadership: designing youth education programs, crisis prevention, wilderness safety, and representing France at Roverway 2024 in Norway.",
+        "link": "https://www.scouts-europe.org"
+      },
+      "Chef Scout": {
+        "category": "Role & Responsibility",
+        "description": "A volunteer unit leader mentoring and guiding youth toward personal autonomy, respect for nature, collective solidarity, and decision-making in the field.",
+        "link": "https://www.scouts-europe.org"
+      },
+      "Leadership": {
+        "category": "Human Competency (Soft Skill)",
+        "description": "Demonstrated ability to inspire, organize, and guide multidisciplinary teams toward ambitious goals with rigor and active listening, forged through 10 years of scouting and student government leadership.",
+        "link": "#"
+      },
+      "Teamwork": {
+        "category": "Human Competency (Soft Skill)",
+        "description": "Proven competency in collaborating within diverse technical teams (R&D researchers, technicians, student associations, European partners) to deliver complex engineering projects under tight deadlines.",
+        "link": "#"
+      },
+      "PCB": {
+        "category": "Hardware Engineering",
+        "description": "Printed Circuit Board: the physical etched board interconnecting electronic components. Designed using KiCad and Altium with multilayer routing, impedance matching, and manufacturing Gerber generation.",
+        "link": "https://en.wikipedia.org/wiki/Printed_circuit_board"
+      },
+      "Hardware": {
+        "category": "Electronics Engineering",
+        "description": "The tangible physical electronic architecture of a system: sensor arrays, active and passive components, power conversion modules, and custom semiconductor microchips.",
+        "link": "#"
+      },
+      "Robotics": {
+        "category": "Mechatronics Engineering",
+        "description": "Hands-on engineering across 3 national robotics competitions: full mechatronic prototyping including custom chassis, power electronics, motor drivers, sensor integration, and real-time C/C++ firmware navigation.",
+        "link": "https://www.planete-sciences.org/robot/Coupe-de-France"
+      },
+      "Robotique": {
+        "category": "Mechatronics Engineering",
+        "description": "Hands-on engineering across 3 national robotics competitions: full mechatronic prototyping including custom chassis, power electronics, motor drivers, sensor integration, and real-time C/C++ firmware navigation.",
+        "link": "https://www.planete-sciences.org/robot/Coupe-de-France"
+      },
+      "Python": {
+        "category": "Programming Language",
+        "description": "A versatile programming language used for building fast asynchronous backend services (FastAPI), scientific telemetry processing, and automated hardware test bench scripting.",
+        "link": "https://www.python.org"
+      },
+      "FastAPI": {
+        "category": "Backend Web Framework",
+        "description": "A high-performance modern Python web framework based on standard type hints, renowned for execution speed and lightweight asynchronous microservice architectures for IoT.",
+        "link": "https://fastapi.tiangolo.com"
+      },
+      "Docker": {
+        "category": "DevOps & Containerization",
+        "description": "Industry-standard containerization platform ensuring applications, backend APIs, and databases run with reproducible dependencies across any cloud or local environment.",
+        "link": "https://www.docker.com"
+      },
+      "MQTT": {
+        "category": "Network Protocol",
+        "description": "Message Queuing Telemetry Transport: an ultra-lightweight publish/subscribe messaging protocol designed specifically for constrained IoT devices and low-bandwidth telemetry networks.",
+        "link": "https://mqtt.org"
+      },
+      "VTT": {
+        "category": "Sport & Endurance",
+        "description": "Mountain Biking (All-Mountain & Enduro): technical terrain navigation, line selection, and physical endurance, cultivating mental focus and methodical problem solving under stress.",
+        "link": "https://en.wikipedia.org/wiki/Mountain_biking"
+      },
+      "MTB": {
+        "category": "Sport & Endurance",
+        "description": "Mountain Biking (All-Mountain & Enduro): technical terrain navigation, line selection, and physical endurance, cultivating mental focus and methodical problem solving under stress.",
+        "link": "https://en.wikipedia.org/wiki/Mountain_biking"
+      },
+      "Escalade": {
+        "category": "Sport & Method",
+        "description": "Bouldering at the 6B+ difficulty level: every problem is a spatial and mechanical puzzle requiring body tension, calm precision, and methodical beta iteration analogous to engineering debugging.",
+        "link": "https://en.wikipedia.org/wiki/Bouldering"
+      },
+      "Bouldering": {
+        "category": "Sport & Method",
+        "description": "Bouldering at the 6B+ difficulty level: every problem is a spatial and mechanical puzzle requiring body tension, calm precision, and methodical beta iteration analogous to engineering debugging.",
+        "link": "https://en.wikipedia.org/wiki/Bouldering"
+      },
+      "Bloc": {
+        "category": "Sport & Method",
+        "description": "Bouldering climbing style on low walls without ropes over crash pads: short, highly technical and powerful movement problem-solving.",
+        "link": "https://en.wikipedia.org/wiki/Bouldering"
+      },
+      "Outdoors": {
+        "category": "Wilderness & Adventure",
+        "description": "A deep connection to nature, mountain expeditions, scouting treks, and responsible wilderness exploration.",
+        "link": "#"
+      },
+      "Nature": {
+        "category": "Wilderness & Environment",
+        "description": "A vital source of resilience and mental clarity through mountain biking, climbing, and autonomous scouting bivouacs.",
+        "link": "#"
+      },
+      "Endurance": {
+        "category": "Mental & Physical Stamina",
+        "description": "The capacity to maintain peak focus and performance over long periods, cultivated through endurance sports and high-stakes engineering milestones.",
+        "link": "#"
+      },
+      "Problem Solving": {
+        "category": "Engineering Mindset",
+        "description": "An analytical, iterative methodology to deconstruct complex multi-variable problems into solvable steps, applied seamlessly between rock walls and ASIC silicon.",
+        "link": "#"
+      },
+      "Résolution de problèmes": {
+        "category": "Engineering Mindset",
+        "description": "An analytical, iterative methodology to deconstruct complex multi-variable problems into solvable steps, applied seamlessly between rock walls and ASIC silicon.",
+        "link": "#"
+      },
+      "IUT Salon": {
+        "category": "Academic Background",
+        "description": "IUT Aix-Marseille (Salon-de-Provence campus) — BUT GEII (Electrical Engineering & Industrial IT), where Louis ranked Top 3, led the student council, and created Park4Move.",
+        "link": "https://iut.univ-amu.fr"
+      },
+      "PMR": {
+        "category": "Inclusion & Accessibility",
+        "description": "Persons with Reduced Mobility: a core civic priority driving the design of smart IoT technologies ensuring barrier-free urban accessibility.",
+        "link": "https://park4move.fr"
+      },
+      "Handicap": {
+        "category": "Inclusion & Accessibility",
+        "description": "The driving social mission behind Park4Move, harnessing embedded sensors and wireless networks to remove everyday urban parking obstacles for disabled citizens.",
+        "link": "https://park4move.fr"
+      },
+      "BDE": {
+        "category": "Student Leadership",
+        "description": "Bureau des Étudiants: Louis served as Vice President at IUT Salon-de-Provence, organizing the regional GEII Symposium and managing student initiatives.",
+        "link": "#"
+      },
+      "Maker": {
+        "category": "DIY & Innovation",
+        "description": "The maker culture of hands-on electronics: SMD soldering, open-source home automation, custom PCB design, and technological reappropriation.",
+        "link": "#"
+      },
+      "DIY": {
+        "category": "DIY & Innovation",
+        "description": "Do It Yourself: rapid physical prototyping, home automation sensors, custom PCB layouts, and 3D printing.",
+        "link": "#"
+      },
+      "Embedded": {
+        "category": "Computing Systems",
+        "description": "Dedicated computing systems running directly inside physical hardware units with strict real-time, memory, and energy constraints.",
+        "link": "https://en.wikipedia.org/wiki/Embedded_system"
+      },
+      "Embarqué": {
+        "category": "Computing Systems",
+        "description": "Dedicated computing systems running directly inside physical hardware units with strict real-time, memory, and energy constraints.",
+        "link": "https://en.wikipedia.org/wiki/Embedded_system"
+      },
+      "Automation": {
+        "category": "Industrial Automation",
+        "description": "Programming Programmable Logic Controllers (PLCs) and industrial SCADA networks to supervise complex mission-critical processes.",
+        "link": "#"
+      },
+      "Automatisme": {
+        "category": "Industrial Automation",
+        "description": "Programming Programmable Logic Controllers (PLCs) and industrial SCADA networks to supervise complex mission-critical processes.",
+        "link": "#"
+      }
+    }
   },
   "fr": {
     "config": {
@@ -483,12 +787,15 @@
           "tags": [
             "ISAE-SUPAERO",
             "CIME-DEOS",
+            "Microélectronique",
             "CMOS",
             "ASIC",
             "FPGA",
             "CADENCE",
             "VHDL",
             "Xilinx",
+            "Hardware",
+            "N7",
             "2025-2026"
           ]
         },
@@ -502,14 +809,16 @@
           },
           "tags": [
             "Fare Ingenierie",
-            "Automate",
-            "ITER",
+            "IoT",
             "LoRaWAN",
             "MQTT",
             "Python",
             "FastAPI",
             "Docker",
             "MySQL",
+            "ITER",
+            "Automatisme",
+            "Hardware",
             "2024-2026"
           ]
         },
@@ -528,15 +837,19 @@
             ]
           },
           "tags": [
+            "PIA",
+            "Park4Move",
             "LoRaWAN",
+            "IoT",
             "MQTT",
             "Python",
             "FastAPI",
             "Docker",
-            "MySQL",
-            "PWA",
-            "PIA",
-            "Service Learning"
+            "PMR",
+            "Handicap",
+            "Service Learning",
+            "IUT Salon",
+            "2023-2025"
           ]
         },
         {
@@ -549,11 +862,13 @@
           },
           "tags": [
             "Robotique",
-            "C/C++",
-            "PCB",
-            "Arduino",
             "Embarqué",
+            "PCB",
+            "Hardware",
+            "C/C++",
+            "Arduino",
             "IUT Salon",
+            "Résolution de problèmes",
             "2023-2026"
           ]
         }
@@ -611,9 +926,10 @@
             "body": "<p>Je roule régulièrement en VTT — un sport qui combine parfaitement défi technique, endurance physique et temps en nature. Que ce soit sur les sentiers du Luberon ou les forêts autour de Toulouse, le VTT me donne un sens de la liberté et de la résilience qui alimente ma façon d'aborder les problèmes d'ingénierie.</p><p>Le processus mental est étonnamment similaire au débogage : lire le terrain, ajuster sa trajectoire, s'engager dans le mouvement. Pas de raccourci, juste de la méthode et de la pratique.</p>"
           },
           "tags": [
-            "MTB",
             "VTT",
+            "MTB",
             "Nature",
+            "Outdoors",
             "Endurance"
           ]
         },
@@ -627,10 +943,14 @@
             "body": "<p>Je suis particulièrement passionné par l'escalade en bloc, avec un niveau actuel de <strong>6B+</strong>. Ce qui m'attire dans le bloc c'est l'aspect résolution de problèmes : chaque voie est un puzzle avec une séquence de mouvements unique, et trouver le bon beta demande la même pensée méthodique que le débogage d'une routine VHDL.</p><p>La discipline exige aussi de savoir prendre du recul, se reposer, et revenir avec un regard neuf — une leçon qui se transpose directement en recherche et en ingénierie.</p>"
           },
           "tags": [
+            "Escalade",
+            "Bouldering",
             "Bloc",
             "6B+",
-            "Escalade",
-            "Résolution de problèmes"
+            "Nature",
+            "Outdoors",
+            "Résolution de problèmes",
+            "Endurance"
           ]
         },
         {
@@ -642,11 +962,14 @@
             "body": "<p>Je crois à comprendre et construire les outils qui m'entourent. Ma pratique maker va de la conception PCB et du prototypage (Eagle, EasyEDA, KiCad) à la construction de systèmes domotiques et d'objets IoT sur mesure.</p><p>Cet état d'esprit DIY alimente directement mes compétences professionnelles : le réseau de capteurs LoRaWAN de Park4Move a commencé comme projet maker avant de devenir une solution primée. Chez moi, j'ai construit plusieurs projets d'automatisation incluant des noeuds capteurs personnalisés et des dashboards web.</p><ul><li>Conception et routage PCB (Eagle, EasyEDA, KiCad)</li><li>Domotique avec firmware personnalisé</li><li>Réseaux de capteurs IoT et intégration MQTT</li><li>Impression 3D et prototypage mécanique</li></ul>"
           },
           "tags": [
+            "Maker",
             "DIY",
             "PCB",
+            "Hardware",
             "IoT",
-            "Domotique",
-            "Maker"
+            "LoRaWAN",
+            "Embarqué",
+            "Domotique"
           ]
         },
         {
@@ -659,8 +982,13 @@
             "body": "<p>Je suis impliqué dans le scoutisme depuis plus de <strong>10 ans</strong>, en progressant jusqu'au rôle de <strong>Chef Scout</strong>. Ce rôle consiste à concevoir et animer des programmes éducatifs pour les jeunes : projets de plein air, activités citoyennes, défis en équipe.</p><p>Le point fort a été ma <strong>participation autonome à Roverway 2024</strong> — le rassemblement européen scout en Norvège — où j'ai collaboré avec des scouts de toute l'Europe pendant deux semaines de voyage et de projets partagés.</p><p>Le scoutisme a été ma principale école de leadership : prendre des décisions avec des informations incomplètes, motiver un groupe, et créer les conditions pour que chacun puisse progresser de façon autonome.</p>"
           },
           "tags": [
+            "Scoutisme",
             "Chef Scout",
             "Leadership",
+            "Teamwork",
+            "Engagement",
+            "Nature",
+            "Outdoors",
             "10+ ans",
             "Roverway 2024",
             "Norvège"
@@ -682,10 +1010,13 @@
             ]
           },
           "tags": [
-            "BIA",
+            "Espace",
+            "Aéronautique",
+            "ISAE-SUPAERO",
+            "Microélectronique",
             "Tolosat",
             "CubeSat",
-            "ISAE-SUPAERO",
+            "BIA",
             "N7"
           ]
         }
@@ -706,11 +1037,16 @@
             "body": "<p>Plus de <strong>10 ans de scoutisme</strong>, dont le rôle de <strong>Chef Scout</strong>. Mon rôle a consisté à concevoir et animer des programmes éducatifs pour les jeunes — expéditions en plein air, projets citoyens, et défis en équipe.</p><p>En 2024, j'ai participé de façon autonome à <strong>Roverway 2024</strong>, le rassemblement européen scout en Norvège, en collaborant avec des scouts de toute l'Europe pendant deux semaines de voyage, de projets partagés et d'échanges interculturels.</p>"
           },
           "tags": [
+            "Scoutisme",
             "Chef Scout",
+            "Leadership",
+            "Teamwork",
+            "Engagement",
+            "Nature",
+            "Outdoors",
             "10+ ans",
             "Roverway 2024",
-            "Norvège",
-            "Leadership jeunesse"
+            "Norvège"
           ]
         },
         {
@@ -723,10 +1059,11 @@
           },
           "tags": [
             "BDE",
-            "VP",
-            "2024-2025",
-            "Symposium GEII",
-            "IUT Salon"
+            "IUT Salon",
+            "Leadership",
+            "Teamwork",
+            "Engagement",
+            "2024-2025"
           ]
         },
         {
@@ -747,8 +1084,12 @@
             "PIA",
             "Park4Move",
             "LoRaWAN",
+            "IoT",
+            "PMR",
+            "Handicap",
             "Service Learning",
-            "Prix européen",
+            "IUT Salon",
+            "Engagement",
             "2023-2025"
           ]
         }
@@ -775,6 +1116,268 @@
       "download_btn": "Télécharger le Portfolio en PDF"
     },
     "footer_custom": "Portfolio de Louis Ghiglione",
-    "footer_credits": "Créé par Louis Ghiglione en s'appuyant sur les consignes du cours de CAM 2026/2027 pour les étudiants FISA (CAREERS AND MANAGEMENT - Fabienne Iché & Genevieve Casey) et l'outil d'IA antigravity. <br/> <a href=\"https://github.com/louis289/portfolio-louis-ghiglione.git\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--color-accent);\">Lien du Github originel à cloner</a>"
+    "footer_credits": "Créé par Louis Ghiglione en s'appuyant sur les consignes du cours de CAM 2026/2027 pour les étudiants FISA (CAREERS AND MANAGEMENT - Fabienne Iché & Genevieve Casey) et l'outil d'IA antigravity. <br/> <a href=\"https://github.com/louis289/portfolio-louis-ghiglione.git\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--color-accent);\">Lien du Github originel à cloner</a>",
+    "tags_info": {
+      "ISAE-SUPAERO": {
+        "category": "École & Recherche",
+        "description": "L'Institut Supérieur de l'Aéronautique et de l'Espace (ISAE-SUPAERO) à Toulouse est le leader mondial de l'enseignement supérieur en ingénierie aérospatiale. Louis y réalise son apprentissage d'ingénieur au sein de l'équipe de recherche CIME-DEOS sur la conception de capteurs d'images CMOS.",
+        "link": "https://www.isae-supaero.fr/fr/"
+      },
+      "Microélectronique": {
+        "category": "Discipline & Cœur de métier",
+        "description": "Branche de l'électronique consacrée à la conception, la modélisation et la fabrication de circuits intégrés (CI) à l'échelle micrométrique et nanométrique sur tranche de silicium (ASIC, FPGA, capteurs CMOS). C'est le cœur de spécialisation et d'expertise de Louis.",
+        "link": "https://fr.wikipedia.org/wiki/Micro%C3%A9lectronique"
+      },
+      "Microelectronics": {
+        "category": "Core Engineering Discipline",
+        "description": "The branch of electronics focused on designing and integrating microscopic electronic circuits onto semiconductor wafers (ASIC, FPGA, CMOS image sensors). This represents Louis's core engineering specialization and career focus.",
+        "link": "https://en.wikipedia.org/wiki/Microelectronics"
+      },
+      "CIME-DEOS": {
+        "category": "Laboratoire de Recherche",
+        "description": "L'équipe CIME (Capteurs d'Images Intégrés) du département DEOS à l'ISAE-SUPAERO conçoit des architectures de capteurs d'images innovantes à haute résolution et ultra-faible bruit pour les missions spatiales et l'imagerie scientifique.",
+        "link": "https://www.isae-supaero.fr/departement-electronique-optronique-et-signal/groupe-de-recherche-capteurs-dimages-integres-cimi/"
+      },
+      "CMOS": {
+        "category": "Technologie Silicium",
+        "description": "Complementary Metal-Oxide-Semiconductor : technologie de fabrication prépondérante des circuits intégrés combinant des transistors NMOS et PMOS. Elle offre une consommation électrique très faible et permet l'intégration monolithique de matrices de pixels et d'électronique de lecture.",
+        "link": "https://fr.wikipedia.org/wiki/Complementary_metal-oxide-semiconductor"
+      },
+      "ASIC": {
+        "category": "Circuit Intégré",
+        "description": "Application-Specific Integrated Circuit : puce électronique sur silicium entièrement personnalisée et optimisée pour une tâche spécifique, garantissant des vitesses de traitement maximales et une consommation d'énergie minimale par rapport aux processeurs génériques.",
+        "link": "https://fr.wikipedia.org/wiki/Application-specific_integrated_circuit"
+      },
+      "FPGA": {
+        "category": "Logique Programmable",
+        "description": "Field-Programmable Gate Array : circuit intégré constitué de millions de cellules logiques reconfigurables à chaud via des langages de description matérielle (VHDL). Idéal pour le prototypage rapide, les télécoms et le traitement de flux d'images en temps réel.",
+        "link": "https://fr.wikipedia.org/wiki/Field-programmable_gate_array"
+      },
+      "CADENCE": {
+        "category": "Suite CAO Électronique (EDA)",
+        "description": "Suite logicielle professionnelle de référence mondiale (notamment Virtuoso) utilisée par les fonderies et laboratoires pour la conception schématique, la simulation analogique/mixte, le layout physique et la vérification DRC/LVS de circuits intégrés (ASIC).",
+        "link": "https://www.cadence.com"
+      },
+      "VHDL": {
+        "category": "Description Matérielle",
+        "description": "VHSIC Hardware Description Language : langage normalisé IEEE permettant de modéliser avec exactitude le comportement temporel et la structure logique de circuits numériques pour la synthèse FPGA et ASIC.",
+        "link": "https://fr.wikipedia.org/wiki/VHDL"
+      },
+      "Xilinx": {
+        "category": "Constructeur & Outils FPGA",
+        "description": "Leader mondial des technologies FPGA et SoC (groupe AMD). La suite logicielle Vivado est l'environnement utilisé par Louis pour la synthèse, le placement, le routage et le débogage sur carte des routines VHDL.",
+        "link": "https://www.xilinx.com"
+      },
+      "LoRaWAN": {
+        "category": "Réseaux & Protocoles IoT",
+        "description": "Long Range Wide Area Network : protocole radio sans fil longue portée (jusqu'à 15 km) à très faible consommation d'énergie (LPWAN), permettant à des capteurs autonomes sur batterie d'émettre des données télémétriques durant plusieurs années.",
+        "link": "https://lora-alliance.org"
+      },
+      "IoT": {
+        "category": "Systèmes Connectés",
+        "description": "Internet des Objets (Internet of Things) : écosystème interconnectant capteurs physiques, actionneurs embarqués, passerelles radio et serveurs cloud pour la collecte et le traitement automatisé de données dans l'industrie, la ville et l'environnement.",
+        "link": "https://fr.wikipedia.org/wiki/Internet_des_objets"
+      },
+      "Fare Ingenierie": {
+        "category": "Entreprise & Industrie",
+        "description": "Société d'ingénierie technique spécialisée dans les automatismes industriels, la supervision SCADA et les réseaux de capteurs critiques (superyacht SY Tiara II, réacteur de fusion nucléaire ITER). Louis y a passé 16 mois en stage et alternance.",
+        "link": "https://fare-ingenierie.fr"
+      },
+      "ITER": {
+        "category": "Projet Scientifique Mondial",
+        "description": "Le plus grand réacteur de recherche expérimental de fusion thermonucléaire par confinement magnétique au monde, implanté à Cadarache (France). Louis y a conçu des architectures de capteurs de sécurité LoRaWAN/MQTT.",
+        "link": "https://www.iter.org"
+      },
+      "Park4Move": {
+        "category": "Projet & Plateforme",
+        "description": "Solution innovante d'aide à la mobilité urbaine pour les personnes en situation de handicap (PMR). Utilisant des capteurs magnétiques LoRaWAN, un backend FastAPI et une PWA avec carte interactive, elle a remporté le prix Service Learning européen à Bucarest.",
+        "link": "https://park4move.fr"
+      },
+      "PIA": {
+        "category": "Association Étudiante",
+        "description": "Provençal Intelligence Agency : association loi 1901 de l'IUT de Salon-de-Provence dont Louis a été le secrétaire général, incubatrice du projet Park4Move et porteuse d'innovations technologiques à impact citoyen.",
+        "link": "https://park4move.fr"
+      },
+      "Service Learning": {
+        "category": "Pédagogie & Citoyenneté",
+        "description": "Démarche pédagogique universitaire internationale reliant l'enseignement technique supérieur et le service bénévole à la communauté, afin de résoudre des problèmes sociétaux concrets (handicap, inclusion).",
+        "link": "https://www.service-learning.org"
+      },
+      "Tolosat": {
+        "category": "Projet Spatial Étudiant",
+        "description": "Projet de nanosatellite étudiant CubeSat associant plusieurs écoles d'ingénieurs de Toulouse (N7, ISAE-SUPAERO) pour tester des liaisons de télécommunication optiques et RF en orbite basse.",
+        "link": "https://tolosat.fr"
+      },
+      "BIA": {
+        "category": "Diplôme Aéronautique",
+        "description": "Brevet d'Initiation Aéronautique : diplôme d'État attestant de connaissances pointues en aérodynamique, mécanique du vol, histoire de l'aviation et de l'espace, navigation et météorologie.",
+        "link": "https://www.education.gouv.fr/le-brevet-d-initiation-aeronautique-bia-850"
+      },
+      "N7": {
+        "category": "Grande École d'Ingénieurs",
+        "description": "L'INP-ENSEEIHT (N7) à Toulouse est une grande école d'ingénieurs de premier plan, reconnue pour ses filières de pointe en électronique, énergie électrique, automatique (3EA), télécoms et informatique.",
+        "link": "https://www.enseeiht.fr/fr/index.html"
+      },
+      "Scoutisme": {
+        "category": "Engagement & Leadership",
+        "description": "Plus de 10 ans d'engagement bénévole dont plusieurs années comme Chef Scout : conception et animation de projets éducatifs, gestion de crise, sécurité en pleine nature et délégation française au Roverway 2024 en Norvège.",
+        "link": "https://www.scouts-europe.org"
+      },
+      "Chef Scout": {
+        "category": "Rôle & Responsabilité",
+        "description": "Responsable d'unité bénévole encadrant des jeunes dans l'apprentissage de l'autonomie, du respect de l'environnement, de la solidarité et du leadership par l'action sur le terrain.",
+        "link": "https://www.scouts-europe.org"
+      },
+      "Leadership": {
+        "category": "Compétence Humaine (Soft Skill)",
+        "description": "Capacité à guider, motiver et coordonner une équipe vers un objectif commun avec bienveillance, rigueur et exemplarité, développée à travers 10 ans de scoutisme et la vice-présidence du BDE.",
+        "link": "#"
+      },
+      "Teamwork": {
+        "category": "Compétence Humaine (Soft Skill)",
+        "description": "Aptitude éprouvée à collaborer au sein d'équipes pluridisciplinaires (ingénieurs R&D, techniciens, associatifs, étudiants européens) pour réussir des projets complexes sous contrainte.",
+        "link": "#"
+      },
+      "PCB": {
+        "category": "Conception Matérielle",
+        "description": "Printed Circuit Board (Circuit Imprimé) : support rigide gravé reliant les composants électroniques. Conception sous KiCad et Altium avec routage haute fréquence, plans de masse et industrialisation.",
+        "link": "https://fr.wikipedia.org/wiki/Circuit_imprim%C3%A9"
+      },
+      "Hardware": {
+        "category": "Ingénierie Électronique",
+        "description": "Ensemble des briques matérielles physiques d'un système électronique : capteurs, composants actifs/passifs, convertisseurs d'énergie, cartes d'interface et puces semi-conductrices.",
+        "link": "#"
+      },
+      "Robotique": {
+        "category": "Ingénierie Mécatronique",
+        "description": "Participation à 3 coupes nationales de robotique autonome : conception mécatronique complète (châssis, moteurs, asservissement, capteurs, programmation C/C++ temps réel).",
+        "link": "https://www.planete-sciences.org/robot/Coupe-de-France"
+      },
+      "Robotics": {
+        "category": "Mechatronics Engineering",
+        "description": "Engineering and competing in 3 national robotics cups: complete embedded electronics, motor drivers, sensor fusion, and real-time C/C++ firmware navigation.",
+        "link": "https://www.planete-sciences.org/robot/Coupe-de-France"
+      },
+      "Python": {
+        "category": "Langage de Programmation",
+        "description": "Langage de programmation moderne utilisé pour développer des backends d'APIs asynchrones rapides (FastAPI), des scripts d'analyse de données de test et l'automatisation de bancs de mesure.",
+        "link": "https://www.python.org"
+      },
+      "FastAPI": {
+        "category": "Framework Web Backend",
+        "description": "Framework web moderne et asynchrone en Python, réputé pour sa rapidité d'exécution, sa conformité aux standards OpenAPI et sa légèreté pour les microservices IoT.",
+        "link": "https://fastapi.tiangolo.com"
+      },
+      "Docker": {
+        "category": "DevOps & Déploiement",
+        "description": "Technologie de conteneurisation logicielle permettant d'isoler, empaqueter et déployer des applications et bases de données avec leurs dépendances exactes dans tout environnement.",
+        "link": "https://www.docker.com"
+      },
+      "MQTT": {
+        "category": "Protocole Réseau",
+        "description": "Message Queuing Telemetry Transport : protocole de messagerie léger basé sur le principe publication/souscription, standard de l'industrie pour les flux de données de capteurs IoT.",
+        "link": "https://mqtt.org"
+      },
+      "VTT": {
+        "category": "Sport & Dépassement",
+        "description": "Pratique assidue du vélo tout terrain en All-Mountain et Enduro : endurance, gestion de l'effort, lecture de terrain et entretien mécanique, forgeant une discipline d'analyse sous contrainte.",
+        "link": "https://fr.wikipedia.org/wiki/V%C3%A9lo_tout-terrain"
+      },
+      "MTB": {
+        "category": "Sports & Outdoors",
+        "description": "Mountain Biking (All-Mountain & Enduro): technical terrain navigation, line selection, and endurance under pressure, cultivating methodical problem solving.",
+        "link": "https://en.wikipedia.org/wiki/Mountain_biking"
+      },
+      "Escalade": {
+        "category": "Sport & Méthode",
+        "description": "Pratique de l'escalade et du bloc à un niveau 6B+ : chaque passage représente un puzzle physique et géométrique à résoudre avec méthode, calme, patience et persévérance.",
+        "link": "https://fr.wikipedia.org/wiki/Escalade_de_bloc"
+      },
+      "Bouldering": {
+        "category": "Sports & Problem Solving",
+        "description": "Bouldering at the 6B+ level: intense short-problem solving requiring spatial reasoning, physical commitment, and iterative trial-and-error analogous to engineering debugging.",
+        "link": "https://en.wikipedia.org/wiki/Bouldering"
+      },
+      "Bloc": {
+        "category": "Sport & Méthode",
+        "description": "Discipline d'escalade sur parois de faible hauteur sans corde au-dessus de tapis de réception : résolution de mouvements techniques intenses et créatifs.",
+        "link": "https://fr.wikipedia.org/wiki/Escalade_de_bloc"
+      },
+      "Outdoors": {
+        "category": "Nature & Aventure",
+        "description": "Passion profonde pour les activités de plein air, la montagne, les raids scout et l'exploration respectueuse des espaces naturels.",
+        "link": "#"
+      },
+      "Nature": {
+        "category": "Nature & Environnement",
+        "description": "Source constante de ressourcement et de sérénité à travers le VTT, la randonnée et les camps scouts en autonomie.",
+        "link": "#"
+      },
+      "Endurance": {
+        "category": "Qualité Physique & Mentale",
+        "description": "Capacité à soutenir un effort prolongé et surmonter la fatigue, développée en expéditions VTT et en gestion de projet sous délais serrés.",
+        "link": "#"
+      },
+      "Résolution de problèmes": {
+        "category": "Approche Méthodologique",
+        "description": "Démarche analytique et itérative permettant de décomposer une difficulté complexe en étapes franchissables, aussi bien sur une voie d'escalade que sur un bloc de silicium.",
+        "link": "#"
+      },
+      "Problem Solving": {
+        "category": "Methodological Approach",
+        "description": "Analytical and iterative mindset used to decompose complex challenges into manageable steps, applied equally across rock climbing walls and ASIC circuitry.",
+        "link": "#"
+      },
+      "IUT Salon": {
+        "category": "Formation Académique",
+        "description": "Institut Universitaire de Technologie d'Aix-Marseille (site de Salon-de-Provence) : formation BUT GEII où Louis a terminé 3e de promotion et fondé des projets associatifs majeurs.",
+        "link": "https://iut.univ-amu.fr"
+      },
+      "PMR": {
+        "category": "Inclusion & Société",
+        "description": "Personnes à Mobilité Réduite : engagement citoyen pour la conception de solutions technologiques garantissant un accès équitable aux services publics et au stationnement urbain.",
+        "link": "https://park4move.fr"
+      },
+      "Handicap": {
+        "category": "Inclusion & Société",
+        "description": "Thématique centrale du projet Park4Move, visant à utiliser l'ingénierie et les capteurs connectés pour lever les obstacles d'accessibilité au quotidien.",
+        "link": "https://park4move.fr"
+      },
+      "BDE": {
+        "category": "Vie Étudiante & Gestion",
+        "description": "Bureau des Étudiants : mandat associatif de Vice-Président à l'IUT de Salon-de-Provence, organisant le Symposium GEII et animant la cohésion de promotion.",
+        "link": "#"
+      },
+      "Maker": {
+        "category": "Culture & Créativité",
+        "description": "Culture du faire soi-même (DIY) : conception de prototypes électroniques, soudure CMS, domotique open-source et réappropriation technologique.",
+        "link": "#"
+      },
+      "DIY": {
+        "category": "Culture & Créativité",
+        "description": "Do It Yourself : prototypage rapide de circuits électroniques, boîtiers personnalisés et capteurs domestiques.",
+        "link": "#"
+      },
+      "Embarqué": {
+        "category": "Systèmes Informatiques",
+        "description": "Électronique et logiciel intégrés directement dans des systèmes autonomes contraints en énergie et temps réel (microcontrôleurs, FPGA, capteurs).",
+        "link": "https://fr.wikipedia.org/wiki/Syst%C3%A8me_embarqu%C3%A9"
+      },
+      "Embedded": {
+        "category": "Computer Systems",
+        "description": "Dedicated computing platforms integrated inside autonomous hardware systems with strict real-time, memory, and low-power operational constraints.",
+        "link": "https://en.wikipedia.org/wiki/Embedded_system"
+      },
+      "Automatisme": {
+        "category": "Ingénierie Industrielle",
+        "description": "Programmation d'automates programmables industriels (API / PLC) et réseaux de supervision pour le contrôle de processus industriels complexes.",
+        "link": "#"
+      },
+      "Automation": {
+        "category": "Industrial Engineering",
+        "description": "Programming Programmable Logic Controllers (PLCs) and industrial SCADA networks to supervise complex mission-critical processes.",
+        "link": "#"
+      }
+    }
   }
 }

@@ -55,17 +55,15 @@ function renderGrid(sectionName, items) {
         a.href = `./tag.html?tag=${encTag}`;
         a.className = 'badge nav-link';
         a.textContent = t;
+        a.addEventListener('click', (e) => {
+          e.stopPropagation();
+        });
         tagsDiv.appendChild(a);
       });
       li.appendChild(tagsDiv);
     }
     
     grid.appendChild(li);
-    
-    // 2. Create Modal (if article exists)
-    if (item.article) {
-      createModal(`${sectionName}_item_${index}`, item.article);
-    }
   });
 }
 
@@ -113,6 +111,9 @@ function renderCareerList(items) {
         a.href = `./tag.html?tag=${encTag}`;
         a.className = 'badge nav-link';
         a.textContent = t;
+        a.addEventListener('click', (e) => {
+          e.stopPropagation();
+        });
         tagsDiv.appendChild(a);
       });
       content.appendChild(tagsDiv);
@@ -120,51 +121,5 @@ function renderCareerList(items) {
     
     li.appendChild(content);
     list.appendChild(li);
-    
-    if (item.article) {
-      createModal(`career_item_${index}`, item.article);
-    }
   });
-}
-
-function createModal(id, articleData) {
-  // Check if modal container exists
-  let modalBackdrop = document.querySelector('.modal-backdrop');
-  if (!modalBackdrop) {
-    modalBackdrop = document.createElement('div');
-    modalBackdrop.className = 'modal-backdrop';
-    document.body.appendChild(modalBackdrop);
-  }
-  
-  const dialog = document.createElement('dialog');
-  dialog.className = 'modal';
-  dialog.id = id;
-  
-  const header = document.createElement('div');
-  header.className = 'modal__header';
-  
-  const title = document.createElement('h2');
-  title.className = 'modal__title';
-  title.textContent = articleData.title || '';
-  
-  const tag = document.createElement('span');
-  tag.className = 'modal__tag';
-  tag.textContent = articleData.tag || '';
-  
-  const btnClose = document.createElement('button');
-  btnClose.className = 'modal__close';
-  btnClose.setAttribute('aria-label', 'Close dialog');
-  btnClose.innerHTML = '&times;';
-  
-  header.appendChild(title);
-  header.appendChild(tag);
-  header.appendChild(btnClose);
-  
-  const body = document.createElement('div');
-  body.className = 'modal__body';
-  body.innerHTML = articleData.body || '';
-  
-  dialog.appendChild(header);
-  dialog.appendChild(body);
-  modalBackdrop.appendChild(dialog);
 }

@@ -35,10 +35,15 @@
 
       <!-- Hero -->
       <header class="hero">
-        <div class="hero__tag"   data-i18n="welcome.tag"></div>
-        <h1 class="hero__title" data-i18n-html="welcome.hero_name"></h1>
-        <p class="hero__sub"    data-i18n="welcome.hero_sub"></p>
-        <a href="./career.html" class="hero__cta" data-i18n="welcome.hero_cta"></a>
+        <div class="hero-card card">
+          <div class="hero__tag"   data-i18n="welcome.tag"></div>
+          <h1 class="hero__title" data-i18n-html="welcome.hero_name"></h1>
+          <p class="hero__sub"    data-i18n="welcome.hero_sub"></p>
+          <div class="hero__actions">
+            <a href="./career.html" class="hero__cta" data-i18n="welcome.hero_cta"></a>
+            <a href="./projects.html" class="hero__cta hero__cta--secondary" data-i18n="nav.projects"></a>
+          </div>
+        </div>
       </header>
 
       <hr class="divider" />
@@ -50,12 +55,27 @@
           <h2 class="section-title" id="about-title" data-i18n="welcome.about_title"></h2>
           <p class="section-desc"    data-i18n="welcome.about_desc"></p>
         </div>
-        <div class="about-layout">
-          <img src="" alt="" class="about-avatar" data-bind="src:config.avatar_url; alt:config.name" />
-          <div class="about-text">
-            <h3 class="about-name" data-bind="text:config.name"></h3>
-            <p data-i18n="welcome.about_text1"></p>
-            <p data-i18n="welcome.about_text2"></p>
+        <div class="about-card card">
+          <div class="about-layout">
+            <div class="about-avatar-wrapper">
+              <img src="" alt="" class="about-avatar" data-bind="src:config.avatar_url; alt:config.name" />
+              <div class="about-badge-bar">
+                <span class="badge">N7 &bull; ISAE-SUPAERO</span>
+              </div>
+            </div>
+            <div class="about-text">
+              <h3 class="about-name" data-bind="text:config.name"></h3>
+              <div class="about-bio">
+                <p data-i18n="welcome.about_text1"></p>
+                <p data-i18n="welcome.about_text2"></p>
+              </div>
+              <div class="about-quick-tags">
+                <a href="./tag.html?tag=Microélectronique" class="badge">Microélectronique</a>
+                <a href="./tag.html?tag=ISAE-SUPAERO" class="badge">ISAE-SUPAERO</a>
+                <a href="./tag.html?tag=LoRaWAN" class="badge">LoRaWAN & IoT</a>
+                <a href="./tag.html?tag=FPGA" class="badge">FPGA / ASIC</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -84,8 +104,10 @@
           <h2 class="section-title" id="pitch-title" data-i18n="welcome.pitch_title"></h2>
           <p class="section-desc"   data-i18n="welcome.pitch_desc"></p>
         </div>
-        <div class="placeholder-media" role="img" aria-label="Elevator pitch video placeholder">
-          <span data-i18n="welcome.pitch_placeholder"></span>
+        <div class="pitch-card card">
+          <div class="placeholder-media" role="img" aria-label="Elevator pitch video placeholder">
+            <span data-i18n="welcome.pitch_placeholder"></span>
+          </div>
         </div>
       </section>
 

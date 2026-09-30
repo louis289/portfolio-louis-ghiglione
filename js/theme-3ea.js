@@ -219,9 +219,9 @@ export function initCircuitBg() {
   canvas.style.cssText = [
     'position:fixed',
     'inset:0',
-    'z-index:-1',
+    'z-index:0',
     'pointer-events:none',
-    'opacity:0.65',
+    'opacity:0.75',
     'filter:blur(0.8px)',
   ].join(';');
 
