@@ -53,8 +53,23 @@
 - [x] Implemented vCard 3.0 (`.vcf`) generator for native iOS/Android contact saving with embedded base64 photo, emails, and LinkedIn URL.
 - [x] Designed glassmorphic modal with contact preview, direct download buttons, and 1-click clipboard copy.
 
-### 10. Contact Card 3D Amplification & Header Download Button (COMPLETED on 2026-09-30)
-- [x] Replaced export button icon with the official download SVG arrow (tray/arrow symbol) and moved it to the end of the header paragraph, removing it from the 3D card.
-- [x] Amplified 3D perspective to 26° on `js/tilt.js` with dynamic directional shadows and radiant multi-color specular glare.
-- [x] Added mobile touchscreen support (drag & swipe tilt) and calibrated gyroscope sensitivity on smartphones.
-- [x] Added prismatic border reflection and enhanced pop-out parallax depth on the avatar, name, and contact links.
+### 10. Contact Card & Header Download Button
+- [x] Replaced export button icon with official download SVG arrow and positioned it in header paragraph.
+- [x] Streamlined export to native vCard (.vcf) with Base64 photo and dynamic contact channels.
+
+### 11. Contact Card 15h49 Restoration & Unhindered Clickability (COMPLETED on 2026-09-30)
+- [x] Restored exact 15h49 parallax calculation (`MAX_TILT = 15`) and natural specular lighting in `js/tilt.js`.
+- [x] Restored SVG noiseFilter grain texture and overlay glare in `css/components.css`.
+- [x] Removed long-press pointer events on the contact card so all links (email, LinkedIn, GitHub, phone) are 100% directly clickable without delay or capture.
+
+### 12. Career Page Structure (COMPLETED on 2026-09-30)
+- [x] Positioned Objectives & Career Preparation (Offre ciblée, LinkedIn, Interviews My Job Glasses, CV, Lettre) at the TOP of `career.html` as prioritized by academic evaluation guidelines.
+- [x] Positioned Past Experiences & Jobs (ISAE-SUPAERO, Fare Ingénierie, IUT GEII & PIA) directly below, with click-to-open modal detailing positions held, related projects, and mobilities.
+
+### 13. Universal Tag Retransmission in Modals (COMPLETED on 2026-09-30)
+- [x] Unified tag resolution in `js/modal.js` to draw from both `article.tags` and `item.tags`.
+- [x] Synchronized tags in `data/translations.json` across all sections (projects, passions, civic, mobility, career) so every modal dialog retransmits interactive tags.
+
+### 14. 100% Data-Driven Flexible Contact Channels (COMPLETED on 2026-09-30)
+- [x] Eliminated hardcoded `CONTACT_INFO` from JS; completely powered by `data/translations.json`.
+- [x] Supports arbitrary channels (multiple emails, phones, LinkedIn, Instagram, GitHub) with dynamic SVGs on the 3D card, in the modal preview, and in `.vcf` export.

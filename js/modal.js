@@ -62,40 +62,52 @@ export function openModal(articleKey, translations) {
 
   // Resolve nested key like "passions.p1_article" or "projects_item_0"
   let article = null;
+  let itemObj = null;
   if (articleKey.includes('_item_')) {
     const parts = articleKey.split('_item_');
     const sec = parts[0];
     const idx = parseInt(parts[1], 10);
     if (sec === 'career') {
-      article = t?.career?.jobs?.items?.[idx]?.article;
+      itemObj = t?.career?.jobs?.items?.[idx];
     } else {
-      article = t?.[sec]?.items?.[idx]?.article;
+      itemObj = t?.[sec]?.items?.[idx];
     }
+    article = itemObj?.article;
   } else if (articleKey.includes('.')) {
-    article = articleKey.split('.').reduce((o, k) => o?.[k], t);
+    const match = articleKey.match(/^([a-z]+)\.p(\d+)_article$/);
+    if (match) {
+      const sec = match[1];
+      const idx = parseInt(match[2], 10) - 1;
+      itemObj = t?.[sec]?.items?.[idx];
+      article = itemObj?.article;
+    } else {
+      article = articleKey.split('.').reduce((o, k) => o?.[k], t);
+    }
   }
-  if (!article) return;
+  if (!article && !itemObj) return;
+  article = article || {};
 
-  document.getElementById('modal-title').textContent  = article.title  || '';
-  document.getElementById('modal-tag').textContent    = article.tag    || '';
-  document.getElementById('modal-content').innerHTML  = article.body   || '';
+  document.getElementById('modal-title').textContent  = article.title  || itemObj?.title || itemObj?.role || '';
+  document.getElementById('modal-tag').textContent    = article.tag    || itemObj?.tag || '';
+  document.getElementById('modal-content').innerHTML  = article.body   || itemObj?.desc || '';
 
   // Image
   const img = document.getElementById('modal-img');
-  const imgSrc = article.img || article.image;
+  const imgSrc = article.img || article.image || itemObj?.image || itemObj?.img;
   if (imgSrc) {
     img.src = imgSrc;
-    img.alt = article.title || '';
+    img.alt = article.title || itemObj?.title || '';
     img.style.display = 'block';
   } else {
     img.style.display = 'none';
   }
 
-  // Badge tags
+  // Badge tags — seamlessly retransmit tags across all cards (mobility, projects, career, passions, civic)
   const tagsEl = document.getElementById('modal-tags');
   tagsEl.innerHTML = '';
-  if (article.tags && article.tags.length) {
-    article.tags.forEach(tag => {
+  const tags = (article.tags && article.tags.length) ? article.tags : (itemObj?.tags || []);
+  if (tags && tags.length) {
+    tags.forEach(tag => {
       const a = document.createElement('a');
       a.className = 'badge';
       a.href = `./tag.html?tag=${encodeURIComponent(tag)}`;

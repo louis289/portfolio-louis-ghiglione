@@ -442,18 +442,14 @@ function attachLongPressListener(targetEl) {
  * Initializes contact exporting across the application
  */
 export function initContactExport() {
-  // 1. Navbar Contact link
+  // 1. Navbar Contact link (long-press)
   const navContactLinks = document.querySelectorAll('a[href*="contact.html"], a[data-page="contact"]');
   navContactLinks.forEach(link => {
     attachLongPressListener(link);
     link.title = 'Contact (Maintenir appuyé pour exporter la fiche .vcf)';
   });
 
-  // 2. 3D contact card on contact.html
-  const contactCard = document.getElementById('contact-tilt-card') || document.querySelector('.contact-card');
-  if (contactCard) {
-    attachLongPressListener(contactCard);
-  }
+  // Note: Contact card itself does NOT have long-press attached, guaranteeing all links are 100% directly clickable without delay or interception.
 
   // 3. Header dedicated download button
   const exportBtn = document.getElementById('btn-export-contact');
