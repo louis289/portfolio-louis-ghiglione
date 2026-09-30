@@ -417,7 +417,8 @@
 .theme-is-light .section-desc,
 .theme-is-light .hero__sub,
 .theme-is-light .about-bio {
-  color: #334155; /* Slate 700 */
+  color: #334155;
+  /* Slate 700 */
 }
 
 .lum-dark-surface,
@@ -443,7 +444,8 @@
 .theme-is-dark .section-desc,
 .theme-is-dark .hero__sub,
 .theme-is-dark .about-bio {
-  color: #cbd5e1; /* Slate 300 */
+  color: #cbd5e1;
+  /* Slate 300 */
 }
 
 /* ── Career Items ── */
@@ -928,6 +930,7 @@ a.badge:hover {
     padding: var(--space-lg);
   }
 }
+
 /* ── 3D Contact Card & Header Export ────────────────────────── */
 .contact-header-content {
   display: flex;
@@ -940,7 +943,7 @@ a.badge:hover {
 
 .contact-header-content .section-desc {
   margin: 0;
-  flex: 1 1 340px;
+  flex: 1 1;
 }
 
 .btn-export-download {
@@ -1006,7 +1009,10 @@ a.badge:hover {
 
 .contact-card__glare {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.15), transparent 60%);
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -1156,9 +1162,11 @@ a.badge:hover {
   transition: transform 0.2s;
   color: var(--color-text);
 }
+
 .theme-toggle:hover {
   transform: scale(1.1);
 }
+
 .theme-toggle:active {
   transform: scale(0.9);
 }
@@ -1183,8 +1191,15 @@ a.badge:hover {
 }
 
 @keyframes pulse-ring {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  100% { transform: scale(1.15); opacity: 0; }
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
 }
 
 .contact-export-panel {
@@ -1417,4 +1432,3 @@ a.badge:hover {
   border-color: rgba(0, 212, 255, 0.45);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
-
