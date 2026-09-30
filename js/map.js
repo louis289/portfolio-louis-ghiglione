@@ -63,8 +63,9 @@ function createMarkerIcon(title) {
  * Adds all destination markers to the map with translated popups.
  * @param {L.Map} map
  */
-function addMarkers(map) {
+function addMarkers(map, initialLoad = false) {
   const currentLang = getCurrentLang() || 'en';
+  const bounds = [];
 
   getDestinations().forEach(({ lat, lng, city, country, i18nTitle, i18nDesc }) => {
     const title = t(i18nTitle) || getLabel(i18nTitle) || city;
@@ -82,7 +83,14 @@ function addMarkers(map) {
     L.marker([lat, lng], { icon: createMarkerIcon(title), alt: title })
       .bindPopup(popup)
       .addTo(map);
+      
+    bounds.push([lat, lng]);
   });
+
+  if (initialLoad && bounds.length > 0) {
+    const padding = window.innerWidth < 768 ? [20, 20] : [40, 40];
+    map.fitBounds(bounds, { padding: padding, maxZoom: 4 });
+  }
 }
 
 /**
@@ -171,7 +179,7 @@ export function initMap() {
     { maxZoom: 16, pane: 'overlayPane' }
   ).addTo(mapInstance);
 
-  addMarkers(mapInstance);
+  addMarkers(mapInstance, true);
 
   // Force Leaflet to recalculate size once tiles have started loading.
   // Fixes the grey/blank map issue when the container layout isn't settled yet.

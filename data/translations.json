@@ -397,7 +397,7 @@
           },
           {
             "company": "IUT d'Aix-Marseille & PIA",
-            "role": "BUT GEII Student & Co-Founder / Tech Lead PIA",
+            "role": "BUT GEII Student & Secretary / Tech Lead PIA",
             "period": "Sep. 2023 – Aug. 2026 (3 years)",
             "location": "Salon-de-Provence & Bucharest, Romania",
             "desc": "Conception of Park4Move (CISAM+ Service-Learning award winner, Bucharest European Forum) and 3 editions of French Robotics Cup.",
@@ -415,7 +415,7 @@
               "title": "IUT Aix-Marseille & PIA · Student & Tech Lead",
               "tag": "Education & Projects",
               "img": "./images/project_park4move.jpg",
-              "body": "<h4>Positions Held</h4><p><strong>BUT Electrical Engineering and Industrial Computing (GEII) Student</strong> and Co-Founder / Technical Lead of the student association <em>Provençal Intelligence Agency (PIA)</em>.</p><h4>Related Projects</h4><ul><li><strong>Park4Move:</strong> Smart real-time parking detection for disabled drivers (PMR) using LoRaWAN magnetometers and mobile PWA. Awarded Best Project at Aix-Marseille University Service-Learning (CISAM+ France 2030) and presented at the European Forum in Bucharest.</li><li><strong>French Robotics Cup:</strong> Team leader and embedded electronics designer across 3 consecutive national competitions (2024, 2025, 2026).</li></ul><h4>Eventual Mobilities</h4><p>International delegation to the <strong>European Service-Learning Forum in Bucharest (Romania)</strong> in June 2024, and national robotics championships in <strong>La Roche-sur-Yon</strong>.</p>",
+              "body": "<h4>Positions Held</h4><p><strong>BUT Electrical Engineering and Industrial Computing (GEII) Student</strong> and Secretary / Technical Lead of the student association <em>Provençal Intelligence Agency (PIA)</em>.</p><h4>Related Projects</h4><ul><li><strong>Park4Move:</strong> Smart real-time parking detection for disabled drivers (PMR) using LoRaWAN magnetometers and mobile PWA. Awarded Best Project at Aix-Marseille University Service-Learning (CISAM+ France 2030) and presented at the European Forum in Bucharest.</li><li><strong>French Robotics Cup:</strong> Team leader and embedded electronics designer across 3 consecutive national competitions (2024, 2025, 2026).</li></ul><h4>Eventual Mobilities</h4><p>International delegation to the <strong>European Service-Learning Forum in Bucharest (Romania)</strong> in June 2024, and national robotics championships in <strong>La Roche-sur-Yon</strong>.</p>",
               "tags": [
                 "Park4Move",
                 "BUT GEII",
@@ -474,6 +474,11 @@
             "title": "Barcelona, Spain · Universitat Politècnica de Catalunya (UPC)",
             "tag": "International Mobility",
             "img": "./images/mobility_barcelona.jpg",
+            "images": [
+              "./images/mobility_barcelona.jpg",
+              "./images/passion_climbing.jpg",
+              "./images/project_park4move.jpg"
+            ],
             "body": "<p>Academic study semester at <strong>Universitat Politècnica de Catalunya (UPC)</strong>, renowned for engineering excellence and microelectronics design.</p><h4>Academic & Professional Objectives</h4><ul><li>In-depth coursework in integrated circuit architecture, CMOS design, and advanced communications.</li><li>Immersion within Barcelona's thriving tech ecosystem and developing bilingual fluency (Spanish / English).</li><li>Alignment with employer needs on European joint industrial projects.</li></ul><p><strong>Planned Period:</strong> Spring 2026 (Semester 6 / FISA S6).</p>",
             "tags": [
               "UPC",
@@ -849,11 +854,6 @@
           "type": "linkedin",
           "label": "linkedin.com/in/louis-ghiglione-722165294",
           "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
-        },
-        {
-          "type": "github",
-          "label": "github.com/louis289",
-          "url": "https://github.com/louis289"
         }
       ]
     },
@@ -1537,7 +1537,7 @@
           },
           {
             "company": "IUT d'Aix-Marseille & PIA",
-            "role": "Étudiant BUT GEII & Co-fondateur / Lead Technique PIA",
+            "role": "Étudiant BUT GEII & Secrétaire / Lead Technique PIA",
             "period": "Sept. 2023 – Août 2026 (3 ans)",
             "location": "Salon-de-Provence & Bucarest, Roumanie",
             "desc": "Conception du projet Park4Move (lauréat Service-Learning CISAM+, Forum de Bucarest) et 3 participations à la Coupe de France de Robotique.",
@@ -1555,7 +1555,7 @@
               "title": "IUT d'Aix-Marseille & PIA · Étudiant & Lead Technique",
               "tag": "Formation & Projets",
               "img": "./images/project_park4move.jpg",
-              "body": "<h4>Postes occupés</h4><p><strong>Étudiant en BUT Génie Électrique et Informatique Industrielle (GEII)</strong> et membre co-fondateur / responsable technique de l'association étudiante <em>Provençal Intelligence Agency (PIA)</em>.</p><h4>Projets liés</h4><ul><li><strong>Park4Move :</strong> Système intelligent de guidage vers les places de stationnement PMR via réseau de capteurs LoRaWAN et application mobile/PWA. Projet élu meilleur projet du Service-Learning d'Aix-Marseille Université (CISAM+ France 2030) et présenté devant 5 universités européennes.</li><li><strong>Coupe de France de Robotique :</strong> Chef d'équipe et concepteur électronique/embarqué sur 3 éditions consécutives (2024, 2025, 2026).</li></ul><h4>Mobilités éventuelles</h4><p>Représentation internationale au <strong>Forum Européen de Service-Learning à Bucarest (Roumanie)</strong> en juin 2024, ainsi qu'aux compétitions nationales de robotique à <strong>La Roche-sur-Yon</strong>.</p>",
+              "body": "<h4>Postes occupés</h4><p><strong>Étudiant en BUT Génie Électrique et Informatique Industrielle (GEII)</strong> et secrétaire / responsable technique de l'association étudiante <em>Provençal Intelligence Agency (PIA)</em>.</p><h4>Projets liés</h4><ul><li><strong>Park4Move :</strong> Système intelligent de guidage vers les places de stationnement PMR via réseau de capteurs LoRaWAN et application mobile/PWA. Projet élu meilleur projet du Service-Learning d'Aix-Marseille Université (CISAM+ France 2030) et présenté devant 5 universités européennes.</li><li><strong>Coupe de France de Robotique :</strong> Chef d'équipe et concepteur électronique/embarqué sur 3 éditions consécutives (2024, 2025, 2026).</li></ul><h4>Mobilités éventuelles</h4><p>Représentation internationale au <strong>Forum Européen de Service-Learning à Bucarest (Roumanie)</strong> en juin 2024, ainsi qu'aux compétitions nationales de robotique à <strong>La Roche-sur-Yon</strong>.</p>",
               "tags": [
                 "Park4Move",
                 "BUT GEII",
@@ -1614,6 +1614,11 @@
             "title": "Barcelone, Espagne · Universitat Politècnica de Catalunya (UPC)",
             "tag": "Mobilité Internationale",
             "img": "./images/mobility_barcelona.jpg",
+            "images": [
+              "./images/mobility_barcelona.jpg",
+              "./images/passion_climbing.jpg",
+              "./images/project_park4move.jpg"
+            ],
             "body": "<p>Semestre d'études académique à l'<strong>Universitat Politècnica de Catalunya (UPC)</strong>, réputée pour ses cursus d'excellence en ingénierie et microélectronique.</p><h4>Objectifs académiques & professionnels</h4><ul><li>Approfondissement des cours de conception de circuits intégrés et télécommunications.</li><li>Immersion au sein de l'écosystème tech barcelonais et renforcement bilingue (Espagnol / Anglais).</li><li>Cohérence avec les besoins de mon entreprise d'apprentissage pour des projets européens.</li></ul><p><strong>Période envisagée :</strong> Printemps 2026 (Semestre 6 / FISA S6).</p>",
             "tags": [
               "UPC",
@@ -1989,11 +1994,6 @@
           "type": "linkedin",
           "label": "linkedin.com/in/louis-ghiglione-722165294",
           "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
-        },
-        {
-          "type": "github",
-          "label": "github.com/louis289",
-          "url": "https://github.com/louis289"
         }
       ]
     },

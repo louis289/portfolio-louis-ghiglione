@@ -70,7 +70,7 @@ body {
   font-family: var(--font-base);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 /* ── 4. Typography ── */
@@ -112,7 +112,7 @@ a {
 }
 
 .page-content {
-  min-height: calc(100vh - var(--nav-h));
+  min-height: calc(100dvh - var(--nav-h));
   padding-top: calc(var(--nav-h) + var(--space-2xl));
   padding-bottom: var(--space-3xl);
   position: relative;

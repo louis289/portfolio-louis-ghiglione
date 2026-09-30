@@ -19,12 +19,15 @@ function createModal() {
     <div class="modal-backdrop"></div>
     <div class="modal-panel">
       <button class="modal-close" id="modal-close-btn" aria-label="Close">&#10005;</button>
-      <div class="modal-hero">
-        <img id="modal-img" src="" alt="" class="modal-img" />
-        <div class="modal-hero-text">
-          <span id="modal-tag" class="section-tag"></span>
-          <h2 id="modal-title" class="modal-title"></h2>
-        </div>
+      <div id="modal-gallery-container" class="modal-gallery-container" style="display:none;">
+        <div class="modal-gallery-track" id="modal-gallery-track"></div>
+        <button class="gallery-nav prev" id="gallery-prev" aria-label="Previous image">&#10094;</button>
+        <button class="gallery-nav next" id="gallery-next" aria-label="Next image">&#10095;</button>
+        <div class="gallery-counter" id="gallery-counter">1 / 1</div>
+      </div>
+      <div class="modal-header-section">
+        <span id="modal-tag" class="section-tag"></span>
+        <h2 id="modal-title" class="modal-title-solid"></h2>
       </div>
       <div class="modal-body">
         <div id="modal-content" class="modal-content"></div>
@@ -91,15 +94,42 @@ export function openModal(articleKey, translations) {
   document.getElementById('modal-tag').textContent    = article.tag    || itemObj?.tag || '';
   document.getElementById('modal-content').innerHTML  = article.body   || itemObj?.desc || '';
 
-  // Image
-  const img = document.getElementById('modal-img');
-  const imgSrc = article.img || article.image || itemObj?.image || itemObj?.img;
-  if (imgSrc) {
-    img.src = imgSrc;
-    img.alt = article.title || itemObj?.title || '';
-    img.style.display = 'block';
+  // Images Gallery
+  const track = document.getElementById('modal-gallery-track');
+  const container = document.getElementById('modal-gallery-container');
+  const btnPrev = document.getElementById('gallery-prev');
+  const btnNext = document.getElementById('gallery-next');
+  const counter = document.getElementById('gallery-counter');
+  
+  const allImgs = itemObj?.images || itemObj?.photos || article?.images || [];
+  const singleImg = article.img || article.image || itemObj?.image || itemObj?.img;
+  let imgs = [...allImgs];
+  if (singleImg && !imgs.includes(singleImg)) imgs.unshift(singleImg);
+  
+  if (imgs.length > 0) {
+    container.style.display = 'block';
+    track.innerHTML = '';
+    imgs.forEach(src => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.className = 'modal-img-slide';
+      track.appendChild(img);
+    });
+    
+    let currentIndex = 0;
+    const updateGallery = () => {
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      counter.textContent = `${currentIndex + 1} / ${imgs.length}`;
+      btnPrev.style.display = imgs.length > 1 ? 'block' : 'none';
+      btnNext.style.display = imgs.length > 1 ? 'block' : 'none';
+    };
+    
+    btnPrev.onclick = () => { currentIndex = (currentIndex - 1 + imgs.length) % imgs.length; updateGallery(); };
+    btnNext.onclick = () => { currentIndex = (currentIndex + 1) % imgs.length; updateGallery(); };
+    
+    updateGallery();
   } else {
-    img.style.display = 'none';
+    container.style.display = 'none';
   }
 
   // Badge tags — seamlessly retransmit tags across all cards (mobility, projects, career, passions, civic)
