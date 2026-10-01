@@ -242,10 +242,10 @@
           "image": "./images/passion_space.jpg"
         },
         {
-          "title": "Valise Balise — Visual Basic IHM & Arduino",
+          "title": "Visual Basic IHM & Arduino",
           "desc": "Redesign of a legacy HMI in Visual Basic to control an I2C LED matrix via Arduino.",
           "article": {
-            "title": "Valise Balise — Visual Basic IHM & Arduino",
+            "title": "Visual Basic IHM & Arduino",
             "tag": "Project",
             "body": "<p>This project involved reverse-engineering and redesigning a lost legacy application in <strong>Visual Basic</strong> to control an I2C LED matrix via an <strong>Arduino Uno</strong>.</p><p><strong>Key features:</strong></p><ul><li>Development of a complete graphical user interface (GUI) with drawing, playback, and control modes.</li><li>Implementation of serial communication via the COM port to transmit I2C commands to the Arduino.</li><li>Creation of technical specifications and a manufacturing dossier.</li></ul>",
             "img": "./images/project_iter.jpg",
@@ -318,6 +318,31 @@
             "Battery Tester",
             "Analog",
             "Prototyping",
+            "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
+        },
+        {
+          "title": "Digital Chaser (Chenillard) — VHDL & FPGA",
+          "desc": "Design and programming of a digital LED chaser on an FPGA using VHDL.",
+          "article": {
+            "title": "Digital Chaser — VHDL & FPGA",
+            "tag": "Project",
+            "body": "<p>During my IUT, I designed and developed a <strong>digital LED chaser</strong> (Chenillard) from scratch using <strong>VHDL</strong> on an <strong>FPGA</strong>.</p><p>This project involved designing digital logic circuits, simulating VHDL code, and implementing it on hardware to control LED lighting patterns efficiently.</p>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "VHDL",
+              "FPGA",
+              "Digital Logic",
+              "Electronics",
+              "IUT Salon"
+            ]
+          },
+          "tags": [
+            "VHDL",
+            "FPGA",
+            "Digital Logic",
+            "Electronics",
             "IUT Salon"
           ],
           "image": "./images/project_iter.jpg"
@@ -1455,10 +1480,10 @@
           "image": "./images/passion_space.jpg"
         },
         {
-          "title": "Valise Balise — IHM Visual Basic & Arduino",
+          "title": "IHM Visual Basic & Arduino",
           "desc": "Refonte d'une ancienne interface IHM en Visual Basic pour contrôler une matrice de LEDs en I2C via un Arduino.",
           "article": {
-            "title": "Valise Balise — IHM Visual Basic & Arduino",
+            "title": "IHM Visual Basic & Arduino",
             "tag": "Projet",
             "body": "<p>Ce projet consistait à rétro-ingénierer et recréer une application perdue en <strong>Visual Basic</strong> pour contrôler une matrice de LEDs via un bus I2C et un <strong>Arduino Uno</strong>.</p><p><strong>Caractéristiques clés :</strong></p><ul><li>Développement d'une interface utilisateur graphique (IHM) complète avec modes de dessin, lecture et contrôle.</li><li>Implémentation d'une communication série via le port COM pour envoyer les commandes I2C à l'Arduino.</li><li>Rédaction du cahier des charges et du dossier de fabrication.</li></ul>",
             "img": "./images/project_iter.jpg",
@@ -1531,6 +1556,31 @@
             "Testeur de Batterie",
             "Analogique",
             "Prototypage",
+            "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
+        },
+        {
+          "title": "Chenillard Numérique — VHDL & FPGA",
+          "desc": "Conception et programmation d'un chenillard numérique à LEDs sur FPGA en VHDL.",
+          "article": {
+            "title": "Chenillard Numérique — VHDL & FPGA",
+            "tag": "Projet",
+            "body": "<p>Durant mon IUT, j'ai conçu et développé un <strong>chenillard numérique</strong> de A à Z en <strong>VHDL</strong> sur une carte <strong>FPGA</strong>.</p><p>Ce projet impliquait la conception de circuits logiques numériques, la simulation de code VHDL et son implémentation sur matériel pour contrôler divers motifs lumineux à base de LEDs de manière efficace.</p>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "VHDL",
+              "FPGA",
+              "Logique Numérique",
+              "Électronique",
+              "IUT Salon"
+            ]
+          },
+          "tags": [
+            "VHDL",
+            "FPGA",
+            "Logique Numérique",
+            "Électronique",
             "IUT Salon"
           ],
           "image": "./images/project_iter.jpg"
