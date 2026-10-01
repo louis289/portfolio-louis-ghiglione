@@ -101,7 +101,7 @@ export function openModal(articleKey, translations) {
   const btnNext = document.getElementById('gallery-next');
   const counter = document.getElementById('gallery-counter');
   
-  const media = data?.media?.[itemObj?.id] || {};
+  const media = translations?.media?.[itemObj?.id] || {};
   const allImgs = itemObj?.images || itemObj?.photos || article?.images || media.gallery || [];
   const singleImg = article.img || article.image || itemObj?.image || itemObj?.img || media.image || media.article_img;
   let imgs = [...allImgs];

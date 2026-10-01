@@ -60,7 +60,7 @@ export function initTilt() {
       let gamma = Math.max(-30, Math.min(30, e.gamma));
       let beta = Math.max(0, Math.min(60, e.beta)) - 30;
       const xPercent = (- gamma + 30) / 60;
-      const yPercent = (- beta + 30) / 30;
+      const yPercent = (- beta + 30) / 60;
       applyTilt(xPercent, yPercent);
     }, { passive: true });
   }
