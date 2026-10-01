@@ -124,11 +124,11 @@
         },
         {
           "title": "Automation & IoT Engineering — Fare Ingenierie",
-          "desc": "Work-study automation engineer at Fare Ingenierie: PLC programming, LoRaWAN IoT architecture for the ITER nuclear site, yacht automation, and secure web backend.",
+          "desc": "Work-study automation engineer at Fare Ingenierie: PLC programming (SY Tiara Yacht), LoRaWAN IoT for ITER, custom SCADA dataloggers, and secure web backend.",
           "article": {
             "title": "Fare Ingenierie — Automation & IoT",
             "tag": "Project / Work-Study",
-            "body": "<p>Two experiences at <strong>Fare Ingenierie</strong>, a technical engineering firm specialising in automation and supervision systems:</p><p><strong>Internship (Mar–Jun 2025, 4 months):</strong></p><ul><li>Full overhaul of the PLC programme for the <strong>SY Tiara II</strong> — an 80-metre superyacht</li><li>LoRaWAN sensor integration and internal web management application</li><li>Backend: <strong>Python</strong>, MySQL, Docker</li></ul><p><strong>Work-Study (Sep 2025 – Aug 2026, 1 year):</strong></p><ul><li>Design and integration of PLC programmes and supervision systems</li><li>R&D IoT architecture: <strong>LoRaWAN sensors via MQTT protocol on PLCs</strong> for safety monitoring at the <strong>ITER nuclear fusion site</strong></li><li>Secure web backend: <strong>Python / FastAPI / Docker / MySQL</strong></li></ul>",
+            "body": "<p>I completed both a 10-week internship and a 1-year apprenticeship at <strong>Fare Ingenierie</strong>, an engineering firm specializing in automation and supervision systems.</p>\n<p><strong>Key Projects:</strong></p>\n<ul>\n<li><strong>SY Tiara II Superyacht:</strong> Complete overhaul of the WAGO PLC programs for an 80-meter yacht.</li>\n<li><strong>ITER Nuclear Fusion Site:</strong> R&D IoT architecture integrating LoRaWAN sensors via MQTT protocol on PLCs for safety monitoring.</li>\n<li><strong>Custom SCADA Datalogger:</strong> Development of an industrial data transmission system utilizing an edge preprocessing algorithm, chunking, and a secure Docker/Python/FastAPI/MySQL stack.</li>\n<li><strong>FareOps:</strong> Internal business management web application.</li>\n<li><strong>Silos Supervision:</strong> Updating the supervision of a PLC controlling 75 plastic pellet silos.</li>\n</ul>",
             "img": "./images/project_iter.jpg",
             "tags": [
               "Fare Ingenierie",
@@ -344,6 +344,83 @@
             "Digital Logic",
             "Electronics",
             "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
+        },
+        {
+          "title": "Photovoltaic Power Supply",
+          "desc": "Design and prototyping of a solar power control board to power a smartphone and an Altera FPGA.",
+          "article": {
+            "title": "Photovoltaic Power Supply",
+            "tag": "Project",
+            "body": "<p>During a dedicated SAÉ at IUT Salon-de-Provence, we designed the control board for a solar power supply system.</p><p><strong>Objective:</strong> Safely and efficiently power a smartphone and an Altera microprocessor board using photovoltaic panels.</p><p>We bypassed standard voltage dividers to optimize energy yield and developed a robust electronic control circuit, culminating in system simulation and the drafting of maintenance and commissioning documents.</p>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "Electronics",
+              "Solar Power",
+              "Energy Management",
+              "IUT Salon"
+            ]
+          },
+          "tags": [
+            "Electronics",
+            "Solar Power",
+            "Energy Management",
+            "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
+        },
+        {
+          "title": "Analog Line-Follower Robot",
+          "desc": "Creation of an analog line-follower robot guided by sound (claps). Designed the sound control board.",
+          "article": {
+            "title": "Analog Line-Follower Robot (Sound-guided)",
+            "tag": "Project",
+            "body": "<p>As part of an IUT GEII project, we built an <strong>analog line-follower robot</strong> entirely without programming. The robot was controlled via sound: one clap to start, a second clap to stop.</p><p>Working in pairs, our team specifically handled the <strong>Sound Card</strong>. We performed reverse engineering, calculated microphone polarization, designed analog sound amplification filters, and validated the circuits to authorize the robot's movement based on acoustic triggers.</p><p>This robot was presented at the <em>Fête de la Science</em> in Salon-de-Provence.</p>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "Electronics",
+              "Analog",
+              "Robotics",
+              "Sound Processing",
+              "Filters",
+              "IUT Salon"
+            ]
+          },
+          "tags": [
+            "Electronics",
+            "Analog",
+            "Robotics",
+            "Sound Processing",
+            "Filters",
+            "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
+        },
+        {
+          "title": "Industrial Robotic Arms — Dobot & Niryo",
+          "desc": "Programming of Dobot and Niryo industrial robotic arms for an automated piece sorting scenario.",
+          "article": {
+            "title": "Industrial Robotic Arms — Dobot & Niryo",
+            "tag": "Project",
+            "body": "<p>This practical project focused on controlling industrial robotic arms (<strong>Dobot</strong> and <strong>Niryo Ned</strong>).</p><p>We developed an automated scenario where the two robots operated independently to sort and store pieces in specific work zones. The project required understanding kinematics, defining operational specifications, and establishing a robust algorithm for task synchronization.</p>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "Robotics",
+              "Industrial",
+              "Dobot",
+              "Niryo Ned",
+              "Kinematics",
+              "Automation"
+            ]
+          },
+          "tags": [
+            "Robotics",
+            "Industrial",
+            "Dobot",
+            "Niryo Ned",
+            "Kinematics",
+            "Automation"
           ],
           "image": "./images/project_iter.jpg"
         }
@@ -1362,11 +1439,11 @@
         },
         {
           "title": "Automatisme & IoT — Fare Ingenierie",
-          "desc": "Apprenti automaticien en bureau d'études chez Fare Ingenierie : programmation d'automates, architecture IoT LoRaWAN pour le site nucléaire ITER, automatisation d'un yacht 80m, backend web sécurisé.",
+          "desc": "Alternant automaticien chez Fare Ingénierie : programmation API (Yacht SY Tiara), IoT LoRaWAN pour ITER, SCADA Datalogger sur-mesure et backend web.",
           "article": {
             "title": "Fare Ingenierie — Automatisme & IoT",
             "tag": "Projet / Alternance",
-            "body": "<p>Deux expériences chez <strong>Fare Ingenierie</strong>, bureau d'études spécialisé en automatisme et supervision :</p><p><strong>Stage (Mars–Juin 2025, 4 mois) :</strong></p><ul><li>Refonte complète du programme automate du <strong>SY Tiara II</strong> — un superyacht de 80 mètres</li><li>Intégration de capteurs LoRaWAN et développement d'une application web interne de gestion d'entreprise</li><li>Backend : <strong>Python</strong>, MySQL, Docker</li></ul><p><strong>Alternance (Sept. 2025 – Août 2026, 1 an) :</strong></p><ul><li>Conception et intégration de programmes d'automates et réalisation de supervisions</li><li>Développement R&D d'une architecture IoT : <strong>capteurs LoRaWAN via MQTT sur automates</strong> pour la surveillance de sécurité du <strong>site de fusion nucléaire ITER</strong></li><li>Backend web sécurisé : <strong>Python / FastAPI / Docker / MySQL</strong></li></ul>",
+            "body": "<p>J'ai réalisé un stage de 10 semaines suivi d'une alternance d'un an chez <strong>Fare Ingénierie</strong>, bureau d'études spécialisé en automatisme et supervision.</p>\n<p><strong>Projets majeurs :</strong></p>\n<ul>\n<li><strong>Superyacht SY Tiara II :</strong> Refonte complète des programmes automates WAGO pour un yacht de 80 mètres.</li>\n<li><strong>Site d'ITER :</strong> Architecture IoT R&D intégrant des capteurs LoRaWAN via protocole MQTT sur automates pour la surveillance de sécurité.</li>\n<li><strong>SCADA Datalogger Sur-Mesure :</strong> Développement d'un système de transmission de données industrielles avec algorithme de prétraitement Edge, chunking, et stack Docker/Python/FastAPI/MySQL.</li>\n<li><strong>FareOps :</strong> Application web interne de gestion d'entreprise.</li>\n<li><strong>Supervision Silos :</strong> Mise à jour de la supervision d'un automate contrôlant 75 silos de billes de plastique.</li>\n</ul>",
             "img": "./images/project_iter.jpg",
             "tags": [
               "Fare Ingenierie",
@@ -1582,6 +1659,83 @@
             "Logique Numérique",
             "Électronique",
             "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
+        },
+        {
+          "title": "Alimentation Photovoltaïque",
+          "desc": "Conception et réalisation d'une carte de commande pour alimentation solaire destinée à un smartphone et un FPGA Altera.",
+          "article": {
+            "title": "Alimentation Photovoltaïque",
+            "tag": "Projet",
+            "body": "<p>Dans le cadre d'une SAÉ à l'IUT de Salon-de-Provence, nous avons conçu la partie commande d'une alimentation par panneaux solaires.</p><p><strong>Objectif :</strong> Alimenter efficacement un téléphone portable et une carte Altera à microprocesseur.</p><p>Nous avons étudié la partie puissance, optimisé le rendement énergétique, simulé l'ensemble du montage, et rédigé les documents de mise en service et de maintenance de la carte de commande.</p>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "Électronique",
+              "Solaire",
+              "Gestion d'Énergie",
+              "IUT Salon"
+            ]
+          },
+          "tags": [
+            "Électronique",
+            "Solaire",
+            "Gestion d'Énergie",
+            "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
+        },
+        {
+          "title": "Robot Suiveur de Ligne Analogique",
+          "desc": "Réalisation d'un robot analogique guidé par le son (claquements de main). Conception de la carte son.",
+          "article": {
+            "title": "Robot Suiveur de Ligne Analogique (Guidé au son)",
+            "tag": "Projet",
+            "body": "<p>Dans le cadre d'une SAÉ en GEII, nous avons conçu un <strong>robot suiveur de ligne entièrement analogique</strong> (aucune programmation). Ce robot était piloté par le son : un claquement de main pour avancer, un second pour s'arrêter.</p><p>En binôme, nous avons été responsables de la conception de la <strong>Carte Son</strong>. Nous avons réalisé la rétro-ingénierie, calculé la polarisation du microphone, conçu les filtres d'amplification analogique et validé les circuits permettant d'autoriser le déplacement du robot selon le signal acoustique.</p><p>Ce robot a été présenté à la <em>Fête de la Science</em> à Salon-de-Provence.</p>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "Électronique",
+              "Analogique",
+              "Robotique",
+              "Traitement du Son",
+              "Filtres",
+              "IUT Salon"
+            ]
+          },
+          "tags": [
+            "Électronique",
+            "Analogique",
+            "Robotique",
+            "Traitement du Son",
+            "Filtres",
+            "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
+        },
+        {
+          "title": "Bras Robotisés Industriels — Dobot & Niryo",
+          "desc": "Programmation de bras robotisés industriels Dobot et Niryo pour un scénario de tri de pièces automatisé.",
+          "article": {
+            "title": "Bras Robotisés Industriels — Dobot & Niryo",
+            "tag": "Projet",
+            "body": "<p>Ce projet pratique était centré sur le contrôle de bras robotisés industriels (<strong>Dobot</strong> et <strong>Niryo Ned</strong>).</p><p>Nous avons développé un scénario automatisé dans lequel les deux robots fonctionnaient de manière indépendante pour trier et ranger des pièces dans des zones de travail spécifiques. Le projet a nécessité d'appréhender la cinématique, de définir des spécifications opérationnelles et de concevoir un algorithme robuste pour synchroniser les tâches.</p>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "Robotique",
+              "Industriel",
+              "Dobot",
+              "Niryo Ned",
+              "Cinématique",
+              "Automatisme"
+            ]
+          },
+          "tags": [
+            "Robotique",
+            "Industriel",
+            "Dobot",
+            "Niryo Ned",
+            "Cinématique",
+            "Automatisme"
           ],
           "image": "./images/project_iter.jpg"
         }
