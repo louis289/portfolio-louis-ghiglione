@@ -413,7 +413,7 @@
             "title": "Analog Line-Follower Robot (Sound-guided)",
             "tag": "Project",
             "body": "<p>As part of an IUT GEII project, we built an <strong>analog line-follower robot</strong> entirely without programming. The robot was controlled via sound: one clap to start, a second clap to stop.</p><p>Working in pairs, our team specifically handled the <strong>Sound Card</strong>. We performed reverse engineering, calculated microphone polarization, designed analog sound amplification filters, and validated the circuits to authorize the robot's movement based on acoustic triggers.</p><p>This robot was presented at the <em>Fête de la Science</em> in Salon-de-Provence.</p>",
-            "img": "",
+            "img": "./images/proj_robot_son_1.jpg",
             "tags": [
               "Electronics",
               "Analog",
@@ -421,6 +421,11 @@
               "Sound Processing",
               "Filters",
               "IUT Salon"
+            ],
+            "images": [
+              "./images/proj_robot_son_1.jpg",
+              "./images/proj_robot_son_3.jpg",
+              "./images/proj_robot_son_4.jpeg"
             ]
           },
           "tags": [
@@ -431,7 +436,7 @@
             "Filters",
             "IUT Salon"
           ],
-          "image": ""
+          "image": "./images/proj_robot_son_1.jpg"
         },
         {
           "title": "Industrial Robotic Arms — Dobot & Niryo",
