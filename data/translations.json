@@ -214,7 +214,7 @@
           "article": {
             "title": "Robotics — 3 National Competitions",
             "tag": "Project",
-            "body": "<p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), I participated in <strong>3 national student robotics competitions</strong>, covering the full engineering cycle from design to competition.</p><ul><li><strong>Mechanical design</strong> — chassis, actuators and structural components</li><li><strong>Embedded electronics</strong> — PCB design, motor drivers, sensor integration</li><li><strong>Embedded software</strong> — C/C++ firmware, Arduino and custom microcontroller programming</li><li><strong>Prototyping and maintenance</strong> — rapid iteration during competition prep</li></ul><p>These competitions trained working under pressure, managing tight deadlines, and collaborating in a multidisciplinary team.</p>",
+            "body": "<p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), we built fully autonomous and RC-controlled robots for the competition.</p><p>We created comprehensive manufacturing dossiers, tested numerous sensors (TSOP48, ultrasonic), optimized servo motors, and built dedicated test beds (Testeur BUT1) to validate the electronics.</p><p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), I participated in <strong>3 national student robotics competitions</strong>, covering the full engineering cycle from design to competition.</p><ul><li><strong>Mechanical design</strong> — chassis, actuators and structural components</li><li><strong>Embedded electronics</strong> — PCB design, motor drivers, sensor integration</li><li><strong>Embedded software</strong> — C/C++ firmware, Arduino and custom microcontroller programming</li><li><strong>Prototyping and maintenance</strong> — rapid iteration during competition prep</li></ul><p>These competitions trained working under pressure, managing tight deadlines, and collaborating in a multidisciplinary team.</p>",
             "img": "./images/passion_space.jpg",
             "tags": [
               "Robotics",
@@ -240,6 +240,62 @@
             "2023-2026"
           ],
           "image": "./images/passion_space.jpg"
+        },
+        {
+          "title": "Valise Balise — Visual Basic IHM & Arduino",
+          "desc": "Redesign of a legacy HMI in Visual Basic to control an I2C LED matrix via Arduino.",
+          "article": {
+            "title": "Valise Balise — Visual Basic IHM & Arduino",
+            "tag": "Project",
+            "body": "<p>This project involved reverse-engineering and redesigning a lost legacy application in <strong>Visual Basic</strong> to control an I2C LED matrix via an <strong>Arduino Uno</strong>.</p><p><strong>Key features:</strong></p><ul><li>Development of a complete graphical user interface (GUI) with drawing, playback, and control modes.</li><li>Implementation of serial communication via the COM port to transmit I2C commands to the Arduino.</li><li>Creation of technical specifications and a manufacturing dossier.</li></ul>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "Visual Basic",
+              "IHM",
+              "Arduino",
+              "I2C",
+              "Software",
+              "Hardware",
+              "IUT Salon"
+            ]
+          },
+          "tags": [
+            "Visual Basic",
+            "IHM",
+            "Arduino",
+            "I2C",
+            "Software",
+            "Hardware",
+            "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
+        },
+        {
+          "title": "Automatic Control & PID — DC Motor",
+          "desc": "Modeling, simulation, and real-world PID control of a DC motor with tachymetric feedback.",
+          "article": {
+            "title": "Automatic Control & PID — DC Motor",
+            "tag": "Project",
+            "body": "<p>A comprehensive academic project on control theory (Automatique) focusing on the speed and position regulation of a DC motor.</p><p><strong>Process:</strong></p><ul><li>Mathematical modeling and transfer function derivation of the electromechanical system.</li><li>Simulation of step responses and closed-loop behavior using proportional, integral, and PID controllers.</li><li>Real-world implementation and tuning on a test bench with tachymetric feedback.</li></ul>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "Control Theory",
+              "PID",
+              "DC Motor",
+              "Matlab/Simulink",
+              "Modeling",
+              "IUT Salon"
+            ]
+          },
+          "tags": [
+            "Control Theory",
+            "PID",
+            "DC Motor",
+            "Matlab/Simulink",
+            "Modeling",
+            "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
         }
       ]
     },
@@ -726,64 +782,62 @@
       "desc": "Volunteer work, associations, and community involvement.",
       "items": [
         {
-          "title": "Scouting — Scout Leader",
-          "desc": "Over 10 years of scouting experience, including serving as Scout Leader. I designed and led educational projects, managed teams, and participated in Roverway 2024 (Norway).",
+          "title": "Scouting — Scout Leader (Toulouse)",
+          "desc": "Lifelong scout (since age 10) and Scout Leader. Currently leading the 14-17 age group in Toulouse. Led multiple camps across Europe.",
           "article": {
-            "title": "Scouting — Scout Leader",
+            "title": "Scouting — A Lifelong Commitment",
             "tag": "Civic Engagement",
             "img": "./images/passion_scouting.jpg",
-            "body": "<p>Over <strong>10 years of scouting</strong>, including serving as <strong>Chef Scout (Scout Leader)</strong>. My role involved designing and running educational programmes for young people — outdoor expeditions, citizenship projects, and team-building challenges.</p><p>In 2024, I participated autonomously in <strong>Roverway 2024</strong>, the European scout gathering held in Norway, collaborating with scouts from across Europe over two weeks of travel, shared projects and intercultural exchange.</p>",
+            "body": "<p>I have been involved in scouting since I was 10, starting as a youth at <strong>EDLN Marseille</strong> until I was 20. At 17, I became a scout leader at <strong>EEDF Trets Garlaban</strong> during the summer, and at 18, I led a camp in Nantes with them.</p><p>During my higher education in Salon-de-Provence, I joined the <strong>EDLN GLOP (Groupe Local Ouest Provence)</strong> where I was a unit leader for two years, before moving to <strong>EDLN Toulon</strong>.</p><p>Internationally, I participated as a youth in <strong>Roverway (Norway)</strong> and led a camp in <strong>Germany (Summer 2026)</strong> for two age groups (11-17 years old).</p><p>Throughout my years as a leader, I primarily supervised the 8-10 age group. <strong>Currently, I am a Scout Leader in Toulouse</strong>, supervising the 14-17 age group.</p>",
             "tags": [
               "Scouting",
-              "Chef Scout",
+              "Scout Leader",
               "Leadership",
-              "Teamwork",
-              "Engagement",
-              "Outdoors",
-              "Nature",
-              "10+ years",
-              "Roverway 2024",
-              "Norway"
+              "Youth",
+              "EDLN",
+              "EEDF",
+              "Roverway",
+              "Germany 2026",
+              "Toulouse"
             ]
           },
           "tags": [
             "Scouting",
-            "Chef Scout",
+            "Scout Leader",
             "Leadership",
-            "Teamwork",
-            "Engagement",
-            "Outdoors",
-            "Nature",
-            "10+ years",
-            "Roverway 2024",
-            "Norway"
+            "Youth",
+            "EDLN",
+            "EEDF",
+            "Roverway",
+            "Germany 2026",
+            "Toulouse"
           ],
           "image": "./images/passion_scouting.jpg"
         },
         {
           "title": "Vice-President, Student Union (BDE) — IUT Salon",
-          "desc": "VP of the student union at IUT Salon (2024-2025), co-organised the national GEII symposium 2024.",
+          "desc": "VP of the student union at IUT Salon (2024-2025). Participated as a student organizer for the GEII 2024 colloquium in Marseille.",
           "article": {
             "title": "Vice-President, Student Union — IUT Salon",
             "tag": "Civic Engagement",
-            "body": "<p>Served as <strong>Vice-President of the BDE</strong> (Bureau Des Étudiants) at IUT Aix-Marseille, Salon-de-Provence campus during the academic year 2024-2025.</p><p>I co-organised the <strong>national GEII symposium in 2024</strong>, which brought together students and professionals from electrical engineering and industrial computing departments across France. Managing logistics, communication, and programme for a national-scale event was a formative leadership experience.</p>",
+            "body": "<p>I served as <strong>Vice-President of the BDE</strong> (Bureau Des Étudiants) at IUT Aix-Marseille, Salon-de-Provence campus during the academic year 2024-2025.</p><p>I also participated as a <strong>student organizer for the national GEII colloquium in 2024 in Marseille</strong>, which brought together students and professionals from electrical engineering and industrial computing departments across France. Managing logistics, communication, and the programme for a national-scale event was a formative leadership experience.</p>",
             "img": "./images/civic_bde.jpg",
             "tags": [
               "BDE",
               "IUT Salon",
               "Leadership",
-              "Teamwork",
-              "Engagement",
-              "2024-2025"
+              "Event Organization",
+              "Colloc GEII 2024",
+              "Marseille"
             ]
           },
           "tags": [
             "BDE",
             "IUT Salon",
             "Leadership",
-            "Teamwork",
-            "Engagement",
-            "2024-2025"
+            "Event Organization",
+            "Colloc GEII 2024",
+            "Marseille"
           ],
           "image": "./images/civic_bde.jpg"
         },
@@ -793,7 +847,7 @@
           "article": {
             "title": "Provençal Intelligence Agency — Park4Move",
             "tag": "Civic Engagement",
-            "body": "<p>As <strong>Secretary of the PIA</strong> (Provençal Intelligence Agency) — a student association at IUT Salon-de-Provence — I contributed to the <strong>Park4Move</strong> project: an open-source connected urban mobility solution designed for people with reduced mobility (PMR) and the elderly.</p><p>The system uses <strong>LoRaWAN sensors</strong> deployed across parking spaces in Salon-de-Provence to detect availability in real time. The data is displayed on an interactive Progressive Web App accessible at <strong>park4move.fr</strong>.</p><p><strong>Key achievements:</strong></p><ul><li>Winner of the Aix-Marseille University <strong>Service Learning award</strong></li><li>Selected to represent AMU at the <strong>European Service Learning Forum in Bucharest</strong> (among 10 projects from 5 European universities)</li><li>Presentation to the French Minister of Higher Education and local elected officials</li></ul>",
+            "body": "<p>As <strong>Secretary of the PIA</strong> (Provençal Intelligence Agency) — a student association at IUT Salon-de-Provence — I contributed to the <strong>Park4Move</strong> project: an open-source connected urban mobility solution designed for people with reduced mobility (PMR) and the elderly.</p><p>The system used <strong>LoRaWAN sensors</strong> deployed across parking spaces in Salon-de-Provence to detect availability in real time. The data was displayed on an interactive Progressive Web App accessible at <strong>park4move.fr</strong>.</p><p><strong>Key achievements:</strong></p><ul><li>Winner of the Aix-Marseille University <strong>Service Learning award</strong></li><li>Selected to represent AMU at the <strong>European Service Learning Forum in Bucharest</strong> (among 10 projects from 5 European universities)</li><li>Presented the project to the French Minister of Higher Education and local elected officials</li></ul>",
             "links": [
               {
                 "label": "park4move.fr",
@@ -807,11 +861,8 @@
               "LoRaWAN",
               "IoT",
               "PMR",
-              "Handicap",
               "Service Learning",
-              "IUT Salon",
-              "Engagement",
-              "2023-2025"
+              "IUT Salon"
             ]
           },
           "tags": [
@@ -820,11 +871,8 @@
             "LoRaWAN",
             "IoT",
             "PMR",
-            "Handicap",
             "Service Learning",
-            "IUT Salon",
-            "Engagement",
-            "2023-2025"
+            "IUT Salon"
           ],
           "image": "./images/project_park4move.jpg"
         }
@@ -1354,7 +1402,7 @@
           "article": {
             "title": "Robotique — 3 Compétitions Nationales",
             "tag": "Projet",
-            "body": "<p>Durant mon BUT GEII à l'IUT Aix-Marseille (Salon-de-Provence), j'ai participé à <strong>3 compétitions nationales de robotique étudiante</strong>, couvrant le cycle ingénierie complet de la conception jusqu'à la compétition.</p><ul><li><strong>Conception mécanique</strong> — châssis, actionneurs et éléments structuraux</li><li><strong>Électronique embarquée</strong> — conception PCB, drivers moteurs, intégration capteurs</li><li><strong>Logiciel embarqué</strong> — firmware C/C++, Arduino et microcontrôleurs sur mesure</li><li><strong>Prototypage et maintenance</strong> — itération rapide lors de la préparation</li></ul><p>Ces compétitions ont été formatrices pour travailler sous pression, gérer des délais serrés et collaborer en équipe pluridisciplinaire.</p>",
+            "body": "<p>Durant mon BUT GEII à l'IUT d'Aix-Marseille (Salon-de-Provence), nous avons construit des robots totalement autonomes et radiocommandés.</p><p>Nous avons rédigé des dossiers de fabrication complets, testé de nombreux capteurs (TSOP48, ultrasons), optimisé les servomoteurs et fabriqué des bancs d'essais dédiés (Testeur BUT1) pour valider nos circuits imprimés.</p><p>Durant mon BUT GEII à l'IUT Aix-Marseille (Salon-de-Provence), j'ai participé à <strong>3 compétitions nationales de robotique étudiante</strong>, couvrant le cycle ingénierie complet de la conception jusqu'à la compétition.</p><ul><li><strong>Conception mécanique</strong> — châssis, actionneurs et éléments structuraux</li><li><strong>Électronique embarquée</strong> — conception PCB, drivers moteurs, intégration capteurs</li><li><strong>Logiciel embarqué</strong> — firmware C/C++, Arduino et microcontrôleurs sur mesure</li><li><strong>Prototypage et maintenance</strong> — itération rapide lors de la préparation</li></ul><p>Ces compétitions ont été formatrices pour travailler sous pression, gérer des délais serrés et collaborer en équipe pluridisciplinaire.</p>",
             "img": "./images/passion_space.jpg",
             "tags": [
               "Robotique",
@@ -1380,6 +1428,62 @@
             "2023-2026"
           ],
           "image": "./images/passion_space.jpg"
+        },
+        {
+          "title": "Valise Balise — IHM Visual Basic & Arduino",
+          "desc": "Refonte d'une ancienne interface IHM en Visual Basic pour contrôler une matrice de LEDs en I2C via un Arduino.",
+          "article": {
+            "title": "Valise Balise — IHM Visual Basic & Arduino",
+            "tag": "Projet",
+            "body": "<p>Ce projet consistait à rétro-ingénierer et recréer une application perdue en <strong>Visual Basic</strong> pour contrôler une matrice de LEDs via un bus I2C et un <strong>Arduino Uno</strong>.</p><p><strong>Caractéristiques clés :</strong></p><ul><li>Développement d'une interface utilisateur graphique (IHM) complète avec modes de dessin, lecture et contrôle.</li><li>Implémentation d'une communication série via le port COM pour envoyer les commandes I2C à l'Arduino.</li><li>Rédaction du cahier des charges et du dossier de fabrication.</li></ul>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "Visual Basic",
+              "IHM",
+              "Arduino",
+              "I2C",
+              "Logiciel",
+              "Matériel",
+              "IUT Salon"
+            ]
+          },
+          "tags": [
+            "Visual Basic",
+            "IHM",
+            "Arduino",
+            "I2C",
+            "Logiciel",
+            "Matériel",
+            "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
+        },
+        {
+          "title": "Asservissement & Régulation — Moteur CC",
+          "desc": "Modélisation, simulation et asservissement PID réel d'un moteur à courant continu avec retour tachymétrique.",
+          "article": {
+            "title": "Asservissement & Régulation — Moteur CC",
+            "tag": "Projet",
+            "body": "<p>Un projet académique complet sur l'automatique, centré sur la régulation de vitesse et de position d'un moteur à courant continu.</p><p><strong>Processus :</strong></p><ul><li>Modélisation mathématique et détermination de la fonction de transfert du système électromécanique.</li><li>Simulation des réponses indicielles et du comportement en boucle fermée avec des correcteurs proportionnels, intégraux et PID.</li><li>Implémentation réelle et réglage sur banc d'essai avec retour tachymétrique.</li></ul>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "Automatique",
+              "PID",
+              "Moteur CC",
+              "Matlab/Simulink",
+              "Modélisation",
+              "IUT Salon"
+            ]
+          },
+          "tags": [
+            "Automatique",
+            "PID",
+            "Moteur CC",
+            "Matlab/Simulink",
+            "Modélisation",
+            "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
         }
       ]
     },
@@ -1861,79 +1965,75 @@
       ]
     },
     "civic": {
-      "tag": "Engagement Civique",
-      "title": "S'Investir",
-      "desc": "Bénévolat, associations et engagement communautaire.",
+      "tag": "Engagement Citoyen",
+      "title": "Donner en Retour",
+      "desc": "Bénévolat, milieu associatif et engagement communautaire.",
       "items": [
         {
-          "title": "Scoutisme — Chef Scout",
-          "desc": "Plus de 10 ans de scoutisme dont le rôle de Chef Scout. Projets éducatifs, encadrement d'équipes, Roverway 2024 (Norvège).",
+          "title": "Scoutisme — Chef Scout (Toulouse)",
+          "desc": "Scout depuis mes 10 ans et Chef Scout. Actuellement chef de la tranche 14-17 ans à Toulouse. Auparavant chef de camps en France et en Allemagne.",
           "article": {
-            "title": "Scoutisme — Chef Scout",
-            "tag": "Engagement Civique",
+            "title": "Scoutisme — Un Engagement de Longue Date",
+            "tag": "Engagement Citoyen",
             "img": "./images/passion_scouting.jpg",
-            "body": "<p>Plus de <strong>10 ans de scoutisme</strong>, dont le rôle de <strong>Chef Scout</strong>. Mon rôle a consisté à concevoir et animer des programmes éducatifs pour les jeunes — expéditions en plein air, projets citoyens, et défis en équipe.</p><p>En 2024, j'ai participé de façon autonome à <strong>Roverway 2024</strong>, le rassemblement européen scout en Norvège, en collaborant avec des scouts de toute l'Europe pendant deux semaines de voyage, de projets partagés et d'échanges interculturels.</p>",
+            "body": "<p>Je suis investi dans le scoutisme depuis mes 10 ans. J'ai d'abord été jeune aux <strong>EDLN Marseille</strong> jusqu'à mes 20 ans. À 17 ans, j'ai été chef aux <strong>EEDF de Trets Garlaban</strong> durant l'été, puis j'ai encadré un camp à Nantes l'année suivante avec eux.</p><p>Lors de mes études supérieures, je suis allé à Salon-de-Provence et j'ai rejoint le groupe local EDLN <strong>GLOP (Groupe Local Ouest Provence)</strong> où j'ai été chef d'unité pendant 2 ans, avant de rejoindre les <strong>EDLN de Toulon</strong>.</p><p>À l'international, je suis allé en Norvège en tant que jeune pour le <strong>Roverway</strong>. À l'été 2026, je suis parti en <strong>Allemagne</strong> en tant que chef pour encadrer deux tranches d'âge (11-17 ans).</p><p>Hormis l'Allemagne et mon groupe actuel, j'ai principalement été chef de la tranche des 8-10 ans. <strong>Cette année, je suis chef pour les 14-17 ans à Toulouse.</strong></p>",
             "tags": [
               "Scoutisme",
               "Chef Scout",
-              "Leadership",
-              "Teamwork",
-              "Engagement",
-              "Nature",
-              "Outdoors",
-              "10+ ans",
-              "Roverway 2024",
-              "Norvège"
+              "Animation",
+              "EDLN",
+              "EEDF",
+              "Roverway",
+              "Allemagne 2026",
+              "Toulouse"
             ]
           },
           "tags": [
             "Scoutisme",
             "Chef Scout",
-            "Leadership",
-            "Teamwork",
-            "Engagement",
-            "Nature",
-            "Outdoors",
-            "10+ ans",
-            "Roverway 2024",
-            "Norvège"
+            "Animation",
+            "EDLN",
+            "EEDF",
+            "Roverway",
+            "Allemagne 2026",
+            "Toulouse"
           ],
           "image": "./images/passion_scouting.jpg"
         },
         {
-          "title": "Vice-Président BDE — IUT Salon",
-          "desc": "VP du BDE à l'IUT Salon (2024-2025), co-organisateur du symposium national GEII 2024.",
+          "title": "Vice-Président, Bureau Des Étudiants (BDE) — IUT Salon",
+          "desc": "VP du BDE à l'IUT de Salon (2024-2025). J'ai également participé en tant qu'élève organisateur au Colloc GEII 2024 à Marseille.",
           "article": {
-            "title": "Vice-Président BDE — IUT Salon",
-            "tag": "Engagement Civique",
-            "body": "<p>Vice-Président du <strong>BDE</strong> (Bureau Des Étudiants) à l'IUT Aix-Marseille, campus de Salon-de-Provence, durant l'année 2024-2025.</p><p>J'ai co-organisé le <strong>symposium national GEII 2024</strong>, rassemblant étudiants et professionnels du génie électrique et de l'informatique industrielle de toute la France. Gérer la logistique, la communication et le programme d'un événement à échelle nationale a été une expérience de leadership formatrice.</p>",
+            "title": "Vice-Président du BDE — IUT Salon",
+            "tag": "Engagement Citoyen",
+            "body": "<p>J'ai été <strong>Vice-Président du BDE</strong> (Bureau Des Étudiants) de l'IUT d'Aix-Marseille, campus de Salon-de-Provence au cours de l'année 2024-2025.</p><p>J'ai également participé en tant qu'<strong>élève organisateur au Colloc GEII 2024 à Marseille</strong>, événement national rassemblant les départements de Génie Électrique et Informatique Industrielle de France. La gestion de la logistique et de la communication pour un événement de cette ampleur fut une expérience formatrice en leadership.</p>",
             "img": "./images/civic_bde.jpg",
             "tags": [
               "BDE",
               "IUT Salon",
               "Leadership",
-              "Teamwork",
-              "Engagement",
-              "2024-2025"
+              "Événementiel",
+              "Colloc GEII 2024",
+              "Marseille"
             ]
           },
           "tags": [
             "BDE",
             "IUT Salon",
             "Leadership",
-            "Teamwork",
-            "Engagement",
-            "2024-2025"
+            "Événementiel",
+            "Colloc GEII 2024",
+            "Marseille"
           ],
           "image": "./images/civic_bde.jpg"
         },
         {
           "title": "Secrétaire — Provençal Intelligence Agency (PIA)",
-          "desc": "Secrétaire de l'association étudiante PIA à l'IUT de Salon. Contribution au projet Park4Move, primé au niveau européen.",
+          "desc": "Secrétaire de l'association PIA à l'IUT de Salon. Contribution majeure au projet récompensé Park4Move.",
           "article": {
             "title": "Provençal Intelligence Agency — Park4Move",
-            "tag": "Engagement Civique",
-            "body": "<p>En tant que <strong>Secrétaire de la PIA</strong> (Provençal Intelligence Agency) — une association étudiante de l'IUT de Salon-de-Provence — j'ai contribué au projet <strong>Park4Move</strong> : une solution open-source de mobilité urbaine connectée conçue pour les personnes à mobilité réduite (PMR) et les seniors.</p><p>Le système utilise des <strong>capteurs LoRaWAN</strong> déployés sur des places de stationnement à Salon-de-Provence pour détecter leur disponibilité en temps réel. Les données sont affichées sur une Progressive Web App interactive accessible sur <strong>park4move.fr</strong>.</p><p><strong>Résultats clés :</strong></p><ul><li>Lauréat du prix <strong>Service Learning</strong> d'Aix-Marseille Université</li><li>Sélectionné pour représenter AMU au <strong>Forum européen Service Learning à Bucarest</strong> (parmi 10 projets de 5 universités européennes)</li><li>Présentation à la Ministre de l'Enseignement Supérieur et aux élus locaux</li></ul>",
+            "tag": "Engagement Citoyen",
+            "body": "<p>En tant que <strong>Secrétaire de la PIA</strong> (Provençal Intelligence Agency) — association étudiante de l'IUT de Salon-de-Provence — j'ai contribué au projet <strong>Park4Move</strong> : une solution open-source de mobilité urbaine connectée pour les PMR (Personnes à Mobilité Réduite) et les seniors.</p><p>Le système s'appuyait sur des capteurs <strong>LoRaWAN</strong> déployés sur les places de parking à Salon-de-Provence pour détecter les disponibilités en temps réel. Les données étaient affichées sur une Progressive Web App accessible via <strong>park4move.fr</strong>.</p><p><strong>Réalisations clés :</strong></p><ul><li>Lauréat du prix <strong>Service Learning</strong> de l'Université d'Aix-Marseille</li><li>Sélectionné pour représenter AMU au <strong>European Service Learning Forum à Bucarest</strong> (parmi 10 projets de 5 universités européennes)</li><li>Présentation du projet à la Ministre de l'Enseignement Supérieur et aux élus locaux</li></ul>",
             "links": [
               {
                 "label": "park4move.fr",
@@ -1947,11 +2047,8 @@
               "LoRaWAN",
               "IoT",
               "PMR",
-              "Handicap",
               "Service Learning",
-              "IUT Salon",
-              "Engagement",
-              "2023-2025"
+              "IUT Salon"
             ]
           },
           "tags": [
@@ -1960,11 +2057,8 @@
             "LoRaWAN",
             "IoT",
             "PMR",
-            "Handicap",
             "Service Learning",
-            "IUT Salon",
-            "Engagement",
-            "2023-2025"
+            "IUT Salon"
           ],
           "image": "./images/project_park4move.jpg"
         }
