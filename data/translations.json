@@ -325,7 +325,7 @@
             "title": "Battery Tester — BUT1 SAE",
             "tag": "Project",
             "body": "<p>During my first year (BUT1), I worked on the <strong>Battery Tester</strong> project, aiming to design an electronic device capable of measuring and indicating a battery's charge level.</p><p>The project involved:</p><ul><li><strong>Functional design:</strong> Analyzing specifications and defining the electronic architecture.</li><li><strong>Analog electronics:</strong> Designing the measurement and comparison circuits to drive LED indicators.</li><li><strong>Prototyping:</strong> Building and testing the circuit to validate its performance against the specifications.</li></ul>",
-            "img": "",
+            "img": "./images/proj_battery_1.jpg",
             "tags": [
               "Electronics",
               "Battery Tester",
@@ -333,7 +333,10 @@
               "Prototyping",
               "IUT Salon"
             ],
-            "images": []
+            "images": [
+              "./images/proj_battery_1.jpg",
+              "./images/proj_battery_2.jpg"
+            ]
           },
           "tags": [
             "Electronics",
@@ -342,7 +345,7 @@
             "Prototyping",
             "IUT Salon"
           ],
-          "image": ""
+          "image": "./images/proj_battery_1.jpg"
         },
         {
           "title": "Digital Chaser (Chenillard) — VHDL & FPGA",
@@ -1689,7 +1692,7 @@
             "title": "Testeur de Batterie — SAE BUT1",
             "tag": "Projet",
             "body": "<p>Lors de ma première année (BUT1), j'ai travaillé sur la <strong>SAE Testeur de Batterie</strong>, visant à concevoir un appareil électronique capable de mesurer et d'indiquer le niveau de charge d'une batterie.</p><p>Le projet comprenait :</p><ul><li><strong>Conception fonctionnelle :</strong> Analyse du cahier des charges et définition de l'architecture électronique.</li><li><strong>Électronique analogique :</strong> Conception des circuits de mesure et de comparaison pour piloter des indicateurs LED.</li><li><strong>Prototypage :</strong> Réalisation et test du circuit pour valider ses performances par rapport aux spécifications.</li></ul>",
-            "img": "",
+            "img": "./images/proj_battery_1.jpg",
             "tags": [
               "Électronique",
               "Testeur de Batterie",
@@ -1697,7 +1700,10 @@
               "Prototypage",
               "IUT Salon"
             ],
-            "images": []
+            "images": [
+              "./images/proj_battery_1.jpg",
+              "./images/proj_battery_2.jpg"
+            ]
           },
           "tags": [
             "Électronique",
@@ -1706,7 +1712,7 @@
             "Prototypage",
             "IUT Salon"
           ],
-          "image": ""
+          "image": "./images/proj_battery_1.jpg"
         },
         {
           "title": "Chenillard Numérique — VHDL & FPGA",
