@@ -140,7 +140,7 @@ export function openModal(articleKey, translations) {
     tags.forEach(tag => {
       const a = document.createElement('a');
       a.className = 'badge';
-      a.href = `./tag.html?tag=${encodeURIComponent(tag)}`;
+      a.href = `./tag.html?tag=${encodeURIComponent(tag)}&lang=${localStorage.getItem('site_lang') || 'en'}`;
       a.textContent = tag;
       tagsEl.appendChild(a);
     });

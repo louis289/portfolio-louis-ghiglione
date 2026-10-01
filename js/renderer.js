@@ -75,7 +75,7 @@ function renderGrid(sectionName, items) {
       item.tags.forEach(t => {
         const encTag = encodeURIComponent(t);
         const a = document.createElement('a');
-        a.href = `./tag.html?tag=${encTag}`;
+        a.href = `./tag.html?tag=${encTag}&lang=${localStorage.getItem('site_lang') || 'en'}`;
         a.className = 'badge';
         a.textContent = t;
         a.addEventListener('click', (e) => {
@@ -138,7 +138,7 @@ function renderCareerJobs(items) {
       item.tags.forEach(t => {
         const encTag = encodeURIComponent(t);
         const a = document.createElement('a');
-        a.href = `./tag.html?tag=${encTag}`;
+        a.href = `./tag.html?tag=${encTag}&lang=${localStorage.getItem('site_lang') || 'en'}`;
         a.className = 'badge';
         a.textContent = t;
         a.addEventListener('click', (e) => {

@@ -38,6 +38,7 @@ async function initTagPage() {
         });
       }
       for (const [key, val] of Object.entries(node)) {
+        if (key === 'article') continue;
         if (typeof val === 'object') {
           const newSection = sectionsToSearch.includes(key) ? key : sectionName;
           extractItems(val, newSection, key);
@@ -136,7 +137,7 @@ async function initTagPage() {
           const enc = encodeURIComponent(t);
           const isCurrent = t.toLowerCase() === currentTagNorm;
           const style = isCurrent ? 'background: var(--color-accent); color:#fff; border-color:var(--color-accent);' : '';
-          return `<a href="./tag.html?tag=${enc}" class="badge" style="${style}" onclick="event.stopPropagation();">${t}</a>`;
+          return `<a href="./tag.html?tag=${enc}&lang=${lang}" class="badge" style="${style}" onclick="event.stopPropagation();">${t}</a>`;
         }).join(' ');
 
         html += `
@@ -175,7 +176,7 @@ async function initTagPage() {
       html += `<div class="related-tags" style="display:flex; flex-wrap:wrap; gap:0.5rem;">`;
       relatedTags.slice(0, 12).forEach(t => {
         const encTag = encodeURIComponent(t);
-        html += `<a href="./tag.html?tag=${encTag}" class="badge" style="padding:0.25rem 0.75rem; font-size:0.8rem;">#${t}</a>`;
+        html += `<a href="./tag.html?tag=${encTag}&lang=${lang}" class="badge" style="padding:0.25rem 0.75rem; font-size:0.8rem;">#${t}</a>`;
       });
       html += `</div>`;
     }
