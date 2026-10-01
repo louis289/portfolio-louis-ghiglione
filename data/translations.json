@@ -226,6 +226,12 @@
               "IUT Salon",
               "Problem Solving",
               "2023-2026"
+            ],
+            "images": [
+              "./images/proj_robot_concours_1.png",
+              "./images/proj_robot_concours_2.png",
+              "./images/proj_robot_concours_3.png",
+              "./images/proj_robot_concours_4.png"
             ]
           },
           "tags": [
@@ -257,6 +263,12 @@
               "Software",
               "Hardware",
               "IUT Salon"
+            ],
+            "images": [
+              "./images/proj_valise_balise_1.png",
+              "./images/proj_valise_balise_2.png",
+              "./images/proj_valise_balise_3.png",
+              "./images/proj_valise_balise_4.png"
             ]
           },
           "tags": [
@@ -285,6 +297,12 @@
               "Matlab/Simulink",
               "Modeling",
               "IUT Salon"
+            ],
+            "images": [
+              "./images/proj_auto_moteur_1.png",
+              "./images/proj_auto_moteur_2.png",
+              "./images/proj_auto_moteur_3.png",
+              "./images/proj_auto_moteur_4.png"
             ]
           },
           "tags": [
@@ -412,6 +430,12 @@
               "Niryo Ned",
               "Kinematics",
               "Automation"
+            ],
+            "images": [
+              "./images/proj_dobot_niryo_1.png",
+              "./images/proj_dobot_niryo_2.png",
+              "./images/proj_dobot_niryo_3.png",
+              "./images/proj_dobot_niryo_4.png"
             ]
           },
           "tags": [
@@ -1551,6 +1575,12 @@
               "IUT Salon",
               "Résolution de problèmes",
               "2023-2026"
+            ],
+            "images": [
+              "./images/proj_robot_concours_1.png",
+              "./images/proj_robot_concours_2.png",
+              "./images/proj_robot_concours_3.png",
+              "./images/proj_robot_concours_4.png"
             ]
           },
           "tags": [
@@ -1582,6 +1612,12 @@
               "Logiciel",
               "Matériel",
               "IUT Salon"
+            ],
+            "images": [
+              "./images/proj_valise_balise_1.png",
+              "./images/proj_valise_balise_2.png",
+              "./images/proj_valise_balise_3.png",
+              "./images/proj_valise_balise_4.png"
             ]
           },
           "tags": [
@@ -1610,6 +1646,12 @@
               "Matlab/Simulink",
               "Modélisation",
               "IUT Salon"
+            ],
+            "images": [
+              "./images/proj_auto_moteur_1.png",
+              "./images/proj_auto_moteur_2.png",
+              "./images/proj_auto_moteur_3.png",
+              "./images/proj_auto_moteur_4.png"
             ]
           },
           "tags": [
@@ -1710,6 +1752,12 @@
               "Traitement du Son",
               "Filtres",
               "IUT Salon"
+            ],
+            "images": [
+              "./images/proj_robot_son_1.jpg",
+              "./images/proj_robot_son_2.jpeg",
+              "./images/proj_robot_son_3.jpg",
+              "./images/proj_robot_son_4.jpeg"
             ]
           },
           "tags": [
@@ -1737,6 +1785,12 @@
               "Niryo Ned",
               "Cinématique",
               "Automatisme"
+            ],
+            "images": [
+              "./images/proj_dobot_niryo_1.png",
+              "./images/proj_dobot_niryo_2.png",
+              "./images/proj_dobot_niryo_3.png",
+              "./images/proj_dobot_niryo_4.png"
             ]
           },
           "tags": [
