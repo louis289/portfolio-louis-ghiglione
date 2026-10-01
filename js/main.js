@@ -70,6 +70,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderDynamicContent(translations[lang], translations);
     initModals(translations); // Wire up the newly created modals
     evaluateLuminance(); // Recalculate contrast for newly injected cards
+    
+    // Re-apply currently active filter
+    const activeFilterBtn = document.querySelector('.filter-btn.active');
+    if (activeFilterBtn) {
+      activeFilterBtn.click();
+    }
   }
 
   // 3. Wire card modals & Render dynamic arrays

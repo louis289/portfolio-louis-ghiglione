@@ -119,7 +119,8 @@
             "N7",
             "2025-2026"
           ],
-          "id": "proj_0"
+          "id": "proj_0",
+          "status": "ongoing"
         },
         {
           "title": "Automation & IoT Engineering — Fare Ingenierie",
@@ -157,7 +158,8 @@
             "Hardware",
             "2024-2026"
           ],
-          "id": "proj_1"
+          "id": "proj_1",
+          "status": "ongoing"
         },
         {
           "title": "Park4Move — LoRaWAN Smart Parking",
@@ -203,7 +205,8 @@
             "IUT Salon",
             "2023-2025"
           ],
-          "id": "proj_2"
+          "id": "proj_2",
+          "status": "past"
         },
         {
           "title": "Student Robotics — 3 National Competitions",
@@ -235,7 +238,8 @@
             "Problem Solving",
             "2023-2026"
           ],
-          "id": "proj_3"
+          "id": "proj_3",
+          "status": "ongoing"
         },
         {
           "title": "Visual Basic IHM & Arduino",
@@ -263,7 +267,8 @@
             "Hardware",
             "IUT Salon"
           ],
-          "id": "proj_4"
+          "id": "proj_4",
+          "status": "past"
         },
         {
           "title": "Automatic Control & PID — DC Motor",
@@ -289,7 +294,8 @@
             "Modeling",
             "IUT Salon"
           ],
-          "id": "proj_5"
+          "id": "proj_5",
+          "status": "past"
         },
         {
           "title": "Battery Tester — BUT1 Project",
@@ -313,7 +319,8 @@
             "Prototyping",
             "IUT Salon"
           ],
-          "id": "proj_6"
+          "id": "proj_6",
+          "status": "past"
         },
         {
           "title": "Digital Chaser (Chenillard) — VHDL & FPGA",
@@ -337,7 +344,8 @@
             "Electronics",
             "IUT Salon"
           ],
-          "id": "proj_7"
+          "id": "proj_7",
+          "status": "past"
         },
         {
           "title": "Photovoltaic Power Supply",
@@ -359,7 +367,8 @@
             "Energy Management",
             "IUT Salon"
           ],
-          "id": "proj_8"
+          "id": "proj_8",
+          "status": "past"
         },
         {
           "title": "Analog Line-Follower Robot",
@@ -385,7 +394,8 @@
             "Filters",
             "IUT Salon"
           ],
-          "id": "proj_9"
+          "id": "proj_9",
+          "status": "past"
         },
         {
           "title": "Industrial Robotic Arms — Dobot & Niryo",
@@ -411,7 +421,8 @@
             "Kinematics",
             "Automation"
           ],
-          "id": "proj_10"
+          "id": "proj_10",
+          "status": "past"
         }
       ]
     },
@@ -926,7 +937,8 @@
             "Germany 2026",
             "Toulouse"
           ],
-          "id": "civ_0"
+          "id": "civ_0",
+          "status": "ongoing"
         },
         {
           "title": "Vice-President, Student Union (BDE) — IUT Salon",
@@ -952,7 +964,8 @@
             "Colloc GEII 2024",
             "Marseille"
           ],
-          "id": "civ_1"
+          "id": "civ_1",
+          "status": "past"
         },
         {
           "title": "Secretary — Provençal Intelligence Agency (PIA)",
@@ -986,7 +999,8 @@
             "Service Learning",
             "IUT Salon"
           ],
-          "id": "civ_2"
+          "id": "civ_2",
+          "status": "past"
         }
       ]
     },
@@ -1419,7 +1433,8 @@
             "N7",
             "2025-2026"
           ],
-          "id": "proj_0"
+          "id": "proj_0",
+          "status": "ongoing"
         },
         {
           "title": "Automatisme & IoT — Fare Ingenierie",
@@ -1457,7 +1472,8 @@
             "Hardware",
             "2024-2026"
           ],
-          "id": "proj_1"
+          "id": "proj_1",
+          "status": "ongoing"
         },
         {
           "title": "Park4Move — Stationnement Connecté LoRaWAN",
@@ -1503,7 +1519,8 @@
             "IUT Salon",
             "2023-2025"
           ],
-          "id": "proj_2"
+          "id": "proj_2",
+          "status": "past"
         },
         {
           "title": "Robotique Étudiante — 3 Compétitions Nationales",
@@ -1535,7 +1552,8 @@
             "Résolution de problèmes",
             "2023-2026"
           ],
-          "id": "proj_3"
+          "id": "proj_3",
+          "status": "ongoing"
         },
         {
           "title": "IHM Visual Basic & Arduino",
@@ -1563,7 +1581,8 @@
             "Matériel",
             "IUT Salon"
           ],
-          "id": "proj_4"
+          "id": "proj_4",
+          "status": "past"
         },
         {
           "title": "Asservissement & Régulation — Moteur CC",
@@ -1589,7 +1608,8 @@
             "Modélisation",
             "IUT Salon"
           ],
-          "id": "proj_5"
+          "id": "proj_5",
+          "status": "past"
         },
         {
           "title": "Testeur de Batterie — Projet BUT1",
@@ -1613,7 +1633,8 @@
             "Prototypage",
             "IUT Salon"
           ],
-          "id": "proj_6"
+          "id": "proj_6",
+          "status": "past"
         },
         {
           "title": "Chenillard Numérique — VHDL & FPGA",
@@ -1637,7 +1658,8 @@
             "Électronique",
             "IUT Salon"
           ],
-          "id": "proj_7"
+          "id": "proj_7",
+          "status": "past"
         },
         {
           "title": "Alimentation Photovoltaïque",
@@ -1659,7 +1681,8 @@
             "Gestion d'Énergie",
             "IUT Salon"
           ],
-          "id": "proj_8"
+          "id": "proj_8",
+          "status": "past"
         },
         {
           "title": "Robot Suiveur de Ligne Analogique",
@@ -1685,7 +1708,8 @@
             "Filtres",
             "IUT Salon"
           ],
-          "id": "proj_9"
+          "id": "proj_9",
+          "status": "past"
         },
         {
           "title": "Bras Robotisés Industriels — Dobot & Niryo",
@@ -1711,7 +1735,8 @@
             "Cinématique",
             "Automatisme"
           ],
-          "id": "proj_10"
+          "id": "proj_10",
+          "status": "past"
         }
       ]
     },
@@ -2224,7 +2249,8 @@
             "Allemagne 2026",
             "Toulouse"
           ],
-          "id": "civ_0"
+          "id": "civ_0",
+          "status": "ongoing"
         },
         {
           "title": "Vice-Président, Bureau Des Étudiants (BDE) — IUT Salon",
@@ -2250,7 +2276,8 @@
             "Colloc GEII 2024",
             "Marseille"
           ],
-          "id": "civ_1"
+          "id": "civ_1",
+          "status": "past"
         },
         {
           "title": "Secrétaire — Provençal Intelligence Agency (PIA)",
@@ -2284,7 +2311,8 @@
             "Service Learning",
             "IUT Salon"
           ],
-          "id": "civ_2"
+          "id": "civ_2",
+          "status": "past"
         }
       ]
     },
