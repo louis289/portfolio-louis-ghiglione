@@ -214,7 +214,7 @@
           "article": {
             "title": "Robotics — 3 National Competitions",
             "tag": "Project",
-            "body": "<p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), we built fully autonomous and RC-controlled robots for the competition.</p><p>We created comprehensive manufacturing dossiers, tested numerous sensors (TSOP48, ultrasonic), optimized servo motors, and built dedicated test beds (Testeur BUT1) to validate the electronics.</p><p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), I participated in <strong>3 national student robotics competitions</strong>, covering the full engineering cycle from design to competition.</p><ul><li><strong>Mechanical design</strong> — chassis, actuators and structural components</li><li><strong>Embedded electronics</strong> — PCB design, motor drivers, sensor integration</li><li><strong>Embedded software</strong> — C/C++ firmware, Arduino and custom microcontroller programming</li><li><strong>Prototyping and maintenance</strong> — rapid iteration during competition prep</li></ul><p>These competitions trained working under pressure, managing tight deadlines, and collaborating in a multidisciplinary team.</p>",
+            "body": "<p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), I participated in <strong>3 national student robotics competitions</strong>, covering the full engineering cycle from design to competition.</p><p>We built fully autonomous and RC-controlled robots, created comprehensive manufacturing dossiers, tested numerous sensors (TSOP48, ultrasonic), and optimized servo motors.</p><ul><li><strong>Mechanical design</strong> — chassis, actuators and structural components</li><li><strong>Embedded electronics</strong> — PCB design, motor drivers, sensor integration</li><li><strong>Embedded software</strong> — C/C++ firmware, Arduino and custom microcontroller programming</li><li><strong>Prototyping and maintenance</strong> — rapid iteration during competition prep</li></ul><p>These competitions trained working under pressure, managing tight deadlines, and collaborating in a multidisciplinary team.</p>",
             "img": "./images/passion_space.jpg",
             "tags": [
               "Robotics",
@@ -293,6 +293,31 @@
             "DC Motor",
             "Matlab/Simulink",
             "Modeling",
+            "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
+        },
+        {
+          "title": "Battery Tester — BUT1 Project",
+          "desc": "Design and prototyping of a battery tester. Conception of analog functions and LED indicators.",
+          "article": {
+            "title": "Battery Tester — BUT1 SAE",
+            "tag": "Project",
+            "body": "<p>During my first year (BUT1), I worked on the <strong>Battery Tester</strong> project, aiming to design an electronic device capable of measuring and indicating a battery's charge level.</p><p>The project involved:</p><ul><li><strong>Functional design:</strong> Analyzing specifications and defining the electronic architecture.</li><li><strong>Analog electronics:</strong> Designing the measurement and comparison circuits to drive LED indicators.</li><li><strong>Prototyping:</strong> Building and testing the circuit to validate its performance against the specifications.</li></ul>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "Electronics",
+              "Battery Tester",
+              "Analog",
+              "Prototyping",
+              "IUT Salon"
+            ]
+          },
+          "tags": [
+            "Electronics",
+            "Battery Tester",
+            "Analog",
+            "Prototyping",
             "IUT Salon"
           ],
           "image": "./images/project_iter.jpg"
@@ -1402,7 +1427,7 @@
           "article": {
             "title": "Robotique — 3 Compétitions Nationales",
             "tag": "Projet",
-            "body": "<p>Durant mon BUT GEII à l'IUT d'Aix-Marseille (Salon-de-Provence), nous avons construit des robots totalement autonomes et radiocommandés.</p><p>Nous avons rédigé des dossiers de fabrication complets, testé de nombreux capteurs (TSOP48, ultrasons), optimisé les servomoteurs et fabriqué des bancs d'essais dédiés (Testeur BUT1) pour valider nos circuits imprimés.</p><p>Durant mon BUT GEII à l'IUT Aix-Marseille (Salon-de-Provence), j'ai participé à <strong>3 compétitions nationales de robotique étudiante</strong>, couvrant le cycle ingénierie complet de la conception jusqu'à la compétition.</p><ul><li><strong>Conception mécanique</strong> — châssis, actionneurs et éléments structuraux</li><li><strong>Électronique embarquée</strong> — conception PCB, drivers moteurs, intégration capteurs</li><li><strong>Logiciel embarqué</strong> — firmware C/C++, Arduino et microcontrôleurs sur mesure</li><li><strong>Prototypage et maintenance</strong> — itération rapide lors de la préparation</li></ul><p>Ces compétitions ont été formatrices pour travailler sous pression, gérer des délais serrés et collaborer en équipe pluridisciplinaire.</p>",
+            "body": "<p>Durant mon BUT GEII à l'IUT d'Aix-Marseille (Salon-de-Provence), j'ai participé à <strong>3 compétitions nationales de robotique étudiante</strong>, couvrant l'ensemble du cycle d'ingénierie, de la conception à la compétition.</p><p>Nous avons construit des robots totalement autonomes et radiocommandés, rédigé des dossiers de fabrication complets, testé de nombreux capteurs (TSOP48, ultrasons) et optimisé les servomoteurs.</p><ul><li><strong>Conception mécanique</strong> — châssis, actionneurs et éléments structurels</li><li><strong>Électronique embarquée</strong> — conception de PCB, pilotes de moteurs, intégration de capteurs</li><li><strong>Logiciel embarqué</strong> — firmware C/C++, programmation Arduino et microcontrôleurs sur mesure</li><li><strong>Prototypage et maintenance</strong> — itération rapide lors de la préparation aux compétitions</li></ul><p>Ces compétitions m'ont formé au travail sous pression, à la gestion de délais très courts et à la collaboration au sein d'une équipe pluridisciplinaire.</p>",
             "img": "./images/passion_space.jpg",
             "tags": [
               "Robotique",
@@ -1481,6 +1506,31 @@
             "Moteur CC",
             "Matlab/Simulink",
             "Modélisation",
+            "IUT Salon"
+          ],
+          "image": "./images/project_iter.jpg"
+        },
+        {
+          "title": "Testeur de Batterie — Projet BUT1",
+          "desc": "Conception et prototypage d'un testeur de batterie. Étude des fonctions analogiques et affichage LED.",
+          "article": {
+            "title": "Testeur de Batterie — SAE BUT1",
+            "tag": "Projet",
+            "body": "<p>Lors de ma première année (BUT1), j'ai travaillé sur la <strong>SAE Testeur de Batterie</strong>, visant à concevoir un appareil électronique capable de mesurer et d'indiquer le niveau de charge d'une batterie.</p><p>Le projet comprenait :</p><ul><li><strong>Conception fonctionnelle :</strong> Analyse du cahier des charges et définition de l'architecture électronique.</li><li><strong>Électronique analogique :</strong> Conception des circuits de mesure et de comparaison pour piloter des indicateurs LED.</li><li><strong>Prototypage :</strong> Réalisation et test du circuit pour valider ses performances par rapport aux spécifications.</li></ul>",
+            "img": "./images/project_iter.jpg",
+            "tags": [
+              "Électronique",
+              "Testeur de Batterie",
+              "Analogique",
+              "Prototypage",
+              "IUT Salon"
+            ]
+          },
+          "tags": [
+            "Électronique",
+            "Testeur de Batterie",
+            "Analogique",
+            "Prototypage",
             "IUT Salon"
           ],
           "image": "./images/project_iter.jpg"
