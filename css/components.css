@@ -769,10 +769,10 @@ a.badge:hover {
 .modal-gallery-container {
   position: relative;
   width: 100%;
-  height: 260px;
+  height: 400px;
   overflow: hidden;
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-  background: var(--color-surface);
+  background: var(--color-bg); /* Use background color so letterboxing is clean */
 }
 
 .modal-gallery-track {
@@ -786,7 +786,7 @@ a.badge:hover {
   flex: 0 0 100%;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Prevents cropping, shows the full image */
   display: block;
 }
 
@@ -1431,4 +1431,9 @@ a.badge:hover {
   transform: translateX(6px);
   border-color: rgba(0, 212, 255, 0.45);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 768px) {
+  .modal-gallery-container {
+    height: 250px;
+  }
 }

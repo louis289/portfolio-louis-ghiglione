@@ -129,7 +129,7 @@
             "title": "Fare Ingenierie — Automation & IoT",
             "tag": "Project / Work-Study",
             "body": "<p>I completed both a 10-week internship and a 1-year apprenticeship at <strong>Fare Ingenierie</strong>, an engineering firm specializing in automation and supervision systems.</p>\n<p><strong>Key Projects:</strong></p>\n<ul>\n<li><strong>SY Tiara II Superyacht:</strong> Complete overhaul of the WAGO PLC programs for an 80-meter yacht.</li>\n<li><strong>ITER Nuclear Fusion Site:</strong> R&D IoT architecture integrating LoRaWAN sensors via MQTT protocol on PLCs for safety monitoring.</li>\n<li><strong>Custom SCADA Datalogger:</strong> Development of an industrial data transmission system utilizing an edge preprocessing algorithm, chunking, and a secure Docker/Python/FastAPI/MySQL stack.</li>\n<li><strong>FareOps:</strong> Internal business management web application.</li>\n<li><strong>Silos Supervision:</strong> Updating the supervision of a PLC controlling 75 plastic pellet silos.</li>\n</ul>",
-            "img": "./images/proj_fare_1.jpg",
+            "img": "./images/proj_fare_3.jpg",
             "tags": [
               "Fare Ingenierie",
               "IoT",
@@ -145,8 +145,6 @@
               "2024-2026"
             ],
             "images": [
-              "./images/proj_fare_1.jpg",
-              "./images/proj_fare_2.jpg",
               "./images/proj_fare_3.jpg",
               "./images/proj_fare_4.jpg"
             ]
@@ -165,7 +163,7 @@
             "Hardware",
             "2024-2026"
           ],
-          "image": "./images/proj_fare_1.jpg"
+          "image": "./images/proj_fare_3.jpg"
         },
         {
           "title": "Park4Move — LoRaWAN Smart Parking",
@@ -221,7 +219,7 @@
             "title": "Robotics — 3 National Competitions",
             "tag": "Project",
             "body": "<p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), I participated in <strong>3 national student robotics competitions</strong>, covering the full engineering cycle from design to competition.</p><p>We built fully autonomous and RC-controlled robots, created comprehensive manufacturing dossiers, tested numerous sensors (TSOP48, ultrasonic), and optimized servo motors.</p><ul><li><strong>Mechanical design</strong> — chassis, actuators and structural components</li><li><strong>Embedded electronics</strong> — PCB design, motor drivers, sensor integration</li><li><strong>Embedded software</strong> — C/C++ firmware, Arduino and custom microcontroller programming</li><li><strong>Prototyping and maintenance</strong> — rapid iteration during competition prep</li></ul><p>These competitions trained working under pressure, managing tight deadlines, and collaborating in a multidisciplinary team.</p>",
-            "img": "./images/proj_robot_concours.png",
+            "img": "./images/proj_robot_concours_2.png",
             "tags": [
               "Robotics",
               "Embedded",
@@ -234,7 +232,6 @@
               "2023-2026"
             ],
             "images": [
-              "./images/proj_robot_concours_1.png",
               "./images/proj_robot_concours_2.png",
               "./images/proj_robot_concours_3.png",
               "./images/proj_robot_concours_4.png"
@@ -251,7 +248,7 @@
             "Problem Solving",
             "2023-2026"
           ],
-          "image": "./images/proj_robot_concours.png"
+          "image": "./images/proj_robot_concours_2.png"
         },
         {
           "title": "Visual Basic IHM & Arduino",
@@ -328,7 +325,7 @@
             "title": "Battery Tester — BUT1 SAE",
             "tag": "Project",
             "body": "<p>During my first year (BUT1), I worked on the <strong>Battery Tester</strong> project, aiming to design an electronic device capable of measuring and indicating a battery's charge level.</p><p>The project involved:</p><ul><li><strong>Functional design:</strong> Analyzing specifications and defining the electronic architecture.</li><li><strong>Analog electronics:</strong> Designing the measurement and comparison circuits to drive LED indicators.</li><li><strong>Prototyping:</strong> Building and testing the circuit to validate its performance against the specifications.</li></ul>",
-            "img": "./images/proj_battery_1.jpg",
+            "img": "",
             "tags": [
               "Electronics",
               "Battery Tester",
@@ -336,9 +333,7 @@
               "Prototyping",
               "IUT Salon"
             ],
-            "images": [
-              "./images/proj_battery_1.jpg"
-            ]
+            "images": []
           },
           "tags": [
             "Electronics",
@@ -347,7 +342,7 @@
             "Prototyping",
             "IUT Salon"
           ],
-          "image": "./images/proj_battery_1.jpg"
+          "image": ""
         },
         {
           "title": "Digital Chaser (Chenillard) — VHDL & FPGA",
@@ -366,7 +361,6 @@
             ],
             "images": [
               "./images/proj_chenillard_1.jpeg",
-              "./images/proj_chenillard_2.jpeg",
               "./images/proj_chenillard_3.jpeg",
               "./images/proj_chenillard_4.jpeg"
             ]
@@ -416,7 +410,7 @@
             "title": "Analog Line-Follower Robot (Sound-guided)",
             "tag": "Project",
             "body": "<p>As part of an IUT GEII project, we built an <strong>analog line-follower robot</strong> entirely without programming. The robot was controlled via sound: one clap to start, a second clap to stop.</p><p>Working in pairs, our team specifically handled the <strong>Sound Card</strong>. We performed reverse engineering, calculated microphone polarization, designed analog sound amplification filters, and validated the circuits to authorize the robot's movement based on acoustic triggers.</p><p>This robot was presented at the <em>Fête de la Science</em> in Salon-de-Provence.</p>",
-            "img": "./images/proj_robot_concours.png",
+            "img": "",
             "tags": [
               "Electronics",
               "Analog",
@@ -434,7 +428,7 @@
             "Filters",
             "IUT Salon"
           ],
-          "image": "./images/proj_robot_concours.png"
+          "image": ""
         },
         {
           "title": "Industrial Robotic Arms — Dobot & Niryo",
@@ -1499,7 +1493,7 @@
             "title": "Fare Ingenierie — Automatisme & IoT",
             "tag": "Projet / Alternance",
             "body": "<p>J'ai réalisé un stage de 10 semaines suivi d'une alternance d'un an chez <strong>Fare Ingénierie</strong>, bureau d'études spécialisé en automatisme et supervision.</p>\n<p><strong>Projets majeurs :</strong></p>\n<ul>\n<li><strong>Superyacht SY Tiara II :</strong> Refonte complète des programmes automates WAGO pour un yacht de 80 mètres.</li>\n<li><strong>Site d'ITER :</strong> Architecture IoT R&D intégrant des capteurs LoRaWAN via protocole MQTT sur automates pour la surveillance de sécurité.</li>\n<li><strong>SCADA Datalogger Sur-Mesure :</strong> Développement d'un système de transmission de données industrielles avec algorithme de prétraitement Edge, chunking, et stack Docker/Python/FastAPI/MySQL.</li>\n<li><strong>FareOps :</strong> Application web interne de gestion d'entreprise.</li>\n<li><strong>Supervision Silos :</strong> Mise à jour de la supervision d'un automate contrôlant 75 silos de billes de plastique.</li>\n</ul>",
-            "img": "./images/proj_fare_1.jpg",
+            "img": "./images/proj_fare_3.jpg",
             "tags": [
               "Fare Ingenierie",
               "IoT",
@@ -1515,8 +1509,6 @@
               "2024-2026"
             ],
             "images": [
-              "./images/proj_fare_1.jpg",
-              "./images/proj_fare_2.jpg",
               "./images/proj_fare_3.jpg",
               "./images/proj_fare_4.jpg"
             ]
@@ -1535,7 +1527,7 @@
             "Hardware",
             "2024-2026"
           ],
-          "image": "./images/proj_fare_1.jpg"
+          "image": "./images/proj_fare_3.jpg"
         },
         {
           "title": "Park4Move — Stationnement Connecté LoRaWAN",
@@ -1591,7 +1583,7 @@
             "title": "Robotique — 3 Compétitions Nationales",
             "tag": "Projet",
             "body": "<p>Durant mon BUT GEII à l'IUT d'Aix-Marseille (Salon-de-Provence), j'ai participé à <strong>3 compétitions nationales de robotique étudiante</strong>, couvrant l'ensemble du cycle d'ingénierie, de la conception à la compétition.</p><p>Nous avons construit des robots totalement autonomes et radiocommandés, rédigé des dossiers de fabrication complets, testé de nombreux capteurs (TSOP48, ultrasons) et optimisé les servomoteurs.</p><ul><li><strong>Conception mécanique</strong> — châssis, actionneurs et éléments structurels</li><li><strong>Électronique embarquée</strong> — conception de PCB, pilotes de moteurs, intégration de capteurs</li><li><strong>Logiciel embarqué</strong> — firmware C/C++, programmation Arduino et microcontrôleurs sur mesure</li><li><strong>Prototypage et maintenance</strong> — itération rapide lors de la préparation aux compétitions</li></ul><p>Ces compétitions m'ont formé au travail sous pression, à la gestion de délais très courts et à la collaboration au sein d'une équipe pluridisciplinaire.</p>",
-            "img": "./images/proj_robot_concours.png",
+            "img": "./images/proj_robot_concours_2.png",
             "tags": [
               "Robotique",
               "Embarqué",
@@ -1604,7 +1596,6 @@
               "2023-2026"
             ],
             "images": [
-              "./images/proj_robot_concours_1.png",
               "./images/proj_robot_concours_2.png",
               "./images/proj_robot_concours_3.png",
               "./images/proj_robot_concours_4.png"
@@ -1621,7 +1612,7 @@
             "Résolution de problèmes",
             "2023-2026"
           ],
-          "image": "./images/proj_robot_concours.png"
+          "image": "./images/proj_robot_concours_2.png"
         },
         {
           "title": "IHM Visual Basic & Arduino",
@@ -1698,7 +1689,7 @@
             "title": "Testeur de Batterie — SAE BUT1",
             "tag": "Projet",
             "body": "<p>Lors de ma première année (BUT1), j'ai travaillé sur la <strong>SAE Testeur de Batterie</strong>, visant à concevoir un appareil électronique capable de mesurer et d'indiquer le niveau de charge d'une batterie.</p><p>Le projet comprenait :</p><ul><li><strong>Conception fonctionnelle :</strong> Analyse du cahier des charges et définition de l'architecture électronique.</li><li><strong>Électronique analogique :</strong> Conception des circuits de mesure et de comparaison pour piloter des indicateurs LED.</li><li><strong>Prototypage :</strong> Réalisation et test du circuit pour valider ses performances par rapport aux spécifications.</li></ul>",
-            "img": "./images/proj_battery_1.jpg",
+            "img": "",
             "tags": [
               "Électronique",
               "Testeur de Batterie",
@@ -1706,9 +1697,7 @@
               "Prototypage",
               "IUT Salon"
             ],
-            "images": [
-              "./images/proj_battery_1.jpg"
-            ]
+            "images": []
           },
           "tags": [
             "Électronique",
@@ -1717,7 +1706,7 @@
             "Prototypage",
             "IUT Salon"
           ],
-          "image": "./images/proj_battery_1.jpg"
+          "image": ""
         },
         {
           "title": "Chenillard Numérique — VHDL & FPGA",
@@ -1736,7 +1725,6 @@
             ],
             "images": [
               "./images/proj_chenillard_1.jpeg",
-              "./images/proj_chenillard_2.jpeg",
               "./images/proj_chenillard_3.jpeg",
               "./images/proj_chenillard_4.jpeg"
             ]
@@ -1786,7 +1774,7 @@
             "title": "Robot Suiveur de Ligne Analogique (Guidé au son)",
             "tag": "Projet",
             "body": "<p>Dans le cadre d'une SAÉ en GEII, nous avons conçu un <strong>robot suiveur de ligne entièrement analogique</strong> (aucune programmation). Ce robot était piloté par le son : un claquement de main pour avancer, un second pour s'arrêter.</p><p>En binôme, nous avons été responsables de la conception de la <strong>Carte Son</strong>. Nous avons réalisé la rétro-ingénierie, calculé la polarisation du microphone, conçu les filtres d'amplification analogique et validé les circuits permettant d'autoriser le déplacement du robot selon le signal acoustique.</p><p>Ce robot a été présenté à la <em>Fête de la Science</em> à Salon-de-Provence.</p>",
-            "img": "./images/proj_robot_concours.png",
+            "img": "./images/proj_robot_son_1.jpg",
             "tags": [
               "Électronique",
               "Analogique",
@@ -1797,7 +1785,6 @@
             ],
             "images": [
               "./images/proj_robot_son_1.jpg",
-              "./images/proj_robot_son_2.jpeg",
               "./images/proj_robot_son_3.jpg",
               "./images/proj_robot_son_4.jpeg"
             ]
@@ -1810,7 +1797,7 @@
             "Filtres",
             "IUT Salon"
           ],
-          "image": "./images/proj_robot_concours.png"
+          "image": "./images/proj_robot_son_1.jpg"
         },
         {
           "title": "Bras Robotisés Industriels — Dobot & Niryo",
