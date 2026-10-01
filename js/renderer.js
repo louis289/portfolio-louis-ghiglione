@@ -5,25 +5,25 @@
 
 import { getContactData, getChannelIconSvg } from './contact-export.js';
 
-export function renderDynamicContent(langData) {
+export function renderDynamicContent(langData, fullData) {
   const page = document.body.dataset.page;
   
   if (page === 'projects' && langData.projects && langData.projects.items) {
-    renderGrid('projects', langData.projects.items);
+    renderGrid('projects', langData.projects.items, fullData);
   } else if (page === 'passions' && langData.passions && langData.passions.items) {
-    renderGrid('passions', langData.passions.items);
+    renderGrid('passions', langData.passions.items, fullData);
   } else if (page === 'civic' && langData.civic && langData.civic.items) {
-    renderGrid('civic', langData.civic.items);
+    renderGrid('civic', langData.civic.items, fullData);
   } else if (page === 'mobility' && langData.mobility && langData.mobility.items) {
-    renderGrid('mobility', langData.mobility.items);
+    renderGrid('mobility', langData.mobility.items, fullData);
   } else if (page === 'career' && langData.career && langData.career.jobs && langData.career.jobs.items) {
-    renderCareerJobs(langData.career.jobs.items);
+    renderCareerJobs(langData.career.jobs.items, fullData);
   } else if (page === 'contact') {
     renderContactLinks();
   }
 }
 
-function renderGrid(sectionName, items) {
+function renderGrid(sectionName, items, fullData) {
   const grid = document.querySelector('.grid-2, .grid-3');
   if (!grid) return;
   grid.innerHTML = ''; // Clear hardcoded
@@ -39,7 +39,7 @@ function renderGrid(sectionName, items) {
     li.style.cursor = 'pointer';
     
     // Thumbnail if image provided
-    const imgSrc = item.image || item.img || item.article?.img;
+    const imgSrc = item.image || item.img || item.article?.img || (fullData?.media?.[item.id]?.image);
     if (imgSrc) {
       const img = document.createElement('img');
       img.src = imgSrc;

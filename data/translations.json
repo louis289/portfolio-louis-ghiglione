@@ -90,7 +90,6 @@
             "title": "ASIC & FPGA Design — ISAE-SUPAERO (CIME-DEOS)",
             "tag": "Project",
             "body": "<p>As an apprentice engineer in the <strong>CIME-DEOS group</strong> (Integrated Image Sensors) at ISAE-SUPAERO, I work on the full design chain for CMOS image sensor readout circuits.</p><ul><li><strong>CMOS readout circuit architectures</strong> — designed with CADENCE (Virtuoso)</li><li><strong>VHDL control routines</strong> — implemented and verified on Xilinx FPGA (Vivado)</li><li><strong>Full ASIC flow</strong> — synthesis, placement and routing</li><li>Integration in the <strong>CIMI research group</strong>, working on sensor systems for space and industrial imaging applications</li></ul><p>This apprenticeship directly connects my academic training in electronics (3EA, N7) with cutting-edge research in microelectronics.</p>",
-            "img": "./images/logo_isae.png",
             "tags": [
               "ISAE-SUPAERO",
               "CIME-DEOS",
@@ -120,7 +119,7 @@
             "N7",
             "2025-2026"
           ],
-          "image": "./images/logo_isae.png"
+          "id": "proj_0"
         },
         {
           "title": "Automation & IoT Engineering — Fare Ingenierie",
@@ -129,7 +128,6 @@
             "title": "Fare Ingenierie — Automation & IoT",
             "tag": "Project / Work-Study",
             "body": "<p>I completed both a 10-week internship and a 1-year apprenticeship at <strong>Fare Ingenierie</strong>, an engineering firm specializing in automation and supervision systems.</p>\n<p><strong>Key Projects:</strong></p>\n<ul>\n<li><strong>SY Tiara II Superyacht:</strong> Complete overhaul of the WAGO PLC programs for an 80-meter yacht.</li>\n<li><strong>ITER Nuclear Fusion Site:</strong> R&D IoT architecture integrating LoRaWAN sensors via MQTT protocol on PLCs for safety monitoring.</li>\n<li><strong>Custom SCADA Datalogger:</strong> Development of an industrial data transmission system utilizing an edge preprocessing algorithm, chunking, and a secure Docker/Python/FastAPI/MySQL stack.</li>\n<li><strong>FareOps:</strong> Internal business management web application.</li>\n<li><strong>Silos Supervision:</strong> Updating the supervision of a PLC controlling 75 plastic pellet silos.</li>\n</ul>",
-            "img": "./images/proj_fare_3.jpg",
             "tags": [
               "Fare Ingenierie",
               "IoT",
@@ -143,10 +141,6 @@
               "Automation",
               "Hardware",
               "2024-2026"
-            ],
-            "images": [
-              "./images/proj_fare_3.jpg",
-              "./images/proj_fare_4.jpg"
             ]
           },
           "tags": [
@@ -163,7 +157,7 @@
             "Hardware",
             "2024-2026"
           ],
-          "image": "./images/proj_fare_3.jpg"
+          "id": "proj_1"
         },
         {
           "title": "Park4Move — LoRaWAN Smart Parking",
@@ -178,7 +172,6 @@
                 "url": "https://park4move.fr"
               }
             ],
-            "img": "./images/project_park4move.jpg",
             "tags": [
               "PIA",
               "Park4Move",
@@ -210,7 +203,7 @@
             "IUT Salon",
             "2023-2025"
           ],
-          "image": "./images/project_park4move.jpg"
+          "id": "proj_2"
         },
         {
           "title": "Student Robotics — 3 National Competitions",
@@ -219,7 +212,6 @@
             "title": "Robotics — 3 National Competitions",
             "tag": "Project",
             "body": "<p>During my BUT GEII at IUT Aix-Marseille (Salon-de-Provence), I participated in <strong>3 national student robotics competitions</strong>, covering the full engineering cycle from design to competition.</p><p>We built fully autonomous and RC-controlled robots, created comprehensive manufacturing dossiers, tested numerous sensors (TSOP48, ultrasonic), and optimized servo motors.</p><ul><li><strong>Mechanical design</strong> — chassis, actuators and structural components</li><li><strong>Embedded electronics</strong> — PCB design, motor drivers, sensor integration</li><li><strong>Embedded software</strong> — C/C++ firmware, Arduino and custom microcontroller programming</li><li><strong>Prototyping and maintenance</strong> — rapid iteration during competition prep</li></ul><p>These competitions trained working under pressure, managing tight deadlines, and collaborating in a multidisciplinary team.</p>",
-            "img": "./images/proj_robot_concours_2.png",
             "tags": [
               "Robotics",
               "Embedded",
@@ -230,11 +222,6 @@
               "IUT Salon",
               "Problem Solving",
               "2023-2026"
-            ],
-            "images": [
-              "./images/proj_robot_concours_2.png",
-              "./images/proj_robot_concours_3.png",
-              "./images/proj_robot_concours_4.png"
             ]
           },
           "tags": [
@@ -248,7 +235,7 @@
             "Problem Solving",
             "2023-2026"
           ],
-          "image": "./images/proj_robot_concours_2.png"
+          "id": "proj_3"
         },
         {
           "title": "Visual Basic IHM & Arduino",
@@ -257,7 +244,6 @@
             "title": "Visual Basic IHM & Arduino",
             "tag": "Project",
             "body": "<p>This project involved reverse-engineering and redesigning a lost legacy application in <strong>Visual Basic</strong> to control an I2C LED matrix via an <strong>Arduino Uno</strong>.</p><p><strong>Key features:</strong></p><ul><li>Development of a complete graphical user interface (GUI) with drawing, playback, and control modes.</li><li>Implementation of serial communication via the COM port to transmit I2C commands to the Arduino.</li><li>Creation of technical specifications and a manufacturing dossier.</li></ul>",
-            "img": "./images/proj_valise_balise.png",
             "tags": [
               "Visual Basic",
               "IHM",
@@ -266,12 +252,6 @@
               "Software",
               "Hardware",
               "IUT Salon"
-            ],
-            "images": [
-              "./images/proj_valise_balise_1.png",
-              "./images/proj_valise_balise_2.png",
-              "./images/proj_valise_balise_3.png",
-              "./images/proj_valise_balise_4.png"
             ]
           },
           "tags": [
@@ -283,7 +263,7 @@
             "Hardware",
             "IUT Salon"
           ],
-          "image": "./images/proj_valise_balise.png"
+          "id": "proj_4"
         },
         {
           "title": "Automatic Control & PID — DC Motor",
@@ -292,7 +272,6 @@
             "title": "Automatic Control & PID — DC Motor",
             "tag": "Project",
             "body": "<p>A comprehensive academic project on control theory (Automatique) focusing on the speed and position regulation of a DC motor.</p><p><strong>Process:</strong></p><ul><li>Mathematical modeling and transfer function derivation of the electromechanical system.</li><li>Simulation of step responses and closed-loop behavior using proportional, integral, and PID controllers.</li><li>Real-world implementation and tuning on a test bench with tachymetric feedback.</li></ul>",
-            "img": "./images/proj_auto_moteur.png",
             "tags": [
               "Control Theory",
               "PID",
@@ -300,12 +279,6 @@
               "Matlab/Simulink",
               "Modeling",
               "IUT Salon"
-            ],
-            "images": [
-              "./images/proj_auto_moteur_1.png",
-              "./images/proj_auto_moteur_2.png",
-              "./images/proj_auto_moteur_3.png",
-              "./images/proj_auto_moteur_4.png"
             ]
           },
           "tags": [
@@ -316,7 +289,7 @@
             "Modeling",
             "IUT Salon"
           ],
-          "image": "./images/proj_auto_moteur.png"
+          "id": "proj_5"
         },
         {
           "title": "Battery Tester — BUT1 Project",
@@ -325,17 +298,12 @@
             "title": "Battery Tester — BUT1 SAE",
             "tag": "Project",
             "body": "<p>During my first year (BUT1), I worked on the <strong>Battery Tester</strong> project, aiming to design an electronic device capable of measuring and indicating a battery's charge level.</p><p>The project involved:</p><ul><li><strong>Functional design:</strong> Analyzing specifications and defining the electronic architecture.</li><li><strong>Analog electronics:</strong> Designing the measurement and comparison circuits to drive LED indicators.</li><li><strong>Prototyping:</strong> Building and testing the circuit to validate its performance against the specifications.</li></ul>",
-            "img": "./images/proj_battery_1.jpg",
             "tags": [
               "Electronics",
               "Battery Tester",
               "Analog",
               "Prototyping",
               "IUT Salon"
-            ],
-            "images": [
-              "./images/proj_battery_1.jpg",
-              "./images/proj_battery_2.jpg"
             ]
           },
           "tags": [
@@ -345,7 +313,7 @@
             "Prototyping",
             "IUT Salon"
           ],
-          "image": "./images/proj_battery_1.jpg"
+          "id": "proj_6"
         },
         {
           "title": "Digital Chaser (Chenillard) — VHDL & FPGA",
@@ -354,18 +322,12 @@
             "title": "Digital Chaser — VHDL & FPGA",
             "tag": "Project",
             "body": "<p>During my IUT, I designed and developed a <strong>digital LED chaser</strong> (Chenillard) from scratch using <strong>VHDL</strong> on an <strong>FPGA</strong>.</p><p>This project involved designing digital logic circuits, simulating VHDL code, and implementing it on hardware to control LED lighting patterns efficiently.</p>",
-            "img": "./images/proj_chenillard_1.jpeg",
             "tags": [
               "VHDL",
               "FPGA",
               "Digital Logic",
               "Electronics",
               "IUT Salon"
-            ],
-            "images": [
-              "./images/proj_chenillard_1.jpeg",
-              "./images/proj_chenillard_3.jpeg",
-              "./images/proj_chenillard_4.jpeg"
             ]
           },
           "tags": [
@@ -375,7 +337,7 @@
             "Electronics",
             "IUT Salon"
           ],
-          "image": "./images/proj_chenillard_1.jpeg"
+          "id": "proj_7"
         },
         {
           "title": "Photovoltaic Power Supply",
@@ -384,18 +346,11 @@
             "title": "Photovoltaic Power Supply",
             "tag": "Project",
             "body": "<p>During a dedicated SAÉ at IUT Salon-de-Provence, we designed the control board for a solar power supply system.</p><p><strong>Objective:</strong> Safely and efficiently power a smartphone and an Altera microprocessor board using photovoltaic panels.</p><p>We bypassed standard voltage dividers to optimize energy yield and developed a robust electronic control circuit, culminating in system simulation and the drafting of maintenance and commissioning documents.</p>",
-            "img": "./images/proj_solar_1.jpeg",
             "tags": [
               "Electronics",
               "Solar Power",
               "Energy Management",
               "IUT Salon"
-            ],
-            "images": [
-              "./images/proj_solar_1.jpeg",
-              "./images/proj_solar_2.png",
-              "./images/proj_solar_3.jpeg",
-              "./images/proj_solar_4.jpeg"
             ]
           },
           "tags": [
@@ -404,7 +359,7 @@
             "Energy Management",
             "IUT Salon"
           ],
-          "image": "./images/proj_solar_1.jpeg"
+          "id": "proj_8"
         },
         {
           "title": "Analog Line-Follower Robot",
@@ -413,7 +368,6 @@
             "title": "Analog Line-Follower Robot (Sound-guided)",
             "tag": "Project",
             "body": "<p>As part of an IUT GEII project, we built an <strong>analog line-follower robot</strong> entirely without programming. The robot was controlled via sound: one clap to start, a second clap to stop.</p><p>Working in pairs, our team specifically handled the <strong>Sound Card</strong>. We performed reverse engineering, calculated microphone polarization, designed analog sound amplification filters, and validated the circuits to authorize the robot's movement based on acoustic triggers.</p><p>This robot was presented at the <em>Fête de la Science</em> in Salon-de-Provence.</p>",
-            "img": "./images/proj_robot_son_1.jpg",
             "tags": [
               "Electronics",
               "Analog",
@@ -421,11 +375,6 @@
               "Sound Processing",
               "Filters",
               "IUT Salon"
-            ],
-            "images": [
-              "./images/proj_robot_son_1.jpg",
-              "./images/proj_robot_son_3.jpg",
-              "./images/proj_robot_son_4.jpeg"
             ]
           },
           "tags": [
@@ -436,7 +385,7 @@
             "Filters",
             "IUT Salon"
           ],
-          "image": "./images/proj_robot_son_1.jpg"
+          "id": "proj_9"
         },
         {
           "title": "Industrial Robotic Arms — Dobot & Niryo",
@@ -445,7 +394,6 @@
             "title": "Industrial Robotic Arms — Dobot & Niryo",
             "tag": "Project",
             "body": "<p>This practical project focused on controlling industrial robotic arms (<strong>Dobot</strong> and <strong>Niryo Ned</strong>).</p><p>We developed an automated scenario where the two robots operated independently to sort and store pieces in specific work zones. The project required understanding kinematics, defining operational specifications, and establishing a robust algorithm for task synchronization.</p>",
-            "img": "./images/proj_dobot_niryo.png",
             "tags": [
               "Robotics",
               "Industrial",
@@ -453,12 +401,6 @@
               "Niryo Ned",
               "Kinematics",
               "Automation"
-            ],
-            "images": [
-              "./images/proj_dobot_niryo_1.png",
-              "./images/proj_dobot_niryo_2.png",
-              "./images/proj_dobot_niryo_3.png",
-              "./images/proj_dobot_niryo_4.png"
             ]
           },
           "tags": [
@@ -469,7 +411,7 @@
             "Kinematics",
             "Automation"
           ],
-          "image": "./images/proj_dobot_niryo.png"
+          "id": "proj_10"
         }
       ]
     },
@@ -503,7 +445,6 @@
             "period": "Sep. 2026 – Present",
             "location": "Toulouse, France",
             "desc": "Design of space CMOS integrated image sensors, analog readout circuits, VHDL routines, and ASIC flow.",
-            "image": "./images/logo_isae.png",
             "tags": [
               "ISAE-SUPAERO",
               "Microelectronics",
@@ -517,7 +458,6 @@
             "article": {
               "title": "ISAE-SUPAERO · Apprentice Microelectronics Design Engineer",
               "tag": "Work Experience",
-              "img": "./images/logo_isae.png",
               "body": "<h4>Positions Held</h4><p><strong>Apprentice Microelectronics Design Engineer (Analog & Digital)</strong> within the CIMI research team (Integrated Image Sensors) at ISAE-SUPAERO (Toulouse), pursuing an engineering degree (FISA) at ENSEEIHT.</p><h4>Related Projects</h4><ul><li><strong>CMOS Image Sensors for Space Applications:</strong> Design and simulation of pixel analog readout chains, low-noise analog-to-digital converters (ADC), and radiation-tolerant architectures using Cadence Virtuoso.</li><li><strong>Tolosat 3U CubeSat:</strong> Payload electronic readout subsystems verification and FPGA integration.</li></ul>",
               "tags": [
                 "ISAE-SUPAERO",
@@ -539,7 +479,8 @@
                   "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
                 }
               ]
-            }
+            },
+            "id": "car_0"
           },
           {
             "company": "FARE INGÉNIERIE",
@@ -547,7 +488,6 @@
             "period": "Sep. 2025 – Aug. 2026 (1 year)",
             "location": "Salon-de-Provence & Cadarache, France",
             "desc": "End-to-end IoT LoRaWAN/MQTT architecture for the ITER nuclear fusion facility, industrial PLCs, and secure FastAPI backend.",
-            "image": "./images/project_iter.jpg",
             "tags": [
               "Fare Ingenierie",
               "ITER",
@@ -562,7 +502,6 @@
             "article": {
               "title": "FARE INGÉNIERIE · Work-Study Automation Engineer",
               "tag": "Work Experience",
-              "img": "./images/project_iter.jpg",
               "body": "<h4>Positions Held</h4><p><strong>Work-Study Automation & IoT Systems Engineer</strong> at FARE Ingénierie (Salon-de-Provence), an engineering consulting firm specialised in critical automation systems.</p><h4>Related Projects</h4><ul><li><strong>ITER Nuclear Project:</strong> R&D design and deployment of an end-to-end IoT sensor network communicating via MQTT over PLCs (Schneider / Unity Pro) for safety monitoring at the international ITER fusion facility in Cadarache.</li><li><strong>Secure Supervision Backend:</strong> Production-grade Python/FastAPI web service containerised with Docker and backed by MySQL, compliant with strict security standards.</li></ul>",
               "tags": [
                 "Fare Ingenierie",
@@ -585,7 +524,8 @@
                   "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
                 }
               ]
-            }
+            },
+            "id": "car_1"
           },
           {
             "company": "FARE INGÉNIERIE",
@@ -593,7 +533,6 @@
             "period": "Mar. 2025 – Jun. 2025 (4 months)",
             "location": "Salon-de-Provence & La Ciotat, France",
             "desc": "Full overhaul of the automation PLC program on the 80m SY Tiara II superyacht, LoRaWAN sensors, and internal management web app.",
-            "image": "./images/passion_vtt.jpg",
             "tags": [
               "Fare Ingenierie",
               "Automation",
@@ -606,7 +545,6 @@
             "article": {
               "title": "FARE INGÉNIERIE · Automation Engineering Intern",
               "tag": "Work Experience",
-              "img": "./images/project_iter.jpg",
               "body": "<h4>Positions Held</h4><p><strong>Automation Engineering Intern</strong> at FARE Ingénierie (4-month technical internship during BUT GEII).</p><h4>Related Projects</h4><ul><li><strong>SY Tiara II (80m Superyacht):</strong> Complete overhaul of the onboard automation supervision and PLC control system (Schneider Electric / Unity Pro).</li><li><strong>IoT & Business Application:</strong> Integration of LoRaWAN wireless sensor nodes and design of an internal corporate operations web portal in Python & MySQL.</li></ul>",
               "tags": [
                 "Fare Ingenierie",
@@ -623,7 +561,8 @@
                   "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
                 }
               ]
-            }
+            },
+            "id": "car_2"
           },
           {
             "company": "IUT d'Aix-Marseille & PIA",
@@ -631,7 +570,6 @@
             "period": "Sep. 2023 – Aug. 2026 (3 years)",
             "location": "Salon-de-Provence & Bucharest, Romania",
             "desc": "Conception of Park4Move (CISAM+ Service-Learning award winner, Bucharest European Forum) and 3 editions of French Robotics Cup.",
-            "image": "./images/project_park4move.jpg",
             "tags": [
               "Park4Move",
               "BUT GEII",
@@ -644,7 +582,6 @@
             "article": {
               "title": "IUT Aix-Marseille & PIA · Student & Tech Lead",
               "tag": "Education & Projects",
-              "img": "./images/project_park4move.jpg",
               "body": "<h4>Positions Held</h4><p><strong>BUT Electrical Engineering and Industrial Computing (GEII) Student</strong> and Secretary / Technical Lead of the student association <em>Provençal Intelligence Agency (PIA)</em>.</p><h4>Related Projects</h4><ul><li><strong>Park4Move:</strong> Smart real-time parking detection for disabled drivers (PMR) using LoRaWAN magnetometers and mobile PWA. Awarded Best Project at Aix-Marseille University Service-Learning (CISAM+ France 2030) and presented at the European Forum in Bucharest.</li><li><strong>French Robotics Cup:</strong> Participant for 2 editions and technical assistant during the 3rd edition.</li><li><strong>National GEII Colloquium 2024:</strong> Student organizer of the event in Marseille.</li></ul>",
               "tags": [
                 "Park4Move",
@@ -665,7 +602,8 @@
                   "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
                 }
               ]
-            }
+            },
+            "id": "car_3"
           }
         ]
       }
@@ -691,7 +629,6 @@
         {
           "title": "Barcelona, Spain",
           "desc": "Academic exchange semester at UPC (Universitat Politècnica de Catalunya) — immersion in Southern European tech ecosystem, advanced microelectronics, and Spanish language.",
-          "image": "./images/mobility_barcelona.jpg",
           "tags": [
             "UPC",
             "Spain",
@@ -703,12 +640,6 @@
           "article": {
             "title": "Barcelona, Spain · Universitat Politècnica de Catalunya (UPC)",
             "tag": "International Mobility",
-            "img": "./images/mobility_barcelona.jpg",
-            "images": [
-              "./images/mobility_barcelona.jpg",
-              "./images/passion_climbing.jpg",
-              "./images/project_park4move.jpg"
-            ],
             "body": "<p>Academic study semester at <strong>Universitat Politècnica de Catalunya (UPC)</strong>, renowned for engineering excellence and microelectronics design.</p><h4>Academic & Professional Objectives</h4><ul><li>In-depth coursework in integrated circuit architecture, CMOS design, and advanced communications.</li><li>Immersion within Barcelona's thriving tech ecosystem and developing bilingual fluency (Spanish / English).</li><li>Alignment with employer needs on European joint industrial projects.</li></ul><p><strong>Planned Period:</strong> Spring 2026 (Semester 6 / FISA S6).</p>",
             "tags": [
               "UPC",
@@ -724,12 +655,12 @@
                 "url": "https://www.upc.edu/"
               }
             ]
-          }
+          },
+          "id": "mob_0"
         },
         {
           "title": "Montréal, Canada",
           "desc": "Applied research internship at Polytechnique Montréal — French-speaking North American research environment, cutting-edge microelectronics and quantum hardware laboratories.",
-          "image": "./images/mobility_montreal.jpg",
           "tags": [
             "Polytechnique Montréal",
             "Canada",
@@ -740,7 +671,6 @@
           "article": {
             "title": "Montréal, Canada · Polytechnique Montréal",
             "tag": "International Mobility",
-            "img": "./images/mobility_montreal.jpg",
             "body": "<p>Applied research laboratory placement at <strong>Polytechnique Montréal</strong>, a premier North American hub for quantum computing and micro/nano-electronic devices.</p><h4>Objectives & Impact</h4><ul><li>Hands-on research in cleanroom microfabrication and characterization of semiconductor components under extreme conditions.</li><li>Adopting North American agile R&D methodologies.</li><li>Direct knowledge transfer to CMOS image sensor development at ISAE-SUPAERO.</li></ul><p><strong>Planned Period:</strong> Summer 2026.</p>",
             "tags": [
               "Polytechnique Montréal",
@@ -755,12 +685,12 @@
                 "url": "https://www.polymtl.ca/"
               }
             ]
-          }
+          },
+          "id": "mob_1"
         },
         {
           "title": "Singapore",
           "desc": "Industrial project or academic mission in Singapore (NUS / NTU) — Asia-Pacific semiconductor capital, international exposure, and semiconductor supply chain innovation.",
-          "image": "./images/mobility_singapore.jpg",
           "tags": [
             "Singapore",
             "NUS",
@@ -771,7 +701,6 @@
           "article": {
             "title": "Singapore · Asia-Pacific Semiconductor Hub (NUS / NTU)",
             "tag": "International Mobility",
-            "img": "./images/mobility_singapore.jpg",
             "body": "<p>Industrial capstone or research mission in Singapore, one of the world's most critical semiconductor fabrication and advanced packaging epicenters.</p><h4>Perspectives & Skills</h4><ul><li>Direct exposure to global semiconductor leaders (foundries, testing, and advanced packaging).</li><li>Professional immersion in a fast-paced, 100% English-speaking global business environment.</li><li>Comprehensive understanding of international semiconductor supply chains and silicon manufacturing.</li></ul><p><strong>Planned Period:</strong> Fall 2027.</p>",
             "tags": [
               "Singapore",
@@ -786,7 +715,8 @@
                 "url": "https://nus.edu.sg/"
               }
             ]
-          }
+          },
+          "id": "mob_2"
         }
       ]
     },
@@ -801,7 +731,6 @@
           "article": {
             "title": "Mountain Biking",
             "tag": "Passion",
-            "img": "./images/passion_vtt.jpg",
             "body": "<p>I ride mountain bike regularly — a sport that perfectly combines technical challenge, physical endurance, and time in nature. Whether on rocky descents in the Luberon or forest trails near Toulouse, VTT gives me a sense of freedom and resilience that feeds back into how I approach engineering problems.</p><p>The mental process is surprisingly similar to debugging: read the terrain, adjust your line, commit to the move. There's no shortcut, just method and practice.</p>",
             "tags": [
               "MTB",
@@ -817,7 +746,8 @@
             "Outdoors",
             "Nature",
             "Endurance"
-          ]
+          ],
+          "id": "pass_0"
         },
         {
           "title": "Bouldering & Climbing",
@@ -825,7 +755,6 @@
           "article": {
             "title": "Bouldering & Rock Climbing",
             "tag": "Passion",
-            "img": "./images/passion_climbing.jpg",
             "body": "<p>I am especially passionate about bouldering, currently climbing at the <strong>6B+ level</strong>. What draws me to bouldering over sport climbing is the problem-solving aspect: each route is a puzzle with a unique sequence of moves, and finding the right beta (solution) takes the same methodical thinking as debugging a VHDL routine.</p><p>The discipline also demands the ability to step back, rest, and return with fresh eyes — a lesson that transfers directly to research and engineering work.</p>",
             "tags": [
               "Bouldering",
@@ -847,7 +776,8 @@
             "Nature",
             "Problem Solving",
             "Endurance"
-          ]
+          ],
+          "id": "pass_1"
         },
         {
           "title": "Maker Culture & Home Automation",
@@ -876,7 +806,8 @@
             "LoRaWAN",
             "Embedded",
             "Home Automation"
-          ]
+          ],
+          "id": "pass_2"
         },
         {
           "title": "Scouting",
@@ -884,7 +815,6 @@
           "article": {
             "title": "Scouting — Chef Scout",
             "tag": "Passion & Leadership",
-            "img": "./images/passion_scouting.jpg",
             "body": "<p>I have been involved in scouting for over <strong>10 years</strong>, progressing from scout to <strong>Chef Scout (Scout Leader)</strong>. In this role, I design and lead educational programmes for young people: outdoor projects, citizenship activities, and team challenges.</p><p>The highlight was my <strong>autonomous participation in Roverway 2024</strong> — the European scout gathering held in Norway — where I collaborated with scouts from across the continent over two weeks of travel and shared projects.</p><p>Scouting has been my primary school of leadership: making decisions with incomplete information, motivating a group, and creating conditions where each person can grow independently.</p>",
             "tags": [
               "Scouting",
@@ -910,7 +840,8 @@
             "10+ years",
             "Roverway 2024",
             "Norway"
-          ]
+          ],
+          "id": "pass_3"
         },
         {
           "title": "Space & Aeronautics",
@@ -918,7 +849,6 @@
           "article": {
             "title": "Space & Aeronautics",
             "tag": "Passion",
-            "img": "./images/passion_space.jpg",
             "body": "<p>My interest in space and aeronautics goes back to obtaining my <strong>BIA (Brevet d'Initiation Aéronautique)</strong> — the French aeronautics initiation diploma. This certified interest in flight mechanics, navigation, and aerospace engineering.</p><p>This year, I am joining <strong>Tolosat</strong> — the student CubeSat project run jointly by N7 (ENSEEIHT) and ISAE-SUPAERO. Tolosat aims to design, build, and launch a 1U CubeSat, providing students with a complete hands-on mission from system design to orbital operations.</p><p>This aligns directly with my microelectronics work at CIME-DEOS (ISAE-SUPAERO), where image sensor design for space applications is one of the research directions. I also follow the clubs <strong>N7 Racing Team</strong> and <strong>7Robot</strong> at N7 — student clubs that compete in national engineering challenges.</p>",
             "links": [
               {
@@ -946,7 +876,8 @@
             "CubeSat",
             "BIA",
             "N7"
-          ]
+          ],
+          "id": "pass_4"
         }
       ]
     },
@@ -961,7 +892,6 @@
           "article": {
             "title": "Scouting — A Lifelong Commitment",
             "tag": "Civic Engagement",
-            "img": "./images/passion_scouting.jpg",
             "body": "<p>I have been involved in scouting since I was 10, starting as a youth at <strong>EDLN (Éclaireuses et Éclaireurs de la Nature)</strong> Marseille until I was 20. At 17, I became a year-round scout leader at <strong>EEDF (Éclaireuses et Éclaireurs de France)</strong> in Trets Garlaban, and at the end of the year, I led their summer camp in Nantes.</p><p>During my higher education in Salon-de-Provence, I joined the <strong>EDLN GLOP (Groupe Local Ouest Provence)</strong> where I was a unit leader for two years, before moving to <strong>EDLN Toulon</strong>.</p><p>Internationally, I participated as a youth in <strong>Roverway (Norway)</strong> and led a camp in <strong>Germany (Summer 2026)</strong> for two age groups (11-17 years old).</p><p>Throughout my years as a leader, I primarily supervised the 8-10 age group. <strong>Currently, I am a Scout Leader in Toulouse</strong>, supervising the 14-17 age group.</p>",
             "tags": [
               "Scouting",
@@ -996,7 +926,7 @@
             "Germany 2026",
             "Toulouse"
           ],
-          "image": "./images/passion_scouting.jpg"
+          "id": "civ_0"
         },
         {
           "title": "Vice-President, Student Union (BDE) — IUT Salon",
@@ -1005,7 +935,6 @@
             "title": "Vice-President, Student Union — IUT Salon",
             "tag": "Civic Engagement",
             "body": "<p>I served as <strong>Vice-President of the BDE</strong> (Bureau Des Étudiants) at IUT Aix-Marseille, Salon-de-Provence campus during the academic year 2024-2025.</p><p>I also participated as a <strong>student organizer for the national GEII colloquium in 2024 in Marseille</strong>, which brought together students and professionals from electrical engineering and industrial computing departments across France. Managing logistics, communication, and the programme for a national-scale event was a formative leadership experience.</p>",
-            "img": "./images/civic_bde.jpg",
             "tags": [
               "BDE",
               "IUT Salon",
@@ -1023,7 +952,7 @@
             "Colloc GEII 2024",
             "Marseille"
           ],
-          "image": "./images/civic_bde.jpg"
+          "id": "civ_1"
         },
         {
           "title": "Secretary — Provençal Intelligence Agency (PIA)",
@@ -1038,7 +967,6 @@
                 "url": "https://park4move.fr"
               }
             ],
-            "img": "./images/project_park4move.jpg",
             "tags": [
               "PIA",
               "Park4Move",
@@ -1058,7 +986,7 @@
             "Service Learning",
             "IUT Salon"
           ],
-          "image": "./images/project_park4move.jpg"
+          "id": "civ_2"
         }
       ]
     },
@@ -1462,7 +1390,6 @@
             "title": "Conception ASIC & FPGA — ISAE-SUPAERO (CIME-DEOS)",
             "tag": "Projet",
             "body": "<p>En tant qu'apprenti ingénieur dans le groupe <strong>CIME-DEOS</strong> (Capteurs d'Image Intégrés) à l'ISAE-SUPAERO, je travaille sur la chaîne de conception complète des circuits de lecture CMOS pour capteurs d'image.</p><ul><li><strong>Architectures de circuits de lecture CMOS</strong> — conçus sous CADENCE (Virtuoso)</li><li><strong>Routines de commande VHDL</strong> — implémentées et vérifiées sur FPGA Xilinx (Vivado)</li><li><strong>Flux ASIC complet</strong> — synthèse, placement et routage</li><li>Intégration dans le <strong>groupe de recherche CIMI</strong>, travaillant sur des systèmes de capteurs pour l'imagerie spatiale et industrielle</li></ul><p>Cette alternance connecte directement ma formation académique en électronique (3EA, N7) à la recherche de pointe en microélectronique.</p>",
-            "img": "./images/logo_isae.png",
             "tags": [
               "ISAE-SUPAERO",
               "CIME-DEOS",
@@ -1492,7 +1419,7 @@
             "N7",
             "2025-2026"
           ],
-          "image": "./images/logo_isae.png"
+          "id": "proj_0"
         },
         {
           "title": "Automatisme & IoT — Fare Ingenierie",
@@ -1501,7 +1428,6 @@
             "title": "Fare Ingenierie — Automatisme & IoT",
             "tag": "Projet / Alternance",
             "body": "<p>J'ai réalisé un stage de 10 semaines suivi d'une alternance d'un an chez <strong>Fare Ingénierie</strong>, bureau d'études spécialisé en automatisme et supervision.</p>\n<p><strong>Projets majeurs :</strong></p>\n<ul>\n<li><strong>Superyacht SY Tiara II :</strong> Refonte complète des programmes automates WAGO pour un yacht de 80 mètres.</li>\n<li><strong>Site d'ITER :</strong> Architecture IoT R&D intégrant des capteurs LoRaWAN via protocole MQTT sur automates pour la surveillance de sécurité.</li>\n<li><strong>SCADA Datalogger Sur-Mesure :</strong> Développement d'un système de transmission de données industrielles avec algorithme de prétraitement Edge, chunking, et stack Docker/Python/FastAPI/MySQL.</li>\n<li><strong>FareOps :</strong> Application web interne de gestion d'entreprise.</li>\n<li><strong>Supervision Silos :</strong> Mise à jour de la supervision d'un automate contrôlant 75 silos de billes de plastique.</li>\n</ul>",
-            "img": "./images/proj_fare_3.jpg",
             "tags": [
               "Fare Ingenierie",
               "IoT",
@@ -1515,10 +1441,6 @@
               "Automatisme",
               "Hardware",
               "2024-2026"
-            ],
-            "images": [
-              "./images/proj_fare_3.jpg",
-              "./images/proj_fare_4.jpg"
             ]
           },
           "tags": [
@@ -1535,7 +1457,7 @@
             "Hardware",
             "2024-2026"
           ],
-          "image": "./images/proj_fare_3.jpg"
+          "id": "proj_1"
         },
         {
           "title": "Park4Move — Stationnement Connecté LoRaWAN",
@@ -1550,7 +1472,6 @@
                 "url": "https://park4move.fr"
               }
             ],
-            "img": "./images/project_park4move.jpg",
             "tags": [
               "PIA",
               "Park4Move",
@@ -1582,7 +1503,7 @@
             "IUT Salon",
             "2023-2025"
           ],
-          "image": "./images/project_park4move.jpg"
+          "id": "proj_2"
         },
         {
           "title": "Robotique Étudiante — 3 Compétitions Nationales",
@@ -1591,7 +1512,6 @@
             "title": "Robotique — 3 Compétitions Nationales",
             "tag": "Projet",
             "body": "<p>Durant mon BUT GEII à l'IUT d'Aix-Marseille (Salon-de-Provence), j'ai participé à <strong>3 compétitions nationales de robotique étudiante</strong>, couvrant l'ensemble du cycle d'ingénierie, de la conception à la compétition.</p><p>Nous avons construit des robots totalement autonomes et radiocommandés, rédigé des dossiers de fabrication complets, testé de nombreux capteurs (TSOP48, ultrasons) et optimisé les servomoteurs.</p><ul><li><strong>Conception mécanique</strong> — châssis, actionneurs et éléments structurels</li><li><strong>Électronique embarquée</strong> — conception de PCB, pilotes de moteurs, intégration de capteurs</li><li><strong>Logiciel embarqué</strong> — firmware C/C++, programmation Arduino et microcontrôleurs sur mesure</li><li><strong>Prototypage et maintenance</strong> — itération rapide lors de la préparation aux compétitions</li></ul><p>Ces compétitions m'ont formé au travail sous pression, à la gestion de délais très courts et à la collaboration au sein d'une équipe pluridisciplinaire.</p>",
-            "img": "./images/proj_robot_concours_2.png",
             "tags": [
               "Robotique",
               "Embarqué",
@@ -1602,11 +1522,6 @@
               "IUT Salon",
               "Résolution de problèmes",
               "2023-2026"
-            ],
-            "images": [
-              "./images/proj_robot_concours_2.png",
-              "./images/proj_robot_concours_3.png",
-              "./images/proj_robot_concours_4.png"
             ]
           },
           "tags": [
@@ -1620,7 +1535,7 @@
             "Résolution de problèmes",
             "2023-2026"
           ],
-          "image": "./images/proj_robot_concours_2.png"
+          "id": "proj_3"
         },
         {
           "title": "IHM Visual Basic & Arduino",
@@ -1629,7 +1544,6 @@
             "title": "IHM Visual Basic & Arduino",
             "tag": "Projet",
             "body": "<p>Ce projet consistait à rétro-ingénierer et recréer une application perdue en <strong>Visual Basic</strong> pour contrôler une matrice de LEDs via un bus I2C et un <strong>Arduino Uno</strong>.</p><p><strong>Caractéristiques clés :</strong></p><ul><li>Développement d'une interface utilisateur graphique (IHM) complète avec modes de dessin, lecture et contrôle.</li><li>Implémentation d'une communication série via le port COM pour envoyer les commandes I2C à l'Arduino.</li><li>Rédaction du cahier des charges et du dossier de fabrication.</li></ul>",
-            "img": "./images/proj_valise_balise.png",
             "tags": [
               "Visual Basic",
               "IHM",
@@ -1638,12 +1552,6 @@
               "Logiciel",
               "Matériel",
               "IUT Salon"
-            ],
-            "images": [
-              "./images/proj_valise_balise_1.png",
-              "./images/proj_valise_balise_2.png",
-              "./images/proj_valise_balise_3.png",
-              "./images/proj_valise_balise_4.png"
             ]
           },
           "tags": [
@@ -1655,7 +1563,7 @@
             "Matériel",
             "IUT Salon"
           ],
-          "image": "./images/proj_valise_balise.png"
+          "id": "proj_4"
         },
         {
           "title": "Asservissement & Régulation — Moteur CC",
@@ -1664,7 +1572,6 @@
             "title": "Asservissement & Régulation — Moteur CC",
             "tag": "Projet",
             "body": "<p>Un projet académique complet sur l'automatique, centré sur la régulation de vitesse et de position d'un moteur à courant continu.</p><p><strong>Processus :</strong></p><ul><li>Modélisation mathématique et détermination de la fonction de transfert du système électromécanique.</li><li>Simulation des réponses indicielles et du comportement en boucle fermée avec des correcteurs proportionnels, intégraux et PID.</li><li>Implémentation réelle et réglage sur banc d'essai avec retour tachymétrique.</li></ul>",
-            "img": "./images/proj_auto_moteur.png",
             "tags": [
               "Automatique",
               "PID",
@@ -1672,12 +1579,6 @@
               "Matlab/Simulink",
               "Modélisation",
               "IUT Salon"
-            ],
-            "images": [
-              "./images/proj_auto_moteur_1.png",
-              "./images/proj_auto_moteur_2.png",
-              "./images/proj_auto_moteur_3.png",
-              "./images/proj_auto_moteur_4.png"
             ]
           },
           "tags": [
@@ -1688,7 +1589,7 @@
             "Modélisation",
             "IUT Salon"
           ],
-          "image": "./images/proj_auto_moteur.png"
+          "id": "proj_5"
         },
         {
           "title": "Testeur de Batterie — Projet BUT1",
@@ -1697,17 +1598,12 @@
             "title": "Testeur de Batterie — SAE BUT1",
             "tag": "Projet",
             "body": "<p>Lors de ma première année (BUT1), j'ai travaillé sur la <strong>SAE Testeur de Batterie</strong>, visant à concevoir un appareil électronique capable de mesurer et d'indiquer le niveau de charge d'une batterie.</p><p>Le projet comprenait :</p><ul><li><strong>Conception fonctionnelle :</strong> Analyse du cahier des charges et définition de l'architecture électronique.</li><li><strong>Électronique analogique :</strong> Conception des circuits de mesure et de comparaison pour piloter des indicateurs LED.</li><li><strong>Prototypage :</strong> Réalisation et test du circuit pour valider ses performances par rapport aux spécifications.</li></ul>",
-            "img": "./images/proj_battery_1.jpg",
             "tags": [
               "Électronique",
               "Testeur de Batterie",
               "Analogique",
               "Prototypage",
               "IUT Salon"
-            ],
-            "images": [
-              "./images/proj_battery_1.jpg",
-              "./images/proj_battery_2.jpg"
             ]
           },
           "tags": [
@@ -1717,7 +1613,7 @@
             "Prototypage",
             "IUT Salon"
           ],
-          "image": "./images/proj_battery_1.jpg"
+          "id": "proj_6"
         },
         {
           "title": "Chenillard Numérique — VHDL & FPGA",
@@ -1726,18 +1622,12 @@
             "title": "Chenillard Numérique — VHDL & FPGA",
             "tag": "Projet",
             "body": "<p>Durant mon IUT, j'ai conçu et développé un <strong>chenillard numérique</strong> de A à Z en <strong>VHDL</strong> sur une carte <strong>FPGA</strong>.</p><p>Ce projet impliquait la conception de circuits logiques numériques, la simulation de code VHDL et son implémentation sur matériel pour contrôler divers motifs lumineux à base de LEDs de manière efficace.</p>",
-            "img": "./images/proj_chenillard_1.jpeg",
             "tags": [
               "VHDL",
               "FPGA",
               "Logique Numérique",
               "Électronique",
               "IUT Salon"
-            ],
-            "images": [
-              "./images/proj_chenillard_1.jpeg",
-              "./images/proj_chenillard_3.jpeg",
-              "./images/proj_chenillard_4.jpeg"
             ]
           },
           "tags": [
@@ -1747,7 +1637,7 @@
             "Électronique",
             "IUT Salon"
           ],
-          "image": "./images/proj_chenillard_1.jpeg"
+          "id": "proj_7"
         },
         {
           "title": "Alimentation Photovoltaïque",
@@ -1756,18 +1646,11 @@
             "title": "Alimentation Photovoltaïque",
             "tag": "Projet",
             "body": "<p>Dans le cadre d'une SAÉ à l'IUT de Salon-de-Provence, nous avons conçu la partie commande d'une alimentation par panneaux solaires.</p><p><strong>Objectif :</strong> Alimenter efficacement un téléphone portable et une carte Altera à microprocesseur.</p><p>Nous avons étudié la partie puissance, optimisé le rendement énergétique, simulé l'ensemble du montage, et rédigé les documents de mise en service et de maintenance de la carte de commande.</p>",
-            "img": "./images/proj_solar_1.jpeg",
             "tags": [
               "Électronique",
               "Solaire",
               "Gestion d'Énergie",
               "IUT Salon"
-            ],
-            "images": [
-              "./images/proj_solar_1.jpeg",
-              "./images/proj_solar_2.png",
-              "./images/proj_solar_3.jpeg",
-              "./images/proj_solar_4.jpeg"
             ]
           },
           "tags": [
@@ -1776,7 +1659,7 @@
             "Gestion d'Énergie",
             "IUT Salon"
           ],
-          "image": "./images/proj_solar_1.jpeg"
+          "id": "proj_8"
         },
         {
           "title": "Robot Suiveur de Ligne Analogique",
@@ -1785,7 +1668,6 @@
             "title": "Robot Suiveur de Ligne Analogique (Guidé au son)",
             "tag": "Projet",
             "body": "<p>Dans le cadre d'une SAÉ en GEII, nous avons conçu un <strong>robot suiveur de ligne entièrement analogique</strong> (aucune programmation). Ce robot était piloté par le son : un claquement de main pour avancer, un second pour s'arrêter.</p><p>En binôme, nous avons été responsables de la conception de la <strong>Carte Son</strong>. Nous avons réalisé la rétro-ingénierie, calculé la polarisation du microphone, conçu les filtres d'amplification analogique et validé les circuits permettant d'autoriser le déplacement du robot selon le signal acoustique.</p><p>Ce robot a été présenté à la <em>Fête de la Science</em> à Salon-de-Provence.</p>",
-            "img": "./images/proj_robot_son_1.jpg",
             "tags": [
               "Électronique",
               "Analogique",
@@ -1793,11 +1675,6 @@
               "Traitement du Son",
               "Filtres",
               "IUT Salon"
-            ],
-            "images": [
-              "./images/proj_robot_son_1.jpg",
-              "./images/proj_robot_son_3.jpg",
-              "./images/proj_robot_son_4.jpeg"
             ]
           },
           "tags": [
@@ -1808,7 +1685,7 @@
             "Filtres",
             "IUT Salon"
           ],
-          "image": "./images/proj_robot_son_1.jpg"
+          "id": "proj_9"
         },
         {
           "title": "Bras Robotisés Industriels — Dobot & Niryo",
@@ -1817,7 +1694,6 @@
             "title": "Bras Robotisés Industriels — Dobot & Niryo",
             "tag": "Projet",
             "body": "<p>Ce projet pratique était centré sur le contrôle de bras robotisés industriels (<strong>Dobot</strong> et <strong>Niryo Ned</strong>).</p><p>Nous avons développé un scénario automatisé dans lequel les deux robots fonctionnaient de manière indépendante pour trier et ranger des pièces dans des zones de travail spécifiques. Le projet a nécessité d'appréhender la cinématique, de définir des spécifications opérationnelles et de concevoir un algorithme robuste pour synchroniser les tâches.</p>",
-            "img": "./images/proj_dobot_niryo.png",
             "tags": [
               "Robotique",
               "Industriel",
@@ -1825,12 +1701,6 @@
               "Niryo Ned",
               "Cinématique",
               "Automatisme"
-            ],
-            "images": [
-              "./images/proj_dobot_niryo_1.png",
-              "./images/proj_dobot_niryo_2.png",
-              "./images/proj_dobot_niryo_3.png",
-              "./images/proj_dobot_niryo_4.png"
             ]
           },
           "tags": [
@@ -1841,7 +1711,7 @@
             "Cinématique",
             "Automatisme"
           ],
-          "image": "./images/proj_dobot_niryo.png"
+          "id": "proj_10"
         }
       ]
     },
@@ -1875,7 +1745,6 @@
             "period": "Sept. 2026 – En cours",
             "location": "Toulouse, France",
             "desc": "Conception de capteurs d'image CMOS spatiaux, simulation et caractérisation de blocs de lecture analogique et numérique.",
-            "image": "./images/logo_isae.png",
             "tags": [
               "ISAE-SUPAERO",
               "Microélectronique",
@@ -1889,7 +1758,6 @@
             "article": {
               "title": "ISAE-SUPAERO · Apprenti Ingénieur Conception Microélectronique",
               "tag": "Expérience Professionnelle",
-              "img": "./images/logo_isae.png",
               "body": "<h4>Postes occupés</h4><p><strong>Apprenti Ingénieur en Conception Microélectronique Analogique et Numérique</strong> au sein de l'équipe CIMI (Capteurs d'Images et Systèmes Intégrés) du département CIME-DEOS à l'ISAE-SUPAERO (Toulouse). Formation en alternance sous statut d'élève-ingénieur FISA à l'ENSEEIHT.</p><h4>Projets liés</h4><ul><li><strong>Capteurs d'image CMOS pour l'espace :</strong> Conception et modélisation de blocs de lecture analogique de pixels, convertisseurs analogique-numérique (ADC) et chaînes d'acquisition bas-bruit sous contraintes radiatives spatiales.</li><li><strong>CubeSat Tolosat (Nanosatellite 3U) :</strong> Intégration de charges utiles scientifiques et validation de chaînes de mesure électroniques.</li></ul>",
               "tags": [
                 "ISAE-SUPAERO",
@@ -1911,7 +1779,8 @@
                   "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
                 }
               ]
-            }
+            },
+            "id": "car_0"
           },
           {
             "company": "FARE INGÉNIERIE",
@@ -1919,7 +1788,6 @@
             "period": "Sept. 2025 – Août 2026 (1 an)",
             "location": "Salon-de-Provence & Cadarache, France",
             "desc": "Architecture IoT LoRaWAN/MQTT pour le site nucléaire d'ITER, programmes automates industriels et backend web FastAPI sécurisé.",
-            "image": "./images/project_iter.jpg",
             "tags": [
               "Fare Ingénierie",
               "ITER",
@@ -1934,7 +1802,6 @@
             "article": {
               "title": "FARE INGÉNIERIE · Alternant Automaticien en Bureau d'Études",
               "tag": "Expérience Professionnelle",
-              "img": "./images/project_iter.jpg",
               "body": "<h4>Postes occupés</h4><p><strong>Alternant Automaticien & Développeur IoT en Bureau d'Études</strong> chez FARE Ingénierie (Salon-de-Provence), société d'ingénierie spécialisée dans l'automatisme industriel et les systèmes critiques.</p><h4>Projets liés</h4><ul><li><strong>Projet ITER (Nucléaire & Sécurité) :</strong> Conception et déploiement R&D d'une architecture IoT de bout en bout intégrant des capteurs LoRaWAN communicant en MQTT directement avec des automates programmables industriels (PLC) sur le chantier de fusion nucléaire ITER à Cadarache.</li><li><strong>Backend & Supervision sécurisée :</strong> Développement d'une API backend robuste en Python / FastAPI, conteneurisée sous Docker avec persistance de données MySQL selon un cahier des charges rigoureux.</li></ul>",
               "tags": [
                 "Fare Ingénierie",
@@ -1957,7 +1824,8 @@
                   "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
                 }
               ]
-            }
+            },
+            "id": "car_1"
           },
           {
             "company": "FARE INGÉNIERIE",
@@ -1965,7 +1833,6 @@
             "period": "Mars 2025 – Juin 2025 (4 mois)",
             "location": "Salon-de-Provence & La Ciotat, France",
             "desc": "Refonte intégrale du programme automate du yacht SY Tiara II (80 m), capteurs LoRaWAN et progiciel web interne.",
-            "image": "./images/passion_vtt.jpg",
             "tags": [
               "Fare Ingénierie",
               "Automatisme",
@@ -1978,7 +1845,6 @@
             "article": {
               "title": "FARE INGÉNIERIE · Stagiaire Automaticien en Bureau d'Études",
               "tag": "Expérience Professionnelle",
-              "img": "./images/project_iter.jpg",
               "body": "<h4>Postes occupés</h4><p><strong>Stagiaire Automaticien en Bureau d'Études</strong> chez FARE Ingénierie (stage technique de BUT GEII de 4 mois).</p><h4>Projets liés</h4><ul><li><strong>Superyacht SY Tiara II (80 m) :</strong> Pilotage complet de la refonte du programme automate de supervision et de contrôle commande bord (automates Schneider / Unity Pro).</li><li><strong>Capteurs IoT & Gestion d'entreprise :</strong> Intégration de capteurs LoRaWAN et conception d'une application web interne de gestion d'entreprise en Python/MySQL.</li></ul>",
               "tags": [
                 "Fare Ingénierie",
@@ -1995,7 +1861,8 @@
                   "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
                 }
               ]
-            }
+            },
+            "id": "car_2"
           },
           {
             "company": "IUT d'Aix-Marseille & PIA",
@@ -2003,7 +1870,6 @@
             "period": "Sept. 2023 – Août 2026 (3 ans)",
             "location": "Salon-de-Provence & Bucarest, Roumanie",
             "desc": "Conception du projet Park4Move (lauréat Service-Learning CISAM+, Forum de Bucarest) et 3 participations à la Coupe de France de Robotique.",
-            "image": "./images/project_park4move.jpg",
             "tags": [
               "Park4Move",
               "BUT GEII",
@@ -2016,7 +1882,6 @@
             "article": {
               "title": "IUT d'Aix-Marseille & PIA · Étudiant & Lead Technique",
               "tag": "Formation & Projets",
-              "img": "./images/project_park4move.jpg",
               "body": "<h4>Postes occupés</h4><p><strong>Étudiant en BUT Génie Électrique et Informatique Industrielle (GEII)</strong> et secrétaire / responsable technique de l'association étudiante <em>Provençal Intelligence Agency (PIA)</em>.</p><h4>Projets liés</h4><ul><li><strong>Park4Move :</strong> Système intelligent de guidage vers les places de stationnement PMR via réseau de capteurs LoRaWAN et application mobile/PWA. Projet élu meilleur projet du Service-Learning d'Aix-Marseille Université (CISAM+ France 2030) et présenté devant 5 universités européennes.</li><li><strong>Coupe de France de Robotique :</strong> Participant sur 2 éditions et aide technique lors de la 3ème édition.</li><li><strong>Colloque national GEII 2024 :</strong> Étudiant organisateur de l'événement à Marseille.</li></ul>",
               "tags": [
                 "Park4Move",
@@ -2037,7 +1902,8 @@
                   "url": "https://www.linkedin.com/in/louis-ghiglione-722165294/"
                 }
               ]
-            }
+            },
+            "id": "car_3"
           }
         ]
       }
@@ -2063,7 +1929,6 @@
         {
           "title": "Barcelone, Espagne",
           "desc": "Semestre d'échange académique à l'UPC (Universitat Politècnica de Catalunya) — immersion dans l'écosystème tech catalan, microélectronique avancée et perfectionnement linguistique.",
-          "image": "./images/mobility_barcelona.jpg",
           "tags": [
             "UPC",
             "Espagne",
@@ -2075,12 +1940,6 @@
           "article": {
             "title": "Barcelone, Espagne · Universitat Politècnica de Catalunya (UPC)",
             "tag": "Mobilité Internationale",
-            "img": "./images/mobility_barcelona.jpg",
-            "images": [
-              "./images/mobility_barcelona.jpg",
-              "./images/passion_climbing.jpg",
-              "./images/project_park4move.jpg"
-            ],
             "body": "<p>Semestre d'études académique à l'<strong>Universitat Politècnica de Catalunya (UPC)</strong>, réputée pour ses cursus d'excellence en ingénierie et microélectronique.</p><h4>Objectifs académiques & professionnels</h4><ul><li>Approfondissement des cours de conception de circuits intégrés et télécommunications.</li><li>Immersion au sein de l'écosystème tech barcelonais et renforcement bilingue (Espagnol / Anglais).</li><li>Cohérence avec les besoins de mon entreprise d'apprentissage pour des projets européens.</li></ul><p><strong>Période envisagée :</strong> Printemps 2026 (Semestre 6 / FISA S6).</p>",
             "tags": [
               "UPC",
@@ -2096,12 +1955,12 @@
                 "url": "https://www.upc.edu/"
               }
             ]
-          }
+          },
+          "id": "mob_0"
         },
         {
           "title": "Montréal, Canada",
           "desc": "Stage de recherche appliquée à Polytechnique Montréal — environnement nord-américain d'excellence, laboratoires de pointe en microélectronique et technologies quantiques.",
-          "image": "./images/mobility_montreal.jpg",
           "tags": [
             "Polytechnique Montréal",
             "Canada",
@@ -2112,7 +1971,6 @@
           "article": {
             "title": "Montréal, Canada · Polytechnique Montréal",
             "tag": "Mobilité Internationale",
-            "img": "./images/mobility_montreal.jpg",
             "body": "<p>Stage de recherche appliquée en laboratoire au sein de <strong>Polytechnique Montréal</strong>, pôle majeur de recherche en technologies quantiques et micro/nano-électronique.</p><h4>Objectifs et valeur ajoutée</h4><ul><li>Travail en laboratoire de microfabrication et caractérisation de composants sous contraintes extrêmes.</li><li>Découverte des méthodologies de recherche et développement nord-américaines.</li><li>Valorisation directe pour les capteurs d'image spatiaux développés à l'ISAE-SUPAERO.</li></ul><p><strong>Période envisagée :</strong> Été 2026.</p>",
             "tags": [
               "Polytechnique Montréal",
@@ -2127,12 +1985,12 @@
                 "url": "https://www.polymtl.ca/"
               }
             ]
-          }
+          },
+          "id": "mob_1"
         },
         {
           "title": "Singapour",
           "desc": "Projet industriel ou capstone à Singapour (NUS / NTU) — carrefour mondial des semi-conducteurs, exposition internationale de premier plan et vision globale des supply chains de puces.",
-          "image": "./images/mobility_singapore.jpg",
           "tags": [
             "Singapour",
             "NUS",
@@ -2143,7 +2001,6 @@
           "article": {
             "title": "Singapour · Hub Semi-conducteurs Asie-Pacifique (NUS / NTU)",
             "tag": "Mobilité Internationale",
-            "img": "./images/mobility_singapore.jpg",
             "body": "<p>Projet de fin d'études ou mission industrielle à Singapour, l'un des plus grands hubs mondiaux de fonderies et de packaging semi-conducteurs avancés.</p><h4>Perspectives et compétences</h4><ul><li>Exposition directe aux grands industriels mondiaux des semi-conducteurs (fonderies, test, packaging avancé).</li><li>Travail dans un environnement 100% anglophone hautement cosmopolite et exigeant.</li><li>Apport d'une vision globale des chaînes d'approvisionnement des puces électroniques.</li></ul><p><strong>Période envisagée :</strong> Automne 2027.</p>",
             "tags": [
               "Singapour",
@@ -2158,7 +2015,8 @@
                 "url": "https://nus.edu.sg/"
               }
             ]
-          }
+          },
+          "id": "mob_2"
         }
       ]
     },
@@ -2173,7 +2031,6 @@
           "article": {
             "title": "VTT",
             "tag": "Passion",
-            "img": "./images/passion_vtt.jpg",
             "body": "<p>Je roule régulièrement en VTT — un sport qui combine parfaitement défi technique, endurance physique et temps en nature. Que ce soit sur les sentiers du Luberon ou les forêts autour de Toulouse, le VTT me donne un sens de la liberté et de la résilience qui alimente ma façon d'aborder les problèmes d'ingénierie.</p><p>Le processus mental est étonnamment similaire au débogage : lire le terrain, ajuster sa trajectoire, s'engager dans le mouvement. Pas de raccourci, juste de la méthode et de la pratique.</p>",
             "tags": [
               "VTT",
@@ -2189,7 +2046,8 @@
             "Nature",
             "Outdoors",
             "Endurance"
-          ]
+          ],
+          "id": "pass_0"
         },
         {
           "title": "Escalade & Bloc",
@@ -2197,7 +2055,6 @@
           "article": {
             "title": "Escalade & Bloc",
             "tag": "Passion",
-            "img": "./images/passion_climbing.jpg",
             "body": "<p>Je suis particulièrement passionné par l'escalade en bloc, avec un niveau actuel de <strong>6B+</strong>. Ce qui m'attire dans le bloc c'est l'aspect résolution de problèmes : chaque voie est un puzzle avec une séquence de mouvements unique, et trouver le bon beta demande la même pensée méthodique que le débogage d'une routine VHDL.</p><p>La discipline exige aussi de savoir prendre du recul, se reposer, et revenir avec un regard neuf — une leçon qui se transpose directement en recherche et en ingénierie.</p>",
             "tags": [
               "Escalade",
@@ -2219,7 +2076,8 @@
             "Outdoors",
             "Résolution de problèmes",
             "Endurance"
-          ]
+          ],
+          "id": "pass_1"
         },
         {
           "title": "Culture Maker & Domotique",
@@ -2248,7 +2106,8 @@
             "LoRaWAN",
             "Embarqué",
             "Domotique"
-          ]
+          ],
+          "id": "pass_2"
         },
         {
           "title": "Scoutisme",
@@ -2256,7 +2115,6 @@
           "article": {
             "title": "Scoutisme — Chef Scout",
             "tag": "Passion & Leadership",
-            "img": "./images/passion_scouting.jpg",
             "body": "<p>Je suis impliqué dans le scoutisme depuis plus de <strong>10 ans</strong>, en progressant jusqu'au rôle de <strong>Chef Scout</strong>. Ce rôle consiste à concevoir et animer des programmes éducatifs pour les jeunes : projets de plein air, activités citoyennes, défis en équipe.</p><p>Le point fort a été ma <strong>participation autonome à Roverway 2024</strong> — le rassemblement européen scout en Norvège — où j'ai collaboré avec des scouts de toute l'Europe pendant deux semaines de voyage et de projets partagés.</p><p>Le scoutisme a été ma principale école de leadership : prendre des décisions avec des informations incomplètes, motiver un groupe, et créer les conditions pour que chacun puisse progresser de façon autonome.</p>",
             "tags": [
               "Scoutisme",
@@ -2282,7 +2140,8 @@
             "10+ ans",
             "Roverway 2024",
             "Norvège"
-          ]
+          ],
+          "id": "pass_3"
         },
         {
           "title": "Espace & Aéronautique",
@@ -2290,7 +2149,6 @@
           "article": {
             "title": "Espace & Aéronautique",
             "tag": "Passion",
-            "img": "./images/passion_space.jpg",
             "body": "<p>Mon intérêt pour l'espace et l'aéronautique remonte à l'obtention de mon <strong>BIA (Brevet d'Initiation Aéronautique)</strong> — le diplôme français d'initiation à l'aéronautique, couvrant la mécanique du vol, la navigation et les systèmes aérospatiaux.</p><p>Cette année, je rejoins <strong>Tolosat</strong> — le projet CubeSat étudiant porté conjointement par N7 (ENSEEIHT) et l'ISAE-SUPAERO. Tolosat a pour objectif de concevoir, construire et lancer un CubeSat 1U, en offrant aux étudiants une mission complète depuis la conception système jusqu'aux opérations orbitales.</p><p>Cela s'aligne directement avec mon travail en microélectronique au sein de CIME-DEOS (ISAE-SUPAERO), où la conception de capteurs d'image pour les applications spatiales est une direction de recherche. Je suis également les clubs <strong>N7 Racing Team</strong> et <strong>7Robot</strong> à N7.</p>",
             "links": [
               {
@@ -2318,7 +2176,8 @@
             "CubeSat",
             "BIA",
             "N7"
-          ]
+          ],
+          "id": "pass_4"
         }
       ]
     },
@@ -2333,7 +2192,6 @@
           "article": {
             "title": "Scoutisme — Un Engagement de Longue Date",
             "tag": "Engagement Citoyen",
-            "img": "./images/passion_scouting.jpg",
             "body": "<p>Je suis investi dans le scoutisme depuis mes 10 ans. J'ai d'abord été jeune aux <strong>EDLN (Éclaireuses et Éclaireurs de la Nature)</strong> Marseille jusqu'à mes 20 ans. À 17 ans, j'ai été chef à l'année aux <strong>EEDF (Éclaireuses et Éclaireurs de France)</strong> de Trets Garlaban, puis j'ai encadré leur camp d'été à Nantes à la fin de cette même année.</p><p>Lors de mes études supérieures, je suis allé à Salon-de-Provence et j'ai rejoint le groupe local EDLN <strong>GLOP (Groupe Local Ouest Provence)</strong> où j'ai été chef d'unité pendant 2 ans, avant de rejoindre les <strong>EDLN de Toulon</strong>.</p><p>À l'international, je suis allé en Norvège en tant que jeune pour le <strong>Roverway</strong>. À l'été 2026, je suis parti en <strong>Allemagne</strong> en tant que chef pour encadrer deux tranches d'âge (11-17 ans).</p><p>Hormis l'Allemagne et mon groupe actuel, j'ai principalement été chef de la tranche des 8-10 ans. <strong>Cette année, je suis chef pour les 14-17 ans à Toulouse.</strong></p>",
             "tags": [
               "Scoutisme",
@@ -2366,7 +2224,7 @@
             "Allemagne 2026",
             "Toulouse"
           ],
-          "image": "./images/passion_scouting.jpg"
+          "id": "civ_0"
         },
         {
           "title": "Vice-Président, Bureau Des Étudiants (BDE) — IUT Salon",
@@ -2375,7 +2233,6 @@
             "title": "Vice-Président du BDE — IUT Salon",
             "tag": "Engagement Citoyen",
             "body": "<p>J'ai été <strong>Vice-Président du BDE</strong> (Bureau Des Étudiants) de l'IUT d'Aix-Marseille, campus de Salon-de-Provence au cours de l'année 2024-2025.</p><p>J'ai également participé en tant qu'<strong>élève organisateur au Colloc GEII 2024 à Marseille</strong>, événement national rassemblant les départements de Génie Électrique et Informatique Industrielle de France. La gestion de la logistique et de la communication pour un événement de cette ampleur fut une expérience formatrice en leadership.</p>",
-            "img": "./images/civic_bde.jpg",
             "tags": [
               "BDE",
               "IUT Salon",
@@ -2393,7 +2250,7 @@
             "Colloc GEII 2024",
             "Marseille"
           ],
-          "image": "./images/civic_bde.jpg"
+          "id": "civ_1"
         },
         {
           "title": "Secrétaire — Provençal Intelligence Agency (PIA)",
@@ -2408,7 +2265,6 @@
                 "url": "https://park4move.fr"
               }
             ],
-            "img": "./images/project_park4move.jpg",
             "tags": [
               "PIA",
               "Park4Move",
@@ -2428,7 +2284,7 @@
             "Service Learning",
             "IUT Salon"
           ],
-          "image": "./images/project_park4move.jpg"
+          "id": "civ_2"
         }
       ]
     },
@@ -2734,6 +2590,156 @@
         "description": "Programming Programmable Logic Controllers (PLCs) and industrial SCADA networks to supervise complex mission-critical processes.",
         "link": "#"
       }
+    }
+  },
+  "media": {
+    "proj_0": {
+      "image": "./images/logo_isae.png",
+      "article_img": "./images/logo_isae.png"
+    },
+    "proj_1": {
+      "image": "./images/proj_fare_3.jpg",
+      "article_img": "./images/proj_fare_3.jpg",
+      "gallery": [
+        "./images/proj_fare_3.jpg",
+        "./images/proj_fare_4.jpg"
+      ]
+    },
+    "proj_2": {
+      "image": "./images/project_park4move.jpg",
+      "article_img": "./images/project_park4move.jpg"
+    },
+    "proj_3": {
+      "image": "./images/proj_robot_concours_2.png",
+      "article_img": "./images/proj_robot_concours_2.png",
+      "gallery": [
+        "./images/proj_robot_concours_2.png",
+        "./images/proj_robot_concours_3.png",
+        "./images/proj_robot_concours_4.png"
+      ]
+    },
+    "proj_4": {
+      "image": "./images/proj_valise_balise.png",
+      "article_img": "./images/proj_valise_balise.png",
+      "gallery": [
+        "./images/proj_valise_balise_1.png",
+        "./images/proj_valise_balise_2.png",
+        "./images/proj_valise_balise_3.png",
+        "./images/proj_valise_balise_4.png"
+      ]
+    },
+    "proj_5": {
+      "image": "./images/proj_auto_moteur.png",
+      "article_img": "./images/proj_auto_moteur.png",
+      "gallery": [
+        "./images/proj_auto_moteur_1.png",
+        "./images/proj_auto_moteur_2.png",
+        "./images/proj_auto_moteur_3.png",
+        "./images/proj_auto_moteur_4.png"
+      ]
+    },
+    "proj_6": {
+      "image": "./images/proj_battery_1.jpg",
+      "article_img": "./images/proj_battery_1.jpg",
+      "gallery": [
+        "./images/proj_battery_1.jpg",
+        "./images/proj_battery_2.jpg"
+      ]
+    },
+    "proj_7": {
+      "image": "./images/proj_chenillard_1.jpeg",
+      "article_img": "./images/proj_chenillard_1.jpeg",
+      "gallery": [
+        "./images/proj_chenillard_1.jpeg",
+        "./images/proj_chenillard_3.jpeg",
+        "./images/proj_chenillard_4.jpeg"
+      ]
+    },
+    "proj_8": {
+      "image": "./images/proj_solar_1.jpeg",
+      "article_img": "./images/proj_solar_1.jpeg",
+      "gallery": [
+        "./images/proj_solar_1.jpeg",
+        "./images/proj_solar_2.png",
+        "./images/proj_solar_3.jpeg",
+        "./images/proj_solar_4.jpeg"
+      ]
+    },
+    "proj_9": {
+      "image": "./images/proj_robot_son_1.jpg",
+      "article_img": "./images/proj_robot_son_1.jpg",
+      "gallery": [
+        "./images/proj_robot_son_1.jpg",
+        "./images/proj_robot_son_3.jpg",
+        "./images/proj_robot_son_4.jpeg"
+      ]
+    },
+    "proj_10": {
+      "image": "./images/proj_dobot_niryo.png",
+      "article_img": "./images/proj_dobot_niryo.png",
+      "gallery": [
+        "./images/proj_dobot_niryo_1.png",
+        "./images/proj_dobot_niryo_2.png",
+        "./images/proj_dobot_niryo_3.png",
+        "./images/proj_dobot_niryo_4.png"
+      ]
+    },
+    "pass_0": {
+      "article_img": "./images/passion_vtt.jpg"
+    },
+    "pass_1": {
+      "article_img": "./images/passion_climbing.jpg"
+    },
+    "pass_3": {
+      "article_img": "./images/passion_scouting.jpg"
+    },
+    "pass_4": {
+      "article_img": "./images/passion_space.jpg"
+    },
+    "civ_0": {
+      "image": "./images/passion_scouting.jpg",
+      "article_img": "./images/passion_scouting.jpg"
+    },
+    "civ_1": {
+      "image": "./images/civic_bde.jpg",
+      "article_img": "./images/civic_bde.jpg"
+    },
+    "civ_2": {
+      "image": "./images/project_park4move.jpg",
+      "article_img": "./images/project_park4move.jpg"
+    },
+    "mob_0": {
+      "image": "./images/mobility_barcelona.jpg",
+      "article_img": "./images/mobility_barcelona.jpg",
+      "gallery": [
+        "./images/mobility_barcelona.jpg",
+        "./images/passion_climbing.jpg",
+        "./images/project_park4move.jpg"
+      ]
+    },
+    "mob_1": {
+      "image": "./images/mobility_montreal.jpg",
+      "article_img": "./images/mobility_montreal.jpg"
+    },
+    "mob_2": {
+      "image": "./images/mobility_singapore.jpg",
+      "article_img": "./images/mobility_singapore.jpg"
+    },
+    "car_0": {
+      "image": "./images/logo_isae.png",
+      "article_img": "./images/logo_isae.png"
+    },
+    "car_1": {
+      "image": "./images/project_iter.jpg",
+      "article_img": "./images/project_iter.jpg"
+    },
+    "car_2": {
+      "image": "./images/passion_vtt.jpg",
+      "article_img": "./images/project_iter.jpg"
+    },
+    "car_3": {
+      "image": "./images/project_park4move.jpg",
+      "article_img": "./images/project_park4move.jpg"
     }
   }
 }

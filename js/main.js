@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function renderPageDynamicData() {
     const lang = localStorage.getItem('site_lang') || (new URLSearchParams(window.location.search).get('lang')) || 'en';
-    renderDynamicContent(translations[lang]);
+    renderDynamicContent(translations[lang], translations);
     initModals(translations); // Wire up the newly created modals
     evaluateLuminance(); // Recalculate contrast for newly injected cards
   }
