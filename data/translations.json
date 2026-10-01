@@ -129,7 +129,7 @@
             "title": "Fare Ingenierie — Automation & IoT",
             "tag": "Project / Work-Study",
             "body": "<p>I completed both a 10-week internship and a 1-year apprenticeship at <strong>Fare Ingenierie</strong>, an engineering firm specializing in automation and supervision systems.</p>\n<p><strong>Key Projects:</strong></p>\n<ul>\n<li><strong>SY Tiara II Superyacht:</strong> Complete overhaul of the WAGO PLC programs for an 80-meter yacht.</li>\n<li><strong>ITER Nuclear Fusion Site:</strong> R&D IoT architecture integrating LoRaWAN sensors via MQTT protocol on PLCs for safety monitoring.</li>\n<li><strong>Custom SCADA Datalogger:</strong> Development of an industrial data transmission system utilizing an edge preprocessing algorithm, chunking, and a secure Docker/Python/FastAPI/MySQL stack.</li>\n<li><strong>FareOps:</strong> Internal business management web application.</li>\n<li><strong>Silos Supervision:</strong> Updating the supervision of a PLC controlling 75 plastic pellet silos.</li>\n</ul>",
-            "img": "./images/project_iter.jpg",
+            "img": "./images/proj_fare_1.jpg",
             "tags": [
               "Fare Ingenierie",
               "IoT",
@@ -143,6 +143,12 @@
               "Automation",
               "Hardware",
               "2024-2026"
+            ],
+            "images": [
+              "./images/proj_fare_1.jpg",
+              "./images/proj_fare_2.jpg",
+              "./images/proj_fare_3.jpg",
+              "./images/proj_fare_4.jpg"
             ]
           },
           "tags": [
@@ -159,7 +165,7 @@
             "Hardware",
             "2024-2026"
           ],
-          "image": "./images/project_iter.jpg"
+          "image": "./images/proj_fare_1.jpg"
         },
         {
           "title": "Park4Move — LoRaWAN Smart Parking",
@@ -322,13 +328,16 @@
             "title": "Battery Tester — BUT1 SAE",
             "tag": "Project",
             "body": "<p>During my first year (BUT1), I worked on the <strong>Battery Tester</strong> project, aiming to design an electronic device capable of measuring and indicating a battery's charge level.</p><p>The project involved:</p><ul><li><strong>Functional design:</strong> Analyzing specifications and defining the electronic architecture.</li><li><strong>Analog electronics:</strong> Designing the measurement and comparison circuits to drive LED indicators.</li><li><strong>Prototyping:</strong> Building and testing the circuit to validate its performance against the specifications.</li></ul>",
-            "img": "./images/project_iter.jpg",
+            "img": "./images/proj_battery_1.jpg",
             "tags": [
               "Electronics",
               "Battery Tester",
               "Analog",
               "Prototyping",
               "IUT Salon"
+            ],
+            "images": [
+              "./images/proj_battery_1.jpg"
             ]
           },
           "tags": [
@@ -338,7 +347,7 @@
             "Prototyping",
             "IUT Salon"
           ],
-          "image": "./images/project_iter.jpg"
+          "image": "./images/proj_battery_1.jpg"
         },
         {
           "title": "Digital Chaser (Chenillard) — VHDL & FPGA",
@@ -347,13 +356,19 @@
             "title": "Digital Chaser — VHDL & FPGA",
             "tag": "Project",
             "body": "<p>During my IUT, I designed and developed a <strong>digital LED chaser</strong> (Chenillard) from scratch using <strong>VHDL</strong> on an <strong>FPGA</strong>.</p><p>This project involved designing digital logic circuits, simulating VHDL code, and implementing it on hardware to control LED lighting patterns efficiently.</p>",
-            "img": "./images/project_iter.jpg",
+            "img": "./images/proj_chenillard_1.jpeg",
             "tags": [
               "VHDL",
               "FPGA",
               "Digital Logic",
               "Electronics",
               "IUT Salon"
+            ],
+            "images": [
+              "./images/proj_chenillard_1.jpeg",
+              "./images/proj_chenillard_2.jpeg",
+              "./images/proj_chenillard_3.jpeg",
+              "./images/proj_chenillard_4.jpeg"
             ]
           },
           "tags": [
@@ -363,7 +378,7 @@
             "Electronics",
             "IUT Salon"
           ],
-          "image": "./images/project_iter.jpg"
+          "image": "./images/proj_chenillard_1.jpeg"
         },
         {
           "title": "Photovoltaic Power Supply",
@@ -372,12 +387,18 @@
             "title": "Photovoltaic Power Supply",
             "tag": "Project",
             "body": "<p>During a dedicated SAÉ at IUT Salon-de-Provence, we designed the control board for a solar power supply system.</p><p><strong>Objective:</strong> Safely and efficiently power a smartphone and an Altera microprocessor board using photovoltaic panels.</p><p>We bypassed standard voltage dividers to optimize energy yield and developed a robust electronic control circuit, culminating in system simulation and the drafting of maintenance and commissioning documents.</p>",
-            "img": "./images/project_iter.jpg",
+            "img": "./images/proj_solar_1.jpeg",
             "tags": [
               "Electronics",
               "Solar Power",
               "Energy Management",
               "IUT Salon"
+            ],
+            "images": [
+              "./images/proj_solar_1.jpeg",
+              "./images/proj_solar_2.png",
+              "./images/proj_solar_3.jpeg",
+              "./images/proj_solar_4.jpeg"
             ]
           },
           "tags": [
@@ -386,7 +407,7 @@
             "Energy Management",
             "IUT Salon"
           ],
-          "image": "./images/project_iter.jpg"
+          "image": "./images/proj_solar_1.jpeg"
         },
         {
           "title": "Analog Line-Follower Robot",
@@ -1478,7 +1499,7 @@
             "title": "Fare Ingenierie — Automatisme & IoT",
             "tag": "Projet / Alternance",
             "body": "<p>J'ai réalisé un stage de 10 semaines suivi d'une alternance d'un an chez <strong>Fare Ingénierie</strong>, bureau d'études spécialisé en automatisme et supervision.</p>\n<p><strong>Projets majeurs :</strong></p>\n<ul>\n<li><strong>Superyacht SY Tiara II :</strong> Refonte complète des programmes automates WAGO pour un yacht de 80 mètres.</li>\n<li><strong>Site d'ITER :</strong> Architecture IoT R&D intégrant des capteurs LoRaWAN via protocole MQTT sur automates pour la surveillance de sécurité.</li>\n<li><strong>SCADA Datalogger Sur-Mesure :</strong> Développement d'un système de transmission de données industrielles avec algorithme de prétraitement Edge, chunking, et stack Docker/Python/FastAPI/MySQL.</li>\n<li><strong>FareOps :</strong> Application web interne de gestion d'entreprise.</li>\n<li><strong>Supervision Silos :</strong> Mise à jour de la supervision d'un automate contrôlant 75 silos de billes de plastique.</li>\n</ul>",
-            "img": "./images/project_iter.jpg",
+            "img": "./images/proj_fare_1.jpg",
             "tags": [
               "Fare Ingenierie",
               "IoT",
@@ -1492,6 +1513,12 @@
               "Automatisme",
               "Hardware",
               "2024-2026"
+            ],
+            "images": [
+              "./images/proj_fare_1.jpg",
+              "./images/proj_fare_2.jpg",
+              "./images/proj_fare_3.jpg",
+              "./images/proj_fare_4.jpg"
             ]
           },
           "tags": [
@@ -1508,7 +1535,7 @@
             "Hardware",
             "2024-2026"
           ],
-          "image": "./images/project_iter.jpg"
+          "image": "./images/proj_fare_1.jpg"
         },
         {
           "title": "Park4Move — Stationnement Connecté LoRaWAN",
@@ -1671,13 +1698,16 @@
             "title": "Testeur de Batterie — SAE BUT1",
             "tag": "Projet",
             "body": "<p>Lors de ma première année (BUT1), j'ai travaillé sur la <strong>SAE Testeur de Batterie</strong>, visant à concevoir un appareil électronique capable de mesurer et d'indiquer le niveau de charge d'une batterie.</p><p>Le projet comprenait :</p><ul><li><strong>Conception fonctionnelle :</strong> Analyse du cahier des charges et définition de l'architecture électronique.</li><li><strong>Électronique analogique :</strong> Conception des circuits de mesure et de comparaison pour piloter des indicateurs LED.</li><li><strong>Prototypage :</strong> Réalisation et test du circuit pour valider ses performances par rapport aux spécifications.</li></ul>",
-            "img": "./images/project_iter.jpg",
+            "img": "./images/proj_battery_1.jpg",
             "tags": [
               "Électronique",
               "Testeur de Batterie",
               "Analogique",
               "Prototypage",
               "IUT Salon"
+            ],
+            "images": [
+              "./images/proj_battery_1.jpg"
             ]
           },
           "tags": [
@@ -1687,7 +1717,7 @@
             "Prototypage",
             "IUT Salon"
           ],
-          "image": "./images/project_iter.jpg"
+          "image": "./images/proj_battery_1.jpg"
         },
         {
           "title": "Chenillard Numérique — VHDL & FPGA",
@@ -1696,13 +1726,19 @@
             "title": "Chenillard Numérique — VHDL & FPGA",
             "tag": "Projet",
             "body": "<p>Durant mon IUT, j'ai conçu et développé un <strong>chenillard numérique</strong> de A à Z en <strong>VHDL</strong> sur une carte <strong>FPGA</strong>.</p><p>Ce projet impliquait la conception de circuits logiques numériques, la simulation de code VHDL et son implémentation sur matériel pour contrôler divers motifs lumineux à base de LEDs de manière efficace.</p>",
-            "img": "./images/project_iter.jpg",
+            "img": "./images/proj_chenillard_1.jpeg",
             "tags": [
               "VHDL",
               "FPGA",
               "Logique Numérique",
               "Électronique",
               "IUT Salon"
+            ],
+            "images": [
+              "./images/proj_chenillard_1.jpeg",
+              "./images/proj_chenillard_2.jpeg",
+              "./images/proj_chenillard_3.jpeg",
+              "./images/proj_chenillard_4.jpeg"
             ]
           },
           "tags": [
@@ -1712,7 +1748,7 @@
             "Électronique",
             "IUT Salon"
           ],
-          "image": "./images/project_iter.jpg"
+          "image": "./images/proj_chenillard_1.jpeg"
         },
         {
           "title": "Alimentation Photovoltaïque",
@@ -1721,12 +1757,18 @@
             "title": "Alimentation Photovoltaïque",
             "tag": "Projet",
             "body": "<p>Dans le cadre d'une SAÉ à l'IUT de Salon-de-Provence, nous avons conçu la partie commande d'une alimentation par panneaux solaires.</p><p><strong>Objectif :</strong> Alimenter efficacement un téléphone portable et une carte Altera à microprocesseur.</p><p>Nous avons étudié la partie puissance, optimisé le rendement énergétique, simulé l'ensemble du montage, et rédigé les documents de mise en service et de maintenance de la carte de commande.</p>",
-            "img": "./images/project_iter.jpg",
+            "img": "./images/proj_solar_1.jpeg",
             "tags": [
               "Électronique",
               "Solaire",
               "Gestion d'Énergie",
               "IUT Salon"
+            ],
+            "images": [
+              "./images/proj_solar_1.jpeg",
+              "./images/proj_solar_2.png",
+              "./images/proj_solar_3.jpeg",
+              "./images/proj_solar_4.jpeg"
             ]
           },
           "tags": [
@@ -1735,7 +1777,7 @@
             "Gestion d'Énergie",
             "IUT Salon"
           ],
-          "image": "./images/project_iter.jpg"
+          "image": "./images/proj_solar_1.jpeg"
         },
         {
           "title": "Robot Suiveur de Ligne Analogique",
